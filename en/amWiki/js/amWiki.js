@@ -389,7 +389,8 @@ $(function () {
         docs.loadPage(homePage.path, function (state, content) {
             if (state == 'success') {
                 changeNav(homePage.path);
-                docs.renderDoc(content);
+                console.log('homePage.path:',homePage.path);
+                docs.renderDoc(content,homePage.path);
                 storage.saveDoc(homePage.path, content);
                 $main.trigger('scrollbar');
             }
@@ -403,7 +404,8 @@ $(function () {
     var changePage = function (path, withOutPushState, callback) {
         //第一步，从本地缓存读取并渲染页面
         var localDoc = storage.read(path);
-        docs.renderDoc(localDoc);
+        console.log('homePage.path2:',path);
+        docs.renderDoc(localDoc,path);
         testing && testing.crawlContent();
         $main.trigger('scrollbar');
         $mainInner.scrollTop(0);  //返回顶部
@@ -431,7 +433,8 @@ $(function () {
             else if (state == 'success') {
                 //如果服务器文档有更新，更新本地缓存、重新渲染页面、重新判断接口测试
                 if (content != localDoc) {
-                    docs.renderDoc(content);
+                    console.log('homePage.path3:',path);
+                    docs.renderDoc(content,path);
                     storage.saveDoc(path, content);
                     testing && testing.crawlContent();
                     $main.trigger('scrollbar');
@@ -675,3 +678,5 @@ $(function () {
     };
 
 });
+
+

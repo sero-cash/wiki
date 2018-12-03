@@ -273,9 +273,11 @@
      * @returns {String}
      * @private
      */
-    Docs.prototype._setImgResize = function (html) {
+    Docs.prototype._setImgResize = function (html,path) {
         return html.replace(/<img(.*?)src="(.*?)=(\d*[-x×]\d*)(-[lrc])?"/g, function (m, s1, s2, s3, s4) {
+
             var imgHtml = '<img' + s1 + 'src="' + s2 + '"';
+
             var imgSize = s3.split(/[-x×]/);
             var align = ({'-l': 'left', '-r': 'right', '-c': 'center'})[s4];
             if (imgSize[0]) {
@@ -287,6 +289,18 @@
             if (align) {
                 imgHtml += ' align="' + align + '"';
             }
+            return imgHtml;
+        }).replace(/<img(.*?)src="(.*?)"/g, function (m, s1, s2) {
+
+            console.log('_setImgResize::',path);
+
+            var temppath = path.substring(0,path.lastIndexOf('\/'))
+
+            var hrefurl = s2;
+            if(s2.indexOf('http')!=0){
+                hrefurl = ((''==temppath)?('library/' + s2):('library/'+temppath + '/' + s2));
+            }
+            var imgHtml = '<img' + s1 + 'src="' + hrefurl + '"';
             return imgHtml;
         });
     };
@@ -421,7 +435,7 @@
      * @param {String} content - 需要渲染的文档内容
      * @public
      */
-    Docs.prototype.renderDoc = function (content) {
+    Docs.prototype.renderDoc = function (content,path) {
         var that = this;
         var html = '';
         this.cleanView();
@@ -438,7 +452,7 @@
         //创建目录标记，和悬浮窗格式统一
         html = this._setTOC(html);
         //自定义图片大小与对齐方式
-        html = this._setImgResize(html);
+        html = this._setImgResize(html,path);
         //复选框
         html = this._setCheckbox(html);
         //文字飘红
@@ -510,7 +524,7 @@
      * @public
      */
     Docs.prototype.loadPage = function (path, callback) {
-        //console.log(path);
+        console.log(path);
         var that = this;
         var url = this._encodeUrl(path, 'normal');
         this.getDoc(url, function (type, data) {
