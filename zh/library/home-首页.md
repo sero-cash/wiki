@@ -4,4 +4,4 @@
 
 > SERO是真正使用零知识证明的隐私保护平台。SERO不但是世界上第一个支持智能合约的隐私加密货币，也是世界上第一个允许开发者发行支持智能合约的隐私加密货币并且可以在DApp是使用的开发平台。
 
-![img](assets/img/WechatIMG36.png)
+![img](images/img/WechatIMG36.png)
