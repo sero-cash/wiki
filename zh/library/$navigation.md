@@ -4,6 +4,7 @@
 
 ### 教程
 
+- [SERO钱包使用手册](Tutorial/manual-of-wallet.md)
 - [匿名Token发行原理](Tutorial/principle-of-anonymous-token.md)
 - [匿名Token发行实战](Tutorial/practice-of-anonymous-token.md)
 
