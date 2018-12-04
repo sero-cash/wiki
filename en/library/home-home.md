@@ -1,6 +1,6 @@
-# 首页
+# HOME
 
-## 关于SERO
+## About SERO
 
 $10^9$
 

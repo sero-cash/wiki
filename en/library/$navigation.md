@@ -1,13 +1,20 @@
 
 #### [首页](?file=home-首页)
 
-##### 教程
-- **开始**
-    - **测试网络介绍**
-        - [版本计划](?file=001-教程/01-开始/01-测试网络介绍/01-版本计划 "版本计划")
-        - [功能介绍](?file=001-教程/01-开始/01-测试网络介绍/02-功能介绍 "功能介绍")
-- **钱包**
-    - [安装钱包](?file=001-教程/02-钱包/01-安装钱包 "安装钱包")
-    - [使用说明](?file=001-教程/02-钱包/02-使用说明 "使用说明")
-- **gero**
-    - [gero是什么?](?file=001-教程/03-gero/01-gero是什么? "gero是什么?")
+##### Getting started
+- [readme](?file=01-Getting started/01-readme "readme")
+
+##### References
+- [readme](?file=02-References/01-readme "readme")
+
+##### Examples
+- [readme](?file=03-Examples/01-readme "readme")
+
+##### Innovation guides
+- [readme](?file=04-Innovation guides/01-readme "readme")
+
+##### Status
+- **Releases**
+    - [readme](?file=05-Status/01-Releases/01-readme "readme")
+- **News**
+    - [readme](?file=05-Status/02-News/01-readme "readme")
