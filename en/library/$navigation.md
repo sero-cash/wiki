@@ -1,20 +1,25 @@
+### Getting started
 
-#### [Home](?file=home-Home)
+- [From Source Code -- base on CentOS7](Example/sero-basic-interface.md)
 
-##### Getting started
-- [readme](?file=01-Getting%20started/01-readme "readme")
+### Tutorial
 
-##### References
-- [readme](?file=02-References/01-readme "readme")
+- [Anonymous Tokens Issuance Principle](Tutorial/principle-of-anonymous-token.md)
+- [Super Zero Protocol (SERO) Smart Contracts Tutorial - Issue Anonymous Tokens](Tutorial/practice-of-anonymous-token.md)
 
-##### Examples
-- [readme](?file=03-Examples/01-readme "readme")
+### Standard example
 
-##### Innovation guides
-- [readme](?file=04-Innovation%20guides/01-readme "readme")
+- [SERO basic interface](Example/sero-basic-interface.md)
 
-##### Status
+### Innovation Guide
+
+- [What's Innovation guide](Innovation/what-is-innovation-guide.md)
+
+### News
+
 - **Releases**
-    - [readme](?file=05-Status/01-Releases/01-readme "readme")
-- **News**
-    - [readme](?file=05-Status/02-News/01-readme "readme")
+  - [BETANET RC4](News/Publish/SERO-BETANET-RC4(v0.3.0-beta.4).md)
+- **Important events**
+
+### Community contribution
+

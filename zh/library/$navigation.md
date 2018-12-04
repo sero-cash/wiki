@@ -5,6 +5,7 @@
 ### 教程
 
 - [匿名Token发行原理](Tutorial/principle-of-anonymous-token.md)
+- [匿名Token发行实战](Tutorial/practice-of-anonymous-token.md)
 
 ### 标准范例
 
@@ -19,4 +20,6 @@
 - **产品发布**
   - [BETANET RC4](News/Publish/SERO-BETANET-RC4(v0.3.0-beta.4).md)
 - **重要事件**
+
+### 社区贡献
 
