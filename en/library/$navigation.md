@@ -1,5 +1,5 @@
 
-#### [首页](?file=home-Home)
+#### [Home](?file=home-Home)
 
 ##### Getting started
 - [readme](?file=01-Getting%20started/01-readme "readme")
