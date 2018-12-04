@@ -16,7 +16,6 @@ go-czero-import 2bb90ac24dfcc320c166140091332bdb5f3bd0b8
 console 8b67e9d507c962c822f72d72f25e10f426a22e52
 wallet ffceff4d248c28864149ccd97aff4e709b5b1ec0
 
-
 ## 发布包
 
 gero-v0.3.0-beta.rc.4-darwin.tar.gz   _for macos_
@@ -34,3 +33,4 @@ gero-v0.3.0-beta.rc.4-fedora.tar.gz _for fedora_
 BetaNet 区块浏览器：http://explorer.web.sero.cash
 源码位置：https://github.com/sero-cash/go-sero
 智能合约编辑器：http://remix.web.sero.cash
+

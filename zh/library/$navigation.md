@@ -1,6 +1,6 @@
 ### 轻松入门
 
-- [从源码开始——基于CentOS7](Example/sero-basic-interface)
+- [从源码开始——基于CentOS7](Example/sero-basic-interface.md)
 
 ### 教程
 
