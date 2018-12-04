@@ -1,8 +1,8 @@
 
-#### [首页](?file=home-首页)
+#### [首页](?file=home-Home)
 
 ##### Getting started
-- [readme](?file=01-Getting started/01-readme "readme")
+- [readme](?file=01-Getting%20started/01-readme "readme")
 
 ##### References
 - [readme](?file=02-References/01-readme "readme")
@@ -11,7 +11,7 @@
 - [readme](?file=03-Examples/01-readme "readme")
 
 ##### Innovation guides
-- [readme](?file=04-Innovation guides/01-readme "readme")
+- [readme](?file=04-Innovation%20guides/01-readme "readme")
 
 ##### Status
 - **Releases**

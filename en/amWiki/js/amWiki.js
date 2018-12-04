@@ -355,7 +355,7 @@ $(function () {
 
     //改变导航显示
     var changeNav = function (path) {
-        if (/^home[-_].*?/.test(path) || path == '首页') {
+        if (/^home[-_].*?/.test(path) || path == 'Home') {
             $menuBar.find('h4').addClass('on');
             $menuBar.find('a').removeClass('on');
             changeSibling(null);
@@ -384,7 +384,7 @@ $(function () {
         $menuBar.trigger('scrollbar');
     };
 
-    //返回首页
+    //返回home
     var backHome = function () {
         docs.loadPage(homePage.path, function (state, content) {
             if (state == 'success') {
@@ -411,7 +411,7 @@ $(function () {
         $mainInner.scrollTop(0);  //返回顶部
         //更新history记录
         if (!withOutPushState && HISTORY_STATE) {
-            var path2 = path.replace(/&/g, '%26');  //对带 & 符号的地址特殊处理
+            var path2 = path.replace(/&/g, '%26').replace(/\s+/g, '%20');  //对带 & 符号的地址特殊处理
             history.pushState({path: path}, '', '?file=' + path2);
         }
         //第二步，加载服务器上的文档资源，如果有更新重新渲染
@@ -454,7 +454,7 @@ $(function () {
     var loadNav = function (callback) {
         var fillNav = function (data) {
             $menuBar.find('.scroller-content').html(marked(data));
-            //首页
+            //home
             var menuBarHome = $menuBar.find('h4');
             homePage.text = menuBarHome.text();
             homePage.url = menuBarHome.find('a').attr('href');
@@ -599,7 +599,7 @@ $(function () {
 
     //解析地址参数
     var curPath = tools.getURLParameter('file');
-    curPath = !curPath ? '首页' : decodeURI(curPath);
+    curPath = !curPath ? 'Home' : decodeURI(curPath);
     curPath = curPath.replace(/%26/g, '&');
 
     //加载导航
@@ -630,7 +630,7 @@ $(function () {
             //当没有状态记录时
             else {
                 path = tools.getURLParameter('file');
-                path = !path ? '首页' : decodeURI(path);
+                path = !path ? 'Home' : decodeURI(path);
                 path = path.replace(/%26/g, '&');
                 //判断 url 路径是否和当前一样，不一样才跳转
                 if (path != curPath) {
@@ -646,10 +646,6 @@ $(function () {
             }
         });
     }
-
-    /*
-     回调中转
-     */
 
     //重建缓存
     search.onNeedRebuildStorage = function (callback) {
@@ -678,5 +674,3 @@ $(function () {
     };
 
 });
-
-
