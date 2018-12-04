@@ -46,13 +46,13 @@ Alice是一个公益组织的成员，她为了使贫困地区的失学儿童能
 
 她要开发一个智能合约，这个智能合约提供两种Token，分别是`Assisted Token`和`Helper Token`，这两种Token必须同比例发行(即购买了多少`Heper Token`，就必须对应的生成多少`Assisted Token`)。
 
-> **Assisted Token**
+* **Assisted Token**
 
-> 采用常规方式进行记录的，全程受到银行和公众监管，用来跟踪捐助儿童的情况。Assisted Token根据活动开展的需求和情况进行统一分配，所有最后拿到Token进行失学捐助申请资金的时候，必须完整的汇报资金运作的情况，并记录在区块链上，受到公众的监管。
+  采用常规方式进行记录的，全程受到银行和公众监管，用来跟踪捐助儿童的情况。Assisted Token根据活动开展的需求和情况进行统一分配，所有最后拿到Token进行失学捐助申请资金的时候，必须完整的汇报资金运作的情况，并记录在区块链上，受到公众的监管。
 
-> **Helper Token**
+* **Helper Token**
 
-> 用匿名方式来发行，用来进行慈善筹资。购买`Helper Token`的人则可以将Token交易给其他的慈善捐助者，以分担这项行动的成本，同时传递这种温暖的行为。这种行为造成的交易则应该享受相应的社会回报。`Helper Token`的交易也不会透漏捐助者的任何信息，因为它是匿名的。
+  用匿名方式来发行，用来进行慈善筹资。购买`Helper Token`的人则可以将Token交易给其他的慈善捐助者，以分担这项行动的成本，同时传递这种温暖的行为。这种行为造成的交易则应该享受相应的社会回报。`Helper Token`的交易也不会透漏捐助者的任何信息，因为它是匿名的。
 
 好了，Alice有了这个可行的方案，虽然它不够完美，但是不妨碍我们将它开发出来。本文主要借助发行`Helper Token`的场景说明如何在SERO上发行匿名的Token资产。
 
@@ -82,6 +82,8 @@ SERO采用solidity的编程语言进行智能合约的开发，目前兼容v0.5.
 
 你可以通过链接：[http://remix.web.sero.cash](http://remix.web.sero.cash)打开SERO的智能合约开发环境。
 > 请注意，必须用非加密的方式(http://)，而不是(https://)的方式打开链接才能正常运行。
+
+
 
 #### 全节点服务程序(gero)或者SERO客户端钱包(Wallet)
 
@@ -261,32 +263,29 @@ true
 
    智能合约的安装是附带在交易中进行的，交易创建之后可以查看这笔交易的地址。用此地址可在区块浏览器中查询到当前打包的状态。
 
+   ```javascript
+   > tfhcoin.transactionHash
+   "0x254bbefcbe0eaa3cb5a657377fd49b756880839a1bb69eaa006106a882055f09"
    ```
-   
-   ```
-> tfhcoin.transactionHash
-> "0x254bbefcbe0eaa3cb5a657377fd49b756880839a1bb69eaa006106a882055f09"
->
->  ```
-> 
->  ```
-
 * **现在挖出一个区块打包这笔交易，确认成功即代表智能合约被成功安装了。**
    ![image.png](https://upload-images.jianshu.io/upload_images/277023-184f8bc5a3ef536e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
- 安装成功后SERO控制台会返回智能合约地址和交易号
+   安装成功后SERO控制台会返回智能合约地址和交易号
 
 
 * **现在可以查看智能合约地址中的余额。**
- ```javascript
-> sero.getBalance(tfhcoin.address)
-{
-      tkn: {
-          TFHCOIN: 1000000000000000000
-      }
-}
- ```
-  目前我们已经生成了以 $10^9$ 为精度，数量是10亿，币名为`TFHCOIN`的Token。
+
+  ```
+  > sero.getBalance(tfhcoin.address)
+  {
+        tkn: {
+            TFHCOIN: 1000000000000000000
+        }
+  }
+  ```
+
+
+目前我们已经生成了以 $10^9$ 为精度，数量是10亿，币名为`TFHCOIN`的Token。
 
 <br/>
 
@@ -423,54 +422,58 @@ true
      > * 个人给个人发送`TFHCOIN`采用的是与发送`SERO`相同的方式，即SERO的原生转账机制，而不是智能合约`TFHCoin`的方法`transfer`。这说明`TFHCOIN`确实与`SERO`是平等存在在用户账户中的。
      > * 在交易参数中多出一个币名`cy`，其值是`"TFHCOIN"`。
 
-   * **然后我们再来看这笔交易的详情:**
-   ```
-   > sero.getTransaction(
-   "0x7024f426f376d188b6980b720d44104fe3f908d25d0d53c3f7e130f30f6d9765"
-   )
-    {
-      blockHash: "0x735bb...17c3a",
-      blockNumber: 10,
-      gas: 90000,
-      gasPrice: 1000000000,
-      hash: "0x7024f...d9765",
-      input: "0x",
-      nonce: 0,
-      stx: {
-        Bcr: "0x85247...d8a714",
-        Bsign: "0x52013f...6df801",
-        Desc_O_Ins: [],
-        Desc_O_Outs: [],
-        Desc_Z_Ins: [
-          {
-              Anchor: "0xb0aaddf...d856d06",
-              AssetCM: "0x2d3cc...89cf62d",
-              Nil: "0x30da...bcee20",
-              Proof: "0x025eed...da7031b",
-              Trace: "0x811f...90b10b"
-          },
-          ...
-        ],
-        Desc_Z_Outs: [
-          {
-              AssetCM: "0xac8f2...e11c3ad",
-              OutCM: "0x0a586e...13e2486",
-              PKr: "0x875808...14d1c10",
-              Proof: "0x036b46...8d100e"
-          },
-          ...
-        ],
-        Ehash: "0xf125e7...4809768",
-        Fee: "90000000000000",
-        From: "0x807dc...d1bb80a",
-        Sign: "0xadf77...003702"
-      },
-      to: null,
-      transactionIndex: 0,
-      value: 0
-    }
-   ```
-   **是不是与前面看到的`SERO`转账一样，不知来源，不知去处，不知金额！**
+
+
+* **然后我们再来看这笔交易的详情:**
+
+  ```javascript
+  > sero.getTransaction(
+  "0x7024f426f376d188b6980b720d44104fe3f908d25d0d53c3f7e130f30f6d9765"
+  )
+   {
+     blockHash: "0x735bb...17c3a",
+     blockNumber: 10,
+     gas: 90000,
+     gasPrice: 1000000000,
+     hash: "0x7024f...d9765",
+     input: "0x",
+     nonce: 0,
+     stx: {
+       Bcr: "0x85247...d8a714",
+       Bsign: "0x52013f...6df801",
+       Desc_O_Ins: [],
+       Desc_O_Outs: [],
+       Desc_Z_Ins: [
+         {
+             Anchor: "0xb0aaddf...d856d06",
+             AssetCM: "0x2d3cc...89cf62d",
+             Nil: "0x30da...bcee20",
+             Proof: "0x025eed...da7031b",
+             Trace: "0x811f...90b10b"
+         },
+         ...
+       ],
+       Desc_Z_Outs: [
+         {
+             AssetCM: "0xac8f2...e11c3ad",
+             OutCM: "0x0a586e...13e2486",
+             PKr: "0x875808...14d1c10",
+             Proof: "0x036b46...8d100e"
+         },
+         ...
+       ],
+       Ehash: "0xf125e7...4809768",
+       Fee: "90000000000000",
+       From: "0x807dc...d1bb80a",
+       Sign: "0xadf77...003702"
+     },
+     to: null,
+     transactionIndex: 0,
+     value: 0
+   }
+  ```
+
+  **是不是与前面看到的`SERO`转账一样，不知来源，不知去处，不知金额！**
 
 
 ## 四. 总结
