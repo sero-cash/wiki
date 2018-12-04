@@ -93,7 +93,7 @@
             that.$e.searchUpdate.prop('disabled', true);
             that.onNeedRebuildStorage(function () {
                 that.$e.search.prop('disabled', false);
-                that.$e.searchUpdate.val('请勿频繁使用');
+                that.$e.searchUpdate.val('Do not use frequently');
             });
         });
         //更新全部缓存按钮使用的时间限制：一小时内不允许重复使用
@@ -101,7 +101,7 @@
         if (lastBuild) {
             var lave = Date.now() - lastBuild;
             if (lave < 60 * 60 * 1000) {
-                this.$e.searchUpdate.prop('disabled', true).val('请勿频繁使用');
+                this.$e.searchUpdate.prop('disabled', true).val('Do not use frequently');
             }
         }
         //点击搜索
@@ -166,7 +166,7 @@
             return;
         }
         var words = this.$e.searchText.val();
-        this.$e.resultMsg.show().text('创建搜索中...');
+        this.$e.resultMsg.show().text('Create search in...');
         if (typeof win.Worker !== "undefined") {
             //开启一次新搜索时，如果存在搜索子进程，则干掉子进程
             if (this._worker) {
@@ -204,7 +204,7 @@
             }
             //文档预处理完成后开始搜索
             else if (data.type == 'searcher:ready') {
-                that.$e.resultMsg.show().html('正在搜索，请稍后...');
+                that.$e.resultMsg.show().html('Searching, please wait...');
                 that._worker.postMessage({type: 'searcher:search', words: words});
             }
             //搜索结果排行
@@ -232,7 +232,7 @@
     Search.prototype._searchByPresent = function (words) {
         var searcher = new AWSearcher();
         searcher.initDocs(this._storage.getAllDocs());
-        this.$e.resultMsg.show().html('正在搜索，请稍后...');
+        this.$e.resultMsg.show().html('Searching, please wait...');
         searcher.matchWords(words);
         this._data.result = searcher.getResult();
         this._showResultList();
