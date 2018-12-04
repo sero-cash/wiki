@@ -2,17 +2,18 @@
 #### [首页](?file=home-首页)
 
 ##### 轻松入门
-- [readme](?file=01-轻松入门/01-readme "readme")
+- [从源码开始——基于CentOS7](Example/sero-basic-interface)
 
-##### 重要参考
-- [readme](?file=02-重要参考/01-readme "readme")
+##### 教程
+- [匿名Token发行原理](Tutorial/principle-of-anonymous-token.md)
 
 ##### 标准范例
-- [readme](?file=03-标准范例/01-readme "readme")
+- [SERO基础接口](Example/sero-basic-interface.md)
 
 ##### 创新指南
-- [readme](?file=04-创新指南/01-readme "readme")
+- [什么是创新指南](Innovation/what-is-innovation-guide.md)
 
 ##### 最新动态
 - **产品发布**
+  - [SERO BETANET RC4](News/Publish/SERO-BETANET-RC4(v0.3.0-beta.4).md)
 - **重要事件**
