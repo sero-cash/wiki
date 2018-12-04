@@ -745,32 +745,27 @@ true
 
    智能合约的安装是附带在交易中进行的，交易创建之后可以查看这笔交易的地址。用此地址可在区块浏览器中查询到当前打包的状态。
 
+   ```javascript
+   >tfhcoin.transactionHash
+   "0x254bbefcbe0eaa3cb5a657377fd49b756880839a1bb69eaa006106a882055f09"
    ```
-   
-   ```
-> tfhcoin.transactionHash
-> "0x254bbefcbe0eaa3cb5a657377fd49b756880839a1bb69eaa006106a882055f09"
->
->  ```
-> 
->  ```
-
 * **现在挖出一个区块打包这笔交易，确认成功即代表智能合约被成功安装了。**
    ![image.png](https://upload-images.jianshu.io/upload_images/277023-184f8bc5a3ef536e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
- 安装成功后SERO控制台会返回智能合约地址和交易号
-
+    安装成功后SERO控制台会返回智能合约地址和交易号
 
 * **现在可以查看智能合约地址中的余额。**
- ```javascript
-> sero.getBalance(tfhcoin.address)
-{
-      tkn: {
-          TFHCOIN: 1000000000000000000
-      }
-}
- ```
-  目前我们已经生成了以 $10^9$ 为精度，数量是10亿，币名为`TFHCOIN`的Token。
+
+   ```javascript
+   > sero.getBalance(tfhcoin.address)
+   {
+         tkn: {
+             TFHCOIN: 1000000000000000000
+         }
+   }
+   ```
+
+    目前我们已经生成了以 $10^9$ 为精度，数量是10亿，币名为`TFHCOIN`的Token。
 
 <br/>
 
