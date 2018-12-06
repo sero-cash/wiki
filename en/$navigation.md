@@ -20,7 +20,7 @@
 ##### News
 
 - **Releases**
-  - [BETANET RC4](?file=News/Publish/SERO-BETANET-RC4(v0.3.0-beta.4))
+  - [BETANET RC4](?file=News/Releases/SERO-BETANET-RC4(v0.3.0-beta.4))
 - **Important events**
 
 ##### Community contribution
