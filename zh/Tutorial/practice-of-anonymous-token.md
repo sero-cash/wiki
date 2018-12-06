@@ -4,7 +4,7 @@
 
 `超零` `sero` `zpk` `零知识证明` `blockchain` `nizk` `匿名币` `super-zk` `zh` `anonymous` `anonymous token`
 
-我们在上篇已经描述了[SERO智能合约发行匿名Token的原理](https://sero.cash)，那么现在要介绍的是，如何一步一步发行你自己的Token。
+我们在上篇已经描述了[SERO智能合约发行匿名Token的原理](https://wiki.sero.cash/zh/index.html?file=Tutorial/principle-of-anonymous-token)，那么现在要介绍的是，如何一步一步发行你自己的Token。
 
 <br/>
 
@@ -24,7 +24,7 @@
 1. 让访问你业务的客户用你发行的Token缴纳SERO的手续费。
 2. 让你业务具有暗标的公正性。
 
-> SERO通过发行匿名Ticket资产，可以提供更加让人惊讶的功能，详细的教程可以等待[《发行匿名Ticket实战》](https://sero.cash)。
+> SERO通过发行匿名Ticket资产，可以提供更加让人惊讶的功能，详细的教程可以等待[《发行匿名Ticket实战》](https://wiki.sero.cash/zh/index.html)。
 
 下面我们从一个假设的例子出发，看一看，如何在SERO上发行匿名的Token资产。
 
@@ -62,7 +62,7 @@ Alice是一个公益组织的成员，她为了使贫困地区的失学儿童能
 
 ## 三. 发行匿名Token的步骤
 
-> 你可以跟着我的步骤来发行一个你自己的匿名Token，如果对一些基本概念不熟悉，建议重温一下[《发行匿名Token原理》](https://sero.cash)这篇文章。
+> 你可以跟着我的步骤来发行一个你自己的匿名Token，如果对一些基本概念不熟悉，建议重温一下[《发行匿名Token原理》](https://wiki.sero.cash/zh/index.html?file=Tutorial/principle-of-anonymous-token)这篇文章。
 >
 > 另外，因为SERO发布智能合约的主要流程与以太坊是一致的。本文重点将讲述不同之处。
 

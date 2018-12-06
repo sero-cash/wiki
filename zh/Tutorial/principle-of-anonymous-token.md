@@ -6,7 +6,7 @@
 
 SERO是全球首个支持图灵完备智能合约的隐私区块链系统，既然是支持智能合约，当然不可能是简单的智能合约+匿名币。SERO深度整合了两者的优点：智能合约的开放性、隐私系统的封闭性。在这两种特性的支持下，SERO的智能合约具有非常令人兴奋的特性，可以做到一些神奇的事情。
 
-本文主要讲解SERO提供的 `匿名 Token API` 在智能合约的应用，并在开篇简要的介绍一下匿名Token的生成原理。需要编译安装SERO的可以参考[SERO轻松入门](http://sero.cash)，加入我们[SERO开发者社区](https://gitter.im/sero-cash/developer?utm_source=share-link&utm_medium=link&utm_campaign=share-link)，在社区中可以问任何与SERO开发相关的问题。
+本文主要讲解SERO提供的 `匿名 Token API` 在智能合约的应用，并在开篇简要的介绍一下匿名Token的生成原理。需要编译安装SERO的可以参考[SERO轻松入门](https://wiki.sero.cash/zh/index.html?file=Start/from-the-sourcecode-base-on-centos7)，加入我们[SERO开发者社区](https://gitter.im/sero-cash/developer?utm_source=share-link&utm_medium=link&utm_campaign=share-link)，在社区中可以问任何与SERO开发相关的问题。
 
 作为基础，本文认为读者对区块链系统与原理有一个大致的了解。
 
@@ -104,7 +104,7 @@ Token又称之为“同质化通证”，是SERO系统内部承认的一种资�
 
 > 与以太坊中的Token概念不同，以太坊中的Token只是智能合约内部记录的一个符号，而ETH才是以太坊内部真正运行的Token资产。
 
-####币名
+#### 币名
 每种Token都有一个币名，SERO系统初始化后，默认只有一个被注册的币名`SERO`。在智能合约发行匿名Token的时候，必须向SERO系统注册一个全局唯一的字符串作为该Token的币名。币名可以极大的提高你发行资产的可读性。
 
 #### 匿名Token资产
@@ -114,3 +114,9 @@ Token又称之为“同质化通证”，是SERO系统内部承认的一种资�
 SERO的智能合约有一个非常强大的功能，那就是可以任意发行`匿名Token`。当然，前提是你需要一个从未注册过的币名。一旦匿名Token发行成功，智能合约可以将Token以普通交易的形式发送到某个普通账户的暂存地址`PKr`，这时这些被发送的Token将以UTXO的形式脱离智能合约账户，并且与SERO币一样，进入用户的个人账户中，从而被SERO的隐私机制所保护。
 
 > SERO币的发行是由矿工实现的，过程与智能合约发行匿名Token的机制类似，是SERO内建的Token发行功能。
+
+
+
+## 四、最后
+
+我们已经初步了解SERO智能合约对匿名资产发行和处理的原理，如果想要了解匿名资产发行的技术细节，请阅读[《SERO官方WIKI》](https://wiki.sero.cash/zh/index.html)中的教程[《发行匿名Token实战》](https://wiki.sero.cash/zh/index.html?file=Tutorial/practice-of-anonymous-token)

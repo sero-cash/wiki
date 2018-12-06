@@ -346,11 +346,12 @@ sero.sendTransaction({from:sero.accounts[0],to:sero.accounts[1],value:500,cy:"HE
 
 如果对SERO的原理和零知识证明算法感兴趣，可以在SERO的[官网](https://sero.cash)下载我们的白皮书。有任何建议也可以发送电子邮件到 [gordon@sero.vip](gordon@sero.vip) 咨询。
 
-欢迎加入SERO的[gitter社区](https://gitter.im/sero-cash/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)，一起将SERO变得更好。
+欢迎加入SERO的[gitter社区](https://gitter.im/sero-cash/Lobby)，一起将SERO变得更好。
 
 --
 [[官网] https://sero.cash](https://sero.cash)
 [[白皮书 V1.0.6] http://sero-media.s3-website-ap-southeast-1.amazonaws.com/Sero_ENG_V1.06.pdf](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/Sero_ENG_V1.06.pdf)
+[[WIKI] https://wiki.sero.cash](https://wiki.sero.cash)
 [[Twitter] https://twitter.com/SEROdotCASH](https://twitter.com/SEROdotCASH)
 [[Telegram] https://t.me/SeroOfficial](https://t.me/SeroOfficial)
 [[Github] https://github.com/sero-cash/go-sero](https://github.com/sero-cash/go-sero)
