@@ -21,12 +21,10 @@
 ##### 最新动态
 
 - **产品发布**
-  - [BETANET RC1](?file=News/Release/SERO-BETANET-RC1)
-  - [BETANET RC2](?file=News/Release/SERO-BETANET-RC2)
-  - [BETANET RC3](?file=News/Release/SERO-BETANET-RC3)
+  - [BETANET RC5](?file=News/Release/SERO-BETANET-RC5)
   - [BETANET RC4](?file=News/Release/SERO-BETANET-RC4)
 - **Reports**
-  - [2018年11月技术报告](?file=News/Releases/201811-tech-report.md)
+  - [2018年11月技术报告](?file=News/Releases/201811-tech-report)
 - **重要事件**
 
 ##### 社区贡献

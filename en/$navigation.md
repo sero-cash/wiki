@@ -2,12 +2,12 @@
 
 ##### Getting started
 
-- [From Source Code -- base on CentOS7](?file=Example/sero-basic-interface)
+- [From Source Code -- base on CentOS7](?file=Start/from-the-sourcecode-base-on-centos7)
 
 ##### Tutorial
 
 - [Anonymous Tokens Issuance Principle](?file=Tutorial/principle-of-anonymous-token)
-- [Super Zero Protocol (SERO) Smart Contracts Tutorial - Issue Anonymous Tokens](?file=Tutorial/practice-of-anonymous-token)
+- [Issue Anonymous Tokens](?file=Tutorial/practice-of-anonymous-token)
 
 ##### Standard example
 
@@ -20,10 +20,10 @@
 ##### News
 
 - **Releases**
-  - [BETANET RC5](?file=News/Releases/SERO-BETANET-RC4(v0.3.1-beta.5))
+  - [BETANET RC5](?file=News/Releases/SERO-BETANET-RC5)
   - [BETANET RC4](?file=News/Releases/SERO-BETANET-RC4)
 - **Reports**
-  - [November 2018 Technical report](?file=News/Releases/201811-tech-report.md)
+  - [November 2018 Technical report](?file=News/Releases/201811-tech-report)
 - **Important events**
 
 ##### Community contribution
