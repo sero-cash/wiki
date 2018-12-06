@@ -1,4 +1,4 @@
-##### [What's SERO](?file=home-Home)
+#### [What's SERO](?file=home-Home)
 
 ##### Getting started
 
