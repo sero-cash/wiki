@@ -2,7 +2,7 @@
 
 `super zero` `super-zk` `sero` `zpk` `zero knowledge proofs` `blockchain` `nizk` `super-zk` `zh` `anonymous` `anonymous tokens`
 
-We have already described [Super Zero Protocol (SERO) Smart Contracts Tutorial - Anonymous Tokens Issuance Principle] (https://sero.cash) in the previous article, now we are going to introduce how to issue your own tokens step by step.
+We have already described  [Super Zero Protocol (SERO) Smart Contracts Tutorial - Anonymous Tokens Issuance Principle] (https://wiki.sero.cash/en/index.html?file=Tutorial/principle-of-anonymous-token)  in the previous article, now we are going to introduce how to issue your own tokens step by step.
 
 
 
@@ -24,7 +24,7 @@ In the current blockchain systems, issuing anonymous tokens is a unique function
 
 
 
-> SERO can provide even more amazing features by issuing anonymous ticket assets. Detailed tutorials can wait for ["Issuing Anonymous Tickets"] (https://sero.cash).
+> SERO can provide even more amazing features by issuing anonymous ticket assets. Detailed tutorials can wait for ["Issuing Anonymous Tickets"] (https://wiki.sero.cash/en/index.html).
 
 Let's start with a hypothetical example and see how to issue anonymous tokens on SERO.
 
@@ -58,7 +58,7 @@ She wants to develop a smart contract. This smart contract that issues two type 
 
 ## Steps for issuing anonymous tokens
 
-You can follow my steps to issue your own anonymous tokens. If you are unfamiliar with some basic concepts, it is recommended to read the article (https://sero.cash)[Super Zero Protocol (SERO) Smart Contracts Tutorial - Anonymous Tokens Issuance Principle](https://sero.cash).
+You can follow my steps to issue your own anonymous tokens. If you are unfamiliar with some basic concepts, it is recommended to read the article [Super Zero Protocol (SERO) Smart Contracts Tutorial - Anonymous Tokens Issuance Principle](https://wiki.sero.cash/en/index.html?file=Tutorial/principle-of-anonymous-token).
 
 
 
@@ -87,14 +87,14 @@ You can open SERO's smart contract development environment via the link: [http:/
 
 Although SERO's client wallet can also publish smart contracts, we strongly recommend that you use a full-node service program to publish smart contracts so you can get more information and flexibility.
 
-This article uses gero to illustrate the release process of smart contracts. For the compilation and installation of gero, please refer to ["Step by step detailed technical manual for installing SERO (SUPER-ZK) Protocol on your local machine"] (https://sero.cash) and ["SERO Mining Tutorial"] (https:// Sero.cash)
+This article uses gero to illustrate the release process of smart contracts. For the compilation and installation of gero, please refer to ["Step by step detailed technical manual for installing SERO (SUPER-ZK) Protocol on your local machine"] (https://wiki.sero.cash/en/index.html?file=Start/from-the-sourcecode-base-on-centos7) and ["SERO Mining Tutorial"] (https://wiki.sero.cash/en/index.html?file=Start/from-the-binary-package)
 
 > You can get the latest gero source code and compiled package on this page.
 > [https://github.com/sero-cash/go-sero/releases](https://github.com/sero-cash/go-sero/releases)
 
 ![image.png](https://upload-images.jianshu.io/upload_images/277023-91763145b4fe8435.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
-For information on how to publish smart contracts with your wallet, please refer to [SERO Wallet Instructions] (https://sero.cash)
+For information on how to publish smart contracts with your wallet, please refer to [SERO Wallet Instructions] (https://wiki.sero.cash/en/index.html?file=Tutorial/manual-of-wallet)
 
 > You can get the latest wallet source code and compiled installation package on this page.
 > [https://github.com/sero-cash/wallet/releases](https://github.com/sero-cash/wallet/releases)
@@ -218,7 +218,7 @@ contract TFHCoin is SeroInterface {
 
 #### 4. Run the gero background and the command line console
 
-> For the gero background and how to run the console, please refer to ["Step by step detailed technical manual for installing SERO (SUPER-ZK) Protocol on your local machine"] (https://sero.cash) and ["SERO Mining Tutorial"] (https://sero.cash)
+> For the gero background and how to run the console, please refer to ["Step by step detailed technical manual for installing SERO (SUPER-ZK) Protocol on your local machine"] (https://wiki.sero.cash/en/index.html?file=Start/from-the-sourcecode-base-on-centos7) and ["SERO Mining Tutorial"] (https://wiki.sero.cash/en/index.html?file=Start/from-the-binary-package)
 
 Since we are running gero in Dev mode, we need to create an account and prepare some SERO coins as a processing fee.
 ```

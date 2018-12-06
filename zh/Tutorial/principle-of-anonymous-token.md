@@ -6,7 +6,7 @@
 
 SERO是全球首个支持图灵完备智能合约的隐私区块链系统，既然是支持智能合约，当然不可能是简单的智能合约+匿名币。SERO深度整合了两者的优点：智能合约的开放性、隐私系统的封闭性。在这两种特性的支持下，SERO的智能合约具有非常令人兴奋的特性，可以做到一些神奇的事情。
 
-本文主要讲解SERO提供的 `匿名 Token API` 在智能合约的应用，并在开篇简要的介绍一下匿名Token的生成原理。需要编译安装SERO的可以参考[SERO轻松入门](https://wiki.sero.cash/zh/index.html?file=Start/from-the-sourcecode-base-on-centos7)，加入我们[SERO开发者社区](https://gitter.im/sero-cash/developer?utm_source=share-link&utm_medium=link&utm_campaign=share-link)，在社区中可以问任何与SERO开发相关的问题。
+本文主要讲解SERO提供的 `匿名 Token API` 在智能合约的应用，并在开篇简要的介绍一下匿名Token的生成原理。需要编译安装SERO的可以参考[SERO轻松入门](https://wiki.sero.cash/zh/index.html?file=Start/from-the-sourcecode-base-on-centos7)，加入我们[SERO开发者社区](https://gitter.im/sero-cash/developer)，在社区中可以问任何与SERO开发相关的问题。
 
 作为基础，本文认为读者对区块链系统与原理有一个大致的了解。
 

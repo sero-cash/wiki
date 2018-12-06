@@ -4,7 +4,7 @@
 
 SERO is the world's first privacy blockchain system that supports Turing's complete smart contracts. Since it supports smart contracts, it is certainly not a simple smart contracts + anonymous coins. SERO deeply integrates the advantages of both: the openness of smart contracts and the closeness of privacy systems. With the support of the two features, SERO's smart contracts have very exciting features that can do some amazing things.
 
-This article mainly explains the application of the `Anonymous Token API` provided by SERO in smart contracts, and briefly introduces the  principle of the anonymous tokens at the beginning. If you want to compile and install SERO, please refer to [[Step by step detailed technical manual for installing SERO (SUPER-ZK) Protocol on your local machine]](https://medium.com/@SERO.CASH/step-by-step-detailed-manual-for-installing-sero-super-zk-protocol-on-your-local-6c7fad2492fc) , join us [[SERO Developer Community]](https://gitter.im/sero-cash/developer?utm_source=share-link&utm_medium=link&utm_campaign=share-link), you can ask any questions related to SERO development in the community.
+This article mainly explains the application of the `Anonymous Token API` provided by SERO in smart contracts, and briefly introduces the  principle of the anonymous tokens at the beginning. If you want to compile and install SERO, please refer to [[Step by step detailed technical manual for installing SERO (SUPER-ZK) Protocol on your local machine]](https://wiki.sero.cash/en/index.html?file=Start/from-the-sourcecode-base-on-centos7) , join us [[SERO Developer Community]](https://gitter.im/sero-cash/developer), you can ask any questions related to SERO development in the community.
 
 As a basis, this article believes that readers have a general understanding of the blockchain system and related technical principles.
 
@@ -101,7 +101,7 @@ Token, also known as the “homogeneous pass”, is an asset form recognized wit
 
 > Unlike the `Token` concept in Ethereum, the `Tokens` in Ethereum are only symbols of the internal records of the smart contracts, and `ETH` is the Token asset that is actually running inside Ethereum.
 
-####Token Name
+#### Token Name
 Each `Token` has a name. After the SERO system is initialized, there is only one registered token named `SERO` by default. When a smart contract issues an anonymous token, a globally unique string must be registered with the SERO system as the name of the token. The token name can greatly improve the readability of your issued assets.
 
 #### Anonymous Token Assets
