@@ -1,4 +1,4 @@
-#### [HOME](?file=home-Home)
+# (What's SERO)[file=http://wiki.sero.cash/zh/index.html?file=what-is-sero]
 
 ##### Getting started
 
