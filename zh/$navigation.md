@@ -21,10 +21,10 @@
 ##### 最新动态
 
 - **产品发布**
-  - [BETANET RC1](?file=News/Releases/SERO-BETANET-RC1)
-  - [BETANET RC2](?file=News/Releases/SERO-BETANET-RC2)
-  - [BETANET RC3](?file=News/Releases/SERO-BETANET-RC3)
-  - [BETANET RC4](?file=News/Releases/SERO-BETANET-RC4)
+  - [BETANET RC1](?file=News/Release/SERO-BETANET-RC1)
+  - [BETANET RC2](?file=News/Release/SERO-BETANET-RC2)
+  - [BETANET RC3](?file=News/Release/SERO-BETANET-RC3)
+  - [BETANET RC4](?file=News/Release/SERO-BETANET-RC4)
 - **重要事件**
 
 ##### 社区贡献
