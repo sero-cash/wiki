@@ -26,4 +26,3 @@
   - [November 2018 Technical report](?file=News/Report/201811-tech-report)
 - **Important events**
 
-##### Community contribution
