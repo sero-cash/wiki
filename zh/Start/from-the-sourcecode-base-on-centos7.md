@@ -13,12 +13,12 @@
 
 ```sh
 #本文中测试机配置
-----------------------------
-OS  : CENTOS7.3
-CPU : Xeon E5-26xx v4 (C2T2)
-MEM : 4GB
-DISK: 50GB
-----------------------------
+#----------------------------
+# OS  : CENTOS7.3
+# CPU : Xeon E5-26xx v4 (C2T2)
+# MEM : 4GB
+# DISK: 50GB
+#----------------------------
 ```
 
 
@@ -26,13 +26,16 @@ DISK: 50GB
 ## 2. 准备环境
 
 安装Go语言和Git客户端
+
 ```sh
 $ sudo yum install golang
 $ sudo yum install git
 ```
+
 `注意，只支持 v1.10.x 以及以下golang版本，v1.11.x 不支持。`
 
 安装需要的C++依赖库
+
 ```sh
 #安装boost库
 $ sudo yum install boost
@@ -45,6 +48,7 @@ $ sudo yum install gmp libgomp procps-ng
 ## 3. 获取代码
 
 创建GOPATH目录
+
 ```sh
 $ pwd
 ... /root
@@ -58,11 +62,13 @@ $ cd gopath/src/github.com/sero-cash
 ```
 
 访问go-sero项目链接，克隆代码：<https://github.com/sero-cash/go-sero>
+
 ```sh
 $ git clone https://github.com/sero-cash/go-sero.git
 ```
 
 访问go-czero-import项目链接，克隆代码：<https://github.com/sero-cash/go-czero-import>
+
 ```sh
 $ git clone https://github.com/sero-cash/go-czero-import.git
 ```
@@ -79,8 +85,10 @@ $ make all
 $ ls build/bin/gero
 ... build/bin/gero
 ```
+
 可以见到build/bin下生成了可执行文件gero，如果要重新编译则执行
-```
+
+```sh
 $ make clean
 $ make all
 ```
@@ -94,11 +102,13 @@ $ make all
 **首先配置运行gero的环境**
 
 创建SERO数据存储目录
+
 ```sh
 $ mkdir ~/sero-data
 ```
 
 设置动态库加载路径
+
 ```sh
 $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GOPATH/src/github.com/sero-cash/go-czero-import/czero/lib
 ```
@@ -114,6 +124,7 @@ $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GOPATH/src/github.com/sero-cash/go-cz
 ```sh
 $ build/bin/gero  --dev --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc" > ~/sero-data/debug.log
 ```
+
 >  在这种模式下只能通过手工连接其他的dev节点，挖矿难度非常小，且无限制。
 
 #### 启动alpha模式
@@ -121,6 +132,7 @@ $ build/bin/gero  --dev --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc"
 ```sh
 $ build/bin/gero  --alpha --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc" > ~/sero-data/debug.log
 ```
+
 > 这种模式下会自动链接AlphaNet网络，并开始同步数据，AlphaNet网络是SERO内部测试网，挖矿需要许可证，如果有测试需求，可以发邮件给<gordon@sero.vip>申请 `挖矿许可证` 或者 `测试用SERO币` 。
 
 #### 启动beta模式
@@ -128,6 +140,7 @@ $ build/bin/gero  --alpha --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ip
 ```sh
 $ build/bin/gero --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc" > ~/sero-data/debug.log
 ```
+
 > 这种模式下会自动链接BetaNet网络，并开始同步数据，BetaNet网络是SERO团队提供给社区公测用的网络，挖矿同样需要许可证，如果有测试需求，可以发邮件给<gordon@sero.vip>申请 `挖矿许可证` 或者 `测试用SERO币` 。
 
 #### 启动Main模式
@@ -166,13 +179,16 @@ attach会让gero启动一个JS虚拟机驱动的交互式控制台
 ## 8. 账户管理
 
 #### 创建账户指令
+
 ```javascript
 > personal.newAccount("[PASSWORD]")
 ... "[PK]"
 ```
+
 其中 `[PASSWORD]` 是这个账户的密码，因为SERO不会直接存储用户的私钥，当5分钟没有任何操作，账户会被锁定，这时要用该账户进行转账，则需要用此密码对账户解锁。创建用户指令会返回该用户公钥。这个公钥可以作为转账地址。
 
 #### 查看所有公钥
+
 ```javascript
 > sero.accounts
 ... ["[PK0]","[PK1]",...,"[PKn]"]
@@ -181,16 +197,20 @@ attach会让gero启动一个JS虚拟机驱动的交互式控制台
 
 
 #### 解锁账户
+
 ```javascript
 > personal.unlockAccount("[PK]","[PASSWORD]")
 ```
+
 其中`[PK]`是该用户公钥
 
 #### 获取账户资产余额
+
 ```javascript
 > sero.getBalance("[PK]")
 ... {tkn:{...},tkt:{...}}
 ```
+
 其中`tkn`按分类显示账户所有`Token`余额，`tkt`按分类显示账户所有持有的`Ticket`。
 
 

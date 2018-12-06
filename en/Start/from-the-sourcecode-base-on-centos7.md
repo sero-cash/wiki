@@ -19,14 +19,14 @@ With the current scale of the Beta network, the recommended requirements is:
 > RAM: 4GB
 > Disk space: 10G
 
-```
+```sh
 #Hardware information of test machine in this document
-----------------------------
-OS         : CENTOS7.3
-Processor  : Xeon E5-26xx v4 (C2T2)
-RAM        : 4GB
-Disk space : 50GB
-----------------------------
+#----------------------------
+# OS         : CENTOS7.3
+# Processor  : Xeon E5-26xx v4 (C2T2)
+# RAM        : 4GB
+# Disk space : 50GB
+#----------------------------
 ```
 
 
@@ -34,18 +34,18 @@ Disk space : 50GB
 ## 2. Environment preparation
 
 Install the GO and GIT client
-```
+
+```sh
 $ sudo yum install golang
 $ sudo yum install git
 ```
+
 `Note that only v1.10.x and the older golang versions are supported, not supported by v1.11.x yet.`
 
 Install the required C++ dependency library
-```
-#Install Boost Library
-$ sudo yum install boost
-#May also need to install gmp, libgomp, procps-ng
-$ sudo yum install gmp libgomp procps-ng
+
+```sh
+$ sudo yum install gmp libgomp
 ```
 
 
@@ -53,10 +53,10 @@ $ sudo yum install gmp libgomp procps-ng
 ## 3. Get the source code
 
 Create the GOPATH directory
-```
+
+```sh
 $ pwd
 ... /root
-
 $ mkdir gopath
 $ mkdir gopath/src
 $ mkdir gopath/src/github.com
@@ -66,12 +66,14 @@ $ cd gopath/src/github.com/sero-cash
 ```
 
 Visit the go-sero project webpage to clone the code: <https://github.com/sero-cash/go-sero>
-```
+
+```sh
 $ git clone https://github.com/sero-cash/go-sero.git
 ```
 
 Visit the go-czero-import project webpage to clone the code: <https://github.com/sero-cash/go-czero-import>
-```
+
+```sh
 $ git clone https://github.com/sero-cash/go-czero-import.git
 ```
 
@@ -79,7 +81,7 @@ $ git clone https://github.com/sero-cash/go-czero-import.git
 
 ## 4. Compile gero
 
-```
+```sh
 $ ls
 ... go-sero      go-czero-import
 $ cd go-sero
@@ -87,8 +89,10 @@ $ make all
 $ ls build/bin/gero
 ... build/bin/gero
 ```
+
 You can see that the executable program `gero` is generated under the path build/bin, and if you want to recompile it, use the command:
-```
+
+```sh
 $ make clean
 $ make all
 ```
@@ -102,12 +106,14 @@ With the executable program `gero`, you can run SERO's backend service and inter
 **First, configure the environment running gero**
 
 Create the SERO data storage directory
-```
+
+```sh
 $ mkdir ~/sero-data
 ```
 
 Set the dynamic library importing path
-```
+
+```sh
 $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GOPATH/src/github.com/sero-cash/go-czero-import/czero/lib
 ```
 
@@ -119,29 +125,35 @@ With the executable program `gero`, you can now launch four different types of m
 
 #### Start dev mode
 
-```
+```sh
 $ build/bin/gero  --dev --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc" > ~/sero-data/debug.log
 ```
+
 > In this mode, you should connect other dev nodes manually. Mining difficulty is very easy and unlimited.
 
 #### Start alpha mode
 
-```
+
+```sh
 $ build/bin/gero --alpha --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc" > ~/sero-data/debug.log
 ```
-> In this mode, the AlphaNet is automatically linked and start synchronizing data. The AlphaNet is the internal test network of SERO. The mining requires a license. If there is a test requirement, you can send an email to [gordon@sero.vip](gordon@sero.vip) to apply for a "mining license" or "SERO token for test".
+
+> In this mode, the AlphaNet is automatically linked and start synchronizing data. The AlphaNet is the internal test network of SERO. The mining requires a license. If there is a test requirement, you can send an email to [license@sero.vip](license@sero.vip) to apply for a "mining license" or "SERO token for test".
 
 #### Start beta mode
 
 ```
 $ build/bin/gero --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc" > ~/sero-data/debug.log
 ```
-> In this mode, the BetaNet network is automatically linked and start synchronizing data. The BetaNet is the beta test network of SERO. The mining requires a license also. If there is a test requirement, you can send an email to [gordon@sero.vip](gordon@sero.vip) to apply for a "mining license" or "SERO token for test".
+
+> In this mode, the BetaNet network is automatically linked and start synchronizing data. The BetaNet is the beta test network of SERO. The mining requires a license also. If there is a test requirement, you can send an email to [license@sero.vip](license@sero.vip) to apply for a "mining license" or "SERO token for test".
 
 #### Start Main mode
+
 ​    This mode is not currently supported and will be provided when the main network is online...
 
 #### Result output
+
 ![](https://upload-images.jianshu.io/upload_images/277023-30b8b21ac13b66ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 > As long as you see the terminal output "IPC endpoint opened", it means that the service startup has been successful. Now you can start the gero console to connect to the background service.
@@ -152,19 +164,20 @@ $ build/bin/gero --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc" > ~/se
 
 When adding the attach parameter, gero can be started as a console.
 
-```
+```sh
 #Start the gero service in the background
 $ nohup build/bin/gero  --dev --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc" > ~/sero-data/gero.log &
 #Start the console
 $ build/bin/gero --datadir "~/sero-data" attach
 ```
+
 > The attach parameter will let gero launch a interactive console based on JS virtual machine.
 
 ![](https://upload-images.jianshu.io/upload_images/277023-d8afed3845219ab1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 In which you can run complex Javascript interactive commands, the command to exit the console is
 
-```
+```sh
 > exit
 ```
 
@@ -173,30 +186,38 @@ In which you can run complex Javascript interactive commands, the command to exi
 ## 8. Accounts management
 
 #### Create account
-```
+
+```javascript
 > personal.newAccount("[PASSWORD]")
 ... "[PK]"
 ```
+
 Where `[PASSWORD]` is the password for this account, because SERO does not store the user's private key. If there is no operation for 5 minutes, the account will be locked. In this case, to transfer the account, you need to use this password to unlock the accout. The command of create user will returns the user's public key. This public key can be used as a transfer address.
 
 #### View all public keys
-```
+
+```javascript
 > sero.accounts
 ... ["[PK0]","[PK1]",...,"[PKn]"]
 ```
+
 This command returns the public keys of all accounts in the current wallet.
 
 #### Unlock account
-```
+
+```javascript
 > personal.unlockAccount("[PK]","[PASSWORD]")
 ```
+
 `[PK]` is the user's public key
 
 #### Get account balance
-```
+
+```javascript
 > sero.getBalance("[PK]")
 ... {tkn:{...},tkt:{...}}
 ```
+
 `tkn` shows all the `Tokens` balances of the account by category, and `tkt` shows all the `Tickets` held by the account by category.
 
 
@@ -205,21 +226,22 @@ This command returns the public keys of all accounts in the current wallet.
 
 #### Start mining
 
-```
+```javascript
 > miner.start()
 ```
 
 #### Stop mining
 
-```
+```javascript
 > miner.stop()
 ```
 
 #### Console sleep 
 
-```
+```javascript
 > admin.sleepBlocks(num)
 ```
+
 The parameter `num` is the number of blocks that need to sleep. This method must be invoked when the mining is started, otherwise the system will be blocked constantly. It should be noted that the reward obtained by the mining, by default, will enter the _ public address _ generated _ temporary address (PKr)_ of the 0th account of `sero.accounts`.
 
 ## 10.Perform transactions
@@ -244,7 +266,7 @@ After the transaction is generated, it will be synchronized to other nodes in th
 
 ## 11. Get transaction details
 
-```
+```javascript
 > sero.getTransaction("[TX_ID]")
 ...[TX_DETAIL]
 ```
@@ -253,7 +275,7 @@ After the transaction is generated, it will be synchronized to other nodes in th
 
 The main formation of [TX_DETAIL] is as follows:
 
-```
+```javascript
 {
   from: "[SENDER PKr]",
   stx: {
@@ -323,7 +345,7 @@ The anonymous tokens issued by the smart contract can be sent to the personal ac
 
 Now the tokens of `HELLOCOIN` is already in the account of `account[0]`, `account[0]` can sent the tokens to other accounts with normal transactions command. But be sure to remember that the token name `cy:"HELLOCOIN"` must be specified in the parameter.
 
-```
+```javascript
 sero.sendTransaction({from:sero.accounts[0],to:sero.accounts[1],value:500,cy:"HELLOCOIN"})
 ```
 
@@ -341,7 +363,7 @@ The introductory document ends here now. Next document we will explain in detail
 
 If you are interested in the principles of SERO and the zero-knowledge proofs algorithms, you can download our white paper from SERO's [official website] (https://sero.cash). Any suggestions can also be sent to [gordon@sero.vip] (gordon@sero.vip).
 
-Welcome to SERO's [Gitter Community] (https://gitter.im/sero-cash/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link) to make SERO better.
+Welcome to SERO's [Gitter Community] (https://gitter.im/sero-cash/Lobby) to make SERO better.
 
 
 
@@ -351,6 +373,7 @@ Welcome to SERO's [Gitter Community] (https://gitter.im/sero-cash/Lobby?utm_sour
 [[Website] https://sero.cash](https://sero.cash)
 [[White paper V1.0.6] http://sero-media.s3-website-ap-southeast-1.amazonaws.com/Sero_ENG_V1.06.pdf](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/Sero_ENG_V1.06.pdf)
 [[Twitter] https://twitter.com/SEROdotCASH](https://twitter.com/SEROdotCASH)
+[[WIKI]https://wiki.sero.cash/en/index.html](https://wiki.sero.cash/en/index.html)
 [[Telegram] https://t.me/SeroOfficial](https://t.me/SeroOfficial)
 [[Github] https://github.com/sero-cash/go-sero](https://github.com/sero-cash/go-sero)
 [[Gitter Community] https://gitter.im/sero-cash/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link](https://gitter.im/sero-cash/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
