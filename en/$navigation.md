@@ -1,27 +1,26 @@
-### 首页
+#### [HOME](?file=home-Home)
 
-### Getting started
+##### Getting started
 
-- [From Source Code -- base on CentOS7](Example/sero-basic-interface.md)
+- [From Source Code -- base on CentOS7](?file=Example/sero-basic-interface)
 
-### Tutorial
+##### Tutorial
 
-- [Anonymous Tokens Issuance Principle](Tutorial/principle-of-anonymous-token.md)
-- [Super Zero Protocol (SERO) Smart Contracts Tutorial - Issue Anonymous Tokens](Tutorial/practice-of-anonymous-token.md)
+- [Anonymous Tokens Issuance Principle](?file=Tutorial/principle-of-anonymous-token)
+- [Super Zero Protocol (SERO) Smart Contracts Tutorial - Issue Anonymous Tokens](?file=Tutorial/practice-of-anonymous-token)
 
-### Standard example
+##### Standard example
 
-- [SERO basic interface](Example/sero-basic-interface.md)
+- [SERO basic interface](?file=Example/sero-basic-interface)
 
-### Innovation Guide
+##### Innovation Guide
 
-- [What's Innovation guide](Innovation/what-is-innovation-guide.md)
+- [What's Innovation guide](?file=Innovation/what-is-innovation-guide)
 
-### News
+##### News
 
 - **Releases**
-  - [BETANET RC4](News/Publish/SERO-BETANET-RC4(v0.3.0-beta.4).md)
+  - [BETANET RC4](?file=News/Publish/SERO-BETANET-RC4(v0.3.0-beta.4))
 - **Important events**
 
-### Community contribution
-
+##### Community contribution

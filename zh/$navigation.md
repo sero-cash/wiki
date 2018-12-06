@@ -1,28 +1,27 @@
-###  首页
+#### [首页](?file=home-Home)
 
-### 轻松入门
+##### 轻松入门
 
-- [从源码开始——基于CentOS7](Example/sero-basic-interface.md)
+- [从源码开始——基于CentOS7](?file=Example/sero-basic-interface)
 
-### 教程
+##### 教程
 
-- [SERO钱包使用手册](Tutorial/manual-of-wallet.md)
-- [匿名Token发行原理](Tutorial/principle-of-anonymous-token.md)
-- [匿名Token发行实战](Tutorial/practice-of-anonymous-token.md)
+- [SERO钱包使用手册](?file=Tutorial/manual-of-wallet)
+- [匿名Token发行原理](?file=Tutorial/principle-of-anonymous-token)
+- [匿名Token发行实战](?file=Tutorial/practice-of-anonymous-token)
 
-### 标准范例
+##### 标准范例
 
-- [SERO基础接口](Example/sero-basic-interface.md)
+- [SERO基础接口](?file=Example/sero-basic-interface)
 
-### 创新指南
+##### 创新指南
 
-- [什么是创新指南](Innovation/what-is-innovation-guide.md)
+- [什么是创新指南](?file=Innovation/what-is-innovation-guide)
 
-### 最新动态
+##### 最新动态
 
 - **产品发布**
-  - [BETANET RC4](News/Publish/SERO-BETANET-RC4(v0.3.0-beta.4).md)
+  - [BETANET RC4](?file=News/Publish/SERO-BETANET-RC4(v0.3.0-beta.4))
 - **重要事件**
 
-### 社区贡献
-
+##### 社区贡献
