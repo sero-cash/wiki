@@ -1,6 +1,6 @@
 # BETANET-RC5 发布声明
 
-tags: Release-Post
+
 
 ## 重要声明
 

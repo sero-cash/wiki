@@ -1,6 +1,6 @@
 # BETANET-RC5 Release Announce
 
-tags: Release-Post
+
 
 ## Announce
 

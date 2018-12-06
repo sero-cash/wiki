@@ -1,6 +1,6 @@
 # BETANET-RC2 发布概要
 
-tags: Release-Post
+
 
 ## 发布名称
 
