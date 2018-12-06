@@ -1,4 +1,4 @@
-#BETANET-RC2 发布概要
+# BETANET-RC2 发布概要
 
 tags: Release-Post
 
