@@ -1,4 +1,4 @@
-##### [什么是SERO](?file=what-is-sero)
+##### [什么是SERO](?file=home-Home)
 
 ##### 轻松入门
 

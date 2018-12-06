@@ -2,7 +2,7 @@
 
 
 
-## (What's SERO)[file=http://wiki.sero.cash/zh/index.html?file=what-is-sero]
+## (What's SERO)[file=http://wiki.sero.cash/zh/index.html?file=home=Home]
 
 
 
