@@ -1,4 +1,4 @@
-# [什么是SERO](file=http://wiki.sero.cash/zh/index.html?file=what-is-sero)
+##### [什么是SERO](?file=what-is-sero)
 
 ##### 轻松入门
 
