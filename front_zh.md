@@ -4,6 +4,8 @@
 
 
 
+[![SERO.CASH](https://upload-images.jianshu.io/upload_images/277023-0ddf4037f8723b42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)](https://v.qq.com/x/page/s0792e921ok.html)
+
 ## [SERO是什么](/zh/index.html?file=home-Home)
 
 
