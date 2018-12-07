@@ -8,9 +8,9 @@
 
 
 
-## [I'm a miner](/en/index.html?file=Start/from-the-binary-package)
+## [I'm a Miner](/en/index.html?file=Start/from-the-binary-package)
 
 
 
-## [I'm a developer](/en/index.html?file=Tutorial/principle-of-anonymous-token)
+## [I'm a Developer](/en/index.html?file=Tutorial/principle-of-anonymous-token)
 
