@@ -1,8 +1,6 @@
 [[中文]](https://wiki.sero.cash/index-zh.html)
 
-
-
-# Wellcome To SERO
+# **Wellcome To SERO**
 
 
 

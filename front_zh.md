@@ -1,8 +1,6 @@
 [[ENGLISH]](https://wiki.sero.cash/index.html)
 
-
-
-# 欢迎来到SERO的世界
+# **欢迎来到SERO的世界**
 
 
 
