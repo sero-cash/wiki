@@ -267,7 +267,9 @@ true
    > tfhcoin.transactionHash
    "0x254bbefcbe0eaa3cb5a657377fd49b756880839a1bb69eaa006106a882055f09"
    ```
+
 * **现在挖出一个区块打包这笔交易，确认成功即代表智能合约被成功安装了。**
+
    ![image.png](https://upload-images.jianshu.io/upload_images/277023-184f8bc5a3ef536e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
    安装成功后SERO控制台会返回智能合约地址和交易号
@@ -330,7 +332,7 @@ true
 #### 7. 捐助者卖出**`TFHCOIN`**使其他捐助者和他一起共同分担捐助份额
 * 由于我们是Dev账户，`helper_addr`并没有充当交易费的`SERO`币，因此主账户先转10个`SERO`币给`helper_addr`。
 
-   ```
+   ```javascript
    > sero.sendTransaction({from:alice_addr,to:helper_addr,value:web3.toTa(10)})
    "0x9a5fd4f155254483f62a0cd85341ef8942e8a433b1be903a646740a8debb636f"
    > miner.start();admin.sleepBlocks(1);miner.stop();
@@ -343,8 +345,10 @@ true
         }
    }
    ```
+   
    我们先来看看这笔SERO交易的构成
-   ```
+   
+   ```javascript
    > sero.getTransaction("0x9a5fd4f155254483f62a0cd85341ef8942e8a433b1be903a646740a8debb636f")
    {
      blockHash: "0x937ddb...1f6120",
@@ -391,13 +395,14 @@ true
 
 * 我们创建一个假的其他捐助者`other_helper_addr`接收`helper_addr`的`TFHCOIN`。
 
-   ```
+   ```javascript
    > other_helper_addr=personal.newAccount("1234")
    "15B2TPeRdE6GwKsE2V7sprk3yYZXuTVaGMGNXZZAUUHRH3U5pW59BZWhXhAud2a8zFxPp9JRBz4akpHwoLx99No"
    ```
 
 * 现在 `helper_addr` 可以采用匿名的方式转5个`TFHCOIN` 给 `other_helper_addr`
-   ```
+
+   ```javascript
    > sero.sendTransaction(
       {from:helper_addr,to:other_helper_addr,value:5*1000000000,cy:"TFHCOIN"}
    )
@@ -418,6 +423,7 @@ true
      }
    }
    ```
+   
    * **我们注意两个个事情:**
      > * 个人给个人发送`TFHCOIN`采用的是与发送`SERO`相同的方式，即SERO的原生转账机制，而不是智能合约`TFHCoin`的方法`transfer`。这说明`TFHCOIN`确实与`SERO`是平等存在在用户账户中的。
      > * 在交易参数中多出一个币名`cy`，其值是`"TFHCOIN"`。
