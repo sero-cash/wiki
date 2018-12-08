@@ -130,7 +130,7 @@ SERO采用solidity的编程语言进行智能合约的开发，目前兼容v0.5.
 
 SERO IDE的左侧有个名为`serointerface.sol`的文件，这个文件中有个名为`SeroInterface`的基础合约。需要发行匿名Token就必须继承这个合约。本文中这个合约主要用到的接口是这些：
 
-```solidity
+```javascript
 pragma solidity ^0.4.25;
 
 contract SeroInterface {
@@ -168,7 +168,7 @@ contract SeroInterface {
 
 #### 2. 在IDE中编写一个简单的发行**`"TFHCOIN"`**的智能合约`TFHCoin.sol`
 
-```solidity
+```javascript
 // TFHCoin.
 pragma solidity ^0.4.16;
 import "./seroInterface.sol";
@@ -238,7 +238,7 @@ contract TFHCoin is SeroInterface {
 > 对于gero后台以及控制台的运行方法请参考[《SERO轻松入门》](https://wiki.sero.cash/zh/index.html?file=Start/from-the-sourcecode-base-on-centos7)以及[《SERO挖矿教程》](https://wiki.sero.cash/zh/index.html?file=Start/from-the-binary-package)
 
 由于我们是采用Dev模式运行的gero，因此我们需要先创建一个账户，并为他准备一些SERO作为手续费用。
-```
+```javascript
 > alice_addr=personal.newAccount("1234")
 "2yKtQ7rMHLn1dSSuAFvsi1s7NaLL1zkNysmMv4L51WCubgjHtMtKNwVsDdEMXXH1QvmWQgKTKcyUXBK2RUPoK7mo"
 > sero.accounts
@@ -277,7 +277,7 @@ true
 
 * **现在可以查看智能合约地址中的余额。**
 
-  ```
+  ```javascript
   > sero.getBalance(tfhcoin.address)
   {
         tkn: {
@@ -298,13 +298,13 @@ true
    > 我们可以调用TFHCoin智能合约的`transfer`方法，实现将一定数量的TFHCoin发送给捐助者。
 
 * 为此我们创建一个假的捐助者`helper_addr`来测试这个功能。
-  ```
+  ```javascript
   > helper_addr=personal.newAccount("1234")
   "37NVgL22rksMLK6Euos9eoS2T7prRUrXKzMMXPYr4SfNCaiDgXfvbfe6SmD3EgfhRuZtPekop3BgwGRByWLSeRHg"
   ```
 
 * 用`account[0]`给这个捐助者发出10个`TFHCOIN`。
-  ```
+  ```javascript
   > tfhcoin.transfer(helper_addr,10*1000000000,{from:sero.accounts[0]})
   "0xbd290e7c1385af11eb8bedbb3c03644dd27bcd7ae12604aac7e40d66597efee0"
   > miner.start();admin.sleepBlocks(1);miner.stop();
