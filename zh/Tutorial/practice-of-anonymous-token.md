@@ -169,7 +169,7 @@ contract SeroInterface {
 #### 2. 在IDE中编写一个简单的发行**`"TFHCOIN"`**的智能合约`TFHCoin.sol`
 
 ```javascript
-// TFHCoin.
+// TFHCoin.sol
 pragma solidity ^0.4.16;
 import "./seroInterface.sol";
 
