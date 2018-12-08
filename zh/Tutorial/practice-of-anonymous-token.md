@@ -130,7 +130,7 @@ SERO采用solidity的编程语言进行智能合约的开发，目前兼容v0.5.
 
 SERO IDE的左侧有个名为`serointerface.sol`的文件，这个文件中有个名为`SeroInterface`的基础合约。需要发行匿名Token就必须继承这个合约。本文中这个合约主要用到的接口是这些：
 
-```javascript
+```JavaScript
 pragma solidity ^0.4.25;
 
 contract SeroInterface {
@@ -168,7 +168,7 @@ contract SeroInterface {
 
 #### 2. 在IDE中编写一个简单的发行**`"TFHCOIN"`**的智能合约`TFHCoin.sol`
 
-```javascript
+```JavaScript
 // TFHCoin.sol
 pragma solidity ^0.4.16;
 import "./seroInterface.sol";
@@ -238,7 +238,7 @@ contract TFHCoin is SeroInterface {
 > 对于gero后台以及控制台的运行方法请参考[《SERO轻松入门》](https://wiki.sero.cash/zh/index.html?file=Start/from-the-sourcecode-base-on-centos7)以及[《SERO挖矿教程》](https://wiki.sero.cash/zh/index.html?file=Start/from-the-binary-package)
 
 由于我们是采用Dev模式运行的gero，因此我们需要先创建一个账户，并为他准备一些SERO作为手续费用。
-```javascript
+```JavaScript
 > alice_addr=personal.newAccount("1234")
 "2yKtQ7rMHLn1dSSuAFvsi1s7NaLL1zkNysmMv4L51WCubgjHtMtKNwVsDdEMXXH1QvmWQgKTKcyUXBK2RUPoK7mo"
 > sero.accounts
@@ -263,7 +263,7 @@ true
 
    智能合约的安装是附带在交易中进行的，交易创建之后可以查看这笔交易的地址。用此地址可在区块浏览器中查询到当前打包的状态。
 
-   ```javascript
+   ```JavaScript
    > tfhcoin.transactionHash
    "0x254bbefcbe0eaa3cb5a657377fd49b756880839a1bb69eaa006106a882055f09"
    ```
@@ -277,7 +277,7 @@ true
 
 * **现在可以查看智能合约地址中的余额。**
 
-  ```javascript
+  ```JavaScript
   > sero.getBalance(tfhcoin.address)
   {
         tkn: {
@@ -298,13 +298,13 @@ true
    > 我们可以调用TFHCoin智能合约的`transfer`方法，实现将一定数量的TFHCoin发送给捐助者。
 
 * 为此我们创建一个假的捐助者`helper_addr`来测试这个功能。
-  ```javascript
+  ```JavaScript
   > helper_addr=personal.newAccount("1234")
   "37NVgL22rksMLK6Euos9eoS2T7prRUrXKzMMXPYr4SfNCaiDgXfvbfe6SmD3EgfhRuZtPekop3BgwGRByWLSeRHg"
   ```
 
 * 用`account[0]`给这个捐助者发出10个`TFHCOIN`。
-  ```javascript
+  ```JavaScript
   > tfhcoin.transfer(helper_addr,10*1000000000,{from:sero.accounts[0]})
   "0xbd290e7c1385af11eb8bedbb3c03644dd27bcd7ae12604aac7e40d66597efee0"
   > miner.start();admin.sleepBlocks(1);miner.stop();
@@ -332,7 +332,7 @@ true
 #### 7. 捐助者卖出**`TFHCOIN`**使其他捐助者和他一起共同分担捐助份额
 * 由于我们是Dev账户，`helper_addr`并没有充当交易费的`SERO`币，因此主账户先转10个`SERO`币给`helper_addr`。
 
-   ```javascript
+   ```JavaScript
    > sero.sendTransaction({from:alice_addr,to:helper_addr,value:web3.toTa(10)})
    "0x9a5fd4f155254483f62a0cd85341ef8942e8a433b1be903a646740a8debb636f"
    > miner.start();admin.sleepBlocks(1);miner.stop();
@@ -348,7 +348,7 @@ true
    
    我们先来看看这笔SERO交易的构成
    
-   ```javascript
+   ```JavaScript
    > sero.getTransaction("0x9a5fd4f155254483f62a0cd85341ef8942e8a433b1be903a646740a8debb636f")
    {
      blockHash: "0x937ddb...1f6120",
@@ -395,14 +395,14 @@ true
 
 * 我们创建一个假的其他捐助者`other_helper_addr`接收`helper_addr`的`TFHCOIN`。
 
-   ```javascript
+   ```JavaScript
    > other_helper_addr=personal.newAccount("1234")
    "15B2TPeRdE6GwKsE2V7sprk3yYZXuTVaGMGNXZZAUUHRH3U5pW59BZWhXhAud2a8zFxPp9JRBz4akpHwoLx99No"
    ```
 
 * 现在 `helper_addr` 可以采用匿名的方式转5个`TFHCOIN` 给 `other_helper_addr`
 
-   ```javascript
+   ```JavaScript
    > sero.sendTransaction(
       {from:helper_addr,to:other_helper_addr,value:5*1000000000,cy:"TFHCOIN"}
    )
@@ -432,7 +432,7 @@ true
 
 * **然后我们再来看这笔交易的详情:**
 
-  ```javascript
+  ```JavaScript
   > sero.getTransaction(
   "0x7024f426f376d188b6980b720d44104fe3f908d25d0d53c3f7e130f30f6d9765"
   )
