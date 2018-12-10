@@ -18,6 +18,7 @@
 ##### 创新指南
 
 - [什么是创新指南](?file=Innovation/what-is-innovation-guide)
+- [如何实现匿名版以太猫](?file=Innovation/sero-crypto-kitties)
 
 ##### 最新动态
 
