@@ -35,5 +35,5 @@ SERO把隐私方案和智能合约融合到一起，能做到很多神奇的、�
 
 
 ## 作者列表
-
+[kusun](https://github.com/kusun)
 [sero-cash](https://github.com/sero-cash)
