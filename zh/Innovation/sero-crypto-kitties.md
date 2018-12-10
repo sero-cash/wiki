@@ -1,6 +1,5 @@
 # 如何以DApp的方式实现匿名版的以太猫
 
-标签（空格分隔）： sero-dapp
 
 `Super Zero` `sero` `zpk` `zero-knowledge-proofs` `blockchain` `confidential transactions` `nizk` `anonymous tokens` `super-zk` `smart contracts` `crypto kitties`
 
