@@ -187,7 +187,7 @@ SERO issued a total of 1 billion SERO coins, of which 25 % were awarded as commu
 
    If you see a console interface similar to the one below, the console will start successfully.
 
-   ![image.png](https://upload-images.jianshu.io/upload_images/277023-9511643359456b35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+   ![image.png](https://upload-images.jianshu.io/upload_images/277023-9511643359456b35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 * ### **Create account**
    Now we can create an account by typing the command below:
