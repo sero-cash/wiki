@@ -17,6 +17,7 @@
 ##### Innovation Guide
 
 - [What's Innovation guide](?file=Innovation/what-is-innovation-guide)
+- [How to Realize Anonymous Crypto Kitties by SERO DAPP](?file=Innovation/sero-crypto-kitties)
 
 ##### News
 

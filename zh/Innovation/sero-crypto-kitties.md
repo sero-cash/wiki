@@ -1,7 +1,8 @@
 # 如何以DApp的方式实现匿名版的以太猫
 
-
 `Super Zero` `sero` `zpk` `zero-knowledge-proofs` `blockchain` `confidential transactions` `nizk` `anonymous tokens` `super-zk` `smart contracts` `crypto kitties`
+
+_作者：[kusun](https://github.com/kusun)_
 
 ### 现在区块链开发平台的隐私保护问题
 
