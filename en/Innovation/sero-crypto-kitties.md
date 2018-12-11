@@ -2,7 +2,7 @@
 
 _Author: [kusun](https://github.com/kusun)_
 
-Translator: [SERO](https://github.com/sero-cash)
+_Translator: [SERO](https://github.com/sero-cash)_
 
 `Super Zero` `sero` `zpk` `zero-knowledge-proofs` `blockchain` `confidential transactions` `nizk` `anonymous tokens` `super-zk` `smart contracts` `crypto kitties`
 
