@@ -32,7 +32,7 @@ _作者：[kusun](https://github.com/kusun)_
 ###### 票据(Ticket)相关接口定义
 
 SERO团队部署了一个[Remix-ide](http://remix.web.sero.cash)的站点，其中有一个名为SeroInterface.sol的例子，主要是提供发布匿名token和ticket的接口，这些应该是系统接口，只要是想实行匿名就必须继承的。根据SERO团队提供的例子，在生成、转移Ticket的接口中必须包含系统定义好的日志Topic
-```css
+```JavaScript
   /**
   * the follow topics is system topics,can not be changed at will
   */
@@ -46,7 +46,7 @@ SERO团队部署了一个[Remix-ide](http://remix.web.sero.cash)的站点，其�
 SeroInterface主要提供了以下几个接口是本次写匿名版以太猫需要用到的：
 
 **1.生成ticketId，并将ticketId直接存入到个人账号中去.**
-```css
+```JavaScript
   /**
    * @dev generate a tickeId and allot to the receiver address
    * @param _receiver receiving address of tickeId
@@ -67,7 +67,7 @@ SeroInterface主要提供了以下几个接口是本次写匿名版以太猫需�
   }
 ```
 **2.获取交易参数中的category**
-```css
+```JavaScript
   /**
   * @dev the get category from the tx params
   */
@@ -82,7 +82,7 @@ SeroInterface主要提供了以下几个接口是本次写匿名版以太猫需�
   }
 ```
 **3.获取交易参数中的ticketId**
-```css
+```JavaScript
  /**
   * @dev the get ticketId from the tx params
   */
@@ -96,7 +96,7 @@ SeroInterface主要提供了以下几个接口是本次写匿名版以太猫需�
   }
 ```
 **4.将交易中的ticketId存入到接收方的个人账号**
-```css
+```JavaScript
  /**
    * @dev transfer the tickeId to the receiver
    * @param _receiver the address of receiver
@@ -134,7 +134,7 @@ SeroInterface主要提供了以下几个接口是本次写匿名版以太猫需�
 ###### KittyBase
 
 由于SERO上ticekId的数据类型全部变为bytes32,一次需要将KittyBase中所有ticketId的数据类型全部有uint32变成bytes32。
-```css
+```JavaScript
   struct Kitty {
       bytes32 kittyId;
       uint256 genes;
@@ -150,11 +150,11 @@ SeroInterface主要提供了以下几个接口是本次写匿名版以太猫需�
 ```
 
 kittyId的数据类型转变后，相应的一些数据接口也需要做调整，需要将KittyBase中的kittys由数组类型改成map
-```css
+```JavaScript
  mapping(bytes32 => Kitty) kittys;
 ```
 从[SERO的源码](https://github.com/sero-cash/go-sero)来看,做匿名交易的第一步就是匿名账号地址，所有交易中涉及的账号地址都被一次性地址给替换，所以之前的KittyBase中的sireAllowedToAddress修改为sireAllowedToTokenId。由tickeId到账号的映射修改为tickeId到ticketId的映射。
-```css
+```JavaScript
   mapping (bytes32 => bytes32) public sireAllowedToTokenId;
 ```
 删除kittyIndexToOwner、ownershipTokenCount两个属性，因为所有的ticekId最终都保存在个人账号中，因此无需智能合约来保存ticketId和账号之间的关系。
@@ -169,7 +169,7 @@ kittyId的数据类型转变后，相应的一些数据接口也需要做调整�
 
 ###### KittyBreeding
 这个文件应该不需要怎么改动，由于将sireAllowedToAddress修改为sireAllowedToTokenId，因此只需要修改下approveSiring方法。
-```css
+```JavaScript
 function approveSiring(bytes32 _matronId)
     external
     whenNotPaused
