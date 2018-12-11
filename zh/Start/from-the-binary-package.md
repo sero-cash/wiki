@@ -193,7 +193,7 @@ SERO一共发行10亿数量的SERO币，其中25%作为社区节点贡献的奖�
 
     如果看到类似下面的控制台界面，控制台启动就成功了。
 
-    ![image.png](https://upload-images.jianshu.io/upload_images/277023-9511643359456b35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    ![image.png](https://upload-images.jianshu.io/upload_images/277023-9511643359456b35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 
 * ### **创建账户**
