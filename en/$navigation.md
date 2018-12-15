@@ -3,7 +3,7 @@
 ##### Getting started
 
 - [From Source Code -- base on CentOS7](?file=Start/from-the-sourcecode-base-on-centos7)
-- [How to mining](?file=Start/from-the-binary-package)
+- [How to mine](?file=Start/from-the-binary-package)
 
 ##### Tutorial
 
