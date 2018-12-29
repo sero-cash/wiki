@@ -23,7 +23,10 @@ SERO issued a total of 1 billion SERO coins, of which 25 % were awarded as commu
 
    > **The Versions of BetaNet**
    > * RC version: Betanet's release in release candidate will require several versions of adjustments from the official Betanet, the ledger will be cleared after the release of the RC version.
-   > * Release version: The official version of BetaNet will be deployed at 24:00 on December 31, 2018. The ledger will not be cleared when subsequent versions are updated.
+   >
+   > * Release version: The official version of BetaNet will be deployed at 24:00 on January 7, 2019. The ledger will not be cleared when subsequent versions are updated.
+   >
+   >   `Originally scheduled for December 31, 2018, due to the influence of Christmas and New Year's Day, we feel that we are delaying for one week.`
 
 * ### In order to ensure the initial security of the network, mining during BetaNet requires a license from the SERO team.
 
