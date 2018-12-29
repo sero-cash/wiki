@@ -26,5 +26,7 @@
   - [BETANET RC5](?file=News/Release/SERO-BETANET-RC5)
   - [BETANET RC4](?file=News/Release/SERO-BETANET-RC4)
 - **Reports**
+  - [2018年12月技术汇报](?file=News/Report/201812-tech-report)
   - [2018年11月技术汇报](?file=News/Report/201811-tech-report)
 - **重要事件**
+

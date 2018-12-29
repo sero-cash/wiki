@@ -1,4 +1,4 @@
-# December 2018 Technical Report（`BetaNet-Release` is coming）
+# December 2018 Technical Report
 
 ## Completion in December
 
