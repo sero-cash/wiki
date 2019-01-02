@@ -14,8 +14,8 @@ v0.3.3-beta.rc.5-hotfix.3
 
 ## 提交ID
 
-go-sero 110b05da5f163ce202bfb78528cf41934bdade7a
-go-czero-import ee6c1e7e1ef6d4161da0fb269799e6aa1e6eb3da
+go-sero 17fa1255cd74e799da1cf2c63d2ca0fbd038e611
+go-czero-import 6907e824a7d1ae75342c2dc27eefbb67d4b19f74
 console d7639bc83539ff579df14b8815b00aa389625799
 wallet 22092344943f3290d8b64e757b00cb75e0b304e6
 
