@@ -53,3 +53,4 @@ wallet b8247e40c603f09b0721e6640f4f882b37de5d51
 BetaNet 区块浏览器：http://explorer.web.sero.cash
 源码位置：https://github.com/sero-cash/go-sero
 智能合约编辑器：http://remix.web.sero.cash
+
