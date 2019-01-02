@@ -77,7 +77,7 @@
 > - 点击菜单"账户">"导入账户或挖矿License",如下图,打开导入界面，此时只需要将名称为`BLIC.DATA`的文件拖拽到框中。
 ![image.png](https://upload-images.jianshu.io/upload_images/13141677-205221f5fc604f96.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
-### 6. 开启挖矿
+### 5. 开启挖矿
 
 > - 点击菜单"开发">"开启挖矿"
 ![image.png](https://upload-images.jianshu.io/upload_images/13141677-5737bc6f5c3355ce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
@@ -85,12 +85,4 @@
 > - 当出现下图，则表示开启挖矿成功
 ![image.png](https://upload-images.jianshu.io/upload_images/13141677-9bbaafcdd86a9f0f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
-### 5. 常见问题
-
-* **启动钱包后，一致停留在「正在查找节点」界面，没有同步区块**
-* **已经启动挖矿，但是没有显示挖到矿**
-* **导入账号后，其他账号的余额为零**
-* **启动挖矿，提示“启动失败”**
-* **申请license后，并且导入license成功，开始挖坑失败**
-* **如何删除账号**
-* **是否可以设置数据目录**
+### 6. 常见问题 [点击](https://wiki.sero.cash/zh/index.html?file=Start/wallet-trouble-shooting-help)
