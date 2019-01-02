@@ -28,10 +28,9 @@ v0.4.0-beta.rc.6
 
 ## 提交ID
 
-go-sero 
-go-czero-import 
-console 
-wallet 
+go-sero 02729ca19b3b251355b67cb6fa6820051b3f7f6f
+go-czero-import a258cfe44070b525c444d66e70d17086afbbcdc2
+console a7a8f72b3a0b624b4bb06fd6906ccf7970b35d21
 
 ## 发布包
 
