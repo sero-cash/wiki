@@ -1,4 +1,4 @@
-# BETANET-RC5 发布声明
+# BETANET-RC5-HOTFIX.3 发布声明
 
 ## 发布名称
 

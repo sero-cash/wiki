@@ -1,4 +1,4 @@
-# BETANET-RC5 Release Announce
+# BETANET-RC5-HOTFIX.3 Release Announce
 
 ## Release Name
 
