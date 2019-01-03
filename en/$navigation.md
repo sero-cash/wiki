@@ -7,6 +7,7 @@
 
 ##### Tutorial
 
+- [SERO Wallet Manual](?file=Tutorial/manual-of-wallet)
 - [Anonymous Tokens Issuance Principle](?file=Tutorial/principle-of-anonymous-token)
 - [Issue Anonymous Tokens](?file=Tutorial/practice-of-anonymous-token)
 
