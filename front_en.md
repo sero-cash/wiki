@@ -1,6 +1,6 @@
 [[中文]](/index-zh.html)
 
-# **Wellcome To SERO**
+# **Welcome To SERO**
 
 [![SERO.CASH](https://upload-images.jianshu.io/upload_images/277023-0ddf4037f8723b42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)](https://www.youtube.com/watch?v=UNG2boG49Io)
 
