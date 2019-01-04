@@ -3,7 +3,7 @@
 ##### 轻松入门
 
 - [从源码开始——基于CentOS7](?file=Start/from-the-sourcecode-base-on-centos7)
-- [源码挖矿教程](?file=Start/from-the-binary-package)
+- [gero挖矿教程](?file=Start/from-the-binary-package)
 - [钱包挖矿教程](?file=Start/mined-from-the-wallet)
 
 ##### 教程
