@@ -109,7 +109,8 @@ It should be noted that the token name needs to be registered to the SERO consen
 > * Is case insensitive
 > * Cannot be duplicated globally
 > * Cannot exceed 24 characters
-> * Only use uppercase letters ` a-z ` and underline ` _ `
+> * Only use figures `0-9` uppercase letters ` a-z ` and underline ` _ `
+> * Cannot involve the keyword  `sero`.
 
 Therefore, when you repeat this example, use SERO's Dev mode to make sure you are the first developer to use this name.
 
