@@ -49,6 +49,7 @@
 ---
 >问：我启动钱包的时候，钱包会自动检测更新。但是有时候网络不好，会导致提示文件hash不正确。能否手动配置node？
 >答：可以手动配置node。
+
 1. 首先请下载最新的配置文件，
 > - 下载地址：
 [http://sero-media.s3-website-ap-southeast-1.amazonaws.com/clients/clientBinaries.json](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/clients/clientBinaries.json)
