@@ -51,10 +51,12 @@
 >答：可以手动配置node。
 >1. 首先请下载最新的配置文件，下载地址：
 [http://sero-media.s3-website-ap-southeast-1.amazonaws.com/clients/clientBinaries.json](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/clients/clientBinaries.json)
-下载完成后，覆盖配置文件
+>
+>下载完成后，覆盖配置文件
 > - Windows `C:\Users\%username%\AppData\Roaming\Sero\keystore\clientBinaries.json`
 > - macOS `~/Library/Sero/keystore/clientBinaries.json`
 > - Linux `~/.config/Sero/keystore/clientBinaries.json`
+>
 > 2. 下载对应系统的gero压缩包，下载地址请见sero发布的github.
 [https://github.com/sero-cash/go-sero/releases](https://github.com/sero-cash/go-sero/releases)
 下载完成后，拷贝文件到下面目录，并命名为 archive.zip|tar , 例如windows为 archive.zip。然 后解压缩到unpacked目录。
@@ -62,4 +64,5 @@
 > - Windows `C:\Users\%username%\AppData\Roaming\SERO Wallet\binaries\gero\unpacked\geropkg`
 > - macOS `~/Library/Application\ Support/SERO Wallet/binaries/gero/unpacked/geropkg`
 > - Linux `~/.config/SERO Wallet/binaries/gero/unpacked/geropkg`
+>
 >3. 重启钱包。
