@@ -54,9 +54,9 @@
 > - 下载地址：
 [http://sero-media.s3-website-ap-southeast-1.amazonaws.com/clients/clientBinaries.json](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/clients/clientBinaries.json)
 > - 下载完成后，覆盖配置文件:
-> - Windows `C:\Users\%username%\AppData\Roaming\Sero\keystore\clientBinaries.json`
-> - macOS `~/Library/Sero/keystore/clientBinaries.json`
-> - Linux `~/.config/Sero/keystore/clientBinaries.json`
+> - Windows `C:\Users\%username%\AppData\Roaming\SERO Wallet\clientBinaries.json`
+> - macOS `~/Library/Application\ Support/SERO Wallet/clientBinaries.json`
+> - Linux `~/.config/SERO Wallet/clientBinaries.json`
 
 2. 下载对应系统的gero压缩包，
 > - 下载地址请见sero发布的github.
