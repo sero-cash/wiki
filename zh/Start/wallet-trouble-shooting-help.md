@@ -67,4 +67,10 @@
 > - macOS `~/Library/Application\ Support/SERO Wallet/binaries/gero/unpacked/geropkg`
 > - Linux `~/.config/SERO Wallet/binaries/gero/unpacked/geropkg`
 
-3. 重启钱包。
+3.拷贝gero可执行文件
+> - Windows > - Windows 拷贝./unpacked/geropkg/bin/gero.exe 文件到 ./unpacked/ 目录
+> - macOS 拷贝./unpacked/geropkg/bin/gero 文件到 ./unpacked/ 目录
+> - Linux 拷贝./unpacked/geropkg/bin/gero 文件到 ./unpacked/ 目录
+`注意: ./unpacked/ 下面应该有一个 gero可执行文件 和 geropkg 文件夹`
+
+4.重启钱包。
