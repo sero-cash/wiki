@@ -24,6 +24,7 @@
 ##### News
 
 - **Releases**
+  - [BETANET Release 1](?file=News/Release/SERO-BETANET-R1)
   - [BETANET RC6](?file=News/Release/SERO-BETANET-RC6)
   - [BETANET RC5.hotfix.3](?file=News/Release/SERO-BETANET-RC5.hotfix.3)
   - [BETANET RC5.hotfix.2](?file=News/Release/SERO-BETANET-RC5.hotfix.2)
