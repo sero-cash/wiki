@@ -16,6 +16,28 @@
 
 ** `Note: Account and data generated in RC network are incompatible with Release network. So you must clean the data use the address which generate by the new gero and wallet client, to apply the license.`* *
 
+#### Step of install the lastest wallet
+
+1. **Backup the data of RC Directory:**
+
+   Windows C: \ Users \ % username% \  AppData \ Roaming \ Sero
+
+   MacOS ~ / Library/Sero
+
+   Linux ~ / config/Sero
+
+2. **Uninstall the wallet**
+
+3. **Clear the folder data**
+
+   Windows C: \ Users \ % username%  \ AppData \ Roaming \ Sero
+
+   MacOS ~ / Library/Sero
+
+   Linux ~ / config/Sero
+
+4. **download the latest wallet for installation.**
+
 #### Status of the BetaNet-RC network
 
 * BetaNet-RC network will be deprecated after BetaNet-Release network is released
