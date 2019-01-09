@@ -1,4 +1,4 @@
-# Mining with SERO Wallet Client
+# Mining using SERO Wallet Client
 
 ### 1. Install SERO Wallet
 

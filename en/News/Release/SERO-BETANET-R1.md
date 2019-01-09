@@ -14,6 +14,8 @@
 - Mining permission still use the license application process.
 - The SERO coins of BetaNet-Release netWork will map 1:1 to the MainNet network.
 
+** `Note: Account and data generated in RC network are incompatible with Release network. So you must clean the data use the address which generate by the new gero and wallet client, to apply the license.`* *
+
 #### Status of the BetaNet-RC network
 
 * BetaNet-RC network will be deprecated after BetaNet-Release network is released

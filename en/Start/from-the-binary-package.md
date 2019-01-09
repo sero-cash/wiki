@@ -1,8 +1,9 @@
-# SERO Mining Tutorial
+# Mining using Gero
 
 This article mainly explains how to install SERO from binary package and use it to mine SERO coins. For more information, please visit our [Product Technology WIKI](https://wiki.sero.cash).
 
 # Bonus Design
+
 SERO issued a total of 1 billion SERO coins, of which 25 % were awarded as community node contributions, that is, 250 million SERO coins were awarded to SERO miners for mining.  Mining bonus follow these rules:
 
 * ### Bonus will be issued within 10 years, and a certain amount of SERO coins will be mined each year until 250 million SERO coins are mined.

@@ -16,6 +16,8 @@
 - 挖矿权限依然采用许可证申请机制。
 - 承诺在MainNet网络上线后，本网络的SERO代币将1:1映射到MainNet网络
 
+**`注意：RC网络生成的账号与账本数据与Release网络不兼容，在Release账户申请License必须用Release网络的Gero或者Wallet。`**
+
 #### BetaNet-RC网络的状态
 
 * RC网络在Release发布之后将被废弃
