@@ -16,7 +16,7 @@
 
 ** `Note: Account and data generated in RC network are incompatible with Release network. So you must clean the data use the address which generate by the new gero and wallet client, to apply the license.`* *
 
-#### Step of install the lastest wallet
+#### Step of installing the lastest wallet
 
 1. **Backup the data of RC Directory:**
 
