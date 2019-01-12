@@ -52,7 +52,7 @@ wallet 79089ca1e20fe70afdc9312e4eeb956a3a0238f8
 ## 发布包
 
 > **二进制包下载地址：**
-> [https://github.com/sero-cash/go-sero/releases/tag/v0.3.1-beta.rc.5](https://github.com/sero-cash/go-sero/releases/tag/v0.3.1-beta.rc.5)
+> [https://github.com/sero-cash/go-sero/releases/tag/v0.4.0-beta.r1](https://github.com/sero-cash/go-sero/releases/tag/v0.4.0-beta.r1)
 >
 > gero-v0.4.0-beta.release.1-darwin-amd64.tar.gz  _for macos_
 > gero-v0.4.0-beta.release.1-linux-amd64-v3.tar.gz  _for centos & ubuntu_
