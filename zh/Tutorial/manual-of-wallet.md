@@ -6,7 +6,7 @@
 
 ### 介绍
 
-> SERO钱包是基于SERO主链研发的一款全节点客户端钱包，可以满足大部分用户的需求，比如：导入钱包账户、发送交易、挖矿、发布智能合约。目前已支持MAC和LINUX系统，WINDOWS版本即将推出，敬请期待。
+> SERO钱包是基于SERO主链研发的一款全节点客户端钱包，可以满足大部分用户的需求，比如：导入钱包账户、发送交易、挖矿、发布智能合约。目前已支持Mac , Linux ,Windows。
 > SERO钱包已在Github上开源 : [SERO Wallet](https://github.com/sero-cash/wallet/)
 
 
@@ -164,6 +164,7 @@
     ```
     MACOS：~/Library/Application\ Support/SERO Wallet
     LINUX：~/.config/SERO Wallet
+    Windows：C:\Users\%username%\AppData\Roaming\SERO Wallet
     ```
 
 * #### SERO钱包的数据目录
@@ -171,6 +172,7 @@
     ```
     MACOS：~/Library/Sero/
     LINUX：~/.sero/
+    Windows：C:\Users\%username%\AppData\Roaming\Sero
     ```
 
 * #### 查看日志文件：

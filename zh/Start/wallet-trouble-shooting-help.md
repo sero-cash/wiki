@@ -38,7 +38,7 @@
 > 2. 账户目录:
 > - Windows `C:\Users\%username%\AppData\Roaming\Sero\keystore`
 > - macOS `~/Library/Sero/keystore`
-> - Linux `~/.config/Sero/keystore `
+> - Linux `~/.sero/keystore `
 
 #### Windows是否可以设置数据目录？
 ---

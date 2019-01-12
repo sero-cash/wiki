@@ -21,7 +21,7 @@
 区块数据的文件夹,用于存放区块数据，钱包账户文件
 - Windows `C:\Users\%username%\AppData\Roaming\Sero`
 - macOS `~/Library/Sero`
-- Linux `~/.config/Sero`
+- Linux `~/.sero`
 
 ### 2. 启动钱包
 > - 第一次启动钱包，会自动查找节点
