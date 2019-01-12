@@ -161,6 +161,7 @@
   ```
   MACOS：~/Library/Application\ Support/SERO Wallet
   LINUX：~/.config/SERO Wallet
+  Windows：C:\Users\%username%\AppData\Roaming\SERO Wallet\
   ```
 
 - #### SERO Wallet Data Directory
@@ -168,6 +169,7 @@
   ```
   MACOS：~/Library/Sero/
   LINUX：~/.sero/
+  Windows：C:\Users\%username%\AppData\Roaming\Sero
   ```
 
 - #### View Log Files:
