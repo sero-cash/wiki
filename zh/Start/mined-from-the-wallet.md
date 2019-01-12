@@ -64,7 +64,7 @@
     > `gitter` 是 github.com 免费的即使通讯工具，跟 `github` 具有很好的集成度，可以通过 github/gitlab/twitter 账号登录。关于miner的一些重要通知会在这儿发布。
 
 * ### **发申请邮件**
-    > 上面已经生成了账户，请将标记`Serobase`的公钥地址通过邮件发送给 [license@sero.vip](license@sero.vip) ，并说明你的情况。
+    > 上面已经生成了账户，请将标记`Serobase`的公钥地址通过邮件发送给 [license@sero.vip](mailto:license@sero.vip) ，并说明你的情况。
     ![image.png](https://upload-images.jianshu.io/upload_images/277023-e72fcce8a23a8578.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
     `注意：公钥可以作为资产接受地址，提供给第三方生成交易，泄露公钥并不会泄露你在SERO的信息。`

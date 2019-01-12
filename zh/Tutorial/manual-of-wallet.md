@@ -85,7 +85,7 @@
 
 * #### 申请挖矿许可证
 
-    SERO社区已开放申请挖矿许可证，请把账户地址发邮件到 [license@sero.vip](license@sero.vip)，SERO团队将会在48小时内给到回复。
+    SERO社区已开放申请挖矿许可证，请把账户地址发邮件到 [license@sero.vip](mailto:license@sero.vip)，SERO团队将会在48小时内给到回复。
 
 * #### 导入挖矿许可证
 

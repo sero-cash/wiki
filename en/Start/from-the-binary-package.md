@@ -36,7 +36,7 @@ SERO issued a total of 1 billion SERO coins, of which 25 % were awarded as commu
    > * Import or create a mining user and get the public key address of the user.
    > * Join SERO's [miner community](https://gitter.im/sero-cash/miner?utm_source=share-link&utm_medium=link&utm_campaign=share-link) on gitter.
    >     `This step can be taken first, so that problems you encounter in using SERO can be raised in the community.`
-   > * Send an email to [license@sero.vip](license@sero.vip) to explain your information and attach your public key address.
+   > * Send an email to [license@sero.vip](mailto:license@sero.vip) to explain your information and attach your public key address.
    > * The SERO team will generate a license corresponding to the public key address within 48 hours and respond to your email.
    >
    > **After the BetaNet-Releaes version is released, each application of mining will be strictly reviewed.**
@@ -243,7 +243,7 @@ Next we need to apply for a license from the SERO team, which requires the follo
    > `gitter` is a free instant messaging tool in github.com. It has good integration with `gitHub` and can be logged in through gitHub/gitlab/twitter account. Some important notices about miner will be posted here.
 
 * ### **Send an application email for the license**
-   > The account has been generated above. Please send the public key `PK` of `sero.account[0]` to [license@sero.vip](license@sero.vip) by email and explain your information.
+   > The account has been generated above. Please send the public key `PK` of `sero.account[0]` to [license@sero.vip](mailto:license@sero.vip) by email and explain your information.
    > ![image.png](https://upload-images.jianshu.io/upload_images/277023-e72fcce8a23a8578.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
    `Note: The public key can be used as an asset acceptance addressand provided to a third party to generate transactions. Disclosure of the public key will not reveal your information in SERO. `

@@ -72,7 +72,7 @@ Next, we need to apply for a license from the SERO team, and we need to do the f
     > `gitter` is github.com's free instant messaging tool with good integration with `github`, which can be logged in via github/gitlab/twitter account. Some important notices about miner will be posted here.
 
 * ### **Send application email**
-    > The account has been generated above. Please send the account address of the tag `Serobase` to [license@sero.vip](license@sero.vip) by email and explain your information.
+    > The account has been generated above. Please send the account address of the tag `Serobase` to [license@sero.vip](mailto:license@sero.vip) by email and explain your information.
     > ![image.png](https://upload-images.jianshu.io/upload_images/277023-e72fcce8a23a8578.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
     `Note: This address can be used as an asset acceptance address and can be provided to third parties to generate transactions. Disclosure the public key will not reveal your information in SERO.`

@@ -82,7 +82,7 @@
 
 - #### Apply for Mining License
 
-  The SERO community has opened an application for mining licenses. Please email the account address to [license@sero.vip](license@sero.vip) and the SERO team will respond within 48 hours.
+  The SERO community has opened an application for mining licenses. Please email the account address to [license@sero.vip](mailto:license@sero.vip) and the SERO team will respond within 48 hours.
 
 - #### Import Mining License
 

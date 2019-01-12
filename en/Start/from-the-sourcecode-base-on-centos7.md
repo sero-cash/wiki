@@ -138,7 +138,7 @@ $ build/bin/gero  --dev --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc"
 $ build/bin/gero --alpha --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc" > ~/sero-data/debug.log
 ```
 
-> In this mode, the AlphaNet is automatically linked and start synchronizing data. The AlphaNet is the internal test network of SERO. The mining requires a license. If there is a test requirement, you can send an email to [license@sero.vip](license@sero.vip) to apply for a "mining license" or "SERO token for test".
+> In this mode, the AlphaNet is automatically linked and start synchronizing data. The AlphaNet is the internal test network of SERO. The mining requires a license. If there is a test requirement, you can send an email to [license@sero.vip](mailto:license@sero.vip) to apply for a "mining license" or "SERO token for test".
 
 #### Start beta mode
 
@@ -146,7 +146,7 @@ $ build/bin/gero --alpha --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc
 $ build/bin/gero --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc" > ~/sero-data/debug.log
 ```
 
-> In this mode, the BetaNet network is automatically linked and start synchronizing data. The BetaNet is the beta test network of SERO. The mining requires a license also. If there is a test requirement, you can send an email to [license@sero.vip](license@sero.vip) to apply for a "mining license" or "SERO token for test".
+> In this mode, the BetaNet network is automatically linked and start synchronizing data. The BetaNet is the beta test network of SERO. The mining requires a license also. If there is a test requirement, you can send an email to [license@sero.vip](mailto:license@sero.vip) to apply for a "mining license" or "SERO token for test".
 
 #### Start Main mode
 
