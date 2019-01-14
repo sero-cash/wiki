@@ -344,7 +344,7 @@ SERO发布智能合约与以太坊的步骤是相似的。
 
 #### 转发匿名资产
 
-现在`HELLOCOIN`的Token已经在`account[0]`的账户中，`account[0]`可以用普通的交易将它发送给其他的账户。但是一定记住必须在参数中指定币名`cy:"HELLOCOIN"`
+现在`HELLOCOIN`的Token已经在`accounts[0]`的账户中，`accounts[0]`可以用普通的交易将它发送给其他的账户。但是一定记住必须在参数中指定币名`cy:"HELLOCOIN"`
 
 ```javascript
 sero.sendTransaction({from:sero.accounts[0],to:sero.accounts[1],value:500,cy:"HELLOCOIN"})

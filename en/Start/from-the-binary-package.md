@@ -219,11 +219,11 @@ SERO issued a total of 1 billion SERO coins, of which 25 % were awarded as commu
    > sero.sendTransaction(...)
    Error: authentication needed: password or unlock
    
-   > personal.unlockAccount(sero.account[0],"123456")
+   > personal.unlockAccount(sero.accounts[0],"123456")
    true
    ```
 
-   > Note: The bonus from mining will default to the account created by the current node, which is the account represented by `sero.account[0]`.
+   > Note: The bonus from mining will default to the account created by the current node, which is the account represented by `sero.accounts[0]`.
 
    The command to exit the console is:
 
@@ -243,7 +243,7 @@ Next we need to apply for a license from the SERO team, which requires the follo
    > `gitter` is a free instant messaging tool in github.com. It has good integration with `gitHub` and can be logged in through gitHub/gitlab/twitter account. Some important notices about miner will be posted here.
 
 * ### **Send an application email for the license**
-   > The account has been generated above. Please send the public key `PK` of `sero.account[0]` to [license@sero.vip](mailto:license@sero.vip) by email and explain your information.
+   > The account has been generated above. Please send the public key `PK` of `sero.accounts[0]` to [license@sero.vip](license@sero.vip) by email and explain your information.
    > ![image.png](https://upload-images.jianshu.io/upload_images/277023-e72fcce8a23a8578.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
    `Note: The public key can be used as an asset acceptance addressand provided to a third party to generate transactions. Disclosure of the public key will not reveal your information in SERO. `
@@ -303,7 +303,7 @@ View the current block height:
 See if you've mined SERO coins:
 
 ```JavaScript
-> sero.getBalance(sero.account[0])
+> sero.getBalance(sero.accounts[0])
 {
   tkn: {
     SERO: 2.03085359120665e+22

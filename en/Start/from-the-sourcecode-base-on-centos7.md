@@ -343,7 +343,7 @@ The anonymous tokens issued by the smart contract can be sent to the personal ac
 
 #### Send anonymous tokens
 
-Now the tokens of `HELLOCOIN` is already in the account of `account[0]`, `account[0]` can sent the tokens to other accounts with normal transactions command. But be sure to remember that the token name `cy:"HELLOCOIN"` must be specified in the parameter.
+Now the tokens of `HELLOCOIN` is already in the account of `accounts[0]`, `accounts[0]` can sent the tokens to other accounts with normal transactions command. But be sure to remember that the token name `cy:"HELLOCOIN"` must be specified in the parameter.
 
 ```javascript
 sero.sendTransaction({from:sero.accounts[0],to:sero.accounts[1],value:500,cy:"HELLOCOIN"})
