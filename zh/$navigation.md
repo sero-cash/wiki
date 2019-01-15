@@ -5,6 +5,7 @@
 - [从源码开始——基于CentOS7](?file=Start/from-the-sourcecode-base-on-centos7)
 - [gero挖矿教程](?file=Start/from-the-binary-package)
 - [钱包挖矿教程](?file=Start/mined-from-the-wallet)
+- [钱包挖矿问题收集](?file=Start/wallet-trouble-shooting-help)
 
 ##### 教程
 
