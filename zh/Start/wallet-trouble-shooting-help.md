@@ -76,6 +76,7 @@
 4. 重启钱包。
 
 #### 如何开启脚本挖矿?
+
 ---
 
 1. 找到脚本目录：
@@ -110,3 +111,27 @@
 
 7. 停止挖矿
 >输入  `miner.stop();` 可停止挖矿。
+
+
+
+#### 其他下载地址
+
+---------------
+
+
+
+**linux版**
+
+<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/wallet/v0.1.2/SERO-Wallet-linux64-0-1-2-BETANET-RELEASE.deb>
+
+
+
+**Windows版**
+
+<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/wallet/v0.1.2/SERO-Wallet-windows-0-1-2-BETANET-RELEASE.exe>
+
+
+
+**Mac版**
+
+<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/wallet/v0.1.2/SERO-Wallet-mac-0-1-2-BETANET-RELEASE.dmg>
