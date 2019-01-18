@@ -12,9 +12,9 @@ v0.4.1-beta.r2-hotfix.2
 
 ## New Features
 
-- [x] 多核运算的性能优化
-- [x] 社区反馈的部分bug修改
-- [x] 钱包体验优化
+- [x] Performance optimization of multicore processor
+- [x] Fix the bugs of community feedback
+- [x] Wallet experience optimization
 
 ## Commitment ID
 
