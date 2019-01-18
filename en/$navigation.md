@@ -5,6 +5,7 @@
 - [From Source Code -- base on CentOS7](?file=Start/from-the-sourcecode-base-on-centos7)
 - [How to mine using gero](?file=Start/from-the-binary-package)
 - [How to mine using wallet](?file=Start/mined-from-the-wallet)
+- [Summary of Wallet Problems](?file=Start/wallet-trouble-shooting-help)
 
 ##### Tutorial
 
@@ -24,6 +25,7 @@
 ##### News
 
 - **Releases**
+  - [BETANET R2-HOTFIX.2](?file=News/Release/SERO-BETANET-R2-HOTFIX.2)
   - [BETANET Release 2](?file=News/Release/SERO-BETANET-R2)
   - [BETANET Release 1](?file=News/Release/SERO-BETANET-R1)
   - [BETANET RC6](?file=News/Release/SERO-BETANET-RC6)
