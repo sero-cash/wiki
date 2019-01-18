@@ -113,6 +113,21 @@
 >输入  `miner.stop();` 可停止挖矿。
 
 
+#### 如何在多台电脑上使用同一个账号挖矿?
+
+1. 备份账号文件和License（如已备份请跳过）
+> 打开钱包，进入账户备份目录：
+> ![image.png](https://upload-images.jianshu.io/upload_images/13141677-17d132f401e5f86c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 
+> keystore 为你的账号目录，License存放你的挖矿许可证，文件名一般为：BLIC.DATA ，拷贝这两个文件做好备份。
+> ![image.png](https://upload-images.jianshu.io/upload_images/13141677-d07db6a039dc6da4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> 
+2. 导入账号和License
+> 在你需要挖矿的机器，导入第一步备份好的账号和License（依次导入）
+> ![image.png](https://upload-images.jianshu.io/upload_images/13141677-74972b2139d2e3bb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+3. 导入成功后，你可以看到账户出现你刚刚导入的账号，便可以开启挖矿了。
+
 
 #### 其他下载地址
 
