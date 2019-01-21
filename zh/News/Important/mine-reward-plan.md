@@ -78,45 +78,45 @@
 
 ## 奖励计算方法
 
-$$Rreward_{ori}=66.773505743000000000$$
+$Rreward_{ori}=66.773505743000000000$
 
-$$Current \ni  [120000, 3057600) ​$$
+$Current \ni  [120000, 3057600) $
 
-​         $$Reward_{std}=Reward_{ori}​$$
+​         $Reward_{std}=Reward_{ori}$
 
-$$ Current \ni [3057600, \infty) ​$$
+$ Current \ni [3057600, \infty) $
 
-​         $$rate_{reward}=1+[ (Current-3057600)/8294400 ]​$$
+​         $rate_{reward}=1+[ (Current-3057600)/8294400 ]$
 
-​         $$Reward_{std}=Reward _{ori} >> rate_{reward}​$$
+​         $Reward_{std}=Reward _{ori} >> rate_{reward}$
 
 
 
 $Diff \ni [400,\infty )$
 
-​         $$ Reward_{mine} = Reward_{std} ​$$    
+​         $ Reward_{mine} = Reward_{std} ​$
 
- $$Diff \ni  [1,3.4) $$
+ $Diff \ni  [1,3.4)$
 
-​         $$ Reward_{mine} = 1 ​$$ 
+​         $ Reward_{mine} = 1 ​$
 
-$$Diff \ni  [3.4,17) ​$$
+$Diff \ni  [3.4,17) $
 
-​         $$ Reward_{mine} = \frac{5.6+[1.65 \cdot (Diff-3.4)]}{Reward_{ori}} \cdot Reward_{std} ​$$
+​         $ Reward_{mine} = \frac{5.6+[1.65 \cdot (Diff-3.4)]}{Reward_{ori}} \cdot Reward_{std} $
 
-$$Diff \ni  [17,40) ​$$
+$Diff \ni  [17,40) ​$
 
-​         $$ Reward_{mine} = \frac{29}{Reward_{ori}} \cdot Reward_{std} ​$$
+​         $ Reward_{mine} = \frac{29}{Reward_{ori}} \cdot Reward_{std} ​$
 
-$$Diff \ni  [40,400) ​$$
+$Diff \ni  [40,400) ​$
 
-​          $$ Reward_{mine} = \frac{29+[0.104 \cdot (Diff-40)]}{Reward_{ori}} \cdot Reward_{std} $$
+​          $ Reward_{mine} = \frac{29+[0.104 \cdot (Diff-40)]}{Reward_{ori}} \cdot Reward_{std} ​$
 
 
 
-$$Reward_{community}=\frac{Reward_{mine}}{15}$$ （每5760块结算一次）
+$Reward_{community}=\frac{Reward_{mine}}{15}​$ （每5760块结算一次）
 
-$$Reward_{team}=Reward_{community} \cdot 2$$ （每5760块结算一次）
+$Reward_{team}=Reward_{community} \cdot 2$ （每5760块结算一次）
 
 
 
