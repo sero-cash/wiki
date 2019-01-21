@@ -9,7 +9,7 @@
 #### How to view wallet logs?
 ---
 > 1. Open the log file as shown below:
-![image.png](https://upload-images.jianshu.io/upload_images/13141677-4b9642b60df09133.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/13141677-4b9642b60df09133.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 > 2. Locate the log files, node.log is the current log file, node.log.{x} are the history log files.
 
 #### Why can't SERO coins be displayed in the wallet?
@@ -87,19 +87,19 @@ First, the SERO wallet client is only a visual desktop tool of the SERO chain. T
 
 2. Start gero node
 >Double click startup.bat, Don't close the window after opening it, just minimize it.
->![image.png](https://upload-images.jianshu.io/upload_images/13141677-a191e72f201d0ab9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+>![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/13141677-a191e72f201d0ab9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 3. Connect to gero nodes
 >Double click attach.bat, run attach.bat
->![image.png](https://upload-images.jianshu.io/upload_images/13141677-25a2e01876377569.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+>![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/13141677-25a2e01876377569.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 4. Start mining
 >Input `miner.start(2);`, "2" is the number of threads, which can be adjusted according to requirements.
->![image.png](https://upload-images.jianshu.io/upload_images/13141677-0ed38055b0390e8c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+>![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/13141677-0ed38055b0390e8c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 5. Check the mining status
 >Input `sero.minging; `, If you see "true", it means that you have successfully opened the mine, “false” means you have failed.
->![image.png](https://upload-images.jianshu.io/upload_images/13141677-6f13934708267373.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+>![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/13141677-6f13934708267373.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 6. View balance
 >Input `web3.fromTa(sero.getBalance(sero.coinbase).tkn.SERO);` 
@@ -109,7 +109,7 @@ First, the SERO wallet client is only a visual desktop tool of the SERO chain. T
 >`sero.getBalance(sero.coinbase)`
 >
 >`web3.fromTa(number); ` You can convert numbers into SERO units by pasting them in parentheses.
->![image.png](https://upload-images.jianshu.io/upload_images/13141677-21735e739c899978.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+>![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/13141677-21735e739c899978.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 7. Stop mining
 >Input  `miner.stop();` to stop mining
