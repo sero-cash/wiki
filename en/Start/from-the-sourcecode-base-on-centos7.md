@@ -154,7 +154,7 @@ $ build/bin/gero --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc" > ~/se
 
 #### Result output
 
-![](https://upload-images.jianshu.io/upload_images/277023-30b8b21ac13b66ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-30b8b21ac13b66ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 > As long as you see the terminal output "IPC endpoint opened", it means that the service startup has been successful. Now you can start the gero console to connect to the background service.
 
@@ -173,7 +173,7 @@ $ build/bin/gero --datadir "~/sero-data" attach
 
 > The attach parameter will let gero launch a interactive console based on JS virtual machine.
 
-![](https://upload-images.jianshu.io/upload_images/277023-d8afed3845219ab1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-d8afed3845219ab1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 In which you can run complex Javascript interactive commands, the command to exit the console is
 
@@ -260,7 +260,7 @@ sero.sendTransaction({
 
 > Where [SRC_PK] is the public key of the sender, [TARGET_PK] is the public key of the recipient, [NUM_OF_TA] is the minimum unit amount, the minimum unit of the SERO is TA, and the conversion unit is `1 SERO = 10^18 TA`. The return value [TX_ID] is the ID of the generated transaction.
 
-![](https://upload-images.jianshu.io/upload_images/277023-bd6cbeca950950fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-bd6cbeca950950fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 After the transaction is generated, it will be synchronized to other nodes in the current network, waiting to be packaged into the block. After packing into the block, you can use the following command to get the details of the transaction.
 
@@ -271,7 +271,7 @@ After the transaction is generated, it will be synchronized to other nodes in th
 ...[TX_DETAIL]
 ```
 
-![](https://upload-images.jianshu.io/upload_images/277023-010374c16c87687c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-010374c16c87687c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 The main formation of [TX_DETAIL] is as follows:
 
@@ -307,37 +307,37 @@ SERO's methods of deploy smart contracts are similar to those of Ethereum.
 Open the following link to using SERO's smart contract editor:
 <http://remix.web.sero.cash>
 
-![](https://upload-images.jianshu.io/upload_images/277023-95affedbc7d4344c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-95affedbc7d4344c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 After loading, you can see an example of `sero token. sol` issuing anonymous tokens.
 
-![](https://upload-images.jianshu.io/upload_images/277023-3dfd4bce37a5e244.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-3dfd4bce37a5e244.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 Select `seroToken` in the upper right corner and click `Details`.
 
-![](https://upload-images.jianshu.io/upload_images/277023-5731e92c7ab7ab0c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-5731e92c7ab7ab0c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 Click the copy button in the upper left corner of the pop-up box `WEB3DEPLOY`.
 
 #### Modify initialization parameters
 
-![](https://upload-images.jianshu.io/upload_images/277023-1d6cdfa4e62f6416.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-1d6cdfa4e62f6416.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 Modify the initialization variables in a text editor.
 
 #### Deploy smart contract
 
-![](https://upload-images.jianshu.io/upload_images/277023-2eee55bef93eac35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1024)
+![](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-2eee55bef93eac35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1024)
 
 Then paste all of the text into the console and press Enter. The console will immediately send a transaction to deylpy this smart contract.
 
 #### View smart contract account
-![](https://upload-images.jianshu.io/upload_images/277023-c88beb87ad21a616.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-c88beb87ad21a616.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 After the transaction is successfully executed, the token issued by the smart contract can be viewed through the command `sero.getBalance`.
 
 #### Call the smart contract
-![](https://upload-images.jianshu.io/upload_images/277023-7b8f8c2fce9b7081.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-7b8f8c2fce9b7081.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 The anonymous tokens issued by the smart contract can be sent to the personal account using the `transfer` method defined by the smart contract.
 
@@ -349,11 +349,11 @@ Now the tokens of `HELLOCOIN` is already in the account of `accounts[0]`, `accou
 sero.sendTransaction({from:sero.accounts[0],to:sero.accounts[1],value:500,cy:"HELLOCOIN"})
 ```
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-f1706217106739bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-f1706217106739bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
 Finally, in the accounts of accounts[1], you can see that it has received 500 tokens of `HELLOCOIN`.
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-af79f0c27be00fbe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-af79f0c27be00fbe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 The transaction is also confidential transaction.
 

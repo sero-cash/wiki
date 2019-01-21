@@ -42,7 +42,7 @@ In order to operate such a public welfare activity, Alice designed a blockchain 
 
 **Alice’s application is like this**
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-edd4b2ba0ad45c85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-edd4b2ba0ad45c85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 She wants to develop a smart contract. This smart contract that issues two type of tokens, namely `Assisted Token` and `Helper Token`, which must be issued in the same proportion (that is, how many `Heper Tokens` are purchased and how many `assigned tokens` must be generated accordingly).
 
@@ -70,13 +70,13 @@ You can follow my steps to issue your own anonymous tokens. If you are unfamilia
 
 #### Solidity Language
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-2bdef85e6118d982.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-2bdef85e6118d982.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 SERO uses the Solidity programming language for smart contracts development and is currently compatible with v0.5.0 and below. If you have questions about the Solidity's grammar, you can refer to [Solidity Official Handbook] (https://solidity.readthedocs.io/en/v0.5.0/).
 
 #### SERO Smart Contracts Development Environment
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-e09c65925d1f6783.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-e09c65925d1f6783.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 We recommend that you use SERO's officially customized Solidity IDE for the development and compilation of SERO smart contracts. It currently integrates the most basic API for issuing anonymous smart contracts (serointerface.sol), an example of issuing anonymous tokens (token_test.sol), and some necessary automation. We will add anonymous assets debugging features later.
 
@@ -92,14 +92,14 @@ This article uses gero to illustrate the release process of smart contracts. For
 > You can get the latest gero source code and compiled package on this page.
 > [https://github.com/sero-cash/go-sero/releases](https://github.com/sero-cash/go-sero/releases)
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-91763145b4fe8435.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-91763145b4fe8435.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 For information on how to publish smart contracts with your wallet, please refer to [SERO Wallet Instructions] (https://wiki.sero.cash/en/index.html?file=Tutorial/manual-of-wallet)
 
 > You can get the latest wallet source code and compiled installation package on this page.
 > [https://github.com/sero-cash/wallet/releases](https://github.com/sero-cash/wallet/releases)
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-060fc708d35cdff7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-060fc708d35cdff7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 ### Step 2. Determine the token name
 Now we are going to issue the Helper Token, we first give this token a name, such as **`"TFHCOIN"`** means "Tomorrow Flowers Helper Coin".
@@ -209,11 +209,11 @@ contract TFHCoin is SeroInterface {
 
 * Select the `TFHCOIN` smart contract on the right side of the IDE and click the `Detail` button next to it.
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-e23b8cb8c9b8e467.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-e23b8cb8c9b8e467.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 * Find the the button of copy next to `WEB3DEPLOY` in the pop-up box and click it to copy the compiled contents.
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-34d4e074e8c13375.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-34d4e074e8c13375.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 > **Note** The constructor of `TFHCOIN` has no arguments passed in. If there are arguments passed in, you need to copy it to a text editor to set the initialization parameters of the constructor.
 
@@ -242,7 +242,7 @@ true
 * **Then we paste the compiled contents copied from the IDE into the console and click enter to create the transaction.**
 
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-7510f0afadee18a5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-7510f0afadee18a5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 The installation of the smart contract is carried out in the transaction, and the address of the transaction can be viewed after the transaction is created. Use this address to query the current state of packaging in the block browser.
 
@@ -253,7 +253,7 @@ The installation of the smart contract is carried out in the transaction, and th
 
 * **Now mine a block to package the transaction and confirm that the smart contract has been successfully installed.**
 
- ![image.png](https://upload-images.jianshu.io/upload_images/277023-184f8bc5a3ef536e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+ ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-184f8bc5a3ef536e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 The SERO console will return the smart contract address and transaction number after successful installation.
 

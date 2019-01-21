@@ -63,7 +63,7 @@ SERO issued a total of 1 billion SERO coins, of which 25 % were awarded as commu
 * ### **Download the latest version of `gero` binary package via github.**
    Readers can download the latest binary package by visiting the link [https://github.com/sero-cash/go-sero/releases](https://github.com/sero-cash/go-sero/releases).
 
-   ![image.png](https://upload-images.jianshu.io/upload_images/277023-b731e437b567c179.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+   ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-b731e437b567c179.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
    > **In the Assets section, you can see the binary packages for different system environments**
    > * `gero-[VERSION]-darwin-amd64.tar.gz` corresponds to the 64-bit `MacOS` system
@@ -121,7 +121,7 @@ SERO issued a total of 1 billion SERO coins, of which 25 % were awarded as commu
    > * The first important directory of SERO is `datadir`, which stores synchronized account data.
    > * Another important directory is `keystore`, which contains the encrypted `account file` and the `license file` for minning, like this:
    >
-   >   ![image.png](https://upload-images.jianshu.io/upload_images/277023-d8801c3d87c486e5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+   >   ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-d8801c3d87c486e5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
    In order not to affect the synchronized data when upgrading `geropkg` in the future, we separate the data directory, such as:
 
@@ -171,7 +171,7 @@ SERO issued a total of 1 billion SERO coins, of which 25 % were awarded as commu
 
    **You will see text similar to the following**
 
-   ![image.png](https://upload-images.jianshu.io/upload_images/277023-8397a48ee35318a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+   ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-8397a48ee35318a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
    As long as you see the text `IPC endpoint opened`, the startup is successful.
 
@@ -191,7 +191,7 @@ SERO issued a total of 1 billion SERO coins, of which 25 % were awarded as commu
 
    If you see a console interface similar to the one below, the console will start successfully.
 
-   ![image.png](https://upload-images.jianshu.io/upload_images/277023-9511643359456b35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+   ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-9511643359456b35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 * ### **Create account**
    Now we can create an account by typing the command below:
@@ -238,19 +238,19 @@ Next we need to apply for a license from the SERO team, which requires the follo
 * ### **Join SERO's gitter community**
    > **The link of the community is**
    > [https://gitter.im/sero-cash/miner](https://gitter.im/sero-cash/miner)
-   > ![image.png](https://upload-images.jianshu.io/upload_images/277023-fecac3360cd796e6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
+   > ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-fecac3360cd796e6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
    >
    > `gitter` is a free instant messaging tool in github.com. It has good integration with `gitHub` and can be logged in through gitHub/gitlab/twitter account. Some important notices about miner will be posted here.
 
 * ### **Send an application email for the license**
-   > The account has been generated above. Please send the public key `PK` of `sero.accounts[0]` to [license@sero.vip](license@sero.vip) by email and explain your information.
-   > ![image.png](https://upload-images.jianshu.io/upload_images/277023-e72fcce8a23a8578.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+   > The account has been generated above. Please send the public key `PK` of `sero.account[0]` to [license@sero.vip](mailto:license@sero.vip) by email and explain your information.
+   > ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-e72fcce8a23a8578.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
    `Note: The public key can be used as an asset acceptance addressand provided to a third party to generate transactions. Disclosure of the public key will not reveal your information in SERO. `
 
 * ### **Install the license**
    The SERO team will generate a BetaNet mining license for you within 48 hours and reply to you.
-   ![image.png](https://upload-images.jianshu.io/upload_images/277023-ce2d496f2b656112.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+   ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-ce2d496f2b656112.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
    ** In your reply, you have one copy of your license in the mail body and one copy in the attachment. The two copies are identical.**
 

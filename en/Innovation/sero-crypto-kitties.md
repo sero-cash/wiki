@@ -12,13 +12,13 @@ We now know that Ethereum is a blockchain application development platform. Base
 
 ### SERO: The world's first anonymous public chain supporting smart contracts
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-50e80f9db60148e1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-50e80f9db60148e1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
 
 Currently, there are popular anonymous blockchain technologies such as Monero, Dash and Zcash. Although they can be anonymously protected by privacy, they do not support smart contracts and cannot be used to develop DApps. The SERO(Super Zero Protocol) ([SERO](https://sero.cash))[[White Paper](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/Sero_ENG_V1.06.pdf) is an anonymous public chain that supports Turing's complete smart contracts, implements privacy protection technology with zero knowledge proofs, and has already released the beta version. SERO seems to be a perfect solution for privacy protection and can develop anonymous DAPPs on it.
 
 ### Overview of the Crypto Kitties program on Ethereum
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-c9de77ecd764b845.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-c9de77ecd764b845.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
 
 [Crypto Kitties] (https://github.com/cryptocopycats/awesome-cryptokitties) should be Ethereum's most mature and successful game DAPP so far. It caused the congestion of Ethereum in a short period of time. The Crypto Kitties was developed in accordance with ERC721, with about 2,000 lines of Smart contract code. The source code is open source on github and can also be found in the [Ethereum Block Browser](https://etherscan.io/).
 
@@ -33,7 +33,7 @@ The Crypto Kitties program includes seven main programs:
 
 ### Anonymous version of the Crypto Kitties implementation
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-944732110b239103.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-944732110b239103.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
 
 According to the SERO DApp programming specification, an anonymous version of the Crypto Kitties DApp can be implemented. At present, the function of SERO to support the issue of "anonymous tickets" has been released. This function corresponds to the Ethereum ERC721 protocol, which is the basis for implementing the Crypto Kitties.
 
@@ -219,7 +219,7 @@ The core part of the Crypto Kitties is ERC721 (Non-Fungible Token Standard) base
 
 Because the kittyId generated on the SERO will be directly stored in the personal account whether it is created or generated, the smart contract does not need to manage the ownership of the kittyId. When calling the smart contract method, all the places that need to pass the kittyId that they own must be passed to the smart contract through the transaction parameters. What needs special attention is that the kittyId in the transaction parameters will be marked as used from the personal account in the SERO chain, and you will no longer own the kittyId. If the kittyId passed through the transaction parameter is used only for authentication and does not need to be transferred, it is important to remember that the kittyId needs to be stored in the personal account again in the smart contract method.
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-e10fa5b921944fee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-e10fa5b921944fee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
 
 The first step in realizing anonymity in SERO is to modify the address. Both the address in the transaction and the address passed into the smart contracts will be converted into temporary addresses. Only the person who owns the address can query the asset status and use them, which virtually weakens the function of the address. In the case where the cattyId is approved to an address in the Crypto Kitties, this is obviously not the case in the SERO because the address that is passed into the smart contract may be different each time, even if it is the same address. Although it is impossible to directly approve an address, SERO can also implement similar functions, just by changing our thinking. Because all the assets of SERO have been saved in the personal account, for a person with a non-fungible token, a tickeId can prove the identity of an address under certain circumstances, so when the Crypto Kitties approve a kittyId to an address, it can be replaced by a method of approving one kittyId to another kietyId and the approver's kittyId must be passed to the smart contract through the transaction parameters. After understanding the above major changes, it is easy to anonymize Crypto Kitties without changing their business logic. Compared to the original version of the code, the amount of code will be less, and the asset management logic will be reduced. The main focus of implementation will be on the business logic.
 
