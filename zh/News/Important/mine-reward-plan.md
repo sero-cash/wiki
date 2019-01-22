@@ -12,7 +12,7 @@
 
 * 保持10亿代币总量不变
 * 将矿工份额从25%提升到 (75+5)%
-* 基于通缩模型，4年减半，开采时间为101年。
+* 基于通缩模型，4年减半，开采时间为101.5年。
 * 缩减团队份额到10%，并与矿工同比释放。
 * 缩减可融资份额到10%。
 * 软分叉BetaNet网络，销毁10%的基金会份额。
@@ -34,7 +34,7 @@
 
 * 总共发行10亿SERO代币
   * BetaNet网络销毁10%的代币，保留90%，其中包括：
-    * 标准矿工奖励由 75% (750000000 SERO) 分101年挖出。
+    * 标准矿工奖励由 75% (750000000 SERO) 分101.5年挖出。
     * 矿工社区奖励 5%  (50000000 SERO) 与标准矿工奖励同比释放。
     * 团队份额10% (100000000  SERO) 与标准矿工奖励同比释放。
   * 用于早期融资的SERO ERC20智能合约中，销毁90%的Token。
@@ -80,35 +80,36 @@
 
 * $Rreward_{ori}=66.773505743000000000$
 
-* $Current \ni  [120000, 3057600) $
-  * $Reward_{std}=Reward_{ori}$
 
+
+* $Current \ni  [120000, 3057600) ​$
+  * $Reward_{std}=Reward_{ori}$
 * $ Current \ni [3057600, \infty) $
   * $rate_{reward}=1+[ (Current-3057600)/8294400 ]$
   * $Reward_{std}=Reward _{ori} >> rate_{reward}​$
 
 
 
-* $Diff \ni [400,\infty )$
+* $Diff \ni [170,\infty )​$
   * $ Reward_{mine} = Reward_{std} ​$
 
 * $Diff \ni  [1,3.4)$
   * $ Reward_{mine} = 1 ​$
 
 * $Diff \ni  [3.4,17) $
-  * $ Reward_{mine} = \frac{5.6+[1.65 \cdot (Diff-3.4)]}{Reward_{ori}} \cdot Reward_{std} $
+  * $ Reward_{mine} = \frac{5.6+[1.65 \cdot (Diff-3.4)]}{Reward_{ori}} \cdot Reward_{std} ​$
 
 * $Diff \ni  [17,40) ​$
-  * $ Reward_{mine} = \frac{29}{Reward_{ori}} \cdot Reward_{std} ​$
+  *  $ Reward_{mine} = \frac{28+[0.21 \cdot (Diff-17)]}{Reward_{ori}} \cdot Reward_{std} ​$
 
-* $Diff \ni  [40,400) ​$
-  * $ Reward_{mine} = \frac{29+[0.104 \cdot (Diff-40)]}{Reward_{ori}} \cdot Reward_{std} ​$
+* $Diff \ni  [40,170) ​$
+  * $ Reward_{mine} = \frac{33+[0.254 \cdot (Diff-40)]}{Reward_{ori}} \cdot Reward_{std} ​$
 
 
 
-* $Reward_{community}=\frac{Reward_{mine}}{15}​$ （每5760块结算一次）
+* $Reward_{community}=\frac{Reward_{std}}{15}​$ （每5760块结算一次）
 
-* $Reward_{team}=Reward_{community} \cdot 2$ （每5760块结算一次）
+* $Reward_{team}=\frac{Reward_{std} \cdot 2}{15}$ （每5760块结算一次）
 
 
 
