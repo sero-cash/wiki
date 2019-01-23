@@ -91,6 +91,7 @@ SERO一共发行10亿数量的SERO币，其中25%作为社区节点贡献的奖�
     ```sh
     $ wget https://github.com/sero-cash/go-sero/releases/download/v0.3.1-beta.rc.5/gero-v0.3.1-beta.rc.5-linux-amd64-v3.tar.gz
     ```
+    `注意：此下载链接，请到github release 获取最新的下载链接` [https://github.com/sero-cash/go-sero/releases](https://github.com/sero-cash/go-sero/releases)
 
     ```sh
     $ ls
