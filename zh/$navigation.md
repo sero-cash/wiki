@@ -37,4 +37,5 @@
   - [2018年12月技术汇报](?file=News/Report/201812-tech-report)
   - [2018年11月技术汇报](?file=News/Report/201811-tech-report)
 - **重要事件**
+  - [SIP1：奖励改进计划](?file=News/Important/sip1-mine-reward-plan.md)
 
