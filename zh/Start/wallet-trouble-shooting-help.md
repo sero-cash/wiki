@@ -114,9 +114,13 @@
  
 8. 其他命令：
 > admin.peers 查看节点连接情况 `[]` 表示没有连接节点
+> 
 > sero.coinbase 查看当前挖矿账号
+> 
 > sero.accouts 查看所有账号
+> 
 > sero.getBalance(sero.coinbase) 查看挖矿账号的SERO币，单位是Ta , 1 SERO = 10^18 Ta
+
 
 
 #### 如何在多台电脑上使用同一个账号挖矿?
