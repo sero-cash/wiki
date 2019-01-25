@@ -95,7 +95,7 @@
 >![image.png](https://upload-images.jianshu.io/upload_images/13141677-0ed38055b0390e8c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 5. 查看挖矿状态
->输入 `sero.minging; `,如果看到  true 表示开启挖矿成功，false为失败。
+>输入 `sero.mining; `,如果看到  true 表示开启挖矿成功，false为失败。
 >![image.png](https://upload-images.jianshu.io/upload_images/13141677-6f13934708267373.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 6. 查看余额
@@ -111,6 +111,12 @@
 
 7. 停止挖矿
 >输入  `miner.stop();` 可停止挖矿。
+ 
+8. 其他命令：
+> admin.peers 查看节点连接情况 `[]` 表示没有连接节点
+> sero.coinbase 查看当前挖矿账号
+> sero.accouts 查看所有账号
+> sero.getBalance(sero.coinbase) 查看挖矿账号的SERO币，单位是Ta , 1 SERO = 10^18 Ta
 
 
 #### 如何在多台电脑上使用同一个账号挖矿?
