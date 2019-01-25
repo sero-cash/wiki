@@ -109,9 +109,9 @@
 
 
 
-* $Reward_{community}=\frac{Reward_{std}}{15}​$ （每5760块结算一次）
+* $Reward_{community}=\frac{Reward_{std}}{15}$ （每5760块结算一次）
 
-* $Reward_{team}=\frac{Reward_{std} \cdot 2}{15}$ （每5760块结算一次）
+* $Reward_{team}=\frac{Reward_{mine} \cdot 2}{15}$ （每5760块结算一次）
 
 
 
