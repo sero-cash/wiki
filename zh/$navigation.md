@@ -25,6 +25,7 @@
 ##### 最新动态
 
 - **产品发布**
+  - [BETANET R5](?file=News/Release/SERO-BETANET-R5)
   - [BETANET R2-HOTFIX.2](?file=News/Release/SERO-BETANET-R2-HOTFIX.2)
   - [BETANET Release 2](?file=News/Release/SERO-BETANET-R2)
   - [BETANET Release 1](?file=News/Release/SERO-BETANET-R1)
@@ -38,4 +39,5 @@
   - [2018年11月技术汇报](?file=News/Report/201811-tech-report)
 - **重要事件**
   - [SIP1：奖励改进计划](?file=News/Important/sip1-mine-reward-plan)
+  - [矿工公会奖励计划](?file=News/Important/guild-award-plan)
 
