@@ -1,12 +1,14 @@
 # BETANET-R5 Release Announce
 
-**This release is soft forking,  greatly improving the reward for the contribution of miners.**
+**This release will soft fork betanet,  greatly improving the bonus for the contribution of miners.**
 
 `**THE FORKED HEIGHT:** 130000`
 
 ## Be sure to install the version as soon as possible
 
+**Detailed bonus Information Reference**
 
+[SIP1：Bonus improvement plan](?file=News/Important/sip1-mine-reward-plan)
 
 ## Release Name
 
@@ -18,7 +20,7 @@ v0.5.0-beta.r5
 
 ## New Features
 
-- [x] SIP1 reward plan
+- [x] SIP1 bonus plan
 - [x] reduce the space occupancy of hard disk 
 - [x] fix the bugs of community feedback
 - [x] wallet experience optimization
