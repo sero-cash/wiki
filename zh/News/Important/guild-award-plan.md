@@ -66,7 +66,7 @@ SERO项目组**暂时手动管理**公会入会流程。
 
 
 
-1）新申请license挖矿的矿工，可以发邮件到 [license@sero.vip](/Users/tangzhige/Library/Application Support/typora-user-images/E32D07D2-49BC-45C4-B71C-5D087F88D74F/mailto:license@sero.vip)申请挖矿并加入公会。
+1）新申请license挖矿的矿工，可以发邮件到 [license@sero.vip](mailto:license@sero.vip)申请挖矿并加入公会。
 
 
 
@@ -82,7 +82,7 @@ C: 公会ID（即公会会长的公钥地址）
 
 
 
-2）已经拥有license并在进行挖矿活动的矿工，可以发邮件到[license@sero.vip](/Users/tangzhige/Library/Application Support/typora-user-images/E32D07D2-49BC-45C4-B71C-5D087F88D74F/mailto:license@sero.vip)加入公会。
+2）已经拥有license并在进行挖矿活动的矿工，可以发邮件到[license@sero.vip](mailto:license@sero.vip)加入公会。
 
 
 
@@ -110,7 +110,7 @@ SERO团队收到发件人入会邮件后，次日生效。
 
 
 
-矿工可发送邮件到 [license@sero.vip](/Users/tangzhige/Library/Application Support/typora-user-images/E32D07D2-49BC-45C4-B71C-5D087F88D74F/mailto:license@sero.vip)，进行转会。
+矿工可发送邮件到 [license@sero.vip](mailto:license@sero.vip)，进行转会。
 
 
 
