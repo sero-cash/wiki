@@ -9,8 +9,8 @@ The total supply of SERO that will ever be is 1 billion, and the distribution is
 3. 100 million SERO coins belong to the project start-up team and will be used for the project team's founding shareholders and early contributors to reward, and the same amount of SERO coins excavated by miners, released for about 101 years.
 
 4. The distribution of 800 million SERO coins belonging to the Miners and Mining Association organizers mentioned in above point 2 is as follows:
-
 > a) 750 million SERO coins will be dug by miners and awarded to miners.
+> 
 > b) 0.5 billion SERO coins will be allocated to the president of the Association according to the ranking mechanism.
 
 ## SERO Association Award System Rules
