@@ -39,4 +39,5 @@
   - [November 2018 Technical report](?file=News/Report/201811-tech-report)
 - **Important events**
   - [SIP1：Bonus improvement plan](?file=News/Important/sip1-mine-reward-plan)
+  - [SERO Mining Association Award System](?file=News/Important/guild-award-plan)
 
