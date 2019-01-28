@@ -31,6 +31,24 @@ wallet 7c25e1f1ba7ccc3cc1322dc6f1d70dd25951c9eb
 > gero-v0.5.0-beta.r5-hotfix.1-linux-amd64-v4.tar.gz  _for fedora, md5:dde86cb29df87cd35bada2e2cb58320d_
 > gero-v0.5.0-beta.r5-hotfix.1-windows-amd64.tar.gz  _windows, md5:c32bbb31f981117c9d2ac1e147535ca8_
 
+
+
+## 亚洲版下载地址
+
+### DARWIN
+https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.5.0-beta.r5-hotfix.1/gero-v0.5.0-beta.r5-hotfix.1-darwin-amd64.tar.gz
+
+### LINUX3
+https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.5.0-beta.r5-hotfix.1/gero-v0.5.0-beta.r5-hotfix.1-linux-amd64-v3.tar.gz
+
+### LINUX4
+https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.5.0-beta.r5-hotfix.1/gero-v0.5.0-beta.r5-hotfix.1-linux-amd64-v4.tar.gz
+
+### WINDOWS
+https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.5.0-beta.r5-hotfix.1/gero-v0.5.0-beta.r5-hotfix.1-windows-amd64.zip
+
+
+
 ## 相关资源
 
 BetaNet 区块浏览器：http://explorer.web.sero.cash
