@@ -1,4 +1,4 @@
-# BETANET-R2-HOTFIX.2 发布声明
+# BETANET-R5-HOTFIX.1 发布声明
 
 
 

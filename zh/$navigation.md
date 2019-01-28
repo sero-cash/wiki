@@ -25,6 +25,7 @@
 ##### 最新动态
 
 - **产品发布**
+  - [BETANET R5-HOTFIX.1](?file=News/Release/SERO-BETANET-R5-HOTFIX.1)
   - [BETANET R5](?file=News/Release/SERO-BETANET-R5)
   - [BETANET R2-HOTFIX.2](?file=News/Release/SERO-BETANET-R2-HOTFIX.2)
   - [BETANET Release 2](?file=News/Release/SERO-BETANET-R2)
