@@ -1,6 +1,23 @@
-# SERO Mining Association Award System
+# SERO Miners' Guilds Award System
+
+## How to Establish a Miners' Guild 
+
+Anyone can apply to establish a miners' guild.
+
+The application and entry ranking methods of the guilds are tentatively set as the following rules:
+
+1. Set up a miners' guild: send the guild organizer's public key address + guild name to the mailbox: license@sero.vip to apply for the establishment of a guild.
+
+2. Minimum guild qualification to participate in the ranking: at least 5 valid members are included, that is, the license of each member shall mine at least one block the day before the official ranking.
+
+3. How to join the guild: please refer to the following details.
+
+4. Please contact SERO's official customer service (WeChat ID: SERO9413 in Chinese, Telegram ID: @sero_aakash in English) if the guild has the need to expand the number of members, and submit the guild's reward system, contact information and other information. SERO team will recommend the license to the new miners.
+
+The SERO team will strive to support every guild. At present, SERO project is developing rapidly. The guild is an important force in the future of our project.
 
 ## SERO Coin Allocation Rules
+
 The total supply of SERO that will ever be is 1 billion, and the distribution is as follows:
 1. 10% i.e 100 million SERO coins are reserved for external financing purposes to support the ongoing operation of the project team. And 1:1 mapping of 100 million ERC20 tokens.
 
@@ -8,12 +25,12 @@ The total supply of SERO that will ever be is 1 billion, and the distribution is
 
 3. 100 million SERO coins belong to the project start-up team and will be used for the project team's founding shareholders and early contributors to reward, and the same amount of SERO coins excavated by miners, released for about 101 years.
 
-4. The distribution of 800 million SERO coins belonging to the Miners and Mining Association organizers mentioned in above point 2 is as follows:
+4. The distribution of 800 million SERO coins belonging to the Miners and miners' guild organizers mentioned in above point 2 is as follows:
 > a) 750 million SERO coins will be dug by miners and awarded to miners.
 > 
 > b) 0.5 billion SERO coins will be allocated to the president of the Association according to the ranking mechanism.
 
-## SERO Association Award System Rules
+## SERO Miners' Guilds Award System Rules
 
 ### 1. Total Guild rewards.
 
@@ -24,7 +41,7 @@ The total supply of SERO that will ever be is 1 billion, and the distribution is
 All unions are ranked according to the total amount of all members of the guild from 0:00 (Beijing time) on the 15th of each month to 24:00 on the 14th of the following month, ranking from the highest to the lowest, taking the top 100 Reward and set different reward intervals. Please refer to the attachment below for specific intervals.
 
 ### 3. Guild joining process
-The SERO project team temporarily manages the guild joining process manually.
+The SERO project team temporarily manages the miners' guild joining process manually.
 
 **i) Miners who apply for new mining can send an email to [license@sero.vip](mailto:license@sero.vip) to apply for mining and join the guild.**
 
@@ -66,19 +83,19 @@ E: The guild ID to apply for transfer (i.e, the application to transfer to the g
 
 ### 6. Guild transfer time
 
-After receiving the transfer email, the SERO project team will accept the application for transfer of the association before 20:00 on the 12th of each month. The performance of the transfer application will still be included in the original guild, and the performance after 0:00 on the 15th will be included in the new transfer. Enter the guild.
+After receiving the transfer email, the SERO project team will accept the application for transfer of the guild before 20:00 on the 12th of each month. The performance of the transfer application will still be included in the original guild, and the performance after 0:00 on the 15th will be included in the new transfer.
 
 Guild members who do not send a transfer application default to the current guild.
 
-### 7. The Guild rewards
+### 7. The Guilds rewards
 
 The SERO project team calculates the sum of the mined blocks of each guild at 0:00 on the 15th of each month. The first 100 guilds will receive the SERO coins for the corresponding rewards.
 
 If the number of guilds in the month is less than 100, the remaining amount will be distributed equally to each guild that meets the conditions (a guild member with more than 5 independent licenses that dig out the block in the current month).
 
-The SERO project team will enter the corresponding SERO currency reward into the president's public key address before 0:00 on the 18th of each month.
+The SERO project team will send the corresponding SERO coins reward to the guild organizer public key address before 0:00 on the 18th of each month.
 
-The first guild reward will be issued on February 18, 2019, before 0:00.
+The first guilds reward will be issued on February 18, 2019, before 0:00.
 
 The guild ranking corresponding to the award amount is subject to the public announcement of the SERO official website.
 
@@ -197,4 +214,4 @@ The goal is to provide more accessible services to SERO miners
 Membership in a guild is entirely up to the miners' own free will
 Any miner who has worked out in a week may form a guild
 The SERO team is only responsible for technical support and rewards, not for union matters
-The President of the Union may not enter other Guilds
+The President of the Union may not enter other guilds
