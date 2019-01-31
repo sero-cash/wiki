@@ -10,6 +10,7 @@
 ##### 教程
 
 - [SERO钱包使用手册](?file=Tutorial/manual-of-wallet)
+-  [SOLO模式下如何估算自己的出块概率](?file=Tutorial/how-to-evaluate-node-hashrate)
 - [匿名Token发行原理](?file=Tutorial/principle-of-anonymous-token)
 - [匿名Token发行实战](?file=Tutorial/practice-of-anonymous-token)
 
@@ -25,6 +26,7 @@
 ##### 最新动态
 
 - **产品发布**
+  - [BETANET R5-HOTFIX.3](?file=News/Release/SERO-BETANET-R5-HOTFIX.3)
   - [BETANET R5-HOTFIX.1](?file=News/Release/SERO-BETANET-R5-HOTFIX.1)
   - [BETANET R5](?file=News/Release/SERO-BETANET-R5)
   - [BETANET R2-HOTFIX.2](?file=News/Release/SERO-BETANET-R2-HOTFIX.2)
