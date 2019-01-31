@@ -14,7 +14,9 @@ BetaNet-R5-HOTFIX.3
 
 ## 版本号
 
-v0.5.0-beta.r5-hotfix.3
+Gero: v0.5.0-beta.r5-hotfix.3
+
+Wallet: 0.1.4
 
 
 
@@ -34,15 +36,17 @@ go-czero-import
 console
 wallet
 
+
+
 ## 发布包
 
 > **二进制包下载地址：**
-> [https://github.com/sero-cash/go-sero/releases/tag/v0.5.0-beta.r5-hotfix.1](https://github.com/sero-cash/go-sero/releases/tag/v0.5.0-beta.r5-hotfix.1)
+> [https://github.com/sero-cash/go-sero/releases/tag/v0.5.0-beta.r5-hotfix.3](https://github.com/sero-cash/go-sero/releases/tag/v0.5.0-beta.r5-hotfix.3)
 >
-> gero-v0.5.0-beta.r5-hotfix.1-darwin-amd64.tar.gz  _macos,  md5:_
-> gero-v0.5.0-beta.r5-hotfix.1-linux-amd64-v3.tar.gz  _centos & ubuntu, md5:_
-> gero-v0.5.0-beta.r5-hotfix.1-linux-amd64-v4.tar.gz  _for fedora, md5:_
-> gero-v0.5.0-beta.r5-hotfix.1-windows-amd64.tar.gz  _windows, md5:_
+> gero-v0.5.0-beta.r5-hotfix.3-darwin-amd64.tar.gz  _macos,  md5:_
+> gero-v0.5.0-beta.r5-hotfix.3-linux-amd64-v3.tar.gz  _centos & ubuntu, md5:_
+> gero-v0.5.0-beta.r5-hotfix.3-linux-amd64-v4.tar.gz  _for fedora, md5:_
+> gero-v0.5.0-beta.r5-hotfix.3-windows-amd64.tar.gz  _windows, md5:_
 
 
 
@@ -70,7 +74,7 @@ wallet
 
 ### 1. 如何判断你是否要升级
 
-**本版本非必须升级，如果你的程序存在下面几个情况，可以尝试升级此版本。**
+**本版非必须升级，如果你的程序存在下面几个情况，可以尝试升级此版本。**
 
 * 对比其他相同配置的机器**挖矿效率低**的。
 * 磁盘老旧，IO太弱以至于**影响同步效率**的。
@@ -85,7 +89,7 @@ wallet
 
   * windows：在顶层菜单 [**帮助**->**关于SERO Wallet**]
 
-  [图]
+  ![image.png](https://upload-images.jianshu.io/upload_images/277023-eb709ef0c8c47af1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
   * Mac：在顶层菜单 [**SERO Wallet**->**关于SERO Wallet**]
 
@@ -104,8 +108,12 @@ wallet
 ### 3. 如果你碰到弹出菜单提示你升级
 
 * 就是下图这样的对话框
-  * **不想升级**的矿工按左侧的[XXX]
-  * **想要升级**的矿工按右侧的[XXX]
+
+  ![image.png](https://upload-images.jianshu.io/upload_images/277023-dff2c76a75d2f6e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+
+  * **不想升级**的矿工按左侧的 **[SKIP UPDATE]**
+  * **想要升级**的矿工按右侧的 **[DOWNLOAD NEW VERSION]**
+
 * 有两个要注意的地方
   * 自己需不需要升级，参考上面的说明 **[1. 需要升级的情况]**
   * 如果你的钱包**正在启动**
@@ -119,7 +127,7 @@ wallet
 
 * 检查你当前钱包的版本号
 * 如果不是当前最新的版本，关闭并重启钱包，会自动弹出升级提示。
-* 如果上一条步骤不成功，你可以
+* 如果上一步骤不成功，你可以（这么做最保险）
   * 卸载之前的钱包（这一步一定要做，windows上有覆盖安装无效）
     - 放心，卸载钱包不会清楚数据和账户文件。
   * 下载安装最新的钱包，安装后自然会更新最新的节点程序。
