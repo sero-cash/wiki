@@ -31,10 +31,10 @@ Wallet: 0.1.4
 
 ## 提交ID
 
-go-sero
-go-czero-import
-console
-wallet
+go-sero      35c3fcadeda949fecf6d3b80994df1cdc69b4a29
+go-czero-import  dbaf8d616f3b74eefdb5197bd07b6e405f3ea0be
+console  b752cb6ba78a052691add8d40876275730f99427
+wallet  9614518fd52951a44cbed28cb0955d4a25a3f3ec
 
 
 
@@ -54,17 +54,21 @@ wallet
 
 ### DARWIN
 
-
+https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.5.0-beta.r5-hotfix.3/gero-v0.5.0-beta.r5-hotfix.3-darwin-amd64.tar.gz
 
 ### LINUX3
+
+https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.5.0-beta.r5-hotfix.3/gero-v0.5.0-beta.r5-hotfix.3-linux-amd64-v3.tar.gz
 
 
 
 ### LINUX4
 
-
+https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.5.0-beta.r5-hotfix.3/gero-v0.5.0-beta.r5-hotfix.3-linux-amd64-v4.tar.gz
 
 ### WINDOWS
+
+https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.5.0-beta.r5-hotfix.3/gero-v0.5.0-beta.r5-hotfix.3-windows-amd64.zip
 
 
 
