@@ -1,4 +1,4 @@
-# SERO Miners' Guilds Award System
+# SERO Miners' Guilds Reward System
 
 ## How to Establish a Miners' Guild 
 

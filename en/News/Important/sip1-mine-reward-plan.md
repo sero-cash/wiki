@@ -1,4 +1,4 @@
-# SIP1: Bonus improvement plan (BETANET-R5 Release Content)
+# SIP1: Reward improvement plan (BETANET-R5 Release Content)
 
 ## Online Time
 
