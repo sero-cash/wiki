@@ -28,7 +28,7 @@ The total supply of SERO that will ever be is 1 billion, and the distribution is
 4. The distribution of 800 million SERO coins belonging to the Miners and miners' guild organizers mentioned in above point 2 is as follows:
 > a) 750 million SERO coins will be dug by miners and awarded to miners.
 > 
-> b) 0.5 billion SERO coins will be allocated to the president of the Association according to the ranking mechanism.
+> b) 50 million SERO coins will be allocated to the president of the Association according to the ranking mechanism.
 
 ## SERO Miners' Guilds Award System Rules
 
