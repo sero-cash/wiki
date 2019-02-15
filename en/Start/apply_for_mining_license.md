@@ -7,7 +7,7 @@
 ![img](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902/1681550229561_.pic_hd.jpg)
 
 2. Fill in the relevant information (* is required, the rest is optional)
-![img](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902/1691550229571_.pic_hd.jpg)
+![img](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902/13141677-d25ba5874b170818.png)
 
 3. After successful submission, such page will appear in the query.
 ![img](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902/1701550229578_.pic_hd.jpg)
