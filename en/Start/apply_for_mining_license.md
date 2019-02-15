@@ -23,7 +23,7 @@ The SERO team will process your application within 48 hours, and your email will
 1. Open the URL for self-service application for mining license: https://sero.cash/license/apply.html
 Drag the page to the bottom and click: Application records to enter the query page.
 
-![img](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902/1711550229586_.pic_hd.jpg)
+![img](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902/13141677-533693a328f3f5a7.png)
 
 2. Enter the public key address to be queried in the query box.
 
