@@ -43,4 +43,4 @@
 - **重要事件**
   - [SIP1：奖励改进计划](?file=News/Important/sip1-mine-reward-plan)
   - [矿工公会奖励计划](?file=News/Important/guild-award-plan)
-  - [SERO公会第一期奖励发放完毕](?file=the-first-phase-of-guild-awards)
+  - [SERO公会第一期奖励发放完毕](?file=News/Important/the-first-phase-of-guild-awards)
