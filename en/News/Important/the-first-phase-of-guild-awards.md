@@ -1,6 +1,8 @@
 # SERO Mining Guilds 001 Month Ranking
 
-`sero-important`
+`sero-importants`
+
+---
 
 Thank you for your recognition and support of the SERO project! Since the introduction of the guilds system by the SERO project, we have received enthusiastic response from the guild organizers! The SERO team has now calculated the first guild awards quota (statistic deadline: 0:00 on February 15, 2019, Beijing time), and the payment is completed! (note: Only the the guilds meeting the ranking standards will be published this time. The guild organizers who fails to meet the standards or has other questions can communicate with SERO team.)
 
