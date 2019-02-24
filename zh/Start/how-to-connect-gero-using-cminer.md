@@ -45,13 +45,12 @@
    * `YOUR_GERO_HOST_IP` 和 `PORT` 都是在第1步的时候为gero指定的参数值
    * --cpu=0 是让cminer自己选择矿工线程数，具体指定办法可以参考[如何使用矿工程序(cminer)连接矿池挖矿](file=mined-in-the-mine-pool)
 
-4. #### cminer在挖到块之后向gero提交结果 ![image_1d4fqrtbfpgp1gqhtai2no19mmm.png-68.6kB][1]
+4. #### cminer在挖到块之后向gero提交结果
+   ![image_1d4fqrtbfpgp1gqhtai2no19mmm.png-68.6kB][1]
 
-   **绿色：** 结果被接受
-
-   **红色：** 结果被拒绝
-
-   **蓝色：** 当前机器算力
+   * **绿色：** 结果被接受
+   * **红色：** 结果被拒绝
+   * **蓝色：** 当前机器算力
 
 
 
