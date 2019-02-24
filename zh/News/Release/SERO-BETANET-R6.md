@@ -80,7 +80,7 @@ wallet  24f8a59fb2ce311c74bde00dc5765d49128e886d
 - 算力大的矿工可以采用cminer直接连接gero挖矿，因为cminer非常轻，所以会很稳定。
   - 参考 [如何用矿工程序(cminer)连接gero进行SOLO挖矿](?file=Tutorial/how-to-evaluate-node-hashrate)
 - 算力较小的矿工可以采用cminer连接矿池挖矿，由矿池平衡收益。
-  - 参考 [如何用矿工程序(cminer)连接矿池挖矿](?file=Tutorial/how-to-evaluate-node-hashrate)
+  - 参考 [如何用矿工程序(cminer)连接矿池挖矿](?file=Start/mined-in-the-mine-pool)
 
 
 
