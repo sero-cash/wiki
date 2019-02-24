@@ -89,8 +89,8 @@ github地址：https://github.com/sero-cash/cminer/releases
 
 网盘地址：
 windows版本:https://pan.baidu.com/s/1R7RhQH34NDC-BB6VunXZgg  密码:00h1
-Mac版本:https://pan.baidu.com/s/1CrLSWBC9VBIynBXpD24r9Q  密码:0jvs
-Linux版本:https://pan.baidu.com/s/1hBhDjinK71QrdyFyLHirJw  密码:rs5z
+Mac版本:<https://pan.baidu.com/s/1mPmHQb6iwkDQNAMb2JEsMA>  密码:ik8v
+Linux版本:<https://pan.baidu.com/s/1b1PyugXd4Us6aEABtUZ2cw>  密码:s5e2
 
 
 

@@ -7,6 +7,7 @@
 - [钱包挖矿教程](?file=Start/mined-from-the-wallet)
 - [钱包挖矿问题收集](?file=Start/wallet-trouble-shooting-help)
 - [如何使用矿工程序(cminer)连接矿池挖矿](?file=Start/mined-in-the-mine-pool)
+- [如何用矿工程序(cminer)连接gero进行SOLO挖矿](?file=Start/how-to-connect-gero-using-cminer)
 
 ##### 教程
 
