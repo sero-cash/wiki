@@ -6,6 +6,7 @@
 - [gero挖矿教程](?file=Start/from-the-binary-package)
 - [钱包挖矿教程](?file=Start/mined-from-the-wallet)
 - [钱包挖矿问题收集](?file=Start/wallet-trouble-shooting-help)
+- [如何使用矿工程序(cminer)连接矿池挖矿](?file=Start/mined-in-the-mine-pool)
 
 ##### 教程
 
@@ -26,6 +27,7 @@
 ##### 最新动态
 
 - **产品发布**
+  - **[BETANET R6](?file=News/Release/SERO-BETANET-R6)**
   - [BETANET R5-HOTFIX.3](?file=News/Release/SERO-BETANET-R5-HOTFIX.3)
   - [BETANET R5-HOTFIX.1](?file=News/Release/SERO-BETANET-R5-HOTFIX.1)
   - [BETANET R5](?file=News/Release/SERO-BETANET-R5)
