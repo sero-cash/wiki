@@ -35,7 +35,7 @@ Wallet: 0.1.4
 
 go-sero      d1d65868407f2130a56707ffb986b9318940482f
 go-czero-import  6e1fa977c8accd913cea938e17e51e3aa7ac4cc3
-console  b752cb6ba78a052691add8d40876275730f99427
+console  329b34bb69f55424149d06abe0f0c493a2d7bdfa
 wallet  24f8a59fb2ce311c74bde00dc5765d49128e886d
 
 
@@ -45,10 +45,10 @@ wallet  24f8a59fb2ce311c74bde00dc5765d49128e886d
 > **The download address of binay packages：**
 > [https://github.com/sero-cash/go-sero/releases/tag/v0.6.0-beta.r6](https://github.com/sero-cash/go-sero/releases/tag/v0.6.0-beta.r6)
 >
-> gero-v0.6.0-beta.r6-darwin-amd64.tar.gz  _macos,  md5:_
-> gero-v0.6.0-beta.r6-linux-amd64-v3.tar.gz  _centos & ubuntu, md5:_
-> gero-v0.6.0-beta.r6-linux-amd64-v4.tar.gz  _for fedora, md5:_
-> gero-v0.6.0-beta.r6-windows-amd64.tar.gz  _windows, md5:_
+> gero-v0.6.0-beta.r6-darwin-amd64.tar.gz  _macos,  md5 :_4764db68d59f6b6558c4fa2140c45010
+> gero-v0.6.0-beta.r6-linux-amd64-v3.tar.gz  _centos & ubuntu, md5 : 7d924958cdbf4268b9340d83da1b0c2c_
+> gero-v0.6.0-beta.r6-linux-amd64-v4.tar.gz  _for fedora, md5 : a482509b5acf25f638524afae0ce9e96_
+> gero-v0.6.0-beta.r6-windows-amd64.tar.gz  _windows, md5 : 7ba7417b650b79d6341f34d9b8f95c7a_
 
 
 
@@ -56,19 +56,19 @@ wallet  24f8a59fb2ce311c74bde00dc5765d49128e886d
 
 ### DARWIN
 
-
+<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.6.0-beta.r6/gero-v0.6.0-beta.r6-darwin-amd64.tar.gz>
 
 ### LINUX3
 
-
+<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.6.0-beta.r6/gero-v0.6.0-beta.r6-linux-amd64-v3.tar.gz>
 
 ### LINUX4
 
-
-
-
+<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.6.0-beta.r6/gero-v0.6.0-beta.r6-linux-amd64-v4.tar.gz>
 
 ### WINDOWS
+
+<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.6.0-beta.r6/gero-v0.6.0-beta.r6-windows-amd64.zip>
 
 
 
