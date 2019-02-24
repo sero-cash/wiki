@@ -5,6 +5,7 @@
 - [From Source Code -- base on CentOS7](?file=Start/from-the-sourcecode-base-on-centos7)
 - [How to mine using gero](?file=Start/from-the-binary-package)
 - [How to mine using wallet](?file=Start/mined-from-the-wallet)
+- [How to mine using pool](?file=Start/mined-in-the-mine-pool)
 - [Summary of Wallet Problems](?file=Start/wallet-trouble-shooting-help)
 
 ##### Tutorial
