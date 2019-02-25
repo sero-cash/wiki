@@ -81,11 +81,17 @@
 
 ## 三、下载挖矿软件
 
-##### 下载办法1
+#### Windows版本安装C++运行库
+
+去微软官网这个页面下载安装：https://www.microsoft.com/zh-cn/download/details.aspx?id=48145
+
+#### 下载cminer
+
+* ##### 下载办法1
 
 github地址：https://github.com/sero-cash/cminer/releases
 
-##### 下载办法2
+* ##### 下载办法2
 
 网盘地址：
 windows版本:https://pan.baidu.com/s/1R7RhQH34NDC-BB6VunXZgg  密码:00h1
