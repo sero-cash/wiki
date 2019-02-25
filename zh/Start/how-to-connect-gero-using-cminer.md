@@ -30,11 +30,11 @@
 
 2. #### 启动gero，并且设置好矿工帐号，以及设置好license。
 
-   * 具体操作，请参考[SERO挖矿教程](file=Start/from-the-binary-package)
+   * 具体操作，请参考[SERO挖矿教程](?file=Start/from-the-binary-package)
 
    * 唯一不同的是不需要开启miner.start()
    * 注意：采用cminer连接gero挖矿的算力(HashRate)，在gero控制台无法显示出来，只能通过cminer的输出查看。
-     * 具体如何查看，请参考[如何使用矿工程序(cminer)连接矿池挖矿](file=Start/mined-in-the-mine-pool)
+     * 具体如何查看，请参考[如何使用矿工程序(cminer)连接矿池挖矿](?file=Start/mined-in-the-mine-pool)
 
 3. #### 启动cminer，参数需要指定为：
 
@@ -43,7 +43,7 @@
    ```
 
    * `YOUR_GERO_HOST_IP` 和 `PORT` 都是在第1步的时候为gero指定的参数值
-   * --cpu=0 是让cminer自己选择矿工线程数，具体指定办法可以参考[如何使用矿工程序(cminer)连接矿池挖矿](file=Start/mined-in-the-mine-pool)
+   * --cpu=0 是让cminer自己选择矿工线程数，具体指定办法可以参考[如何使用矿工程序(cminer)连接矿池挖矿](?file=Start/mined-in-the-mine-pool)
 
 4. #### cminer在挖到块之后向gero提交结果
    ![image_1d4fqrtbfpgp1gqhtai2no19mmm.png-68.6kB][1]
