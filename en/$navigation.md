@@ -6,6 +6,7 @@
 - [How to mine using gero](?file=Start/from-the-binary-package)
 - [How to mine using wallet](?file=Start/mined-from-the-wallet)
 - [How to mine using pool](?file=Start/mined-in-the-mine-pool)
+- [How to mining solo using cminer](?file=Start/how-to-connect-gero-using-cminer)
 - [Summary of Wallet Problems](?file=Start/wallet-trouble-shooting-help)
 
 ##### Tutorial
