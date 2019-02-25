@@ -38,7 +38,7 @@
    ```
 
    * `YOUR_GERO_HOST_IP` and `PORT` are the parameter values specified for gero in step 1.
-   * --cpu=0 is to let cminer choose the number of mining threads, please refer to [Mining using SERO opensource mining pool](file=mined-in-the-mine-pool)
+   * --cpu=0 is to let cminer choose the number of mining threads, please refer to [Mining using SERO opensource mining pool](file=Start/mined-in-the-mine-pool)
 
 4. #### The logs of cminer submits a result to the gero after minging the block
    ![image_1d4fqrtbfpgp1gqhtai2no19mmm.png-68.6kB][1]
