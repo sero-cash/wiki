@@ -112,7 +112,7 @@ wallet  24f8a59fb2ce311c74bde00dc5765d49128e886d
 
   - For example, in the following example, the wallet version is 0.1.4, while the node version is 0.6.0-beta.r6, which is lower than the current latest version number.
 
-  ![image.png](https://upload-images.jianshu.io/upload_images/277023-469aa09e36dd723e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
+  ![image_1d4kvaugfjar18131f5v1hkdm7h9.png-33.3kB](http://static.zybuluo.com/erlenzi-han/69qajk0nmal82z6bpqv5e972/image_1d4kvaugfjar18131f5v1hkdm7h9.png)
 
   - The difference between a wallet and a node is that the wallet is just your interface, and the real mining is the node program, which is gero.
 

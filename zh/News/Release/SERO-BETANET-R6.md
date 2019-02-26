@@ -112,7 +112,7 @@ wallet  24f8a59fb2ce311c74bde00dc5765d49128e886d
 
   - 比如下图的例子，钱包的版本是0.1.4，而节点的版本是0.6.0-beta.r6，都低于当前最新的版本号。
 
-  ![image.png](https://upload-images.jianshu.io/upload_images/277023-469aa09e36dd723e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
+  ![image_1d4kvaugfjar18131f5v1hkdm7h9.png-33.3kB](http://static.zybuluo.com/erlenzi-han/69qajk0nmal82z6bpqv5e972/image_1d4kvaugfjar18131f5v1hkdm7h9.png)
 
   - 钱包和节点的区别是，钱包只是你的操作界面，而真正挖矿的是节点程序，也就是gero。
 
@@ -146,10 +146,6 @@ wallet  24f8a59fb2ce311c74bde00dc5765d49128e886d
     - 放心，卸载钱包不会清楚数据和账户文件。
     - 不管如何，请备份好keystore文件夹。
   - 下载安装最新的钱包，安装后自然会更新最新的节点程序。
-
-
-
-
 
 
 
