@@ -22,7 +22,7 @@ Wallet data folder, used to store wallet configuration data and log files
 Block data folder, used to store blockchain data and wallet account files
 - Windows `C:\Users\%username%\AppData\Roaming\Sero`
 - macOS `~/Library/Sero`
-- Linux `~/.config/Sero`
+- Linux `~/.sero`
 
 ### 2. Start the Wallet
 > - The first time you start the wallet, the nodes are automatically looked up.
