@@ -175,17 +175,17 @@ The proportion of miner's total hashrate to mining pool's all hashrate under an 
    * The current mine pool is a trial mine pool built by the SERO team and will only operate for a period of time.
    * Mine pool is open source, so mining guilds and individuals with appropriate technical capabilities can build mining pool for community use.
 
-[1]: http://static.zybuluo.com/erlenzi-han/xbcort74b65ltq4ot8fdw25o/wallet-relase.jpg
-[2]: http://static.zybuluo.com/erlenzi-han/01z4im278qsy43b8la0afoj0/wallet_address.jpg
-[3]: http://static.zybuluo.com/erlenzi-han/cogd2qoejpx99yzlt0j2y376/w-c.jpg
-[4]: http://static.zybuluo.com/erlenzi-han/gktys0p12mdlkqyj3dv87ess/w_s.jpg
-[5]: http://static.zybuluo.com/erlenzi-han/qjz0g269toxb7wwzpl3yriat/image_1d4feefmll9iv52drql5mebn39.png
-[6]: http://static.zybuluo.com/erlenzi-han/ceu9tw9b0qiva0jaud4avw1t/m_s.jpg
-[7]: http://static.zybuluo.com/erlenzi-han/rrptmffhy0c1iz10ma1c32x7/c_t.jpg
-[8]: http://static.zybuluo.com/erlenzi-han/9987edgor92b10y48uqzqwq8/pool-serach.jpg
-[9]: http://static.zybuluo.com/erlenzi-han/wjs6n45ak7deyi4xu1kwy3e5/miner.jpg
-[10]: http://static.zybuluo.com/erlenzi-han/dyiivwrsxm7bmr8gvwmrawj7/miner-amount.jpg
-[11]: http://static.zybuluo.com/erlenzi-han/uif7u0351rqd4a39aux6tb2s/mac.jpg
-[12]: http://static.zybuluo.com/erlenzi-han/7q5z8wepeq3somei3k1itizy/home.jpg
-[13]: http://static.zybuluo.com/erlenzi-han/gct76u6iz05zbkcnac8h9yrk/home-fee.jpg
-[14]: http://static.zybuluo.com/erlenzi-han/j96ni2266at3wm98a5ztsu4r/image_1d4flc8fb1re74ela7h10jmnfm9.png
+[1]: http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902/wallet-relase.jpg
+[2]: http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902/wallet_address.jpg
+[3]: http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902/w-c.jpg
+[4]: http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902/w_s.jpg
+[5]: http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902/image_1d4feefmll9iv52drql5mebn39.png
+[6]: http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902/m_s.jpg
+[7]: http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902/c_t.jpg
+[8]: http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902/pool-serach.jpg
+[9]: http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902/miner.jpg
+[10]: http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902/miner-amount.jpg
+[11]: http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902/mac.jpg
+[12]: http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902/home.jpg
+[13]: http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902/home-fee.jpg
+[14]: http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902/image_1d4flc8fb1re74ela7h10jmnfm9.png

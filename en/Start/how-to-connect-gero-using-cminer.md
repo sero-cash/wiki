@@ -47,5 +47,5 @@
    * **In the red box:** The result is rejected
    * **In the blue box:** The hashrate of current machine
 
-[1]: http://static.zybuluo.com/erlenzi-han/lmb61zmh57gw5zt9nmf5wbb3/image_1d4fqrtbfpgp1gqhtai2no19mmm.png
+[1]: http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902/image_1d4fqrtbfpgp1gqhtai2no19mmm.png
 
