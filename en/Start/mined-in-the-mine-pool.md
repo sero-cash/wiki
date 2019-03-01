@@ -77,7 +77,7 @@ Block data folder, used to store blockchain data and wallet account files
 
 Install the wallet and open the wallet to create a wallet account. The red box in the figure below is the wallet address, copy the address.
 
->  ![image.png](https://upload-images.jianshu.io/upload_images/13141677-4d58b7fe97dee23b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+>  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902//13141677-4d58b7fe97dee23b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 ### Download Mining Client

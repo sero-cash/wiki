@@ -84,17 +84,17 @@ https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.5.0-beta.r5-h
 
   * Windows: in the top menu [**Help**->**About SERO Wallet**]
 
-  ![image.png](https://upload-images.jianshu.io/upload_images/277023-eb709ef0c8c47af1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
+  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902//277023-eb709ef0c8c47af1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
   * Mac: in the top menu [**Help**->**About SERO Wallet**]
 
-  ![image.png](https://upload-images.jianshu.io/upload_images/277023-011ac37a052914ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
+  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902//277023-011ac37a052914ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
 * The pop-up dialog box has current wallet version information and node information.
 
   * For example, in the following example, the wallet version is 0.1.3, while the node version is 0.5.0-beta.r5-hotfix.2, which is lower than the current latest version number.
 
-  ![image.png](https://upload-images.jianshu.io/upload_images/277023-469aa09e36dd723e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
+  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902//277023-469aa09e36dd723e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
   * The difference between a wallet and a node is that the wallet is just your interface, and the real mining is the node program, which is gero.
 
@@ -102,7 +102,7 @@ https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.5.0-beta.r5-h
 
 * Is the dialog shown below
 
-  ![image.png](https://upload-images.jianshu.io/upload_images/277023-dff2c76a75d2f6e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902//277023-dff2c76a75d2f6e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
   * Miners who **do not want to upgrade** press **[SKIP UPDATE]** on the left.
   * Miners who **want to upgrade** press **[DOWNLOAD NEW VERSION]** on the right.

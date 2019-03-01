@@ -102,11 +102,11 @@ wallet  24f8a59fb2ce311c74bde00dc5765d49128e886d
 
   - Windows: in the top menu [**Help**->**About SERO Wallet**]
 
-  ![image.png](https://upload-images.jianshu.io/upload_images/277023-eb709ef0c8c47af1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
+  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902//277023-eb709ef0c8c47af1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
   - Mac: in the top menu [**Help**->**About SERO Wallet**]
 
-  ![image.png](https://upload-images.jianshu.io/upload_images/277023-011ac37a052914ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
+  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902//277023-011ac37a052914ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
 - The pop-up dialog box has current wallet version information and node information.
 
@@ -120,7 +120,7 @@ wallet  24f8a59fb2ce311c74bde00dc5765d49128e886d
 
 - Is the dialog shown below
 
-  ![image.png](https://upload-images.jianshu.io/upload_images/277023-dff2c76a75d2f6e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902//277023-dff2c76a75d2f6e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
   - Miners who **do not want to upgrade** press **[SKIP UPDATE]** on the left.
   - Miners who **want to upgrade** press **[DOWNLOAD NEW VERSION]** on the right.
