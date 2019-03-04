@@ -24,7 +24,7 @@
 - Earnings: <http://pgpool.chainpower.io:8082>
 
 
-## 深圳公会矿池
+## Shengzhen Guild Pool
 
 - Site:  Hangzhou, China
 - Fee: 3%, Settlement: 4-hours
