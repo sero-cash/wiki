@@ -1,0 +1,36 @@
+# SERO Mine Pool List
+
+## Offical Pool
+
+- Site: Guangzhou, China
+- Fee: 5%, Settlement: 12-hours
+- Address: <http://111.230.118.254:9999>
+- Earnings: <http://203.195.255.129:8082> 
+
+
+## Ø•M•G Guild Pool
+
+- Site: Germany
+- Fee: 1%, Settlement: 12-hours
+- Address: <http://www.0-m-g.com:9999>
+- Earnings:  <http://www.0-m-g.com:8082>
+
+
+## Pangu Guild Pool
+
+- Site: USA
+- Fee: 0.1%, Settlement: 1-hours
+- Address: <http://pgpool.chainpower.io:9999>
+- Earnings: <http://pgpool.chainpower.io:8082>
+
+
+## 深圳公会矿池
+
+- Site:  Hangzhou, China
+- Fee: 3%, Settlement: 4-hours
+- Address：
+  - <http://121.196.218.173:9999>
+  - <http://www.sero-pool.cn:9999>
+- Earnings：
+  - <http://121.196.218.173:8082>
+  - <http://www.sero-pool.cn:8082>

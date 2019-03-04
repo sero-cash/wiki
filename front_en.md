@@ -8,7 +8,7 @@
 
 
 
-## [I'm a Miner](/en/index.html?file=Start/from-the-binary-package)
+## [I'm a Miner](/en/index.html?file=Start/mined-in-the-mine-pool)
 
 
 

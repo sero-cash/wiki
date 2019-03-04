@@ -10,7 +10,7 @@
 
 
 
-## [我是矿工](/zh/index.html?file=Start/from-the-binary-package)
+## [我是矿工](/zh/index.html?file=Start/mined-in-the-mine-pool)
 
 
 

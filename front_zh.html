@@ -9,15 +9,16 @@ iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
 .in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
 #write.first-line-indent p { text-indent: 2em; }
 #write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
 #write.first-line-indent li { margin-left: 2em; }
 .for-image #write { padding-left: 8px; padding-right: 8px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
-.typora-export .footnote-line, .typora-export p { white-space: pre-wrap; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
 @media screen and (max-width: 500px) { 
   body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
   .CodeMirror-sizer { margin-left: 0px !important; }
   .CodeMirror-gutters { display: none !important; }
 }
@@ -49,7 +50,7 @@ figure > table { margin: 0px !important; }
 tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
-table.md-table td { min-width: 80px; }
+table.md-table td { min-width: 32px; }
 .CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
 .CodeMirror { text-align: left; }
 .CodeMirror-placeholder { opacity: 0.3; }
@@ -80,10 +81,10 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 #write .footnote-line { white-space: pre-wrap; }
 @media print { 
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid-page; break-before: avoid-page; }
-  #write { margin-top: 0px; border-color: transparent !important; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
   html.blink-to-pdf { font-size: 13px; }
-  .typora-export #write { padding-left: 1cm; padding-right: 1cm; padding-bottom: 0px; break-after: avoid-page; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid-page; }
   .typora-export #write::after { height: 0px; }
   @page { margin: 20mm 0px; }
 }
@@ -129,6 +130,7 @@ kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 
 code { text-align: left; }
 a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
 .md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
 .md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
 .MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
 .MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
@@ -146,42 +148,11 @@ iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
 
 
-:root {
-	--rawblock-edit-panel-bd: #e5e5e5;
-}
-
 /* meyer reset -- http://meyerweb.com/eric/tools/css/reset/ , v2.0 | 20110126 | License: none (public domain) */
 
 @include-when-export url(https://fonts.loli.net/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext);
 
 /* =========== */
-
-@font-face {
-    font-family: 'PT Serif';
-    font-style: normal;
-    font-weight: normal;
-    src: local('PT Serif'), local('PTSerif-Regular'), url('file:///Users/tangzhige/Library/Application%20Support/abnerworks.Typora/themes/newsprint/pt-serif-v9-latin-regular.woff') format('woff');
-}
-@font-face {
-    font-family: 'PT Serif';
-    font-style: italic;
-    font-weight: normal;
-    src: local('PT Serif'), local('PTSerif-Italic'), url('file:///Users/tangzhige/Library/Application%20Support/abnerworks.Typora/themes/newsprint/pt-serif-v9-latin-italic.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'PT Serif';
-    font-style: normal;
-    font-weight: bold;
-    src: local('PT Serif'), local('PTSerif-Bold'), url('file:///Users/tangzhige/Library/Application%20Support/abnerworks.Typora/themes/newsprint/pt-serif-v9-latin-700.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'PT Serif';
-    font-style: italic;
-    font-weight: bold;
-    src: local('PT Serif'), local('PTSerif-BoldItalic'), url('file:///Users/tangzhige/Library/Application%20Support/abnerworks.Typora/themes/newsprint/pt-serif-v9-latin-700italic.woff') format('woff');
-}
 
 :root {
 	--active-file-bg-color: #dadada;
@@ -189,9 +160,11 @@ iframe { max-width: 100%; width: 100%; border: none; }
 	--active-file-text-color: white;
 	--bg-color: #f3f2ee;
 	--text-color: #1f0909;
+	--control-text-color: #444;
+	--rawblock-edit-panel-bd: #e5e5e5;
 
 	--select-text-bg-color: rgba(32, 43, 51, 0.63);
-    --select-text-font-color: white;
+  --select-text-font-color: white;
 }
 
 pre {
@@ -374,12 +347,18 @@ td {
 code,
 .md-fences {
 	background-color: #dadada;
-	padding-left: 1ch;
-	padding-right: 1ch;
 }
+
+code {
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
 .md-fences {
 	margin-left: 2em;
 	margin-bottom: 3em;
+	padding-left: 1ch;
+	padding-right: 1ch;
 }
 
 pre,
@@ -398,7 +377,7 @@ h1 {
 
 p + ul,
 p + ol{
-	margin-top: -1em;
+	margin-top: .5em;
 }
 
 h3 + ul,
@@ -426,10 +405,6 @@ li li ol>li{
 	list-style-type: lower-roman;
 }
 
-li > blockquote {
-	margin-bottom: 0;
-}
-
 h2,
 h3 {
 	margin-bottom: .75em;
@@ -447,6 +422,12 @@ blockquote {
 	border-color: #bababa;
 	color: #656565;
 }
+
+blockquote ul,
+blockquote ol {
+	margin-left:0;
+}
+
 .ty-table-edit {
 	background-color: transparent;
 }
@@ -715,10 +696,16 @@ input {
 	border-color: #e5e5e5;
 }
 
- .typora-export p, .typora-export .footnote-line {white-space: normal;} 
+/* https://github.com/typora/typora-issues/issues/2046 */
+.os-windows-7 strong,
+.os-windows-7 strong  {
+	font-weight: 760;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
 </style>
 </head>
 <body class='typora-export' >
-<div  id='write'  class = 'is-mac'><p><a href='/index.html'>[ENGLISH]</a></p><h1><a name='header-n26' class='md-header-anchor '></a><strong>欢迎来到SERO的世界</strong></h1><p>&nbsp;</p><p><a href='https://v.qq.com/x/page/s0792e921ok.html'><img src='https://upload-images.jianshu.io/upload_images/277023-0ddf4037f8723b42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600' alt='SERO.CASH' referrerPolicy='no-referrer' /></a></p><h2><a name='header-n3' class='md-header-anchor '></a><a href='/zh/index.html?file=home-Home'>SERO是什么</a></h2><p>&nbsp;</p><h2><a name='header-n5' class='md-header-anchor '></a><a href='/zh/index.html?file=Start/from-the-binary-package'>我是矿工</a></h2><p>&nbsp;</p><h2><a name='header-n7' class='md-header-anchor '></a><a href='/zh/index.html?file=Tutorial/principle-of-anonymous-token'>我是开发者</a></h2><p>&nbsp;</p><h2><a name='header-n75' class='md-header-anchor '></a><a href='/zh/index.html?file=Innovation/what-is-innovation-guide'>我是Seror</a></h2><p>&nbsp;</p></div>
+<div  id='write'  class = 'is-mac'><p><a href='/index.html'>[ENGLISH]</a></p><h1><a name='header-n2' class='md-header-anchor '></a><strong>欢迎来到SERO的世界</strong></h1><p>&nbsp;</p><p><a href='https://v.qq.com/x/page/s0792e921ok.html'><img src='https://upload-images.jianshu.io/upload_images/277023-0ddf4037f8723b42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600' alt='SERO.CASH' referrerPolicy='no-referrer' /></a></p><h2><a name='header-n5' class='md-header-anchor '></a><a href='/zh/index.html?file=home-Home'>SERO是什么</a></h2><p>&nbsp;</p><h2><a name='header-n7' class='md-header-anchor '></a><a href='/zh/index.html?file=Start/mined-in-the-mine-pool'>我是矿工</a></h2><p>&nbsp;</p><h2><a name='header-n9' class='md-header-anchor '></a><a href='/zh/index.html?file=Tutorial/principle-of-anonymous-token'>我是开发者</a></h2><p>&nbsp;</p><h2><a name='header-n11' class='md-header-anchor '></a><a href='/zh/index.html?file=Innovation/what-is-innovation-guide'>我是Seror</a></h2><p>&nbsp;</p></div>
 </body>
 </html>
