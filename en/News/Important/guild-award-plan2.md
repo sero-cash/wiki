@@ -201,5 +201,6 @@ Users who deploy the entire site of the SERO public IP are rewarded with 3000 SE
 
 Note: If the president of the guild needs expansion, please contact the SERO official customer service (Chinese customer contact information is micro signal: SERO9413, English customer service contact method is Telegram ID: @SERO_Aakash), and submit the guild reward system, contact information and other information, SERO team will recommend your guild to the new miners.
 
-Thanks to all SERO community members for their support. At present, SERO team is continuously working towards SERO Ecology development and will be revealed very soon to the world!
+**The community has always been an important force driving the innovation of the SERO project. The SERO project team fully listened to the voices of the community members and constantly updated the concept and innovation mechanism! In addition, users of the SERO Association, the mining pool, and the public network IP node are all obliged to provide necessary support for the SERO project team. We sincerely hope that the community members will actively participate in the SERO ecological construction, build and share, and push the SERO. To the world!**
+
 
