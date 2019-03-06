@@ -47,4 +47,5 @@
   - [SIP1：Bonus improvement plan](?file=News/Important/sip1-mine-reward-plan)
   - [SERO Mining Association Award System](?file=News/Important/guild-award-plan)
   - [SERO Mining Guilds 001 Month Ranking](?file=News/Important/the-first-phase-of-guild-awards)
+  - [SERO Association's Second Reward Scheme and Mine support policy (tentative)](?file=News/Important/guild-award-plan2)
 
