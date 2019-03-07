@@ -197,6 +197,14 @@ In order to build the SERO community ecology, the SERO project team decided to p
 
 Users who deploy the entire site of the SERO public IP are rewarded with 3000 SEROs per cycle. For details, add the official SERO customer service consultation!
 
+1. What is the SERO node?
+- [x] a gero node with a public network ip;
+
+2. What conditions do you need?
+- [x] (1) Data synchronization;
+- [x] (2) node discovery;
+- [x] (3) Cooperate with official updates;
+- [x] (4) The maximum link peer setting is at least 300;
 
 
 Note: If the president of the guild needs expansion, please contact the SERO official customer service (Chinese customer contact information is micro signal: SERO9413, English customer service contact method is Telegram ID: @SERO_Aakash), and submit the guild reward system, contact information and other information, SERO team will recommend your guild to the new miners.
