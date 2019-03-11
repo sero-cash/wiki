@@ -36,11 +36,10 @@
 
 ## Pangu Guild Pool
 
-- Site: USA
+- Site: China
 - Fee: 0.1%, Settlement: 1-hours
-- Address: <http://118.25.80.42:9999>
-- Earnings: <http://118.25.80.42:8082>
-
+- Address: <hhttp://118.25.80.42:9999>
+- Earnings: <http://111.231.59.54:8082>
 
 
 
