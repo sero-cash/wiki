@@ -38,8 +38,9 @@
 
 - Site: USA
 - Fee: 0.1%, Settlement: 1-hours
-- Address: <http://pgpool.chainpower.io:9999>
-- Earnings: <http://pgpool.chainpower.io:8082>
+- Address: <http://118.25.80.42:9999>
+- Earnings: <http://118.25.80.42:8082>
+
 
 
 
