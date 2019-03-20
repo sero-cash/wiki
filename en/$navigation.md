@@ -48,4 +48,5 @@
   - [SERO Mining Association Award System](?file=News/Important/guild-award-plan)
   - [SERO Mining Guilds 001 Month Ranking](?file=News/Important/the-first-phase-of-guild-awards)
   - [SERO Association's Second Reward Scheme and Mine support policy (tentative)](?file=News/Important/guild-award-plan2)
+  - [2nd SERO Mining Guild & 1st Mine Pool Awards Distribution](?file=News/Important/the-second-phase-of-guild-awards)
 
