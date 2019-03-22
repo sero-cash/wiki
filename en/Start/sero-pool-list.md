@@ -19,13 +19,16 @@
 ## Shengzhen Guild Pool
 
 - Site:  Hangzhou, China
-- Fee: 3%, Settlement: 4-hours
+- Fee: 3%, Settlement: 2 hours
 - Address：
-  - <http://121.196.218.173:9999>
+  - <http://www.sero-pool.com:9999>
   - <http://www.sero-pool.cn:9999>
 - Earnings：
-  - <http://121.196.218.173:8082>
-  - <http://www.sero-pool.cn:8082>
+  - <http://www.sero-pool.top:8082>  (English)
+  - <http://www.sero-pool.com:8082> (中文)
+  - <http://www.sero-pool.cn:8082>  (中文)
+  
+  
 
 ## The First Guild Pool
 
