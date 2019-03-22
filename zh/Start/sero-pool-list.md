@@ -17,12 +17,15 @@
 * 费率3%，4小时结算一次
 
 * 矿池地址：
-  * <http://121.196.218.173:9999>
+  * <http://www.sero-pool.com:9999>
   * <http://www.sero-pool.cn:9999>
 
 * 收益查询地址：
-  * <http://121.196.218.173:8082>
-  * <http://www.sero-pool.cn:8082>
+  * <http://www.sero-pool.top:8082>  (英文)
+  * <http://www.sero-pool.com:8082> (中文)
+  * <http://www.sero-pool.cn:8082>  (中文)
+  
+  费率3%，0.5个SERO起支付，2小时结算一次。
 
 
 
