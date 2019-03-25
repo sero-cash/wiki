@@ -30,6 +30,7 @@
 
 * 地点：德国
 * 费率1%，12小时结算一次
+*Ø•M•G 公会矿工交流群：https://discordapp.com/invite/kqenXFn
 
 * Address: <http://www.0-m-g.com:9999>
 
