@@ -12,6 +12,7 @@
 
 - Site: Germany
 - Fee: 1%, Settlement: 12-hours
+- Ø•M•G Guild Miners Exchange Group：<https://discordapp.com/invite/kqenXFn>
 - Address: <http://www.0-m-g.com:9999>
 - Earnings:  <http://www.0-m-g.com:8082>
 
