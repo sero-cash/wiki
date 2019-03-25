@@ -4,7 +4,7 @@
 
 - Site: Guangzhou, China
 - Fee: 5%, Settlement: 12-hours
-- Offical pool Miners Exchange Group：<https://discordapp.com/invite/kqenXFn>
+- Offical pool Miners Exchange Group：<https://discord.gg/xZREspF>
 - Address: <http://111.230.118.254:9999>
 - Earnings: <http://203.195.255.129:8082> 
 
