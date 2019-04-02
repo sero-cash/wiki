@@ -1,6 +1,6 @@
 # SERO Mine Pool List
 
-## Offical Pool
+## Official Pool
 
 - Site: Guangzhou, China
 - Fee: 5%, Settlement: 12-hours
