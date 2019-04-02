@@ -50,5 +50,6 @@
   - [矿工公会奖励计划](?file=News/Important/guild-award-plan)
   - [SERO公会第一期奖励发放完毕](?file=News/Important/the-first-phase-of-guild-awards)
   - [SERO公会第二期奖励计划及矿池扶持政策（暂定）](?file=News/Important/guild-award-plan2)
+  - [SERO公会第二期奖励计划及矿池扶持政策（暂定）](?file=News/Important/guild-award-plan3)
   - [SERO公会第002期&矿池第001期奖励发放公示](?file=News/Important/the-second-phase-of-guild-awards)
   
