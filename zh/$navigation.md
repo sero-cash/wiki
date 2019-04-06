@@ -29,6 +29,7 @@
 ##### 最新动态
 
 - **产品发布**
+  - [BETANET R7](?file=News/Release/SERO-BETANET-R7)
   - [BETANET R6](?file=News/Release/SERO-BETANET-R6)
   - [BETANET R5-HOTFIX.3](?file=News/Release/SERO-BETANET-R5-HOTFIX.3)
   - [BETANET R5-HOTFIX.1](?file=News/Release/SERO-BETANET-R5-HOTFIX.1)
@@ -52,4 +53,4 @@
   - [SERO公会第二期奖励计划及矿池扶持政策（暂定）](?file=News/Important/guild-award-plan2)
   - [SERO公会第三期奖励计划及矿池扶持政策（暂定）](?file=News/Important/guild-award-plan3)
   - [SERO公会第002期&矿池第001期奖励发放公示](?file=News/Important/the-second-phase-of-guild-awards)
-  
+
