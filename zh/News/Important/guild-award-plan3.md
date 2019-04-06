@@ -10,8 +10,6 @@
 
 #### （1）公会会长资格：发送会长公钥地址+公会名称到邮箱：license@sero.vip；
 
-![image.png](https://upload-images.jianshu.io/upload_images/13141677-82fc8ccbca33bf7b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
 #### （2）申请公会审核通过后，请添加SERO官方客服（微信号：SERO9413）进入公会会长联盟群（备注：XX公会会长），同时需要邀请官方客服进入公会群（可以是：微信，qq，telegram，discord）并保证是真实矿工；
 
 #### （3）参与排名的公会最低资格：至少包含10个以上有效会员，即每个会员的pk在本周期内至少挖出一个区块，会员可以启用license许可挖矿或者接入矿池挖矿；
@@ -33,6 +31,7 @@
 
 #### （1）访问https://sero.cash/license/apply.html 输入邮箱、钱包地址、要加入的公会ID，提交即可。
 
+![image.png](https://upload-images.jianshu.io/upload_images/13141677-82fc8ccbca33bf7b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 #### （2）公会转会流程
 
