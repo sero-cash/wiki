@@ -34,10 +34,10 @@ Wallet: 0.1.5
 
 ## 提交ID
 
-go-sero      
-go-czero-import  
-console  
-wallet  
+go-sero      9774095fc715e2cce171621b5d2dd4ace56b7fe5
+go-czero-import  3e8183ec372528430cb2aa363c79051d2b3c1097
+console  329b34bb69f55424149d06abe0f0c493a2d7bdfa
+wallet  24f8a59fb2ce311c74bde00dc5765d49128e886d
 
 
 
@@ -46,10 +46,10 @@ wallet
 > **二进制包下载地址：**
 > [https://github.com/sero-cash/go-sero/releases/tag/v0.7.0-beta.r7](https://github.com/sero-cash/go-sero/releases/tag/v0.7.0-beta.r7)
 >
-> gero-v0.6.0-beta.r6-darwin-amd64.tar.gz  macos,  md5 :
-> gero-v0.6.0-beta.r6-linux-amd64-v3.tar.gz  centos & ubuntu, md5 : 
-> gero-v0.6.0-beta.r6-linux-amd64-v4.tar.gz  for fedora, md5 : 
-> gero-v0.6.0-beta.r6-windows-amd64.tar.gz  windows, md5 : 
+> gero-v0.6.0-beta.r6-darwin-amd64.tar.gz  macos,  md5 :c8730e6b6778384b0dcbf96d83b9e2ff
+> gero-v0.6.0-beta.r6-linux-amd64-v3.tar.gz  centos & ubuntu, md5 : b5e4c7384acfbe34d401edd311bcfc70
+> gero-v0.6.0-beta.r6-linux-amd64-v4.tar.gz  for fedora, md5 : e694ee18326d0b8133734980130e7dad
+> gero-v0.6.0-beta.r6-windows-amd64.tar.gz  windows, md5 : 0900e443d927e7b81a56a321562fe8d4
 
 
 
@@ -57,19 +57,19 @@ wallet
 
 ### DARWIN
 
-<>
+<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.0-beta.r7/gero-v0.7.0-beta.r7-darwin-amd64.tar.gz>
 
 ### LINUX3
 
-<>
+<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.0-beta.r7/gero-v0.7.0-beta.r7-linux-amd64-v3.tar.gz>
 
 ### LINUX4
 
-<>
+<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.0-beta.r7/gero-v0.7.0-beta.r7-linux-amd64-v4.tar.gz>
 
 ### WINDOWS
 
-<>
+<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.0-beta.r7/gero-v0.7.0-beta.r7-windows-amd64.zip>
 
 
 
