@@ -2,13 +2,13 @@
 
 ## Attention
 
-  - This update will be soft forked in block 598567. 
+- This update will be soft forked in block 606006. 
 
-    **Be sure to upgrade the full node (gero) and wallet program (SERO Wallet) to the latest version **
+  **Be sure to upgrade the full node (gero) and wallet program (SERO Wallet) to the latest version **
 
-      - Unupdated full nodes and wallets will not be able to properly synchronize blocks after 598567.
-      - The full node program (gero) of the mine pool needs to be upgraded.
-      - Mine pool program and cminer procedures do not need to be upgraded
+  - Unupdated full nodes and wallets will not be able to properly synchronize blocks after 606006.
+  - The full node program (gero) of the mine pool needs to be upgraded.
+  - Mine pool program and cminer procedures do not need to be upgraded
 
 
 
@@ -20,7 +20,7 @@ BetaNet-R7
 
 ## Version Number
 
-Gero: v0.7.0-beta.r7
+Gero: v0.7.0-beta.r7-hotfix.1
 
 Wallet: 0.1.5
 
@@ -37,10 +37,10 @@ Wallet: 0.1.5
 
 ## Commit ID
 
-go-sero      9774095fc715e2cce171621b5d2dd4ace56b7fe5
-go-czero-import  3e8183ec372528430cb2aa363c79051d2b3c1097
-console  329b34bb69f55424149d06abe0f0c493a2d7bdfa
-wallet  24f8a59fb2ce311c74bde00dc5765d49128e886d
+go-sero      87da4e0efb8f80340931cb714bcaa6526faf5d27
+go-czero-import  467c7953127b649bfbf90adcb8a4d801d8db2900
+console  d3c17dfac206642f03b1ddda4d8bcca9c636bf0e
+wallet  fff15b4e5661bdce8165336a9178b2a0d859767c
 
 
 
@@ -49,10 +49,10 @@ wallet  24f8a59fb2ce311c74bde00dc5765d49128e886d
 > **The download address of binay packages:**
 > [https://github.com/sero-cash/go-sero/releases/tag/v0.7.0-beta.r7](https://github.com/sero-cash/go-sero/releases/tag/v0.7.0-beta.r7)
 >
-> gero-v0.6.0-beta.r6-darwin-amd64.tar.gz  macos,  md5 :c8730e6b6778384b0dcbf96d83b9e2ff
-> gero-v0.6.0-beta.r6-linux-amd64-v3.tar.gz  centos & ubuntu, md5 : b5e4c7384acfbe34d401edd311bcfc70
-> gero-v0.6.0-beta.r6-linux-amd64-v4.tar.gz  for fedora, md5 : e694ee18326d0b8133734980130e7dad
-> gero-v0.6.0-beta.r6-windows-amd64.tar.gz  windows, md5 : 0900e443d927e7b81a56a321562fe8d4
+> gero-v0.7.0-beta.r7-hotfix.1-darwin-amd64.tar.gz  macos,  md5 :ec63681dd59e4aaa96ff241826e2b29f
+> gero-v0.7.0-beta.r7-hotfix.1-linux-amd64-v3.tar.gz  centos & ubuntu, md5 : fad4e47b8f547d63d958b9f79d57bdd5
+> gero-v0.7.0-beta.r7-hotfix.1-linux-amd64-v4.tar.gz  for fedora, md5 : 0e23b95a87712c53f28a1b48d044e00b
+> gero-v0.7.0-beta.r7-hotfix.1-windows-amd64.tar.gz  windows, md5 : 6b564c52a136dac3c6721fcc5d93fca3
 
 
 
@@ -60,19 +60,19 @@ wallet  24f8a59fb2ce311c74bde00dc5765d49128e886d
 
 ### DARWIN
 
-<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.0-beta.r7/gero-v0.7.0-beta.r7-darwin-amd64.tar.gz>
+<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.0-beta.r7/gero-v0.7.0-beta.r7-hotfix.1-darwin-amd64.tar.gz>
 
 ### LINUX3
 
-<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.0-beta.r7/gero-v0.7.0-beta.r7-linux-amd64-v3.tar.gz>
+<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.0-beta.r7/gero-v0.7.0-beta.r7-hotfix.1-linux-amd64-v3.tar.gz>
 
 ### LINUX4
 
-<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.0-beta.r7/gero-v0.7.0-beta.r7-linux-amd64-v4.tar.gz>
+<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.0-beta.r7/gero-v0.7.0-beta.r7-hotfix.1-linux-amd64-v4.tar.gz>
 
 ### WINDOWS
 
-<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.0-beta.r7/gero-v0.7.0-beta.r7-windows-amd64.zip>
+<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.0-beta.r7/gero-v0.7.0-beta.r7-hotfix.1-windows-amd64.zip>
 
 
 
