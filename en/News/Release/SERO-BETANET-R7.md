@@ -47,7 +47,7 @@ wallet  fff15b4e5661bdce8165336a9178b2a0d859767c
 ## Release Packages
 
 > **The download address of binay packages:**
-> [https://github.com/sero-cash/go-sero/releases/tag/v0.7.0-beta.r7](https://github.com/sero-cash/go-sero/releases/tag/v0.7.0-beta.r7)
+> [https://github.com/sero-cash/go-sero/releases/tag/v0.7.0-beta.r7-hotfix.1](https://github.com/sero-cash/go-sero/releases/tag/v0.7.0-beta.r7-hotfix.1)
 >
 > gero-v0.7.0-beta.r7-hotfix.1-darwin-amd64.tar.gz  macos,  md5 :ec63681dd59e4aaa96ff241826e2b29f
 > gero-v0.7.0-beta.r7-hotfix.1-linux-amd64-v3.tar.gz  centos & ubuntu, md5 : fad4e47b8f547d63d958b9f79d57bdd5
