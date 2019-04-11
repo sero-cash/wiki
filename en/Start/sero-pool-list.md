@@ -52,15 +52,15 @@
 - Site：Shanghai, Guangzhou, Shenzhen China、Sweden
 - Fee: 1%, Settlement: 2 hours
 
-* Address：
-  * <http://212.64.55.28:8082>
-  * <http://129.204.27.217:8082>
-  * More, Wechat: **LiuXuFei**
-
 * Earnings：
   * <http://pool.sero.im>
-  * <http://212.64.55.28:8082> （备选）
-  * <http://129.204.27.217:8082> （备选）
+  * <http://212.64.55.28:8082> （Alternative）
+  * <http://129.204.27.217:8082> （Alternative）
+
+* Address：
+  * <http://212.64.55.28:8008>
+  * <http://129.204.27.217:8008>
+  * More, Wechat: **LiuXuFei**
 
 
 
