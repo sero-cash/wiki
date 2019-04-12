@@ -62,5 +62,10 @@
   * <http://129.204.27.217:8008>
   * More, Wechat: **LiuXuFei**
 
-
+## Full shuttle pool
+* Site: Guangzhou, China,
+* Fee: 3%, Settlement: 3hours
+* WeChat : zt102500 (remarks sero mining)
+* Aaddress: http://193.112.69.239:8008
+* Earnings: http://193.112.69.239:8082
 
