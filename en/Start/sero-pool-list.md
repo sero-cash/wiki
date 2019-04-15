@@ -51,6 +51,7 @@
 
 - Site：Shanghai, Guangzhou, Shenzhen China、Sweden
 - Fee: 1%, Settlement: 2 hours
+- SERO Fans Club QQ Group：[709137229](//shang.qq.com/wpa/qunwpa?idkey=41898c6b30403ce39f6b3f7daee097acd7b1f3b795c16019b8fe401eff0c25ca "SERO Fans Club QQ Group：709137229")
 
 * Earnings：
   * <http://pool.sero.im>
