@@ -9,6 +9,7 @@
 - [如何使用矿工程序(cminer)连接矿池挖矿](?file=Start/mined-in-the-mine-pool)
 - [矿池列表](?file=Start/sero-pool-list)
 - [如何用矿工程序(cminer)连接gero进行SOLO挖矿](?file=Start/how-to-connect-gero-using-cminer)
+- [快照下载列表](?file=Start/sero-chain-snapshot-list)
 
 ##### 教程
 
@@ -43,6 +44,7 @@
   - [BETANET RC5](?file=News/Release/SERO-BETANET-RC5)
   - [BETANET RC4](?file=News/Release/SERO-BETANET-RC4)
 - **Reports**
+  - [2019年3月技术汇报](?file=News/Report/201903-tech-report)
   - [2019年1、2月技术汇报](?file=News/Report/20190102-tech-report)
   - [2018年12月技术汇报](?file=News/Report/201812-tech-report)
   - [2018年11月技术汇报](?file=News/Report/201811-tech-report)

@@ -31,8 +31,12 @@ SERO一共发行10亿数量的SERO币，除了其中10%作为早期捐赠的报�
   > **申请流程**
   > * 先运行[全节点服务(gero)](http://sero.cash)或者[客户端钱包(wallet)](http://sero.cash)
   > * 导入或者创建挖矿用户，并获取该用户的公钥地址。
-  > * 加入SERO在gitter上的[miner社区](https://gitter.im/sero-cash/miner?utm_source=share-link&utm_medium=link&utm_campaign=share-link)。
-  >     `这一步可以首先进行，这样你在使用SERO过程中遇到问题，可以在社区中提出。`
+  > * 加入SERO在微信/Discord/Telegram/Gitter上的miner社区
+  >     * **gitter：** <https://gitter.im/sero-cash/miner?utm_source=share-link&utm_medium=link&utm_campaign=share-link>。
+  >     * **微信：** SERO9413
+  >     * **Discord：**  <https://discord.gg/n5HVxE>
+  >     * **Telegram：** <https://t.me/SeroOfficial>
+  >   `这一步可以首先进行，这样你在使用SERO过程中遇到问题，可以在社区中提出。`
   > * 发邮件给 [license@sero.vip](mailto:license@sero.vip) ，说明你的情况，并附上你的公钥地址。
   > * SERO团队会在48小时内生成公钥地址对应的许可证，并回复你的邮件。
   >   <br>
@@ -242,24 +246,33 @@ SERO一共发行10亿数量的SERO币，除了其中10%作为早期捐赠的报�
 
 接下来我们需要向SERO团队申请许可证，需要进行下面几个步骤：
 
-* ### **加入SERO的gitter社区**
-    > **社区的链接是**
-    > [https://gitter.im/sero-cash/miner](https://gitter.im/sero-cash/miner)
-    > ![image.png](https://upload-images.jianshu.io/upload_images/277023-fecac3360cd796e6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
-    >
-    > `gitter` 是 github.com 免费的即使通讯工具，跟 `github` 具有很好的集成度，可以通过 github/gitlab/twitter 账号登录。关于miner的一些重要通知会在这儿发布。
+* ### **加入SERO在微信/Discord/Telegram/Gitter上的miner社区**
 
-* ### **发申请邮件**
-    > 上面已经生成了账户，请将`sero.accounts[0]`的公钥`PK`通过邮件发送给 [license@sero.vip](license@sero.vip) ，并说明你的情况。
-    > ![image.png](https://upload-images.jianshu.io/upload_images/277023-e72fcce8a23a8578.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    - **gitter：** <https://gitter.im/sero-cash/miner>。
+    - **微信：** SERO9413
+    - **Discord：**  <https://discord.gg/n5HVxE>
+    - **Telegram：** <https://t.me/SeroOfficial>
+
+    > 选择你最常用的im工具加入社区即可，在社区你可以获得其他矿工提供的帮助。
+
+* ### **自助申请license**
+
+    > 上面已经生成了账户，请访问页面：<https://sero.cash/license/apply.html>，将`sero.accounts[0]`的公钥`PK`填入`Account address`，并完成其他的表单 ，然后点击`SUBMIT`。
+    >
+    > ![image.png](https://upload-images.jianshu.io/upload_images/277023-bbb6f7c7661f7aba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
     `注意：公钥可以作为资产接受地址，提供给第三方生成交易，泄露公钥并不会泄露你在SERO的信息。`
 
 * ### **安装许可证**
+
     SERO团队在48小时内会为你生成BetaNet的挖矿许可证，并回信给你。
     ![image.png](https://upload-images.jianshu.io/upload_images/277023-ce2d496f2b656112.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
     **回信中，你的许可证在正文和附件中各有一份，这两份是一致的。**
+
+    同时你可以通过在网页：<https://sero.cash/license/records.html>输入你的公钥去查询并下载你最新的license。
+
+    ![image.png](https://upload-images.jianshu.io/upload_images/277023-86fb735f11d48516.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
     你需要在keystore目录下创建license目录，然后将许可证文件`BLIC.DATA`拷贝到这个目录下。
 
