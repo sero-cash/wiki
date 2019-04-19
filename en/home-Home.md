@@ -42,9 +42,10 @@ To support conﬁdential transactions, the SERO team implemented non-interactive
 
 
 [[Website] https://sero.cash](https://sero.cash)
-[[White paper V1.0.6] http://sero-media.s3-website-ap-southeast-1.amazonaws.com/Sero_ENG_V1.06.pdf](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/Sero_ENG_V1.06.pdf)
+[[White paper V1.1] http://sero-media.s3-website-ap-southeast-1.amazonaws.com/SERO_ENG_V1.1.pdf](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/SERO_ENG_V1.1.pdf)
 [[Twitter] https://twitter.com/SEROdotCASH](https://twitter.com/SEROdotCASH)
 [[Telegram] https://t.me/SeroOfficial](https://t.me/SeroOfficial)
+[[Discord] https://discordapp.com/invite/3AZVMRU](https://discordapp.com/invite/3AZVMRU)
 [[Github] https://github.com/sero-cash/go-sero](https://github.com/sero-cash/go-sero)
 [[Gitter Community] https://gitter.im/sero-cash/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link](https://gitter.im/sero-cash/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 [[SERO Blockchain Browser]  https://explorer.web.sero.cash/blocks.html](https://explorer.web.sero.cash/blocks.html)
