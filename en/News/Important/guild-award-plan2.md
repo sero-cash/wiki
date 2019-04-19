@@ -1,4 +1,4 @@
-# SERO Association's Second Reward Scheme and Mine support policy (tentative)
+# SERO Association's 2nd Reward Scheme and Mine support policy (tentative)
 
 ## I. SERO Guild Mining 2nd Reward Program.
 
