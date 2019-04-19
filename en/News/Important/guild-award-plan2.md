@@ -1,6 +1,6 @@
-# SERO Association's 2nd Reward Scheme and Mine support policy (tentative)
+# SERO Association's 002 Reward Scheme and Mine support policy (tentative)
 
-## I. SERO Guild Mining 2nd Reward Program.
+## I. SERO Guild Mining 002 Reward Program.
 
 
 ### 1. How to set up a miners' guild
