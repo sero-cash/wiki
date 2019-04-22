@@ -52,6 +52,7 @@
   - [SERO Association's Second Reward Scheme and Mine support policy (tentative)](?file=News/Important/guild-award-plan2)
   - [2nd SERO Mining Guild & 1st Mine Pool Awards Distribution](?file=News/Important/the-second-phase-of-guild-awards)
   - [Third SERO Mining Guild & 2nd Mine Pool Awards Distribution](?file=News/Important/the-third-phase-of-guild-awards)
+  - [Rules of SERO Guild Reward Pool (5%) to be redesigned](?file= News/Important/Rules-of-SERO-Guild-Reward-Pool)
   
-  
+ 
 
