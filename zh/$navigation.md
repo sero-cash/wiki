@@ -58,4 +58,4 @@
   - [SERO公会第003期&矿池第002期奖励发放公示](?file=News/Important/the-third-phase-of-guild-awards)
   - [SERO公会奖池（5%）的使用规则将被重新设计](?file=News/Important/Rules-of-SERO-Guild-Reward-Pool)
   - [SERO公会第004期&矿池第003期奖励发放公示(暂定)](?file=News/Important/the-fourth-phase-of-guild-awards)
- 
+  - [SERO公会奖池调整计划公告及答SERO公会会长疑](?file=News/Important/sero-guild-prize-pool-adjustment-plan-announcement)
