@@ -1,18 +1,27 @@
-# Token distribution statistics for SERO coins (as of 2019.4.30) :
-### I. Distribution of 100 million SERO coins of investors (10% share pre-mining) :
+# SERO Tokenomics and Circulation Statistics (as of 2019.4.30)
 
-#### 1. Early investors and institutions:
-A total of 48 million SERO coins were sold, and the lock rules were unified as follows: linear unlock in 12 months after 3 months on the mainnet listing
-Investment institutions and individuals including (according to investment order) : Suyang Zhang, LD Capital, QTUM fund
+### Total Supply : 1 Billion SERO
 
-#### 2. Pre-ibo and resource exchange expenditure SERO:
-IBO: 6 million SERO coins, released 3 months after admission
-Private sale: 1 million SERO coins, released 6 months linear after admission
+#### I. Reserved for Miners : 80% (800 million SERO, will be released over a period of 101 years)
+     |- 75% :  Reserved for Mining
+     |-  5%  :  Reserved for Guild Mining
 
-#### 3. Remaining investment and financing:
-45 million fundable shares of SERO coins (this part will only be used for investment and financing institutions in the future)
+Now, 41 million SERO have been mined on betanet from the 75% reserved pool of mining and 2.7 million SERO have distributed from the 5% reserved pool of Guild Mining as of 30th April 2019.
 
-### Ⅱ. Circulation of SERO coins of BetaNet (as of 2019.4.30)
-Miners mined out: 41 million (75%)
-Miner guilds: 2.7 million (5%)
-SERO team: 5.3 million (10%, each SERO coin will be unlocked six months after released with mining, that is, starting from January 7 2019, six months after the Betachain network was launched)
+#### II. Reserved for Investors and Institutions : 10% (100 million SERO ERC Tokens)
+
+These are the ERC tokens issued back in 2018. 
+
+A) A total of 48 million SERO coins were sold. A linear unlocking in 12 months after 3 months of the mainnet exchange listing to investment institutions and individuals including (according to investment order) : Mr. Suyang Zhang, LD Capital, QTUM Fund.
+
+B) IBO and Resource Swap Expenses SERO.
+
+IBO : Sold 6 million SERO tokens at a one-time release of over 3  months period.
+
+Private placement : Sold 1 million SERO tokens and will be released in 6 months of linear unlocking from the time of private placement.
+C)  Remaining Investment and Financing.
+45 million SERO tokens. These coins will only be used for investment and financing institutions in the future.
+
+
+#### III. Reserved for Team : 10% (100 million SERO, will be released over a period of 101 years)
+SERO team lockup : 5.3 million SERO coin will be unlocked six months after released with mining i.e, starting from 7th, January, 2019, six months after the Betanet was launched)
