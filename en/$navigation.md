@@ -43,6 +43,7 @@
   - [BETANET RC5](?file=News/Release/SERO-BETANET-RC5)
   - [BETANET RC4](?file=News/Release/SERO-BETANET-RC4)
 - **Reports**
+  - [Token distribution statistics for SERO coins (as of 2019.4.30) ](?file=News/Report/token-distribution-statistics)
   - [December 2018 Technical report](?file=News/Report/201812-tech-report)
   - [November 2018 Technical report](?file=News/Report/201811-tech-report)
 - **Important events**
