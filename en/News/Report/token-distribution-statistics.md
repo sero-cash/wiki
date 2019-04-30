@@ -12,14 +12,14 @@ Now, 41 million SERO have been mined on betanet from the 75% reserved pool of mi
 
 These are the ERC tokens issued back in 2018. 
 
-A) A total of 48 million SERO coins were sold. A linear unlocking in 12 months after 3 months of the mainnet exchange listing to investment institutions and individuals including (according to investment order) : Mr. Suyang Zhang, LD Capital, QTUM Fund.
+##### A) A total of 48 million SERO coins were sold. A linear unlocking in 12 months after 3 months of the mainnet exchange listing to investment institutions and individuals including (according to investment order) : Mr. Suyang Zhang, LD Capital, QTUM Fund.
 
-B) IBO and Resource Swap Expenses SERO.
+##### B) IBO and Resource Swap Expenses SERO.
 
 IBO : Sold 6 million SERO tokens at a one-time release of over 3  months period.
 
 Private placement : Sold 1 million SERO tokens and will be released in 6 months of linear unlocking from the time of private placement.
-C)  Remaining Investment and Financing.
+##### C)  Remaining Investment and Financing.
 45 million SERO tokens. These coins will only be used for investment and financing institutions in the future.
 
 
