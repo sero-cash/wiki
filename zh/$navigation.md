@@ -44,6 +44,7 @@
   - [BETANET RC5](?file=News/Release/SERO-BETANET-RC5)
   - [BETANET RC4](?file=News/Release/SERO-BETANET-RC4)
 - **Reports**
+  - [SERO的Token分配统计（截止2019.4.30)](?file=News/Report/token-distribution-statistics)
   - [2019年3月技术汇报](?file=News/Report/201903-tech-report)
   - [2019年1、2月技术汇报](?file=News/Report/20190102-tech-report)
   - [2018年12月技术汇报](?file=News/Report/201812-tech-report)
