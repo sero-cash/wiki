@@ -148,7 +148,7 @@ $ build/bin/gero --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc" > ~/se
 > 此模式目前不支持，当主网络上线时，才会提供出来 ...
 
 #### 结果输出
-![](https://upload-images.jianshu.io/upload_images/277023-30b8b21ac13b66ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-30b8b21ac13b66ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 > 只要看到`IPC endpoint opened`那句，就说明服务启动已经成功，现在可以启动控制台来连接后台服务。
 
@@ -166,7 +166,7 @@ $ build/bin/gero --datadir "~/sero-data" attach
 ```
 
 attach会让gero启动一个JS虚拟机驱动的交互式控制台
-![](https://upload-images.jianshu.io/upload_images/277023-d8afed3845219ab1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-d8afed3845219ab1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 在其中可以运行复杂的js控制程序，退出控制台的指令是
 
@@ -257,7 +257,7 @@ sero.sendTransaction({
 
 > 其中[SRC_PK]是资金发出方公钥，[TARGET_PK]是资金接受方公钥，[NUM_OF_TA]是最小单位的金额，SERO的最小单位是TA，换算单位是 `1 SERO = 10^18 TA`。返回值[TX_ID]是生成交易的ID。
 
-![](https://upload-images.jianshu.io/upload_images/277023-bd6cbeca950950fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-bd6cbeca950950fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 交易生成之后，将同步给当前网络的其他节点，等待打包进区块中。在打包进区块之后，可以用下面的指令查询交易的详情。
 
@@ -270,7 +270,7 @@ sero.sendTransaction({
 ...[TX_DETAIL]
 ```
 
-![](https://upload-images.jianshu.io/upload_images/277023-010374c16c87687c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-010374c16c87687c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 其中[TX_DETAIL]主要格式于下：
 
@@ -308,37 +308,37 @@ SERO发布智能合约与以太坊的步骤是相似的。
 
 <http://remix.web.sero.cash>
 
-![](https://upload-images.jianshu.io/upload_images/277023-95affedbc7d4344c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-95affedbc7d4344c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 加载完毕后可以看到其中有一个发行匿名货币的例子`seroToken.sol`。
 
-![](https://upload-images.jianshu.io/upload_images/277023-3dfd4bce37a5e244.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-3dfd4bce37a5e244.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 右上角选择`seroToken`,并点击`Details`。
 
-![](https://upload-images.jianshu.io/upload_images/277023-5731e92c7ab7ab0c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-5731e92c7ab7ab0c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 点击弹出框`WEB3DEPLOY`旁边的拷贝按钮。
 
 #### 修改初始化参数
 
-![](https://upload-images.jianshu.io/upload_images/277023-1d6cdfa4e62f6416.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-1d6cdfa4e62f6416.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 在文本编辑器中修改初始化变量。
 
 #### 安装智能合约
 
-![](https://upload-images.jianshu.io/upload_images/277023-2eee55bef93eac35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1024)
+![](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-2eee55bef93eac35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1024)
 
 然后整个粘贴到控制台中，并回车，控制台立即会发送一笔交易来安装此智能合约。
 
 #### 查看智能合约账户
-![](https://upload-images.jianshu.io/upload_images/277023-c88beb87ad21a616.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-c88beb87ad21a616.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 交易成功后，既可以通过`sero.getBalance`查看该智能合约所发行的token。
 
 #### 调用智能合约
-![](https://upload-images.jianshu.io/upload_images/277023-7b8f8c2fce9b7081.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-7b8f8c2fce9b7081.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 用智能合约本身定义的`transfer`方法，可以将智能合约的匿名币发送给个人账户中。
 
@@ -350,11 +350,11 @@ SERO发布智能合约与以太坊的步骤是相似的。
 sero.sendTransaction({from:sero.accounts[0],to:sero.accounts[1],value:500,cy:"HELLOCOIN"})
 ```
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-f1706217106739bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-f1706217106739bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
 最后在accounts[1]的账户中可以看到他收到了500个`HELLOCOIN`的资产。
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-af79f0c27be00fbe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-af79f0c27be00fbe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 这笔交易也是匿名的。
 

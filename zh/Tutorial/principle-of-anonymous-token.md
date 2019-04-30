@@ -18,7 +18,7 @@ SERO是全球首个支持图灵完备智能合约的隐私区块链系统，既�
 
 ### 基于UTXO的交易
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-d4f32a0a0768aca8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-d4f32a0a0768aca8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 如上图，UTXO模式的记录有两种，对交易发起者来说就是`Input`和`Output`，这个`Output`在交易接受方看来就是`未花费输出(UTXO)`，直到交易接受者再发起一个交易，指定一个`Input`将这个`UTXO`作废掉。交易中的记录始终在链接各种输入和输出。在这种模式下，`ACCOUNT`作为一种状态摘要，不是必须的。
 
@@ -31,7 +31,7 @@ SERO是全球首个支持图灵完备智能合约的隐私区块链系统，既�
 
 ### 基于ACCOUNT的交易
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-0ee97ccbafff9d07.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-0ee97ccbafff9d07.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 之前UTXO模式说到了每个账户可以生成一个临时的`ACCOUNT`作为状态摘要，在UTXO模式中，这个账户是临时的，不是必须的。而ACCOUNT模式中，交易中的每个资产流入流出记录都引用`ACCOUNT`而不是`UTXO`，记录`Input`表示增加这个`ACCOUNT`的资产，而记录`Output`表示减少一个账户的资产。在这种模式下，`ACCOUNT`实体是必须的，没有这个`ACCOUNT`，所有的记录都没有了意义。
 
@@ -44,7 +44,7 @@ SERO是全球首个支持图灵完备智能合约的隐私区块链系统，既�
 
 ### SERO的混合模式
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-00dcc847debac203.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-00dcc847debac203.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 SERO将UTXO和ACCOUNT模式混合应用，在需要支持隐私保护的地方采用UTXO模式，在需要运行智能合约的地方采用ACCOUNT模式。SERO通过交易、共识、以及Pedersen Commitment算法，将这两种模式无缝的整合到一起，使智能合约能发挥令人惊讶的能力。
 
@@ -60,20 +60,20 @@ SERO将UTXO和ACCOUNT模式混合应用，在需要支持隐私保护的地方�
 
 ### 交易 `Tx`
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-9c52fb6586e6ba0e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-9c52fb6586e6ba0e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 SERO的匿名交易`Tx`拥有一个匿名的输入集合`Z ins`，一个匿名输出集合`Z outs`，一个普通输出集合`O outs`，和一个名为`From`的暂存地址。`Z ins`完全是匿名的，让第三方观察者无法得知来源和内容，`Z outs`是完全匿名的`UTXO`，只有接收者能查看和使用它的内容，`O outs`携带的内容是非隐藏的，它指向的接受者有两种情况：一种是指向智能合约地址，一种是指向一个暂存地址。`From`代表着交易发送者，同样也是一个暂存地址。因此整个`Tx`无法让人确定真实的用户是谁，其中携带的资产等信息也最大程度被隐藏起来。
 
 ### 输入 `Z ins`
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-52d7661f96f8479b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-52d7661f96f8479b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 在SERO交易的输入集合`Z ins`中，每个输入都是匿名的，包括来源`UTXO`的Id以及携带的资产信息。每个输入都通过采用零知识证明`ZKP`生成的`Proof`，指向一个被隐藏在巨大的`UTXO`序列中特定的某个`UTXO`，这个序列是SERO历史的一部分，所有的细节信息被`Proof`隐藏起来。验证者在不知道细节信息的情况下，通过`Proof`能确认这个输入是否合法。这种方式跟环签很像，不过我们的`Proof`自身的大小要比环签小很多，而且在零知识证明下，用来隐匿UTXO的集合的范围比环签也要大得多。
 
 ### 两种不同的输出 `outs`
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-01ae40ec8cdfb86f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-01ae40ec8cdfb86f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 SERO交易中包含的输出分为两种形式，零知识输出`Z out`和普通输出`O out`。
 
@@ -86,7 +86,7 @@ SERO交易中包含的输出分为两种形式，零知识输出`Z out`和普通
 
 ### 输入和输出的平衡 `Balance`
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-f95d65efdd4e239d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-f95d65efdd4e239d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
 `Tx`将`ins`、`Z outs`、`O outs`打包到一起，如何防止恶意攻击者篡改里面的数据并确保资产安全呢，我们通过引入**perdesen commitment**，它的同态加密特性使验证者在不知道信息细节的情况下，可以确认Balance一定是平衡的，即输入等于输出。
 
@@ -109,7 +109,7 @@ Token又称之为“同质化通证”，是SERO系统内部承认的一种资�
 
 #### 匿名Token资产
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-dad514ff5a2f031e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-dad514ff5a2f031e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 SERO的智能合约有一个非常强大的功能，那就是可以任意发行`匿名Token`。当然，前提是你需要一个从未注册过的币名。一旦匿名Token发行成功，智能合约可以将Token以普通交易的形式发送到某个普通账户的暂存地址`PKr`，这时这些被发送的Token将以UTXO的形式脱离智能合约账户，并且与SERO币一样，进入用户的个人账户中，从而被SERO的隐私机制所保护。
 

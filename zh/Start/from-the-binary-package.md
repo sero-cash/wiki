@@ -68,7 +68,7 @@ SERO一共发行10亿数量的SERO币，除了其中10%作为早期捐赠的报�
 
     读者可以访问链接[https://github.com/sero-cash/go-sero/releases](https://github.com/sero-cash/go-sero/releases)下载最新的二进制包。
 
-    ![image.png](https://upload-images.jianshu.io/upload_images/277023-b731e437b567c179.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+    ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-b731e437b567c179.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
     > **在Assets栏目，可以看到不同系统环境对应的二进制包**
     > * `gero-[VERSION]-darwin-amd64.tar.gz` 对应64位的`MacOS`系统
@@ -129,7 +129,7 @@ SERO一共发行10亿数量的SERO币，除了其中10%作为早期捐赠的报�
     > * SERO第一个重要目录是`datadir`，它里面放置同步的账本数据
     > * 另外一个重要的目录是`keystore`，它里面放置加密后的`账户文件`以及挖矿用的`license文件`，就像下面这样：
     >
-    >   ![image.png](https://upload-images.jianshu.io/upload_images/277023-d8801c3d87c486e5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    >   ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-d8801c3d87c486e5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
     为了在今后升级`geropkg`的时候不会影响已经同步的数据，我们将数据目录独立出来，比如：
 
@@ -179,7 +179,7 @@ SERO一共发行10亿数量的SERO币，除了其中10%作为早期捐赠的报�
 
     **你会看到类似于下面的文本**
 
-    ![image.png](https://upload-images.jianshu.io/upload_images/277023-8397a48ee35318a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+    ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-8397a48ee35318a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
     只要看到`IPC endpoint opened`这句话，就说明启动成功了。
 
@@ -199,7 +199,7 @@ SERO一共发行10亿数量的SERO币，除了其中10%作为早期捐赠的报�
 
     如果看到类似下面的控制台界面，控制台启动就成功了。
 
-    ![image.png](https://upload-images.jianshu.io/upload_images/277023-9511643359456b35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+    ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-9511643359456b35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 
 * ### **创建账户**
@@ -259,20 +259,20 @@ SERO一共发行10亿数量的SERO币，除了其中10%作为早期捐赠的报�
 
     > 上面已经生成了账户，请访问页面：<https://sero.cash/license/apply.html>，将`sero.accounts[0]`的公钥`PK`填入`Account address`，并完成其他的表单 ，然后点击`SUBMIT`。
     >
-    > ![image.png](https://upload-images.jianshu.io/upload_images/277023-bbb6f7c7661f7aba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+    > ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-bbb6f7c7661f7aba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
     `注意：公钥可以作为资产接受地址，提供给第三方生成交易，泄露公钥并不会泄露你在SERO的信息。`
 
 * ### **安装许可证**
 
     SERO团队在48小时内会为你生成BetaNet的挖矿许可证，并回信给你。
-    ![image.png](https://upload-images.jianshu.io/upload_images/277023-ce2d496f2b656112.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-ce2d496f2b656112.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
     **回信中，你的许可证在正文和附件中各有一份，这两份是一致的。**
 
     同时你可以通过在网页：<https://sero.cash/license/records.html>输入你的公钥去查询并下载你最新的license。
 
-    ![image.png](https://upload-images.jianshu.io/upload_images/277023-86fb735f11d48516.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+    ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-86fb735f11d48516.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
     你需要在keystore目录下创建license目录，然后将许可证文件`BLIC.DATA`拷贝到这个目录下。
 

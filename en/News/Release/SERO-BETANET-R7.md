@@ -90,11 +90,11 @@ wallet  fff15b4e5661bdce8165336a9178b2a0d859767c
 
   - windows: First find and click on the wallet's **[about]** menu item
 
-  ![image.png](https://upload-images.jianshu.io/upload_images/277023-eb709ef0c8c47af1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
+  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-eb709ef0c8c47af1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
   - Mac: At the top menu [**SERO Wallet**->**About SERO Wallet**]
 
-  ![image.png](https://upload-images.jianshu.io/upload_images/277023-8188131215142e1b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
+  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-8188131215142e1b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
 - The pop-up dialog box has current wallet version information and node information.
 
@@ -108,7 +108,7 @@ wallet  fff15b4e5661bdce8165336a9178b2a0d859767c
 
 - Is the dialog box like the one below
 
-  ![image.png](https://upload-images.jianshu.io/upload_images/277023-dff2c76a75d2f6e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-dff2c76a75d2f6e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
   - **Please click [DOWNLOAD NEW VERSION]**
 

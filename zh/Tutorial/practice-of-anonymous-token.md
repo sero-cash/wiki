@@ -42,7 +42,7 @@ Alice是一个公益组织的成员，她为了使贫困地区的失学儿童能
 
 **Alice的方案是这样的**
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-edd4b2ba0ad45c85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-edd4b2ba0ad45c85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 她要开发一个智能合约，这个智能合约提供两种Token，分别是`Assisted Token`和`Helper Token`，这两种Token必须同比例发行(即购买了多少`Heper Token`，就必须对应的生成多少`Assisted Token`)。
 
@@ -70,13 +70,13 @@ Alice是一个公益组织的成员，她为了使贫困地区的失学儿童能
 
 #### SOLIDITY语言
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-2bdef85e6118d982.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-2bdef85e6118d982.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 SERO采用solidity的编程语言进行智能合约的开发，目前兼容v0.5.0及以下的版本。如果对语法有疑问可以参考[《SOLIDITY官方手册》](https://solidity.readthedocs.io/en/v0.5.0/)。
 
 #### SERO智能合约开发环境
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-e09c65925d1f6783.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-e09c65925d1f6783.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 我们建议你采用SERO官方定制的SOLIDITY IDE进行SERO智能合约的开发、编译。目前在它上面集成了发行匿名智能合约最基本的API(serointerface.sol)、一个发行匿名token的例子(token_test.sol)，和一些必须的自动化工作。后续我们会加入匿名资产调试功能。
 
@@ -97,7 +97,7 @@ SERO采用solidity的编程语言进行智能合约的开发，目前兼容v0.5.
 > 你可以在这个页面获得最新的gero源码和编译好的包
 > [https://github.com/sero-cash/go-sero/releases](https://github.com/sero-cash/go-sero/releases)
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-91763145b4fe8435.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-91763145b4fe8435.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 
 关于如何用钱包发布智能合约，请参考[《SERO钱包使用手册》](https://wiki.sero.cash/zh/index.html?file=Tutorial/manual-of-wallet)
@@ -105,7 +105,7 @@ SERO采用solidity的编程语言进行智能合约的开发，目前兼容v0.5.
 > 你可以在这个页面获得最新的wallet的源码和编译好的安装包
 > [https://github.com/sero-cash/wallet/releases](https://github.com/sero-cash/wallet/releases)
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-060fc708d35cdff7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-060fc708d35cdff7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 <br/>
 
@@ -224,11 +224,11 @@ contract TFHCoin is SeroInterface {
 
 * 在IDE的右侧选择`TFHCOIN`智能合约，并点击旁边的`Detail`按钮。
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-e23b8cb8c9b8e467.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-e23b8cb8c9b8e467.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 * 在弹出框中找到`WEB3DEPLOY`旁边拷贝的按钮拷贝编译后的内容
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-34d4e074e8c13375.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-34d4e074e8c13375.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 > **注意** `TFHCOIN`的构造方法没有传入参数，如果有传入参数，你需要先将它拷贝到文本编辑器将构造方法的初始化参数设置好。
 
@@ -259,7 +259,7 @@ contract TFHCoin is SeroInterface {
 #### 5. 安装智能合约
 
 * **然后我们将从IDE拷贝出来的编译后代码粘贴进控制台里面，并回车创建交易。**
-   ![image.png](https://upload-images.jianshu.io/upload_images/277023-7510f0afadee18a5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+   ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-7510f0afadee18a5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
    智能合约的安装是附带在交易中进行的，交易创建之后可以查看这笔交易的地址。用此地址可在区块浏览器中查询到当前打包的状态。
 
 ```JavaScript
@@ -269,7 +269,7 @@ contract TFHCoin is SeroInterface {
 
 * **现在挖出一个区块打包这笔交易，确认成功即代表智能合约被成功安装了。**
 
-   ![image.png](https://upload-images.jianshu.io/upload_images/277023-184f8bc5a3ef536e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+   ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-184f8bc5a3ef536e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
    安装成功后SERO控制台会返回智能合约地址和交易号
 

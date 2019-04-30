@@ -10,7 +10,7 @@ _作者：[kusun](https://github.com/kusun)_
 
 ### SERO：世界上首个支持智能合约的匿名公链
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-50e80f9db60148e1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-50e80f9db60148e1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
 
 目前门罗币（Monero），达世币（DASH）以及大零币（Zcash）等热门的匿名区块链技术。虽然都能匿名起到隐私保护的作用，但是它们都不支持智能合约，无法用来开发DApp。超零协议（[SERO](https://sero.cash)）[[白皮书](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/Sero_ENG_V1.06.pdf)]的公链，是个支持图灵完备智能合约的匿名公链，采用零知识证明实现隐私保护技术，并且已经发布beta版本。SERO似乎是隐私保护的一个完美方案，并且可以在其上开发匿名的DAPP。
 
@@ -20,7 +20,7 @@ _作者：[kusun](https://github.com/kusun)_
 
 [以太猫](https://github.com/cryptocopycats/awesome-cryptokitties)应该是以太坊迄今为止最成熟，最成功的Dapp。它在很短的时间内造成了以太坊的交易拥堵。以太猫是按照ERC721开发的，智能合约代码大约两千行，源码在github上有开源，并且也可以在[以太坊区块浏览器](https://etherscan.io/)中找到。
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-c9de77ecd764b845.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-c9de77ecd764b845.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
 
 以太猫程序包括了七个主程序：
 1、**KittyAccessControl**，这个合约管理只能由特定角色执行操作的各种地址和约束。这些角色叫CEO, CFO and COO。
@@ -35,7 +35,7 @@ _作者：[kusun](https://github.com/kusun)_
 
 ### 匿名版以太猫实现
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-944732110b239103.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-944732110b239103.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
 
 按照SERO的DApp编程规范，可以实现一款匿名版以太猫的DApp。目前SERO支持"发行匿名票据"的功能已经发布，这个功能对应的就是以太坊ERC721协议，是实现以太猫的基础。
 
@@ -209,7 +209,7 @@ _sireId就是通过交易参数传递给智能合约的，因此需要调用Sero
 
 因为SERO上生成的kittyId无论是创建还是发生交易最终都会直接存执到个人账号中去，因此智能合约无需管理kittyId的归属。在调用智能合约方法的时候，凡是涉及到需要传递自己拥有的kittyId的地方都必须通过交易参数传递到智能合约中去。需要特别注意的地方是，SERO链上会将交易参数中的kittyId从个人账号中标记为已经使用掉，你将不再拥有该kittyId。如果通过交易参数传递的kittyId仅作为鉴权使用而不需要发生资产转移，切记在智能合约的方法中还需要将该kittyId再次存入到个人账号中去。
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-e10fa5b921944fee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-e10fa5b921944fee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
 
 SERO实现匿名的第一步就是对地址作文章，无论是交易中的地址还是传入到智能合约中地址都将转换成一次性地址，最终只有拥有该地址私有的人才能查询到自己的资产情况并且使用这些资产，这无形当中弱化了地址的功效。在以太猫中存在将kittyId授信给一个地址的情况，在SERO中显然这一点无法做到这一点，因为每次传入到智能合约中的地址可能都不一样了，即使是同一个地址。虽然无法实现对一个地址直接授信，但SERO同样可以实现类似的功能，只需要我们转换下思路就可以了。因为SERO的所有资产都保存到个人账户中去了，因此对于拥有非同质代币的人，在某种情况下一个tickeId就能证明一个地址的身份，因此以太猫中类似将kittyId授信给一个地址的时候，都可以替换为将一个kittyId授信给另外一个kiettyId这样的方式来实现，授信方的kittyId必须通过交易参数传递到智能合约中。搞清楚以上一些主要的变化后，在不变动以太猫的业务逻辑的情况下，就能很容易将其匿名化。对比原版代码量会更少，而且资产的管理逻辑也会减少，实现起来主要的重心就在业务逻辑上了。
 

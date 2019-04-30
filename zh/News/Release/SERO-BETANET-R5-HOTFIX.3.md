@@ -93,17 +93,17 @@ https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.5.0-beta.r5-h
 
   * windows：在顶层菜单 [**帮助**->**关于SERO Wallet**]
 
-  ![image.png](https://upload-images.jianshu.io/upload_images/277023-eb709ef0c8c47af1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
+  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-eb709ef0c8c47af1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
   * Mac：在顶层菜单 [**SERO Wallet**->**关于SERO Wallet**]
 
-  ![image.png](https://upload-images.jianshu.io/upload_images/277023-8188131215142e1b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
+  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-8188131215142e1b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
 * 弹出的对话框内有当前钱包版本信息和节点信息
 
   * 比如下图的例子，钱包的版本是0.1.3，而节点的版本是0.5.0-beta.r5-hotfix.2，都低于当前最新的版本号。
 
-  ![image.png](https://upload-images.jianshu.io/upload_images/277023-469aa09e36dd723e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
+  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-469aa09e36dd723e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
   * 钱包和节点的区别是，钱包只是你的操作界面，而真正挖矿的是节点程序，也就是gero。
 
@@ -113,7 +113,7 @@ https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.5.0-beta.r5-h
 
 * 就是下图这样的对话框
 
-  ![image.png](https://upload-images.jianshu.io/upload_images/277023-dff2c76a75d2f6e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-dff2c76a75d2f6e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
   * **不想升级**的矿工按左侧的 **[SKIP UPDATE]**
   * **想要升级**的矿工按右侧的 **[DOWNLOAD NEW VERSION]**

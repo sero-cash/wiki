@@ -102,11 +102,11 @@ wallet  24f8a59fb2ce311c74bde00dc5765d49128e886d
 
   - windows：在顶层菜单 [**帮助**->**关于SERO Wallet**]
 
-  ![image.png](https://upload-images.jianshu.io/upload_images/277023-eb709ef0c8c47af1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
+  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-eb709ef0c8c47af1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
   - Mac：在顶层菜单 [**SERO Wallet**->**关于SERO Wallet**]
 
-  ![image.png](https://upload-images.jianshu.io/upload_images/277023-8188131215142e1b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
+  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-8188131215142e1b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
 - 弹出的对话框内有当前钱包版本信息和节点信息
 
@@ -122,7 +122,7 @@ wallet  24f8a59fb2ce311c74bde00dc5765d49128e886d
 
 - 就是下图这样的对话框
 
-  ![image.png](https://upload-images.jianshu.io/upload_images/277023-dff2c76a75d2f6e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-dff2c76a75d2f6e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
   - **不想升级**的矿工按左侧的 **[SKIP UPDATE]**
   - **想要升级**的矿工按右侧的 **[DOWNLOAD NEW VERSION]**

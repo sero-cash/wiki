@@ -19,7 +19,7 @@ All guilds will be ranked according to the total amount of all members of the gu
 
 ### 3.SERO Association self-help process
 (1) Go to https://sero.cash/license/apply.html Enter the email address, wallet address, guild ID to be added, and submit.
-![img](https://upload-images.jianshu.io/upload_images/13141677-82fc8ccbca33bf7b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![img](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/13141677-82fc8ccbca33bf7b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 (2) Guild transfer process
 Miners can send an email to license@sero.vip for a transfer.

@@ -18,7 +18,7 @@
 ### 3、SERO公会自助入会流程
 
 （1）访问https://sero.cash/license/apply.html 输入邮箱、钱包地址、要加入的公会ID，提交即可。
-![Alt text](https://upload-images.jianshu.io/upload_images/13141677-82fc8ccbca33bf7b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Alt text](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/13141677-82fc8ccbca33bf7b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 （2）公会转会流程
 矿工可发送邮件到 license@sero.vip，进行转会。
