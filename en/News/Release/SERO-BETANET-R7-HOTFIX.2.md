@@ -46,18 +46,18 @@ wallet  fff15b4e5661bdce8165336a9178b2a0d859767c
 
 ### DARWIN
 
-<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.0-beta.r7/gero-v0.7.0-beta.r7-hotfix.2-darwin-amd64.tar.gz>
+<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.0-beta.r7-hotfix.2/gero-v0.7.0-beta.r7-hotfix.2-darwin-amd64.tar.gz>
 
 ### LINUX3
 
-<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.0-beta.r7/gero-v0.7.0-beta.r7-hotfix.2-linux-amd64-v3.tar.gz>
+<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.0-beta.r7-hotfix.2/gero-v0.7.0-beta.r7-hotfix.2-linux-amd64-v3.tar.gz>
 
 ### LINUX4
 
-<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.0-beta.r7/gero-v0.7.0-beta.r7-hotfix.2-linux-amd64-v4.tar.gz>
+<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.0-beta.r7-hotfix.2/gero-v0.7.0-beta.r7-hotfix.2-linux-amd64-v4.tar.gz>
 
 ### WINDOWS
 
-<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.0-beta.r7/gero-v0.7.0-beta.r7-hotfix.2-windows-amd64.zip>
+<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.0-beta.r7-hotfix.2/gero-v0.7.0-beta.r7-hotfix.2-windows-amd64.zip>
 
 
