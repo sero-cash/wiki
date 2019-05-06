@@ -1,8 +1,56 @@
+# 快照使用方式
+
+* **从下面的网盘下载最新块的快照，然后解压出chaindata目录**
+
+![image_1da5q9hb81koi1rdj15b9ak3fr41n.png-18kB](http://static.zybuluo.com/erlenzi-han/0nbf83387yyvafrb8agdeyp4/image_1da5q9hb81koi1rdj15b9ak3fr41n.png)
+
+
+
+* **点击Account菜单打开钱包的数据目录**
+
+![hello](http://static.zybuluo.com/erlenzi-han/ainpbz554bxxf6hu952o2e9l/image_1da5pl77o1jhj1fhdfggfpi1p4e9.png)
+
+
+
+* **关闭钱包或者全节点，将解压出的chaindata目录替换之前的chaindata目录**
+
+![image_1da5ptjdt7as6q6fc1ijj1f7ot.png-28.1kB](http://static.zybuluo.com/erlenzi-han/gfg5d758wedytgl1vqkpts2q/image_1da5ptjdt7as6q6fc1ijj1f7ot.png)
+
+
+
+* **重新开启钱包，此时钱包会直接从775872块开始同步**
+
+
+
+
+
 # 快照下载列表
 
 
 
-**请将快照解压后覆盖`gero/chaindata`文件夹**
+## 截止 775872 块的快照
+
+
+
+### MD5
+
+a4c9cef552e4fce9be620bdb104de9a3
+
+
+
+### mega.nz
+
+https://mega.nz/#!u5UwDA7A!tQTUS7J9OKUl8G1OeEkKgOYEdfyVR2kjTYD8iRM0Ny4
+
+
+
+#### pan.baidu.com
+
+https://pan.baidu.com/s/1JoAvL9ucFrIovzm7JmSWKQ
+
+提取码: mec7
+
+
 
 
 
