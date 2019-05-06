@@ -8,6 +8,10 @@
 
 
 
+[775872 块高度的快照](?file=Start/sero-chain-snapshot-list)
+
+
+
 ## 发布名称
 
 BetaNet-R7-HOTFIX.3
