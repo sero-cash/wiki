@@ -1,6 +1,6 @@
 # BETANET-R7-HOTFIX.3 Release Announce
 
-At 1 am Beijing time on May 5, SERO suffered a low-gas-cost attack, resulting in a node crash of less than 8G physical memory. The version we are providing now fixes this part of the problem and the new rule will take effect on the 788888 block.
+At 1 am Beijing time on May 5, SERO suffered a low-gas-cost attack, resulting in a node crash of less than 8G physical memory. The version we are providing now fixes this problem and the new rule will take effect on the 788888 block.
 
 
 
