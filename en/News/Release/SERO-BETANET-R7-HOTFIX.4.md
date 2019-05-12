@@ -1,6 +1,6 @@
 # BETANET-R7-HOTFIX.4 Release Announce
 
-Hello, users and miners, BetaNet test is coming to an end, in order to give the community the last period of quiet transition, and to meet the subsequent POW+POS consensus, we urgently modify the SERO-ETHASH algorithm to resist the abnormal hashrate of the recent sudden growth.
+Hello, users and miners, BetaNet test will come to an end in the next few weeks, in order to give the community the last period of quiet transition, and to meet the subsequent POW+POS consensus, we urgently modify the SERO-ETHASH algorithm to resist the abnormal hashrate of the recent sudden growth.
 
 The algorithm will switch at the  **829000**  block,  the abnormal computing power will be cleared.
 
