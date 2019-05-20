@@ -59,4 +59,5 @@
   - [Rules of SERO Guild Reward Pool (5%) to be redesigned](?file=News/Important/Rules-of-SERO-Guild-Reward-Pool)
   - [SERO Guild No. 004 & Mine Pool No. 003 Reward Program (tentative)](?file=News/Important/the-fourth-phase-of-guild-awards)
   - [SERO Guild Prize Pool Adjustment Plan Announcement and important information about the SERO Association.](?file=News/Important/sero-guild-prize-pool-adjustment-plan-announcement)
+  - [Fourth SERO Mining Guild & Third Mine Pool Awards Distribution](?file=News/Important/Fourth-SERO-Mining-Guild)
 
