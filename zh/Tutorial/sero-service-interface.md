@@ -206,9 +206,47 @@ SSI的使用方式是不维护第三方创建的公私钥，因此，第三方�
 
 gtx,err:=light.SLI_Inst.GenTx(param)
 
-param是需要签名的交易，gtx是签名后的交易。
-整个过程不需要区块数据。
+param是需要签名的交易，gtx是签名后的交易。整个过程不需要区块数据。
 
+```go
+type GIn struct {
+	SKr     keys.PKr   //In所有人私钥
+	Out     Out        // Detail接口返回的结构
+	Witness Witness    // GetAnchor接口返回的结构
+}
+
+type GOut struct {
+	PKr   keys.PKr
+	Asset assets.Asset
+	Memo  keys.Uint512
+}
+
+type GenTxParam struct {
+	Gas      uint64
+	GasPrice big.Int
+	From     Kr          //发送者公-私钥对
+	Ins      []GIn
+	Outs     []GOut
+}
+
+type T struct {
+	Ehash    keys.Uint256   //外部hash
+	From     keys.PKr       //发送者暂存公钥
+	Fee      assets.Token   //gas费用
+	Sign     keys.Uint512   //From签名
+	Bcr      keys.Uint256   //Balance Commitment
+	Bsign    keys.Uint512   //BCR 签名
+	Desc_Z   Desc_Z         //密文输入输出
+	Desc_O   Desc_O         //明文输入输出
+	Desc_Pkg PkgDesc_Z      //Pkg描述
+}
+
+type GTx struct {
+	Gas      hexutil.Uint64
+	GasPrice hexutil.Big
+	Tx       stx.T //交易数据
+}
+```
 
 ## 建议对接方案
 
