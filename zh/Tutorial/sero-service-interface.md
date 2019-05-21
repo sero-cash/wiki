@@ -202,16 +202,16 @@ SSI的使用方式是不维护第三方创建的公私钥，因此，第三方�
 
 
 ## 离线签名
-在  github.com/sero-cach/zero/light 包里面
+在  github.com/sero-cach/zero/light 包里面，其中的sli.go是更底层的离线方法，调用这些方法不需要区块数据。
 
 gtx,err:=light.SLI_Inst.GenTx(param)
 
-param是需要签名的交易，gtx是签名后的交易。整个过程不需要区块数据。
+param是需要签名的交易，gtx是签名后的交易。
 
 ```go
 type GIn struct {
 	SKr     keys.PKr   //In所有人私钥
-	Out     Out        // Detail接口返回的结构
+	Out     Out        // GetBlocksInfo接口返回的结构
 	Witness Witness    // GetAnchor接口返回的结构
 }
 
@@ -237,8 +237,8 @@ type T struct {
 	Bcr      keys.Uint256   //Balance Commitment
 	Bsign    keys.Uint512   //BCR 签名
 	Desc_Z   Desc_Z         //密文输入输出
-	Desc_O   Desc_O         //明文输入输出
-	Desc_Pkg PkgDesc_Z      //Pkg描述
+	Desc_O   Desc_O         //明文输入输出(一般不用)
+	Desc_Pkg PkgDesc_Z      //Pkg描述(一般不用)
 }
 
 type GTx struct {
@@ -257,5 +257,5 @@ type GTx struct {
    2. 查找区块的Out中的PKr是否为自己创建，如果是，就调用Detail解出Out的明文信息以及对应的作废码Nil。
    3. 查找区块中的Nil是否在Detail的时候解出过，如果找到，说明对应的UTXO已经被用掉了。
 3. 提现
-   1. 获取已经存在的UTXO作为In，并构造出Out，配平后调用GenTx生成Tx。
+   1. 获取已经存在的UTXO作为In，并构造出Out，配平后调用GenTx签名生成Tx。
    2. 调用CommitTx提交该Tx。
