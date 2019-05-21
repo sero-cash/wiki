@@ -17,7 +17,7 @@
 -  [SOLO模式下如何估算自己的出块概率](?file=Tutorial/how-to-evaluate-node-hashrate)
 - [匿名Token发行原理](?file=Tutorial/principle-of-anonymous-token)
 - [匿名Token发行实战](?file=Tutorial/practice-of-anonymous-token)
-- [第三方对接](?file=Tutorial/sero-service-interface.md)
+- [第三方对接](?file=Tutorial/sero-service-interface)
 
 ##### 标准范例
 
