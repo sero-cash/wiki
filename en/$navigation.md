@@ -30,6 +30,7 @@
 ##### News
 
 - **Releases**
+  - [ProgPow GPU mining compatibility test](?file=News/Release/SEROMINER-V0.1.0-BETA.1)
   - [BETANET R7-HOTFIX.4](?file=News/Release/SERO-BETANET-R7-HOTFIX.4)
   - [BETANET R7-HOTFIX.3](?file=News/Release/SERO-BETANET-R7-HOTFIX.3)
   - [BETANET R7-HOTFIX.2](?file=News/Release/SERO-BETANET-R7-HOTFIX.2)
