@@ -2,7 +2,7 @@
 
 **本发布用来测试progpow的兼容性，参与测试的矿工可以在官方矿池中测试自己GPU的算力。**
 
-由于GPU的hashrate较高，所以请参与startum的方式连接矿池。
+由于GPU的hashrate较高，所以请用startum协议连接矿池。
 
 [serominer 下载](https://github.com/sero-cash/serominer/releases/tag/v0.1.0-beta.1)
 <https://github.com/sero-cash/serominer/releases/tag/v0.1.0-beta.1>
