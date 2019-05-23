@@ -4,6 +4,8 @@
 
 由于GPU的hashrate较高，所以请用startum协议连接矿池。
 
+**本次测试目的是测试serominer的兼容性，使GPU矿工能更顺利的切换到即将到来的progpow算法上，并无贡献奖励。**
+
 [serominer 下载](https://github.com/sero-cash/serominer/releases/tag/v0.1.0-beta.1)
 <https://github.com/sero-cash/serominer/releases/tag/v0.1.0-beta.1>
 
