@@ -67,3 +67,4 @@
   - [SERO公会奖池调整计划公告及答SERO公会会长疑](?file=News/Important/sero-guild-prize-pool-adjustment-plan-announcement)
   - [SERO公会第004期&矿池第003期奖励发放公示](?file=News/Important/Fourth-SERO-Mining-Guild)
   - [通知：暂停SERO公会挖矿奖励并推出混合PoW+PoS共识](?file=News/Important/suspension-of-sero-guild-mining-program)
+  - [SERO矿池第004期奖励计划（暂定）](?file=News/Important/sero-mine-pool-004-reward-program-tentative)
