@@ -46,7 +46,7 @@
 
 * $[130000, 3057600)$ 相差2937600块（大约17个月）
   * 每块奖励为 66.77350574 SERO。
-* $[3057600,\infty)​$
+* $[3057600,\infty)$
   * 初始每块奖励为 33.38675287 SERO。
   * 每隔8294400个块奖励减半。
   * 直到9亿的代币完全挖掘出来。
@@ -59,13 +59,13 @@
   * $[0, 3.4亿)$
     * 块奖励为 1 SERO
 
-  * $[3.4亿, 17亿)​$
+  * $[3.4亿, 17亿)$
     * 块奖励为 `5.6+((难度-3.4) * 1.647)`
 
-  * $[17亿, 40亿)​$
+  * $[17亿, 40亿)$
     * 块奖励为 `28+((难度-17) * 0.217)`
 
-  * $[40亿, 170亿)​$
+  * $[40亿, 170亿)$
     * 块奖励为 `33+((难度-40) * 0.259)`
 
   * $[170亿,\infty )$
@@ -80,18 +80,18 @@
 
 
 * $Current \ni  [130000, 3057600) $
-  * $Reward_{std}=Reward_{ori}​$
+  * $Reward_{std}=Reward_{ori}$
 * $ Current \ni [3057600, \infty) $
-  * $rate_{reward}=1+[ (Current-3057600)/8294400 ]​$
-  * $Reward_{std}=Reward _{ori} >> rate_{reward}​$
+  * $rate_{reward}=1+[ (Current-3057600)/8294400 ]$
+  * $Reward_{std}=Reward _{ori} >> rate_{reward}$
 
 
 
-* $Diff \ni [170,\infty )​$
-  * $ Reward_{mine} = Reward_{std} ​$
+* $Diff \ni [170,\infty )$
+  * $ Reward_{mine} = Reward_{std} $
 
-* $Diff \ni  [1,3.4)​$
-  * $ Reward_{mine} = 1 ​$
+* $Diff \ni  [1,3.4)$
+  * $ Reward_{mine} = 1 $
 
 * $Diff \ni  [3.4,17) $
   * $ Reward_{mine} = \frac{5.6+[1.647 \cdot (Diff-3.4)]}{Reward_{ori}} \cdot Reward_{std} $
@@ -99,7 +99,7 @@
 * $Diff \ni  [17,40) $
   *  $ Reward_{mine} = \frac{28+[0.217 \cdot (Diff-17)]}{Reward_{ori}} \cdot Reward_{std} $
 
-* $Diff \ni  [40,170) ​$
+* $Diff \ni  [40,170) $
   * $ Reward_{mine} = \frac{33+[0.259 \cdot (Diff-40)]}{Reward_{ori}} \cdot Reward_{std} $
 
 
