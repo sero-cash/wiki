@@ -69,7 +69,7 @@
     
     
     
-- POW与POS奖励关系为
+- POW与最高POS奖励关系为
     $$
     Reward_{pos} = \frac {Reward_{pow} \cdot 3}{5}
     $$

@@ -38,7 +38,7 @@
 ## Block Reward Rule
 
 - $[939431, 3057600)$ 
-  - The block reward increase with the pow difficulty, and the heightest reward for each block is 28.1
+  - The block reward increase with the pow difficulty, and the highest reward for each block is 28.1
     - POW reward is 17.6 SERO
     - POS hightest reward is 10.5 SERO  (launch time to be determined)
     - The team share changes with the proportion of the block reward.
@@ -67,7 +67,7 @@
 
   
 
-- The relationship between pow and pos reward is
+- The relationship between pow and the highest pos reward is
   $$
   Reward_{pos} = \frac {Reward_{pow} \cdot 3}{5}
   $$
