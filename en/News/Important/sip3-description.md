@@ -5,9 +5,9 @@
 ## Time
 
 - **Release Time**
-  - **Before 24:00 Beijing time on May 30, 2019**
+  - **Before 20:00 Beijing time on May 28, 2019**
 - **Fork Time**
-  - **About 24:00 Beijing time on May 30, 2019 (at height of 940439)**
+  - **About 20:00 Beijing time on May 30, 2019 (at height of 939431)**
 
 
 
@@ -37,7 +37,7 @@
 
 ## Block Reward Rule
 
-- $[940439, 3057600)$ 
+- $[939431, 3057600)$ 
   - The block reward increase with the pow difficulty, and the heightest reward for each block is 28.1
     - POW reward is 17.6 SERO
     - POS hightest reward is 10.5 SERO  (launch time to be determined)
