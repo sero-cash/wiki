@@ -50,7 +50,7 @@
     - POW is 22.25 SERO
     - POS highest reward is 13.35 SERO  (specific rules to be determined)
   - The reward is halved every 8294400.
-  - Until 900 million tokens were fully mined.
+  - Until 900 million coins were fully mined.
 
 
 
