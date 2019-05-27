@@ -38,17 +38,17 @@
 ## Block Reward Rule
 
 - $[940439, 3057600)$ 
-  - The block reward increase with the pow difficulty, and the minimum reward for each block is 28.1
+  - The block reward increase with the pow difficulty, and the heightest reward for each block is 28.1
     - POW reward is 17.6 SERO
-    - POS reward is 10.5 SERO  (launch time to be determined)
+    - POS hightest reward is 10.5 SERO  (launch time to be determined)
     - The team share changes with the proportion of the block reward.
-  - When the block difficulty exceeds 14T, each reward reaches a maximum of 71.2 SERO
+  - When the block difficulty exceeds 14T, the highest reward reaches 71.2 SERO
     - POW reward is 44.5 SERO
-    - POS reward is 26.7 SERO  (launch time to be determined)
+    - POS highest reward is 26.7 SERO  (specific rules to be determined)
 - $[3057600,\infty)$
-  - The initial reward for each piece is 35.6 sero.
+  - The highest reward for each piece is 35.6 SERO.
     - POW is 22.25 SERO
-    - POS is 13.35 SERO  (launch time to be determined)
+    - POS highest reward is 13.35 SERO  (specific rules to be determined)
   - The reward is halved every 8294400.
   - Until 900 million tokens were fully mined.
 
