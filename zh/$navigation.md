@@ -55,6 +55,7 @@
   - [2018年12月技术汇报](?file=News/Report/201812-tech-report)
   - [2018年11月技术汇报](?file=News/Report/201811-tech-report)
 - **重要事件**
+  - [SIP3：奖励改进计划](?file=News/Important/sip3-description)
   - [SIP1：奖励改进计划](?file=News/Important/sip1-mine-reward-plan)
   - [矿工公会奖励计划](?file=News/Important/guild-award-plan)
   - [SERO公会第一期奖励发放完毕](?file=News/Important/the-first-phase-of-guild-awards)
