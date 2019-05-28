@@ -7,7 +7,7 @@
 - **Release Time**
   - **Before 20:00 Beijing time on May 28, 2019**
 - **Fork Time**
-  - **About 20:00 Beijing time on May 30, 2019 (at height of 939431)**
+  - **About 20:00 Beijing time on May 30, 2019 (at height of 940410)**
 
 
 
@@ -15,7 +15,7 @@
 
 - The POW algorithm is changed from the variant of ethash to the progpow.
 - Release serominer, to support GPU mining.
-- Adjust the block rewards when the difficulty is too low (700G ~ 14T).
+- Adjust the block rewards when the difficulty is too low (700G ~ 28T).
   - The minimum pow reward is 17.6 SERO.
   - The highest pow reward is 44.5 SERO.
 
@@ -37,12 +37,12 @@
 
 ## Block Reward Rule
 
-- $[939431, 3057600)$ 
+- $[940410, 3057600)$ 
   - The block reward increase with the pow difficulty, and the highest reward for each block is 28.1
     - POW reward is 17.6 SERO
     - POS hightest reward is 10.5 SERO  (launch time to be determined)
     - The team share changes with the proportion of the block reward.
-  - When the block difficulty exceeds 14T, the highest reward reaches 71.2 SERO
+  - When the block difficulty exceeds 28T, the highest reward reaches 71.2 SERO
     - POW reward is 44.5 SERO
     - POS highest reward is 26.7 SERO  (specific rules to be determined)
 - $[3057600,\infty)$
@@ -58,7 +58,7 @@
 
 - Difficulty and POW reward formula is
   $$
-  Reward_{std}=2022556390977440 \cdot Diff + 16184210526315800000
+  Reward_{std}=985347985347985 \cdot Diff + 16910256410256400000
   $$
 
   $$
