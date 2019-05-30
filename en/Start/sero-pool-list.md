@@ -73,3 +73,10 @@
 * Aaddress: startum1+tcp: http://193.112.69.239:8008
 * Earnings: http://193.112.69.239:8082
 
+## Boiling point pool
+* Site: Shanghai, China,
+* Fee: 2%, Settlement: 2hours
+* WeChat : zt102500 (remarks sero mining)
+* Aaddress: pool.sero.52hash.com:8998
+* Earnings: http://sero.52hash.com
+
