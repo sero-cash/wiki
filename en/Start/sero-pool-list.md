@@ -76,7 +76,7 @@
 ## Boiling point pool
 * Site: Shanghai, China,
 * Fee: 2%, Settlement: 2hours
-* QQ : 424495679
+* QQ Group: 424495679
 * Aaddress: pool.sero.52hash.com:8998
 * Earnings: http://sero.52hash.com
 
