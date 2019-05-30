@@ -56,11 +56,9 @@
 * Earnings：
   * <http://pool.sero.im>
   * <http://212.64.55.28:8082> （Alternative）
-  * <http://129.204.27.217:8082> （Alternative）
 
 * Address：
   * <http://212.64.55.28:8008>
-  * <http://129.204.27.217:8008>
   * More, Wechat: **LiuXuFei**
 
 ## Full shuttle pool
