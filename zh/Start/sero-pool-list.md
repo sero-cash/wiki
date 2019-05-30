@@ -20,8 +20,8 @@
 * 深圳矿池矿工交流QQ群：961501645
 
 * 矿池地址：
-  * <http://www.sero-pool.com:9999>
-  * <http://www.sero-pool.cn:9999>
+  * <http://www.sero-pool.com:8008>
+  * <http://www.sero-pool.cn:8008>
 
 * 收益查询地址：
   * <http://www.sero-pool.top:8082>  (英文)
@@ -36,7 +36,9 @@
 
 * Ø•M•G公会矿工交流群：https://discordapp.com/invite/kqenXFn
 
-* Address: <http://www.0-m-g.com:9999>
+* Address: 
+   startum1+tcp: <http://www.0-m-g.com:8008>
+   http: <http://www.0-m-g.com:9999>
 
 * Earnings:  <http://www.0-m-g.com:8082>
 
@@ -52,7 +54,7 @@
 
 * 第一矿池矿工交流QQ群：863912973
 
-* 挖矿地址：<http://121.201.75.200:9999>
+* 挖矿地址：<http://121.201.75.200:8008>
 
 * 综合信息查询地址：<http://121.201.75.200:8082>
 
@@ -66,7 +68,7 @@
 
 * 盘古矿池矿工交流QQ群：294118443
 
-* 矿池地址：<http://118.25.80.42:8080>
+* 矿池地址：<http://118.25.80.42:8008>
 
 * 收益查询地址：<http://111.231.59.54:8082>
 
@@ -92,13 +94,15 @@
 
 * 塞罗矿池矿工交流 QQ 群：[709137229](//shang.qq.com/wpa/qunwpa?idkey=41898c6b30403ce39f6b3f7daee097acd7b1f3b795c16019b8fe401eff0c25ca "SERO 爱好者社区：709137229")
 
-* 矿池网站：
-  * <http://pool.sero.im>
-  * <http://212.64.55.28:8082> （备选）
 
 * 挖矿地址：
   * <http://212.64.55.28:8008>
   * 更多地址咨询客服微信 **LiuXuFei**
+  
+* 矿池网站：
+  * <http://pool.sero.im>
+  * <http://212.64.55.28:8082> （备选）
+
 
 
 ## 全梭矿池
