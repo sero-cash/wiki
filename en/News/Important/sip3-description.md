@@ -62,7 +62,7 @@
   $$
 
   $$
-  Reward_{pow}=Max(Min(Reward_{std},44.5),17.6)
+  Reward_{pow}=Max(Min(Reward_{std},44.5 \cdot 10^{18}),17.6 \cdot 10^{18})
   $$
 
   

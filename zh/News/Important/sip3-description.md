@@ -62,7 +62,7 @@
     Reward_{std}=985347985347985 \cdot Diff + 16910256410256400000
     $$
     $$
-    Reward_{pow}=Max(Min(Reward_{std},44.5),17.6)
+    Reward_{pow}=Max(Min(Reward_{std},44.5 \cdot 10^{18}),17.6 \cdot 10^{18})
     $$
     
     其中 $Reward_{pow}$ 是区块POW奖励，单位是Ta，$Diff$ 是当前块难度，单位为$G$。
@@ -82,3 +82,4 @@
     Reward_{team} = \frac {Reward_{pow}}{5}
     $$
     其中 $Reward_{team}$ 为团队在该区块释放的奖励。
+
