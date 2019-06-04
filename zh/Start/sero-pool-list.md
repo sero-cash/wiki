@@ -14,7 +14,7 @@
 
 ## 鱼池
 
-* 费率5%: PPS 
+* 费率: 5%
 * 起付额: 200 SERO  
 * 支付时间: 每日08:00–16:00自动付款，每日付款一次
 * 挖矿教程：<https://blog.f2pool.com/zh/mining-tutorial/sero> 
