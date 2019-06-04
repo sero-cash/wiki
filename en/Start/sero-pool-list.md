@@ -15,7 +15,7 @@
 - Fee: 5% PPS
 - Payout Threshold: 200 SERO
 - Payment Time: Once per day from 0:00 to 8:00 UTC
-- Help：<https://blog.f2pool.com/zh/mining-tutorial/sero> 
+- Help：<https://blog.f2pool.com/en/mining-tutorial-en/sero_en> 
 - Address：<stratum1+tcp://sero.f2pool.com:4200>
 - Earnings：<https://www.f2pool.com/> 
 
