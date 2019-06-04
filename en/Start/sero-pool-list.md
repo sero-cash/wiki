@@ -10,6 +10,17 @@
 - Earnings: <http://203.195.255.129:8082> 
 
 
+## F2pool
+
+- Fee: 5% PPS
+- Payout Threshold: 200 SERO
+- Payment Time: Once per day from 0:00 to 8:00 UTC
+- Help：<https://blog.f2pool.com/zh/mining-tutorial/sero> 
+- Address：<stratum1+tcp://sero.f2pool.com:4200>
+- Earnings：<https://www.f2pool.com/> 
+
+
+
 ## Ø•M•G Guild Pool
 
 - Site: Germany
