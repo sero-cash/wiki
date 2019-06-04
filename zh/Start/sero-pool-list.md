@@ -14,14 +14,12 @@
 
 ## 鱼池
 
-* 费率5% PPS 起付额 200 SERO  每日08:00–16:00自动付款，每日付款一次
-
+* 费率5%: PPS 
+* 起付额: 200 SERO  
+* 支付时间: 每日08:00–16:00自动付款，每日付款一次
 * 挖矿教程：<https://blog.f2pool.com/zh/mining-tutorial/sero> 
-
 * 矿池地址：<stratum1+tcp://sero.f2pool.com:4200>
-
 * 收益查询：<https://www.f2pool.com/> 
-
 
 
 ## 深圳公会矿池
