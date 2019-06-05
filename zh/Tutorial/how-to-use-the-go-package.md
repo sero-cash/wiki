@@ -15,11 +15,8 @@
   zsk = cpt.Force_Fr(&zsk)
   vsk = cpt.Force_Fr(&vsk)
   ```
-
-
-​        其中，$zsk$是签名私钥，$vsk$是跟踪私钥。用来对交易进行签名。
-
-​        参考代码：`go-sero/zero/light/sli.go : CreateKr`
+  其中，$zsk$是签名私钥，$vsk$是跟踪私钥。用来对交易进行签名。
+  参考代码：`go-sero/zero/light/sli.go : CreateKr`
 
 * #### 公钥
 
@@ -29,10 +26,8 @@
   PK:=keys.Sk2PK(&sk)
   ```
 
-
   $PK$ 用来生成 $PKr$ (收款码)。可以提供$PK$给第三方，第三方通过$PK$生成你的$PKr$(收款码)在给你转账，而自己使用$TK$来跟踪入账情况。但因为安全和性能的关系，不建议外部直接使用，外部转账建议直接使用$PKr$(收款码)。
-
-​        参考代码：`go-czero-import/keys/keys.go : Sk2PK`
+  参考代码：`go-czero-import/keys/keys.go : Sk2PK`
 
 * #### 跟踪私钥
 
