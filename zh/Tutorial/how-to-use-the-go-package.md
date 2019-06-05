@@ -117,9 +117,9 @@ vsk = cpt.Force_Fr(&vsk)
 
 * `sero_getBlocksInfo(start,end)->blocks,error`
   * 获取$[start,end)$范围的区块信息
-* sero_getAnchor(roots)->witness,error
+* `sero_getAnchor(roots)->witness,error`
   * 获取UTXO在当前区块的Witness (为零知识证明准备的)
-* sero_commitTx(tx)->error
+* `sero_commitTx(tx)->error`
   * 提交交易，广播到全网
 
 
