@@ -6,16 +6,17 @@
 
 * #### 私钥
 
-​         私钥$sk$一共64个BYTE，由两个32BYTE的大整数组成 $sk=(zsk,vsk) \;\;zsk \in Fr, \; vsk \in Fr $  。
+  私钥$sk$一共64个BYTE，由两个32BYTE的大整数组成 $sk=(zsk,vsk) \;\;zsk \in Fr, \; vsk \in Fr $  。
 
-​         可以采用 `cpt.Force_Fr` 将一个32 BYTE的整型限制在Fr域内。
+  可以采用 `cpt.Force_Fr` 将一个32 BYTE的整型限制在Fr域内。
+  ```go
+  zsk := keys.RandUint256()
+  vsk := keys.RandUint256()
+  zsk = cpt.Force_Fr(&zsk)
+  vsk = cpt.Force_Fr(&vsk)
+  ```
 
-```go
-zsk := keys.RandUint256()
-vsk := keys.RandUint256()
-zsk = cpt.Force_Fr(&zsk)
-vsk = cpt.Force_Fr(&vsk)
-```
+
 ​        其中，$zsk$是签名私钥，$vsk$是跟踪私钥。用来对交易进行签名。
 
 ​        参考代码：`go-sero/zero/light/sli.go : CreateKr`
@@ -27,6 +28,7 @@ vsk = cpt.Force_Fr(&vsk)
   ```go
   PK:=keys.Sk2PK(&sk)
   ```
+
 
   $PK$ 用来生成 $PKr$ (收款码)。可以提供$PK$给第三方，第三方通过$PK$生成你的$PKr$(收款码)在给你转账，而自己使用$TK$来跟踪入账情况。但因为安全和性能的关系，不建议外部直接使用，外部转账建议直接使用$PKr$(收款码)。
 
