@@ -141,19 +141,17 @@ pkr:=keys.Addr2PKr(&pk,&rnd)
 #### Go语言
 
 * 示例程序：<https://github.com/sero-cash/go-sero/blob/v0.7.2-dev/cmd/tx/main.go>
-
   ```go
 import 'github.com/sero-cash/go-sero/zero/light'
-
 param_str:='{"Gas":25000,"GasPrice":1000000000,"From":{"SKr":"0x0 .... }'  //由全节点构造
 sk_str:='fd1b401d2bbfa09fba577b398b09b5ea075bd8f37773095c6e62271a4b080977'
-
+//------
 var param GenTxParam
 json.Unmarshal([]byte(param_str),&param)
 bs, _ := hexutil.Decode(sk)
 sk_bytes := keys.Uint512{}
 copy(sk_bytes[:], bs)
-
+//------
 pk_bytes := keys.Sk2PK(&sk_bytes)
 copy(param.From.SKr[:], sk_bytes[:])
 copy(param.From.PKr[:], pk_bytes[:])
@@ -167,18 +165,17 @@ tx, _ := json.Marshal(&gtx)
 #### JS语言
 
 * 示例程序：https://github.com/sero-cash/js-sero-client/blob/master/src/test/test_tx.js
-
   ```js
 const account = require('js-sero-client').Account
 const tx = require('js-sero-client').Tx
-
+//------
 const seedStr = 'fd1b401d2bbfa09fba577b398b09b5ea075bd8f37773095c6e62271a4b080977'
 const txParamStr = '{"Gas":25000,"GasPrice":1000000000,"Fro .... }'       //由全节点构造
-
+//------
 const seed = Buffer.alloc(32, seedStr, 'hex')
 const keys = account.NewKeys(seed)
 const skStr = keys.sk.toString('hex')
-
+//------
 tx.SignTx(
   txParamStr,
   skStr,
@@ -199,11 +196,12 @@ tx.SignTx(
    * 签名程序会根据当前机器的性能决定并行计算的数量，交易生成时间与引用的UTXO的数量成正比。
         * 如果花费的UTXO的个数很多，生成时间会变得非常长。
    * 解决方案
-        * 对充值进来的UTXO进行merge。
-             * gero 的 exchange 服务提供了自动 merge 功能，在gero上增加 —autoMerge 则可以自动进行UTXO的合并。
-        * 对于非离线签名，可以延长接口调用的超时时间。
-             * --rpcwritetimeout [SECOND] 启动gero的时候加上这个参数，可以设置gero回写的超时时间，单位是秒。
-        * 并行的进行签名
+        * 对于在线签名应用
+             * 对充值进来的UTXO进行merge。
+                  * gero 的 exchange 服务提供了自动 merge 功能，在gero上增加 —autoMerge 则可以自动进行UTXO的合并。
+             * 可以延长接口调用的超时时间。
+                  * --rpcwritetimeout [SECOND] 启动gero的时候加上这个参数，可以设置gero回写的超时时间，单位是秒。
+        * 并行运行多个签名
 
 
 
