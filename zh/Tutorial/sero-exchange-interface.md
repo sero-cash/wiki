@@ -4,18 +4,18 @@
 
 ## 账户
 
-账户由 Seed、SK、TK、PK、PKr 四种密钥构成，生成关系于下：
+账户由 $Seed$、$SK$、$TK$、$PK$、$PKr$ 四种密钥构成，生成关系于下：
 
 ```
 seed(种子) -> sk(私钥) -> TK(跟踪密钥) -> PK(公钥) -> PKr(收款码)
 ```
 
-目前提供了Go和JS两种语言的账户生成库：
+目前提供了**Go**和**JS**两种语言的账户生成库：
 
-Go语言版本：
+**Go**语言版本：
 <https://github.com/sero-cash/go-czero-import/keys/keys.go>
 
-JS语言版本：
+**JS**语言版本：
 
 * <https://github.com/sero-cash/js-sero-client>
 * 示例：<https://github.com/sero-cash/js-sero-client/blob/master/src/test/test_account.js>
