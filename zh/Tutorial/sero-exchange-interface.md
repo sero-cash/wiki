@@ -284,9 +284,18 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 * 如何编译源码
   * <https://wiki.sero.cash/zh/index.html?file=Start/from-the-sourcecode-base-on-centos7>
 * 二进制程序发布位置
-  * <https://github.com/sero-cash/go-sero/releases>
+  * **DARWIN (MacOS)**
+    * <https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.2-beta.r7.2/gero-v0.7.2-beta.r7.2-darwin-amd64.tar.gz>
+  * **WIN32**
+    * <https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.2-beta.r7.2/gero-v0.7.2-beta.r7.2-windows-amd64.zip>
+  * **LINUX3 (CENTOS 7)**
+    * <https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.2-beta.r7.2/gero-v0.7.2-beta.r7.2-linux-amd64-v3.tar.gz>
+  * **LINUX4 (UBUNTU 16.04)**
+    * <https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.2-beta.r7.2/gero-v0.7.2-beta.r7.2-linux-amd64-v4.tar.gz>
 * 如何运行二进制程序
   * <https://wiki.sero.cash/zh/index.html?file=Start/from-the-binary-package>
+
+
 
 在启动gero的时候添加 `—exchange` 和 `—mineMode` 以及 `--rpcapi "exchange"` 三个参数即可开启gero的exchange服务。
 
