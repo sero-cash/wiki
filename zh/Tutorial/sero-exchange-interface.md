@@ -24,13 +24,13 @@ seed(种子) -> sk(私钥) -> TK(跟踪密钥) -> PK(公钥) -> PKr(收款码)
 
 
 
-### seed (种子)
+### seed(种子)
 
 * $seed$ 是32长度的BYTE数组，可以由HASH算法或者助记词生成。拥有了 $seed$ 就可以推出后续所有的密钥，因此必须绝对安全保存。
 
 
 
-### sk (私钥)
+### sk(私钥)
 
 * 私钥$sk$一共64个BYTE，由两个32BYTE的大整数组成，并且与 $seed$ 一一对应。
   * $sk=(zsk,vsk) \;\;zsk \in Fr, \; vsk \in Fr $
@@ -58,7 +58,7 @@ seed(种子) -> sk(私钥) -> TK(跟踪密钥) -> PK(公钥) -> PKr(收款码)
 
 
 
-### TK (跟踪密钥)
+### TK(跟踪密钥)
 
 * $ TK $ 是64长度的BYTE数组，由一个32BYTE的$ECC_{fp}$上的点和一个大整数构成，$ZPK$也是$PK$的前 32 BYTE，$vsk$是$sk$的后32 BYTE。$TK$ 与 $sk$ 一一对应。
   * $TK=(ZPK,vsk) \; ZPK \in ECC_{fp},\; vsk \in Fr$
@@ -84,7 +84,7 @@ seed(种子) -> sk(私钥) -> TK(跟踪密钥) -> PK(公钥) -> PKr(收款码)
 
 
 
-#### PK (公钥)
+#### PK(公钥)
 
 * 公钥$PK$也是64 BYTE，由两个 32 BYTE 的 $ECC_{fp}$ 上的点构成 ，与 $TK$ 也是一一对应的。
   * $PK=(ZPK,VPK)  \; ZPK \in ECC_{fp}, \; VPK \in ECC_{fp}$
@@ -108,7 +108,7 @@ seed(种子) -> sk(私钥) -> TK(跟踪密钥) -> PK(公钥) -> PKr(收款码)
 
 
 
-#### PKr (收款码)
+#### PKr(收款码)
 
 * 收款码 $PKr$ 是一个 96 BYTE的二进制数据，由三个 32 BYTE 的 $ECC_{fp}$ 上的点构成。可以通过`keys.Addr2PKr`将$PK$和一个随机数转换成$PKr$。
   * $PKr=(ZPKr,VPKr,BASEr) \; ZPKr \in ECC_{fp}, \; VPKr \in ECC_{fp}, \; BASEr \in ECC_{fp}$
@@ -131,8 +131,6 @@ pkr:=keys.Addr2PKr(&pk,&rnd)
   let keys = account.NewKeys(undefined,undefined,undefined,pk)
   let pkr = keys.GenPKr(rnd)
 ```
-
-
 
 #### gero 控制台中Base58和Hex编码互转
 
