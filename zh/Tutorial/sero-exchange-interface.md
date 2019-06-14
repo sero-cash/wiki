@@ -1,6 +1,8 @@
 #  SERO Exchange 钱包对接说明
 
 
+[TOC]
+
 
 ## 账户
 
@@ -129,6 +131,20 @@ pkr:=keys.Addr2PKr(&pk,&rnd)
   let keys = account.NewKeys(undefined,undefined,undefined,pk)
   let pkr = keys.GenPKr(rnd)
 ```
+
+
+
+#### gero 控制台中Base58和Hex编码互转
+
+```javascript
+> web3.addressToHex(sero.accounts[0])
+"0x0dbd9c096......849304201ea6"
+
+> web3.hexToBase58("0x0dbd9c09......9304201ea6")
+"GwA94QDTyQ86cE5jcuYCyrQ9Bu9FRcXfq4dxQhryTDzhkahUjYSHcjZ5yFF9bvaZPRMUwR8k5uW4bT3DvPf77a5"
+```
+
+
 
 
 
@@ -325,6 +341,8 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
     * 账户需要导入seed
   * `CommitTx(tx)->()`
     * 将签名好的tx提交给交易池并广播给全网
+  * `GetPkSynced(pk)->pkState`
+    * 获取当前`exchange`的账户分析情况
 
 ### GetPKr
 
@@ -758,6 +776,54 @@ null
   transactionIndex: 0
 }
 
+```
+
+
+
+### GetPkSynced
+
+- **jsonrpc**
+
+  - request
+
+  ```javascript
+  {
+  	"id": 0,
+  	"jsonrpc": "2.0",
+  	"method": "exchange_getPkSynced",
+  	"params": [
+  		"0x0dbd9c0......9304201ea6",                //账户的PK
+  	]
+  }
+  ```
+
+  
+
+  - response
+
+  ```javascript
+  {
+  	"id": 0,
+  	"result": {
+      'currentBlock': 121,                  //当前块高度
+      'currentPKBlock': 121,                //exchange分析到的块高度
+      'highestBlock': 121                   //全网当前块高度
+    },
+  	"error": null
+  }
+  ```
+
+  
+
+- **console**
+
+```javascript
+> exchange.getPkSynced("0x0dbd9c0....9304201ea6")
+{
+  currentBlock: 121,
+  currentPKBlock: 121,
+  highestBlock: 121
+}
 ```
 
 
