@@ -159,6 +159,7 @@ for i := range param.Ins {
 	}
 gtx, _ := light.SLI_Inst.GenTx(param)
 tx, _ := json.Marshal(&gtx)
+  ```
 ```
 
 #### JS语言
@@ -186,7 +187,7 @@ tx.SignTx(
     }
   }
 )
-  ```
+```
 
 
 
@@ -303,6 +304,10 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 - `--mineMode` 关闭PC钱包使用的balance服务
 - `--rpcapi "sero exchange"` 开启exchange的jsonrpc接口
 - 其他的`rpc`参数与以太坊一致
+
+为了在算力大幅度波动的时候确保安全，可以设置确认的区块数量。
+
+* `--balanceDelay 32`  设置32个块确认交易，默认为12个块。
 
 #### 接口简介
 
