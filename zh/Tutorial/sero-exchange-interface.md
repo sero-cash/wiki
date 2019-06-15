@@ -162,19 +162,20 @@ sk_str:='fd1b401d2bbfa09fba577b398b09b5ea075bd8f37773095c6e62271a4b080977'
 //------
 var param GenTxParam
 json.Unmarshal([]byte(param_str),&param)
-bs, _ := hexutil.Decode(sk)
-sk_bytes := keys.Uint512{}
-copy(sk_bytes[:], bs)
-//------
-pk_bytes := keys.Sk2PK(&sk_bytes)
-copy(param.From.PKr[:], pk_bytes[:])
+bs, _ := hexutil.Decode(sk_str)
+sk := keys.Uint512{}
+copy(sk[:], bs)
+//------可以自己组装SK---------
+copy(param.From.SKr[:], sk[:])
 for i := range param.Ins {
-	copy(gtp.Ins[i].SKr[:], sk_bytes[:])
+copy(param.Ins[i].SKr[:], sk[:])
 	}
-gtx, _ := light.SLI_Inst.GenTx(param)
-tx, _ := json.Marshal(&gtx)
+	gtx, _ := light.SLI_Inst.GenTx(param)
+//------也可以直接采用这种形式-------
+//gtx, _:=light.SignTx(sk,param)
+  //------
+  tx, _ := json.Marshal(&gtx)
   ```
-```
 
 #### JS语言
 
@@ -191,17 +192,17 @@ const keys = account.NewKeys(seed)
 const skStr = keys.sk.toString('hex')
 //------
 tx.SignTx(
-  txParamStr,
-  skStr,
-  (err, tx) => {
-    if (err) {
-      console.error(err)
-    } else {
-      console.log(tx)
+    txParamStr,
+    skStr,
+    (err, tx) => {
+      if (err) {
+        console.error(err)
+      } else {
+        console.log(tx)
+      }
     }
-  }
 )
-```
+  ```
 
 
 
@@ -328,6 +329,7 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 * **SERO提供的`exchange`接口**
   * `GetPKr(pk,rnd)->pkr`
     * 通过公钥  $pk$ 和随机数 $rnd$ 生成收款码 $pkr$
+    * `sero.GenPKr(pk)->pkr`可以生成随机的 $pkr$
   * `GetBalances(pk)->balances`
     * 通过公钥 $pk$ 获取总余额 $balances$
   * `GetRecords(pkr,begin,end)->[]Utxo`
