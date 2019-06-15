@@ -30,6 +30,7 @@
 ##### News
 
 - **Releases**
+  - [BETANET R7.2](?file=News/Release/SERO-BETANET-R7.2)
   - [BETANET R7.1-HOTFIX.1](?file=News/Release/SERO-BETANET-R7.1-HOTFIX.1)
   - [BETANET R7.1](?file=News/Release/SERO-BETANET-R7.1)
   - [ProgPow GPU mining compatibility test](?file=News/Release/SEROMINER-V0.1.0-BETA.1)
@@ -66,3 +67,4 @@
   - [Fourth SERO Mining Guild & Third Mine Pool Awards Distribution](?file=News/Important/Fourth-SERO-Mining-Guild)
   - [Suspension of SERO Guild Mining Program and launch of Hybrid PoW&PoS Consensus](?file=News/Important/suspension-of-sero-guild-mining-program)
   - [SERO Mine Pool 004 Reward Program (Tentative)](?file=News/Important/sero-mine-pool-004-reward-program-tentative)
+

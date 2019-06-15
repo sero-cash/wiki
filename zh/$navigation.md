@@ -17,7 +17,8 @@
 -  [SOLO模式下如何估算自己的出块概率](?file=Tutorial/how-to-evaluate-node-hashrate)
 - [匿名Token发行原理](?file=Tutorial/principle-of-anonymous-token)
 - [匿名Token发行实战](?file=Tutorial/practice-of-anonymous-token)
-- [第三方对接](?file=Tutorial/sero-service-interface)
+- [NODE对接  (SSI 接口说明)](?file=Tutorial/sero-service-interface)
+- [WALLET对接 (SEI 接口说明)](?file=Tutorial/sero-exchange-interface)
 
 ##### 标准范例
 
@@ -31,6 +32,7 @@
 ##### 最新动态
 
 - **产品发布**
+  - [BETANET R7.2](?file=News/Release/SERO-BETANET-R7.2)
   - [BETANET R7.1-HOTFIX.1](?file=News/Release/SERO-BETANET-R7.1-HOTFIX.1)
   - [BETANET R7.1](?file=News/Release/SERO-BETANET-R7.1)
   - [ProgPow GPU 挖矿兼容性测试](?file=News/Release/SEROMINER-V0.1.0-BETA.1)

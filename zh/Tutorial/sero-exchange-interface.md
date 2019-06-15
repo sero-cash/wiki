@@ -1,7 +1,14 @@
-#  SERO Exchange 钱包对接说明
+#  SERO Exchange Interface (SEI) 接口说明
 
 
 [TOC]
+
+SEI 接口的对接方式，exchange服务代管用户的 TK，负责追踪用户的 UTXO ，并提供在线和离线的签名方式。
+
+对比 SSI 接口需要对接方自己管理 UTXO，SEI 更加简单、安全、实用。
+
+**[gero v0.7.2-beta.7.2](?file=News/Release/SERO-BETANET-R7.2) 以上的版本才提供SEI接口**
+
 
 
 ## 账户
