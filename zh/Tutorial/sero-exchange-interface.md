@@ -335,14 +335,17 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
   * `GetRecords(pkr,begin,end)->[]Utxo`
     * 获取收款码  $pkr$ 在块号$begin$ 到 $end$ 之间的充值进来的 $UTXO$。
   * `GenTx(preTxParam)->txParam`
-    * 通过preTxParam获取可以用来签名的txParam。
+    * 通过`preTxParam`获取可以用来签名的`txParam`。
   * `GenTxWithSign(preTxParam)->tx`
-    * 通过preTxParam直接生成签名后的tx
-    * 账户需要导入seed
+    * 通过`preTxParam`直接生成签名后的tx
+    * 账户需要导入`seed`
   * `CommitTx(tx)->()`
     * 将签名好的tx提交给交易池并广播给全网
   * `GetPkSynced(pk)->pkState`
     * 获取当前`exchange`的账户分析情况
+  * `Merge(pk,currency)->txhash`
+    * 自动合并币种`currency`的 $UTXO$
+    * 目标值是少于10个 $UTXO$
 
 ### GetPKr
 
@@ -808,6 +811,9 @@ null
       'currentBlock': 121,                  //当前块高度
       'currentPKBlock': 121,                //exchange分析到的块高度
       'highestBlock': 121                   //全网当前块高度
+      'utxoCount': {
+        'SERO':100                          //SERO当前UTXO的数量，需要先调用getBalances
+      }
     },
   	"error": null
   }
@@ -824,6 +830,51 @@ null
   currentPKBlock: 121,
   highestBlock: 121
 }
+```
+
+
+
+
+
+### Merge
+
+- **jsonrpc**
+
+  - request
+
+  ```javascript
+  {
+  	"id": 0,
+  	"jsonrpc": "2.0",
+  	"method": "exchange_merge",
+  	"params": [
+  		"0x0dbd9c0......9304201ea6",                //账户的PK
+      "SERO"																			//Merge的币种
+  	]
+  }
+  ```
+
+  
+
+  - response
+
+  ```javascript
+  {
+  	"id": 0,
+  	"result": {
+      "0x1bae9132......7ecd7172d36"              //Merge生成的交易Hash
+    },
+  	"error": null
+  }
+  ```
+
+  
+
+- **console**
+
+```javascript
+> exchange.merge("0x0dbd9c0......9304201ea6","SERO")
+"0x1bae9132......7ecd7172d36"
 ```
 
 
@@ -867,7 +918,9 @@ null
 
 ### 自动UTXO合并
 
-如果是在线签名的方式，可以采用`exchange`的自动合并功能。
+如果是在线签名的方式，可以采用
 
-* 启动`gero`的时候加上`—merge`参数。
-* 当 `pk` 下的账户会定时进行自动的UTXO的合并。
+* `exchange`的自动合并功能。
+  * 启动`gero`的时候加上`--autoMerge`参数。
+  * 当 `pk` 下的账户会定时进行自动的UTXO的合并。
+* 在控制台调用`exchange.Merge`方法手动合并。
