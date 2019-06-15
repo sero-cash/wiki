@@ -346,6 +346,7 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
   * `Merge(pk,currency)->txhash`
     * 自动合并币种`currency`的 $UTXO$
     * 目标值是少于10个 $UTXO$
+  * `ValidAddress(pk|pkr)->bool`
 
 ### GetPKr
 
@@ -524,7 +525,7 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
   		"Gas": 25000,                                       //最大消耗Gas，最少25000
   		"GasPrice": 1000000000,                             //GasPrice，默认1Gta
   		"Receptions": [{                                    //接受者信息
-  			"Addr": "0x8423cdaf......630a882a14",             //接受者PKr
+  			"Addr": "0x8423cdaf......630a882a14",             //接受者PKr|PK，PK会自动转成PKr
   			"Currency": "SERO",                               //币名
   			"Value": 900000000000000000                       //币的数量
   		}],
@@ -875,6 +876,48 @@ null
 ```javascript
 > exchange.merge("0x0dbd9c0......9304201ea6","SERO")
 "0x1bae9132......7ecd7172d36"
+```
+
+
+
+### ValidAddress
+
+- **jsonrpc**
+
+  - request
+
+  ```javascript
+  {
+  	"id": 0,
+  	"jsonrpc": "2.0",
+  	"method": "exchange_validAddress",
+  	"params": [
+  		"0x0dbd9c0......9304201ea6"                 //账户的PK或者PKr
+  	]
+  }
+  ```
+
+  
+
+  - response
+
+  ```javascript
+  {
+  	"id": 0,
+  	"result": {
+      true                                        //是否有效
+    },
+  	"error": null
+  }
+  ```
+
+  
+
+- **console**
+
+```javascript
+> exchange.validAddress("0x0dbd9c0......9304201ea6")
+true
 ```
 
 
