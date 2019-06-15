@@ -327,26 +327,27 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 #### 接口简介
 
 * **SERO提供的`exchange`接口**
-  * `GetPKr(pk,rnd)->pkr`
+  * [`GetPKr(pk,rnd)->pkr`](#GetPKr)
     * 通过公钥  $pk$ 和随机数 $rnd$ 生成收款码 $pkr$
     * `sero.GenPKr(pk)->pkr`可以生成随机的 $pkr$
-  * `GetBalances(pk)->balances`
+  * [`GetBalances(pk)->balances`](#GetBalances)
     * 通过公钥 $pk$ 获取总余额 $balances$
-  * `GetRecords(pkr,begin,end)->[]Utxo`
+  * [`GetRecords(pkr,begin,end)->[]Utxo`](#GetRecords)
     * 获取收款码  $pkr$ 在块号$begin$ 到 $end$ 之间的充值进来的 $UTXO$。
-  * `GenTx(preTxParam)->txParam`
+  * [`GenTx(preTxParam)->txParam`](#GenTx)
     * 通过`preTxParam`获取可以用来签名的`txParam`。
-  * `GenTxWithSign(preTxParam)->tx`
+  * [`GenTxWithSign(preTxParam)->tx`](#GenTxWithSign)
     * 通过`preTxParam`直接生成签名后的tx
     * 账户需要导入`seed`
-  * `CommitTx(tx)->()`
+  * [`CommitTx(tx)->()`](#CommitTx)
     * 将签名好的tx提交给交易池并广播给全网
-  * `GetPkSynced(pk)->pkState`
+  * [`GetPkSynced(pk)->pkState`](#GetPkSynced)
     * 获取当前`exchange`的账户分析情况
-  * `Merge(pk,currency)->txhash`
+  * [`Merge(pk,currency)->txhash`](#Merge)
     * 自动合并币种`currency`的 $UTXO$
     * 目标值是少于10个 $UTXO$
-  * `ValidAddress(pk|pkr)->bool`
+  * [`ValidAddress(pk|pkr)->bool`](#ValidAddress)
+    * 检查PK或者PKr是否合法
 
 ### GetPKr
 
