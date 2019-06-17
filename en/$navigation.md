@@ -67,4 +67,4 @@
   - [Fourth SERO Mining Guild & Third Mine Pool Awards Distribution](?file=News/Important/Fourth-SERO-Mining-Guild)
   - [Suspension of SERO Guild Mining Program and launch of Hybrid PoW&PoS Consensus](?file=News/Important/suspension-of-sero-guild-mining-program)
   - [SERO Mine Pool 004 Reward Program (Tentative)](?file=News/Important/sero-mine-pool-004-reward-program-tentative)
-
+  - [SERO Mine Pool Awards  No. 004 Announcement](?file=News/Important/sero-mine-pool-awards-no.004-announcement)
