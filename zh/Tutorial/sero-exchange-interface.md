@@ -28,6 +28,11 @@ seed(种子) -> sk(私钥) -> TK(跟踪密钥) -> PK(公钥) -> PKr(收款码)
 
 * <https://github.com/sero-cash/js-sero-client>
 * 示例：<https://github.com/sero-cash/js-sero-client/blob/master/src/test/test_account.js>
+* 安装npm模块
+
+```bash
+npm install js-sero-client
+```
 
 
 
