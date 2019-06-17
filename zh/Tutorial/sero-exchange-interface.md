@@ -360,6 +360,10 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
     * 目标值是少于10个 $UTXO$
   * [`ValidAddress(pk|pkr)->bool`](#ValidAddress)
     * 检查PK或者PKr是否合法
+  * [`GetLockedBalances(pk)->lockedState`](#GetLockedBalances)
+    * 检查由于发送交易可能锁定的金额
+  * [`GetMaxAvailable(pk,currency)->value`](#GetMaxAvailable)
+    * 获取币种`currency`当前能发送的最大的金额
 
 ### GetPKr
 
@@ -931,6 +935,91 @@ null
 ```javascript
 > exchange.validAddress("0x0dbd9c0......9304201ea6")
 true
+```
+
+
+
+### GetLockedBalances
+
+- **jsonrpc**
+
+  - request
+
+  ```javascript
+  {
+  	"id": 0,
+  	"jsonrpc": "2.0",
+  	"method": "exchange_getLockedBalances",
+  	"params": [
+  		"0x0dbd9c0......9304201ea6"                 //账户的PK
+  	]
+  }
+  ```
+
+  
+
+  - response
+
+  ```javascript
+  {
+  	"id": 0,
+  	"result": {
+      "SERO":7000                                //可能被锁定的金额
+    },
+  	"error": null
+  }
+  ```
+
+  
+
+- **console**
+
+```javascript
+> exchange.getLockedBalances("0x0dbd9c0......9304201ea6")
+{
+  "SERO":7000
+}
+```
+
+
+
+### GetMaxAvailable
+
+- **jsonrpc**
+
+  - request
+
+  ```javascript
+  {
+  	"id": 0,
+  	"jsonrpc": "2.0",
+  	"method": "exchange_getMaxAvailable",
+  	"params": [
+  		"0x0dbd9c0......9304201ea6",                 //账户的PK
+      "SERO"                                       //币名
+  	]
+  }
+  ```
+
+  
+
+  - response
+
+  ```javascript
+  {
+  	"id": 0,
+  	"result": 700000,                             //最大一次性转出金额
+  	"error": null
+  }
+  ```
+
+  
+
+- **console**
+
+```javascript
+> exchange.getMaxAvailable("0x0dbd9c0......9304201ea6", "SERO")
+700000
 ```
 
 
