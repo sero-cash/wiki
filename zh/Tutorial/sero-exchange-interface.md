@@ -329,7 +329,7 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 
 - `--exchange` 开启exchange服务
 - `--mineMode` 关闭PC钱包使用的balance服务
-- `--rpcapi "sero exchange"` 开启exchange的jsonrpc接口
+- `--rpcapi "sero,exchange"` 开启exchange的jsonrpc接口
 - 其他的`rpc`参数与以太坊一致
 
 为了在算力大幅度波动的时候确保安全，可以设置确认的区块数量。
