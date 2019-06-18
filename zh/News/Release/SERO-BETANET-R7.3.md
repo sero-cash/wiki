@@ -1,10 +1,10 @@
-## Release Name
+## 发布名称
 
 BetaNet-R7.3
 
 
 
-## Version Number
+## 版本号
 
 gero: v0.7.3-beta.r7.3
 mine-pool: v0.1.3
@@ -13,14 +13,14 @@ Wallet: 0.1.5
 
 
 
-## New Features
+## 新增特性
 
 - [x] Increase the maximum length of `rpc` requests
 - [x] Add some methods to `exchange` service
 
 
 
-## Commit ID
+## 提交Id
 
 go-sero                   fd66a8bc34bbe16691888435554f6352b6e962af
 go-czero-import   d43402d7956049dbd5e269577048d1da34744bda
@@ -31,9 +31,9 @@ wallet                     1e62bb9fba017a461a9af3810f8c72feb769be82
 
 
 
-## Release Packages
+## 发布包
 
-> **The download address of binay packages:**
+> **二进制包下载地址:**
 > <https://github.com/sero-cash/go-sero/releases/tag/v0.7.3-beta.r7.3>
 >
 > > gero-v0.7.3-beta.r7.3-darwin-amd64.tar.gz  macos,  md5 : 77dd1391494297fd35193fde244b3b14

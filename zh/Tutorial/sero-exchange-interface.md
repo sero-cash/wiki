@@ -336,6 +336,10 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 
 * `--confirmedBlock 32`  设置32个块确认交易，默认为12个块。
 
+SERO的rpc有请求大小的限制，默认为512K。
+
+* `--rpcRequestLength 1048576` 可以将限制改为1M
+
 #### 接口简介
 
 * **SERO提供的`exchange`接口**
@@ -527,6 +531,13 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 
 
 ### GenTx
+
+* SERO对交易的输入和输出个数有限制
+  * 明文输出不超过10个，密文输出不超过500个
+  * 明文输入不超过2500个，密文输入没有限制
+    * 可以通过API `GetMaxAvailable` 获取当前能发送的最大金额
+  * 每次调用GenTx，会轮换着使用UTXO，并且将UTXO记下来。
+    * `GetLockedBalances`可以查询已经锁定的金额大小
 
 - **jsonrpc**
 
