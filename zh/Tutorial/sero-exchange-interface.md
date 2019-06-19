@@ -365,7 +365,7 @@ SERO的rpc有请求大小的限制，默认为512K。
   * [`ValidAddress(pk|pkr)->bool`](#ValidAddress)
     * 检查PK或者PKr是否合法
   * [`GetLockedBalances(pk)->lockedState`](#GetLockedBalances) ` > v7.3`
-    * 检查由于发送交易可能锁定的金额
+    * 检查由于生成交易可能导致的锁定金额
   * [`GetMaxAvailable(pk,currency)->value`](#GetMaxAvailable) `> v7.3`
     * 获取币种`currency`当前能发送的最大的金额
   * [`ClearUsedFlag()->()`](#ClearUsedFlag) `> v7.3`
@@ -1048,7 +1048,9 @@ true
   	"id": 0,
   	"jsonrpc": "2.0",
   	"method": "exchange_clearUsedFlag",
-  	"params": []
+  	"params": [
+      "0x0dbd9c0......9304201ea6"                          //账户的PK
+    ]
   }
   ```
 
@@ -1069,7 +1071,7 @@ true
 - **console**
 
 ```javascript
-> exchange.clearUsedFlag
+> exchange.clearUsedFlag("0x0dbd9c0......9304201ea6")
 null
 ```
 
@@ -1096,7 +1098,7 @@ null
 
 ### 充值监测
 
-* 调用`GetRecords`根据块号不断同步`PK`新的充值记录。
+* 调用`exchange.GetRecords`根据块号不断同步`PK`新的充值记录。
 
 ### 提现
 
@@ -1111,6 +1113,13 @@ null
 * 保存`tx`的hash值
 * 调用`CommitTx`将`tx`提交到全节点
 * 调用`sero.getTransactionReceipt`扫描交易完成的情况
+* 由于`UTXO`不能重复使用，并且`genTx`会锁定这次使用的`UTXO`，因此生成交易的时候建议
+  * 通过`exchange.getMaxAvailable`获取本次最大能发送的金额数。
+    * 需要对`utxo`进行merge确保当前能发送的金额较大。
+  * 每次生成完交易`exchange.getMaxAvailable`获取的值会发生变化，代表下一次可发送的金额。
+    * 循环调用`exchange.getMaxAvailable`和`exchange.genTx|genTxWithSign`直到`exhange.getMaxAvailable`为0。
+    * 发送完交易后等待新的`UTXO`生成。
+  * 如果有交易失败，除了重复提交交易外，可以通过`exchange.ClearUsedFlag`清除对这些`UTXO`的锁定。
 
 ### 自动UTXO合并
 
