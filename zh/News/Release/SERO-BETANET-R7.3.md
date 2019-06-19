@@ -36,7 +36,7 @@ wallet                     1e62bb9fba017a461a9af3810f8c72feb769be82
 > **二进制包下载地址:**
 > <https://github.com/sero-cash/go-sero/releases/tag/v0.7.3-beta.r7.3>
 >
-> > gero-v0.7.3-beta.r7.3-darwin-amd64.tar.gz  macos,  md5 : 77dd1391494297fd35193fde244b3b14
-> > gero-v0.7.3-beta.r7.3-linux-amd64-v3.tar.gz  centos & ubuntu, md5: 9ff8420a622a44b11c85b005d3e8ce50
-> > gero-v0.7.3-beta.r7.3-linux-amd64-v4.tar.gz  for fedora, md5 : 3bec7d7f73b70a5cbc7b310d51efc18d
-> > gero-v0.7.3-beta.r7.3-windows-amd64.zip  windows, md5 : 4075bb5b4f769892496a14e329ec91b0
+> > gero-v0.7.3-beta.r7.3-darwin-amd64.tar.gz  macos,  md5 : cd860144fa5fa98db8251dd8f53471d4
+> > gero-v0.7.3-beta.r7.3-linux-amd64-v3.tar.gz  centos & ubuntu, md5: 93ada4861b4e2a37c8db3d4d266630ba
+> > gero-v0.7.3-beta.r7.3-linux-amd64-v4.tar.gz  for fedora, md5 : d9c107609a0842b9f06e5b3a123dcfb7
+> > gero-v0.7.3-beta.r7.3-windows-amd64.zip  windows, md5 : 886c6e3b68129b060c96b87181170009
