@@ -364,10 +364,12 @@ SERO的rpc有请求大小的限制，默认为512K。
     * 目标值是少于10个 $UTXO$
   * [`ValidAddress(pk|pkr)->bool`](#ValidAddress)
     * 检查PK或者PKr是否合法
-  * [`GetLockedBalances(pk)->lockedState`](#GetLockedBalances)
+  * [`GetLockedBalances(pk)->lockedState`](#GetLockedBalances) ` > v7.3`
     * 检查由于发送交易可能锁定的金额
-  * [`GetMaxAvailable(pk,currency)->value`](#GetMaxAvailable)
+  * [`GetMaxAvailable(pk,currency)->value`](#GetMaxAvailable) `> v7.3`
     * 获取币种`currency`当前能发送的最大的金额
+  * [`ClearUsedFlag()->()`](#ClearUsedFlag) `> v7.3`
+    * 清除由于发送交易锁定`UTXO`的标记
 
 ### GetPKr
 
@@ -1031,6 +1033,44 @@ true
 ```javascript
 > exchange.getMaxAvailable("0x0dbd9c0......9304201ea6", "SERO")
 700000
+```
+
+
+
+### ClearUsedFlag
+
+- **jsonrpc**
+
+  - request
+
+  ```javascript
+  {
+  	"id": 0,
+  	"jsonrpc": "2.0",
+  	"method": "exchange_clearUsedFlag",
+  	"params": []
+  }
+  ```
+
+  
+
+  - response
+
+  ```javascript
+  {
+  	"id": 0,
+  	"result": null,
+  	"error": null
+  }
+  ```
+
+  
+
+- **console**
+
+```javascript
+> exchange.clearUsedFlag
+null
 ```
 
 
