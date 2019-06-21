@@ -305,12 +305,11 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 
 #### 开启全节点(gero)的exchange服务
 
-关于全节点程序(gero)可以在下面的几个地方了解
-
-* 代码位置
-  * <https://github.com/sero-cash/go-sero>
-* 如何编译源码
-  * <https://wiki.sero.cash/zh/index.html?file=Start/from-the-sourcecode-base-on-centos7>
+* 关于全节点程序(gero)可以在下面的几个地方了解
+  * 代码位置
+    * <https://github.com/sero-cash/go-sero>
+  * 如何编译源码
+    * <https://wiki.sero.cash/zh/index.html?file=Start/from-the-sourcecode-base-on-centos7>
 * 二进制程序发布位置
   * **DARWIN (MacOS)**
     * <https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.2-beta.r7.2/gero-v0.7.2-beta.r7.2-darwin-amd64.tar.gz>
@@ -320,25 +319,24 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
     * <https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.2-beta.r7.2/gero-v0.7.2-beta.r7.2-linux-amd64-v3.tar.gz>
   * **LINUX4 (UBUNTU 16.04)**
     * <https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.2-beta.r7.2/gero-v0.7.2-beta.r7.2-linux-amd64-v4.tar.gz>
-* 如何运行二进制程序
-  * <https://wiki.sero.cash/zh/index.html?file=Start/from-the-binary-package>
+  * 如何运行二进制程序
+    * <https://wiki.sero.cash/zh/index.html?file=Start/from-the-binary-package>
 
 
 
-在启动gero的时候添加 `—exchange` 和 `—mineMode` 以及 `--rpcapi "exchange"` 三个参数即可开启gero的exchange服务。
+* 在启动gero的时候添加 `—exchange` 和 `—mineMode` 以及 `--rpcapi "exchange"` 三个参数即可开启gero的exchange服务。
+  * `--exchange` 开启exchange服务
+  * `--mineMode` 关闭PC钱包使用的balance服务
+  * `--rpcapi "sero,exchange"` 开启exchange的jsonrpc接口
+  * 其他的`rpc`参数与以太坊一致
 
-- `--exchange` 开启exchange服务
-- `--mineMode` 关闭PC钱包使用的balance服务
-- `--rpcapi "sero,exchange"` 开启exchange的jsonrpc接口
-- 其他的`rpc`参数与以太坊一致
+* 为了在算力大幅度波动的时候确保安全，可以设置确认的区块数量。
+  * `--confirmedBlock 32`  设置32个块确认交易，默认为12个块。
 
-为了在算力大幅度波动的时候确保安全，可以设置确认的区块数量。
-
-* `--confirmedBlock 32`  设置32个块确认交易，默认为12个块。
-
-SERO的rpc有请求大小的限制，默认为512K。
-
-* `--rpcRequestLength 1048576` 可以将限制改为1M
+* SERO的rpc有请求大小的限制，默认为512K。
+  * `--rpcRequestLength 1048576` 可以将限制改为1M
+* 如果无法在jsonrpc返回值序列化的时候处理bigint类型，可以使jsonrpc以字符串的形式返回数值。
+  * `--exchangeValueStr` 将使gero的jsonrpc接口返回
 
 #### 接口简介
 
@@ -368,8 +366,10 @@ SERO的rpc有请求大小的限制，默认为512K。
     * 检查由于生成交易可能导致的锁定金额
   * [`GetMaxAvailable(pk,currency)->value`](#GetMaxAvailable) `> v7.3`
     * 获取币种`currency`当前能发送的最大的金额
-  * [`ClearUsedFlag()->()`](#ClearUsedFlag) `> v7.3`
-    * 清除由于发送交易锁定`UTXO`的标记
+  * [`ClearUsedFlag(pk)->()`](#ClearUsedFlag) `> v7.3`
+    * 清除`PK`下 由于发送交易锁定`UTXO`的标记
+  * [`ClearUsedFlagForRoot([root,...])->()`](#ClearUsedFlagForRoot) `> v7.4`
+    - 清除 `root` 代表的UTXO的锁定标记
 
 ### GetPKr
 
@@ -552,6 +552,7 @@ SERO的rpc有请求大小的限制，默认为512K。
   	"method": "exchange_genTx",
   	"params": [{
   		"From": "0x0dbd9c0......9304201ea6",                //账户的PK
+      "RefoundTo": "0x8423cdaf......630a882a14",          //找零收款码(PKr)，为空则自动生成。
   		"Gas": 25000,                                       //最大消耗Gas，最少25000
   		"GasPrice": 1000000000,                             //GasPrice，默认1Gta
   		"Receptions": [{                                    //接受者信息
@@ -679,6 +680,7 @@ var txParam = exchange.genTx({
   	"method": "exchange_genTx",
   	"params": [{
   		"From": "0x0dbd9c0......9304201ea6",                //账户的PK
+      "RefoundTo": "0x8423cdaf......630a882a14",          //找零收款码(PKr)，为空则自动生成。
   		"Gas": 25000,                                       //最大消耗Gas，最少25000
   		"GasPrice": 1000000000,                             //GasPrice，默认1Gta
   		"Receptions": [{                                    //接受者信息
@@ -1061,7 +1063,7 @@ true
   ```javascript
   {
   	"id": 0,
-  	"result": null,
+  	"result": 3,                       //清除了3个UTXO的标记
   	"error": null
   }
   ```
@@ -1072,6 +1074,49 @@ true
 
 ```javascript
 > exchange.clearUsedFlag("0x0dbd9c0......9304201ea6")
+3
+```
+
+
+
+### ClearUsedFlagForRoot
+
+- **jsonrpc**
+
+  - request
+
+  ```javascript
+  {
+  	"id": 0,
+  	"jsonrpc": "2.0",
+  	"method": "exchange_clearUsedFlagForRoot",
+  	"params": [
+      [
+        "0x13ca7a0......75a3706b0",                 //UTXO 的root
+        "0x244ae92......976fa00bc"
+      ]
+    ]
+  }
+  ```
+
+  
+
+  - response
+
+  ```javascript
+  {
+  	"id": 0,
+  	"result": 2,
+  	"error": null
+  }
+  ```
+
+  
+
+- **console**
+
+```javascript
+> exchange.clearUsedFlagForRoot(["0x0dbd9c0......9304201ea6"])
 null
 ```
 
