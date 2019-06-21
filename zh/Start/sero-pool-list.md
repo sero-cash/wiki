@@ -22,16 +22,18 @@
 * 收益查询：<https://www.f2pool.com/> 
 
 
-## 深圳公会矿池
+## 深圳矿池
 
-* 地点：中国、杭州
+* 地点：中国*阿里云
 
-* 费率3%，0.5个SERO起支付，2小时结算一次。
+* 费率1%，0.5个SERO起支付，24小时不间断支付，最快5分钟，最慢矿工数*5分钟
+
 * 深圳矿池矿工交流QQ群：961501645
 
 * 矿池地址：
   * <http://www.sero-pool.com:8008>
   * <http://www.sero-pool.cn:8008>
+  * <http://www.sero-pool.top:8008>
 
 * 收益查询地址：
   * <http://www.sero-pool.top:8082>  (英文)
@@ -42,6 +44,7 @@
 ## Ø•M•G 公会矿池
 
 * 地点：德国
+
 * 费率1%，12小时结算一次
 
 * Ø•M•G公会矿工交流群：https://discordapp.com/invite/kqenXFn
