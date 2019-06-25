@@ -415,6 +415,11 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
       "hash":"0x61de8473709....3172c2225e55"， //块hash
       "number": 109,                           //块号
       "timestamp": 1561398077                  //时间戳
+      "TxHashes": [                                        //交易hash列表
+        "0xc31c834efe568d56e7b4c60e7aefe2b223e8567244f242c7870ec5cb47cc1000", 
+        "0x9123159d7016086ed4e1ec253f575cd38f04cc4dea31ce922d1387c985e336c8"
+      ]
+  
     }
   	"error": null
   }
@@ -429,7 +434,11 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 {
     "hash":"0x61de8473709567be5278c2e607915e6f9001f45f51dc94f8792a3172c2225e55"，
     "number": 109, 
-    "timestamp": 1561398077
+    "timestamp": 1561398077,
+    "TxHashes": [
+      "0xc31c834efe568d56e7b4c60e7aefe2b223e8567244f242c7870ec5cb47cc1000", 
+      "0x9123159d7016086ed4e1ec253f575cd38f04cc4dea31ce922d1387c985e336c8"
+    ]
 }
 ```
 
@@ -900,7 +909,7 @@ var txParam = exchange.genMergeTx({
   {
   	"id": 0,
   	"jsonrpc": "2.0",
-  	"method": "exchange_genTx",
+  	"method": "exchange_getTx",
   	"params": [
       "0xf8f2269......66d181"           //交易Hash
     ]
@@ -924,10 +933,14 @@ var txParam = exchange.genMergeTx({
             Pkr: "0x924f6b6c......09bf320",             //收款码
             Value: 4999925000000000000                  //金额
           },
-        ......
+          ......
+        ],
+        Ins: [                               //交易输入UTXO的Root列表
+          "0x0dbd9c0......9304201ea6"
         ],
         TxHash: "0xf8f2269......66d181"      //交易hash
-    
+        Fee: 25000000000000,                 //gas费用
+        Timestamp: 1561442217                //交易的时间戳
       },
     	"error": null
     }
@@ -969,7 +982,7 @@ var txParam = exchange.genMergeTx({
   {
   	"id": 0,
   	"jsonrpc": "2.0",
-  	"method": "exchange_genTx",
+  	"method": "exchange_genTxWithSign",
   	"params": [{
   		"From": "0x0dbd9c0......9304201ea6",                //账户的PK
       "RefundTo": "0x8423cdaf......630a882a14",          //找零收款码(PKr)，为空则自动生成。
@@ -1206,6 +1219,8 @@ null
 
 ### ValidAddress
 
+- 判断PK或PKr是否有效
+
 - **jsonrpc**
 
   - request
@@ -1247,6 +1262,8 @@ true
 
 
 ### GetLockedBalances
+
+- 获取被锁定的金额
 
 - **jsonrpc**
 
@@ -1292,6 +1309,8 @@ true
 
 ### GetMaxAvailable
 
+- 获取当前能转出的最大金额
+
 - **jsonrpc**
 
   - request
@@ -1333,6 +1352,8 @@ true
 
 ### ClearUsedFlag
 
+- 根据pk清除锁定标记
+
 - **jsonrpc**
 
   - request
@@ -1372,6 +1393,8 @@ true
 
 
 ### ClearUsedFlagForRoot
+
+* 根据UTXO的Root清除锁定标记
 
 - **jsonrpc**
 
@@ -1466,3 +1489,4 @@ null
   * 启动`gero`的时候加上`--autoMerge`参数。
   * 当 `pk` 下的账户会定时进行自动的UTXO的合并。
 * 在控制台调用`exchange.Merge`方法手动合并。
+
