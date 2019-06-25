@@ -341,15 +341,28 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 #### 接口简介
 
 * **SERO提供的`exchange`接口**
-  * [`GetPKr(pk,rnd)->pkr`](#GetPKr)
+  * [`GetBlockByNumber(num)->block`](#GetBLockByNumber) `v7.5`
+    * 获取块的基本信息
+    * 也可以使用`sero.GetBlockByNumer`获取更详细信息，使用方式跟以太坊兼容
+  * [`GetBlocksInfo(start,end)->blocks`](#GetBlocksInfo)`v7.5`
+    * 获取·`start-end`之间块的详情
+  * [`GetPkr(pk,rnd)->pkr`](#GetPKr)
     * 通过公钥  $pk$ 和随机数 $rnd$ 生成收款码 $pkr$
     * `sero.GenPKr(pk)->pkr`可以生成随机的 $pkr$
+  * [`GetPkByPkr(pkr)->pk`](#GetPkByPkr)`v7.5`
+    - 通过收款码`pkr`反查`pk`
+    - `pk`对应的账户必须在`gero`中
   * [`GetBalances(pk)->balances`](#GetBalances)
     * 通过公钥 $pk$ 获取总余额 $balances$
-  * [`GetRecords(pkr,begin,end)->[]Utxo`](#GetRecords)
-    * 获取收款码  $pkr$ 在块号$begin$ 到 $end$ 之间的充值进来的 $UTXO$。
+  * [`GetRecords(begin,end,[pk])->[]Utxo`](#GetRecords) `v7.5`
+    * 获取账户`pk`在块号$begin$ 到 $end$ 之间的充值进来的 $UTXO$。
   * [`GenTx(preTxParam)->txParam`](#GenTx)
     * 通过`preTxParam`获取可以用来签名的`txParam`。
+  * [`GenMergeTx(mergeParam)->txParam`](#GenMergeTx) `v7.5`
+    - 根据参数`mergeParam`生成合并的交易参数`txParam`，`txParam`需要离线签名。
+  * [`GetTx(txhash)->tx`](#GetTx) `v7.5`
+    * 获取交易hash对应的细节
+    * 目前只提供入账记录
   * [`GenTxWithSign(preTxParam)->tx`](#GenTxWithSign)
     * 通过`preTxParam`直接生成签名后的tx
     * 账户需要导入`seed`
@@ -358,6 +371,7 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
   * [`GetPkSynced(pk)->pkState`](#GetPkSynced)
     * 获取当前`exchange`的账户分析情况
   * [`Merge(pk,currency)->txhash`](#Merge)
+    * 在线签名
     * 自动合并币种`currency`的 $UTXO$
     * 目标值是少于10个 $UTXO$
   * [`ValidAddress(pk|pkr)->bool`](#ValidAddress)
@@ -371,7 +385,136 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
   * [`ClearUsedFlagForRoot([root,...])->()`](#ClearUsedFlagForRoot) `> v7.4`
     - 清除 `root` 代表的UTXO的锁定标记
 
-### GetPKr
+
+
+### GetBlockByNumber
+
+- **jsonrpc**
+
+  - request
+
+  ```javascript
+  {
+  	"id": 0,
+  	"jsonrpc": "2.0",
+  	"method": "exchange_getBlockByNumber",
+  	"params": [
+      109                  // 块号，空代表获取最新的块。
+  	]
+  }
+  ```
+
+  
+
+  - response
+
+  ```javascript
+  {
+  	"id": 0,
+  	"result": {
+      "hash":"0x61de8473709....3172c2225e55"， //块hash
+      "number": 109,                           //块号
+      "timestamp": 1561398077                  //时间戳
+    }
+  	"error": null
+  }
+  ```
+
+  
+
+- **console**
+
+```javascript
+>  exchange.getBlockByNumber(109)
+{
+    "hash":"0x61de8473709567be5278c2e607915e6f9001f45f51dc94f8792a3172c2225e55"，
+    "number": 109, 
+    "timestamp": 1561398077
+}
+```
+
+
+
+### GetBlocksInfo
+
+- **jsonrpc**
+
+  - request
+
+  ```javascript
+  {
+  	"id": 0,
+  	"jsonrpc": "2.0",
+  	"method": "exchange_getBlocksInfo",
+  	"params": [
+      108,                  // 开始块号
+      109                   // 结束块号
+    ]
+  }
+  ```
+
+  
+
+  - response
+
+  ```javascript
+  {
+  	"id": 0,
+  	"result": {
+      [
+        {
+          BlockHash: "0x42fee36......d82bd53",                  // 块Hash
+          Ins: ["0xd85......e0d597"],                      // 本块花费的UTXO的root
+          BlockNumber: 108,                                        // 块高度
+          Outs: [{
+              Currency: "SERO",
+              Nil: "0xe1d29......d15d89",
+              Num: 108,
+              Pkr: "0x842e......950d",
+              Root: "0x192717......646d42a",
+              TxHash: "0xf8f2269......66d181",
+              Value: 70000000000000000000
+            },
+            ......
+          ]
+        }
+      ]
+    }
+  	"error": null
+  }
+  ```
+
+  
+
+- **console**
+
+```javascript
+>  exchange.getBlocksInfo(108,109)
+{
+    [
+      {
+        BlockHash: "0x42fee36......d82bd53",
+        Ins: ["0xd85......e0d597"],
+        BlockNum: 108,
+        Outs: [{
+            Currency: "SERO",
+            Nil: "0xe1d29......d15d89",
+            Num: 108,
+            Pkr: "0x842e......950d",
+            Root: "0x192717......646d42a",
+            TxHash: "0xf8f2269......66d181",
+            Value: 70000000000000000000
+          },
+          ......
+        ]
+      }
+    ]
+  }
+```
+
+
+
+### GetPkr
 
 * **jsonrpc**
 
@@ -411,6 +554,44 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 ```
 
 
+
+### GetPkByPkr
+
+- **jsonrpc**
+
+  - request
+
+  ```javascript
+  {
+  	"id": 0,
+  	"jsonrpc": "2.0",
+  	"method": "exchange_getPkByPkr",
+  	"params": [
+  	  "0xa01b191......ad09bf320"    //收款码Pkr的hex编码
+  	]
+  }
+  ```
+
+  
+
+  - response
+
+  ```javascript
+  {
+  	"id": 0,
+  	"result": "0xc3863f5......bce8168a87",    //公钥Pk
+  	"error": null
+  }
+  ```
+
+  
+
+- **console**
+
+```javascript
+>  exchange.getPkByPkr("0xa01b191......ad09bf320")
+"0xc3863f5......bce8168a87"
+```
 
 
 
@@ -470,9 +651,9 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
   	"jsonrpc": "2.0",
   	"method": "exchange_getRecords",
   	"params": [
-  	  "0x0dbd9c096......849304201ea6",      //PK 或者 PKr,分别返回总的充值记录或者该PKr的充值记录
-  	  1,
-  	  1000
+  	  1,                                    // 开始的块号
+  	  1000，                                // 结束的块号
+      "0x0dbd9c096......849304201ea6",      // 收款码(PKr)|账户公钥(PK)|留空
   	]
   }
   ```
@@ -514,7 +695,7 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 - **console**
 
 ```javascript
-> exchange.getRecords(web3.addressToHex(sero.accounts[0]),1,3)
+> exchange.getRecords(1,3,web3.addressToHex(sero.accounts[0]))
 [
   {
     Currency: "SERO",
@@ -552,7 +733,7 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
   	"method": "exchange_genTx",
   	"params": [{
   		"From": "0x0dbd9c0......9304201ea6",                //账户的PK
-      "RefoundTo": "0x8423cdaf......630a882a14",          //找零收款码(PKr)，为空则自动生成。
+      "RefundTo": "0x8423cdaf......630a882a14",          //找零收款码(PKr)，为空则自动生成。
   		"Gas": 25000,                                       //最大消耗Gas，最少25000
   		"GasPrice": 1000000000,                             //GasPrice，默认1Gta
   		"Receptions": [{                                    //接受者信息
@@ -665,6 +846,117 @@ var txParam = exchange.genTx({
 
 
 
+### GenMergeTx
+
+- **jsonrpc**
+
+  - request
+
+  ```javascript
+  {
+  	"id": 0,
+  	"jsonrpc": "2.0",
+  	"method": "exchange_genTx",
+  	"params": [{
+  		"From": "0x0dbd9c0......9304201ea6",                //账户的PK
+      "To": "0x8423cdaf......630a882a14",                 //合并到收款码(PKr)，为空则自动生成。
+  		"Currency": "SERO",                                //需要合并的币名
+      "Zcount": 100,                                     //最大合并的密文UTXO个数
+      "Left": 1                                          //剩下多少个UTXO
+  	}]
+  }
+  ```
+
+  
+
+  - response
+
+    同`genTx`
+
+  
+
+- **console**
+
+```javascript
+var txParam = exchange.genMergeTx({
+	"From":  web3.addressToHex(sero.accounts[0]),
+	"To": "0x8423cdaf......630a882a14",
+  "Currency": "SERO", 
+  "Zcount": 100, 
+  "Left": 1 
+})
+// txParam 与 jsonrpc 的返回结果一致
+```
+
+
+
+### GetTx
+
+- **jsonrpc**
+
+  - request
+
+  ```javascript
+  {
+  	"id": 0,
+  	"jsonrpc": "2.0",
+  	"method": "exchange_genTx",
+  	"params": [
+      "0xf8f2269......66d181"           //交易Hash
+    ]
+  }
+  ```
+
+  
+
+  - response
+
+    ```javascript
+    {
+    	"id": 0,
+    	"result": {
+        BlockHash: "0x42fee3......d82bd53",         //块Hash
+        BlockNumber: 108,                           //块号
+        Outs: [
+          {                                    //Out列表
+            Currency: "SERO",                           //币名
+            PK: "0x40aa8......f4d08a96",                //账户公钥
+            Pkr: "0x924f6b6c......09bf320",             //收款码
+            Value: 4999925000000000000                  //金额
+          },
+        ......
+        ],
+        TxHash: "0xf8f2269......66d181"      //交易hash
+    
+      },
+    	"error": null
+    }
+    ```
+
+    
+
+  
+
+- **console**
+
+```javascript
+> exchange.getTx("0xf8f2269......66d181")
+{
+    BlockHash: "0x42fee3......d82bd53",
+    BlockNumber: 108,
+    Outs: [
+      {
+        Currency: "SERO",
+        PK: "0x40aa8......f4d08a96",
+        Pkr: "0x924f6b6c......09bf320",
+        Value: 4999925000000000000
+      },
+      ......
+   ],
+   TxHash: "0xf8f2269......66d181"
+}
+```
+
 
 
 ### GenTxWithSign
@@ -680,7 +972,7 @@ var txParam = exchange.genTx({
   	"method": "exchange_genTx",
   	"params": [{
   		"From": "0x0dbd9c0......9304201ea6",                //账户的PK
-      "RefoundTo": "0x8423cdaf......630a882a14",          //找零收款码(PKr)，为空则自动生成。
+      "RefundTo": "0x8423cdaf......630a882a14",          //找零收款码(PKr)，为空则自动生成。
   		"Gas": 25000,                                       //最大消耗Gas，最少25000
   		"GasPrice": 1000000000,                             //GasPrice，默认1Gta
   		"Receptions": [{                                    //接受者信息

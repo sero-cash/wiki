@@ -20,7 +20,7 @@ Wallet: 0.1.5
 ## New Features
 
 - [x] add `exchange.clearUsedFlagForRoot` method
-- [x] `exchange.genTx` add refound address
+- [x] `exchange.genTx` add refund address
 - [x] adjust the rules of the `exchange.merge` function
 
 
