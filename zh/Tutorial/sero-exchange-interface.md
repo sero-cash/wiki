@@ -389,6 +389,8 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 
 ### GetBlockByNumber
 
+- 根据块号获取当前块的信息
+
 - **jsonrpc**
 
   - request
@@ -445,6 +447,8 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 
 
 ### GetBlocksInfo
+
+- 获取一个范围内的块对UTXO的使用信息
 
 - **jsonrpc**
 
@@ -525,6 +529,8 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 
 ### GetPkr
 
+* 采用随机数创建PK对应的PKr
+
 * **jsonrpc**
 
   * request
@@ -566,6 +572,8 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 
 ### GetPkByPkr
 
+- 获取PKr在gero中对应的PK
+
 - **jsonrpc**
 
   - request
@@ -605,6 +613,8 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 
 
 ### GetBalances
+
+* 获取PK代表的账户当前的总余额
 
 * **jsonrpc**
 
@@ -649,6 +659,8 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 
 
 ### GetRecords
+
+- 获取充值记录
 
 - **jsonrpc**
 
@@ -724,6 +736,7 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 
 ### GenTx
 
+* 离线签名版本的交易生成
 * SERO对交易的输入和输出个数有限制
   * 明文输出不超过10个，密文输出不超过500个
   * 明文输入不超过2500个，密文输入没有限制
@@ -857,6 +870,8 @@ var txParam = exchange.genTx({
 
 ### GenMergeTx
 
+- 离线签名版本的UTXO合并
+
 - **jsonrpc**
 
   - request
@@ -900,6 +915,8 @@ var txParam = exchange.genMergeTx({
 
 
 ### GetTx
+
+- 获取交易详情
 
 - **jsonrpc**
 
@@ -973,6 +990,8 @@ var txParam = exchange.genMergeTx({
 
 
 ### GenTxWithSign
+
+- 在线版本的交易生成
 
 - **jsonrpc**
 
@@ -1086,9 +1105,9 @@ true
 
 ### CommitTx
 
+- 提交签名后的交易到交易池
 - **jsonrpc**
-
-  - request
+- request
     - 跟`GenTxWithSign`的输出一致
     
     - response
