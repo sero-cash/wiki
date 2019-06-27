@@ -62,10 +62,12 @@ npm install js-sero-client
         'fd1b401d2bbfa09fba577b398b09b5ea075bd8f37773095c6e62271a4b080977',
         'hex'
   )
-  let keys = account.NewKeys(seed)
+  let keys = account.NewKeys(seed)            //seed 可以直接用字符串(hex|base58)
   let sk = keys.sk.toString('hex')
-  let tk = keys.tk.toString('hex')
+  let tk_hex = keys.tk.toString('hex')
+  let tk_base58 = keys.tk.ToBase58()
   let pk = keys.pk.toString('hex')
+  let pk_base58 = keys.pk.ToBase58()
 ```
 
 
@@ -89,9 +91,11 @@ npm install js-sero-client
          '4e7f432c24d2......e1513eadfef9d1cd604',
         'hex'
   )
-  let keys = account.NewKeys(undefined,sk)
-  let tk = keys.tk.toString('hex')
-  let pk = keys.pk.toString('hex')
+  let keys = account.NewKeys(undefined,sk)    //sk 可以直接用字符串(hex|base58)
+  let tk_hex = keys.tk.toString('hex')
+  let tk_base58 = keys.tk.ToBase58()
+  let pk_hex = keys.pk.toString('hex')
+  let pk_base58 = keys.pk.ToBase58()
 ```
 
 
@@ -114,8 +118,9 @@ npm install js-sero-client
          '6a367411b800be76a9d......1ee1513eadfef9d1cd604',
         'hex'
   )
-  let keys = account.NewKeys(undefined,undefined,tk)
-  let pk = keys.pk.toString('hex')
+  let keys = account.NewKeys(undefined,undefined,tk)      //tk 可以直接用字符串(hex|base58)
+  let pk_hex = keys.pk.toString('hex')
+  let pk_base58 = keys.pk.ToBase58()
 ```
 
 
@@ -140,8 +145,10 @@ pkr:=keys.Addr2PKr(&pk,&rnd)
         'hex'
   )
   let rnd = account.czero.RandomU32()
-  let keys = account.NewKeys(undefined,undefined,undefined,pk)
+  let keys = account.NewKeys(undefined,undefined,undefined,pk)  //pk 可以直接用字符串(hex|base58)
   let pkr = keys.GenPKr(rnd)
+  let pkr_hex = pkr.toString("hex")
+  let pkr_base58 = pkr.ToBase58()
 ```
 
 #### gero 控制台中Base58和Hex编码互转
@@ -205,7 +212,7 @@ const skStr = keys.sk.toString('hex')
 //------
 tx.SignTx(
     txParamStr,
-    skStr,
+    skStr,                        //字符串 hex|base58
     (err, tx) => {
       if (err) {
         console.error(err)
