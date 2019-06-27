@@ -324,10 +324,10 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 
 
 
-* 在启动gero的时候添加 `—exchange` 和 `—mineMode` 以及 `--rpcapi "exchange"` 三个参数即可开启gero的exchange服务。
-  * `--exchange` 开启exchange服务
-  * `--mineMode` 关闭PC钱包使用的balance服务
-  * `--rpcapi "sero,exchange"` 开启exchange的jsonrpc接口
+* 在启动gero的时候添加 `—exchange` 和 `—mineMode` 以及 `--rpcapi exchange,sero` 三个参数即可开启gero的exchange服务。
+  * `--exchange` 开启`exchange`服务
+  * `--mineMode` 关闭PC钱包使用的`balance`服务
+  * `--rpcapi sero,exchange` 开启`exchange`和`sero`的jsonrpc接口
   * 其他的`rpc`参数与以太坊一致
 * 为了在算力大幅度波动的时候确保安全，可以设置确认的区块数量。
   * `--confirmedBlock 32`  设置32个块确认交易，默认为12个块。
@@ -345,7 +345,7 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
     * 获取块的基本信息
     * 也可以使用`sero.GetBlockByNumer`获取更详细信息，使用方式跟以太坊兼容
   * [`GetBlocksInfo(start,end)->blocks`](#GetBlocksInfo)`v7.5`
-    * 获取·`start-end`之间块的详情
+    * 获取`start~end`之间块的详情
   * [`GetPkr(pk,rnd)->pkr`](#GetPKr)
     * 通过公钥  $pk$ 和随机数 $rnd$ 生成收款码 $pkr$
     * `sero.GenPKr(pk)->pkr`可以生成随机的 $pkr$
@@ -1142,6 +1142,8 @@ null
 
 ### GetPkSynced
 
+- exchange当前的分析进度
+
 - **jsonrpc**
 
   - request
@@ -1194,6 +1196,8 @@ null
 
 
 ### Merge
+
+- 在线签名版本的UTXO合并
 
 - **jsonrpc**
 
