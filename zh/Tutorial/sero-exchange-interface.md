@@ -51,8 +51,8 @@ npm install js-sero-client
 * **Go语言**
 ```go
   var seed keys.Uint256
-  seed=cpt.RandUint256()
-  sk:=keys.Seed2SK(&seed)
+  seed=keys.RandUint256()
+  sk:=keys.Seed2Sk(&seed)
 ```
 * **JS语言**
 ```js
@@ -80,7 +80,7 @@ npm install js-sero-client
 * $TK$ 由 $sk$ 生成
 * **Go语言**
 ```go
-  tk:=keys.SK2Tk(&sk)
+  tk:=keys.Sk2Tk(&sk)
 ```
 
 * **JS语言**
