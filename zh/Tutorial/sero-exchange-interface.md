@@ -336,14 +336,34 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
   * `--mineMode` 关闭PC钱包使用的`balance`服务
   * `--rpcapi sero,exchange` 开启`exchange`和`sero`的jsonrpc接口
   * 其他的`rpc`参数与以太坊一致
+  
 * 为了在算力大幅度波动的时候确保安全，可以设置确认的区块数量。
+  
   * `--confirmedBlock 32`  设置32个块确认交易，默认为12个块。
+  
 * SERO的rpc有请求大小的限制，默认为512K。
+  
   * `--rpcRequestLength 1048576` 可以将限制改为1M
+  
 * 如果无法在jsonrpc返回值序列化的时候处理bigint类型，可以使jsonrpc以字符串的形式返回数值。
+  
   * `--exchangeValueStr` 将使gero的jsonrpc接口返回
+  
 * gero为了尽可能少的在硬盘上存储数据，目前每10000块保存一次快照，因此当gero关闭后，会从最近的1万的整数倍块开始同步。
+  
   * `--gcmode archive` 将使gero每一块都保存快照数据，重启的时候不会回滚区块。但是这种方式会耗费更大的硬盘存储。
+  
+* gero在utxo个数较多的时候签名会消耗较多的时间，因此可以调整gero回写client的超时时间
+
+  * `--rpcwritetimeout [SECOND]` 启动gero的时候加上这个参数，可以设置gero回写的超时时间，单位是秒。
+
+* 启动参数示例
+
+  ```sh
+  ./gero --exchange --mineMode --datadir ~/geroData --port 53717 --rpc --rpcport 8545 --rpcapi exchange,sero,net --rpcaddr 127.0.0.1  --rpccorsdomain "*"  --gcmode archive   --keystore ~/keystore --confirmedBlock 32 --rpcwritetimeout 1800
+  ```
+
+  * 对接方可以根据需求修改上面的配置
 
 #### 接口简介
 
