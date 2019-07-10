@@ -55,6 +55,7 @@
   - [December 2018 Technical report](?file=News/Report/201812-tech-report)
   - [November 2018 Technical report](?file=News/Report/201811-tech-report)
 - **Important events**
+  - [SERO Staking (PoS) and Staking Node Introduction](?file=News/Important/sero-staking-service)
   - [SIP2：Bonus improvement plan](?file=News/Important/sip3-description)
   - [SIP1：Bonus improvement plan](?file=News/Important/sip1-mine-reward-plan)
   - [SERO Mining Association Award System](?file=News/Important/guild-award-plan)
