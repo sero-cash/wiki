@@ -248,23 +248,28 @@ gero有两种导入账户的方式，分别是导入 $seed$ 和导入 $TK$ ，�
   * 利用助记词导入 $seed$，在web3里面：
 
   ```javascript
-  > personal.importMnemonic("uncle frost expose ...... salmon champion before")
-  "GwA94QDTyQ86cE5jcuYCyrQ9Bu9FRcXfq4dxQhryTDzhkahUjYSHcjZ5yFF9bvaZPRMUwR8k5uW4bT3DvPf77a5"
+  > personal.importMnemonic("uncle frost ex.....ion before","123456")  //助记词,密码
+  "GwA94QDTyQ86cE5jcu......aZPRMUwR8k5uW4bT3DvPf77a5"    //公钥PK
   ```
 
   * 导出seed对应的助记词是
 
   ```javascript
-  > personal.exportMnemonic(sero.account[0])
-  Passphrase: ****
+  > personal.exportMnemonic(sero.account[0],"123456")  //公钥PK，密码
   "uncle frost expose ...... salmon champion before"
   ```
 
   * 直接导入hex编码的 $seed$
 
   ```javascript
-  > personal.importRawKey("ec8bad429641ff7cc980.....1edf3cc459640b1ab03d1f","1234")
-  "GwA94QDTyQ86cE5jcuYCyrQ9Bu9FRcXfq4dxQhryTDzhkahUjYSHcjZ5yFF9bvaZPRMUwR8k5uW4bT3DvPf77a5"
+  > personal.importRawKey("ec8bad429641f......0b1ab03d1f","123456")  // Seed，密码
+  "GwA94QDTyQ86cE5jc......8k5uW4bT3DvPf77a5"     //公钥PK
+  ```
+
+  * 导出hex编码的 $seed$
+
+  ```javascript
+  >personal.exportRawKey("GwA94QDTyQ86cE5j....DvPf77a5","123456")  //公钥PK，密码
   ```
 
   * 然后用accounts可以查看到导入账户的公钥
@@ -279,32 +284,32 @@ gero有两种导入账户的方式，分别是导入 $seed$ 和导入 $TK$ ，�
 * 导入 $TK$
 
   ```javascript
-  > personal.importTk("GwA94QDTyQ86cE5jcuYCyrQ9Bu9FRcXfq4d.....z4Zwm4zFfDAwUB22sEmQQ1AguYXn")
-  "GwA94QDTyQ86cE5jcuYCyrQ9Bu9FRcXfq4dxQhryTDzhkahUjYSHcjZ5yFF9bvaZPRMUwR8k5uW4bT3DvPf77a5"
+  > personal.importTk("GwA94QDTyQ86cE5......AwUB22sEmQQ1AguYXn")   //TK
+  "GwA94QDTyQ86cE5jcuYCyr......bvaZPRMUwR8k5uW4bT3DvPf77a5"   //公钥PK
   ```
 
   * 查看账户的 $TK$
   ```javascript
-  > sero.getTk(sero.accounts[0])
-  "GwA94QDTyQ86cE5jcuYCyrQ9Bu9FRcXfq4d.....z4Zwm4zFfDAwUB22sEmQQ1AguYXn"
+  > sero.getTk(sero.accounts[0])                        //公钥PK
+  "GwA94QDTyQ86cE5jcuYCy.......AwUB22sEmQQ1AguYXn"      //TK
   ```
 
 
 * 导入账户之后，exchange服务就会自动分析区块信息，如果是新导入的账户，服务需要一段时间才能分析到最新块。可以通过查看gero的日志看出是否分析完毕。
   * 需要开启 `—exchange` 标记
+   ```javascript
+   INFO [06-13|15:44:00.016] Exchange indexed                         blockNumber=1031753
+   INFO [06-13|15:44:50.007] Exchange indexed                         blockNumber=1031754
+   INFO [06-13|15:45:00.007] Exchange indexed                         blockNumber=1031755
+   INFO [06-13|15:45:10.007] Exchange indexed                         blockNumber=1031756
+   ```
+   不管是导入 $seed$ 还是 $TK$ ，`gero` 都会为它生成一个keystore，其中 $seed$ 以密文的形式存储，$TK$ 以明文的形式存储。
 
-```javascript
-INFO [06-13|15:44:00.016] Exchange indexed                         blockNumber=1031753
-INFO [06-13|15:44:50.007] Exchange indexed                         blockNumber=1031754
-INFO [06-13|15:45:00.007] Exchange indexed                         blockNumber=1031755
-INFO [06-13|15:45:10.007] Exchange indexed                         blockNumber=1031756
-```
-
-
-
-不管是导入 $seed$ 还是 $TK$ ，`gero` 都会为它生成一个keystore，其中 $seed$ 以密文的形式存储，$TK$ 以明文的形式存储。
+* 导出`Seed`
 
 
+  * 导出seed数据 `v0.7.8`
+  * 导出助记词
 
 ## 钱包接口
 
@@ -1500,6 +1505,7 @@ null
   * 通过`gero`生成
     * 在`gero`控制台调用`personal.newAccount`生成新账户
     * 通过`personal.exportRawKey`导出`seed`，安全保存。
+      * 也可以保存对应的 `keystore` 文件
     * 通过`sero.getTk`获取账户`TK`。
     * 通过`sero.accounts`获取账户`PK`
 * 账户导入
@@ -1509,6 +1515,10 @@ null
 ### 充值监测
 
 * 调用`exchange.GetRecords`根据块号不断同步`PK`新的充值记录。
+  * **注意：**SERO是隐私公链，签名交易时对引用的 `UTXO` 需要给出证明，如果交易引用的`UTXO`较多，交易签名时间会非常长。因此需要在日常对充值的`UTXO`进行合并，这样在提现的时候才会让用户有好的体验。
+  * SERO提供离线和非离线签名合并`UTXO`交易的生成方法。
+    * 离线签名 [`GenMergeTx`](#GenMergeTx)
+    * 非离线签名 [`Merge`](#Merge)
 
 ### 提现
 
