@@ -305,11 +305,59 @@ gero有两种导入账户的方式，分别是导入 $seed$ 和导入 $TK$ ，�
    ```
    不管是导入 $seed$ 还是 $TK$ ，`gero` 都会为它生成一个keystore，其中 $seed$ 以密文的形式存储，$TK$ 以明文的形式存储。
 
-* 导出`Seed`
 
 
-  * 导出seed数据 `v0.7.8`
-  * 导出助记词
+## 离线接口的rpc版本 `v0.7.9`
+
+目前离线api接口提供了go和javascript两种语言，其他语言可以通过启动一个不对外连接的gero，通过rpc来使用这些功能。
+
+* **seed 生成 sk**
+
+  ```javascript
+  exchange.seed2Sk("0xec8bad429......0b1ab03d1f")    //seed: hex编码
+  "0x8fe1c73ac......0d1bc4305"                       //sk: hex 编码
+  ```
+
+  
+
+* **sk 生成 TK**
+
+  ```javascript
+  exchange.sk2Tk("0x8fe1c7......40d1bc4305")    //sk: hex编码
+  "GwA94QDTy......QQ1AguYXn"                    //TK: base58 编码
+  ```
+
+  
+
+* **TK 生成 PK**
+
+  ```javascript
+  exchange.tk2Pk("GwA94QDTyQ86c......1AguYXn")   //TK: hex或者base58 编码
+  "GwA94QDTyQ8......uW4bT3DvPf77a5"              //PK: base58 编码
+  ```
+
+  
+
+* **PK 生成 PKr**
+
+  ```javascript
+  >  exchange.getPkr("GwA94QDTyQ8......uW4bT3DvPf77a5","0x000000000......0000110")  // PK,RNG
+  "22mZ61am......aevRpWMD89"           //PKr: base58 编码
+  ```
+
+  
+
+* **离线签名**
+
+  ```javascript
+  > const sk = '0xfd1b401d2bbf......71a4b080977'                            //私钥 SK: hex 编码
+  > const txParamObj = {"Gas":25000,"GasPrice":1000000000,.... }       //由全节点构造(不是字符串)
+  > var tx=exchange.signTxWithSk(txParamObj,sk)
+  ```
+
+  
+
+
 
 ## 钱包接口
 
