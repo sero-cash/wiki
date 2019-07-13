@@ -11,6 +11,16 @@ SEI 接口的对接方式，exchange服务代管用户的 TK，负责追踪用�
 
 
 
+# 请对接用户注意，并认真阅读本文。
+
+### 1. 因为Seed->SK->TK->PK是一一对应的，一个PK可以通过随机数对应非常多的PKr。
+
+### 2. 每个用户通过随机数关联到不同的PKr，再关联到一个唯一的PK上，不需要为每个用户生成一个Seed。
+
+### 3. 请经常对账户的UTXO进行Merge，否则转账时过多的UTXO导致签名时间过长，将严重影响用户体验。
+
+
+
 ## 账户
 
 账户由 $Seed$、$SK$、$TK$、$PK$、$PKr$ 四种密钥构成，生成关系于下：
@@ -304,6 +314,28 @@ gero有两种导入账户的方式，分别是导入 $seed$ 和导入 $TK$ ，�
    INFO [06-13|15:45:10.007] Exchange indexed                         blockNumber=1031756
    ```
    不管是导入 $seed$ 还是 $TK$ ，`gero` 都会为它生成一个keystore，其中 $seed$ 以密文的形式存储，$TK$ 以明文的形式存储。
+  
+* **导入账户后，exchange分析会从第1块开始，为了避免exchange分析时间过长，用户可以通过修改keystore文件里面的自动跳过没有必要分析的块数。**
+
+  ```javascript
+  {
+      "address":"24DidZ7...KWTQtU8",
+      "tk":"24Did...BaG84r",
+      "crypto":{
+            "cipher":"aes-128-ctr",
+            "ciphertext":"4e4b3247...adbff2",
+            "cipherparams":{"iv":"1d13d245...3f9db2"},
+            "kdf":"scrypt",
+            "kdfparams":{"dklen":32,"n":262144,"p":1,"r":8,"salt":"e17991a97...b1b7bd"},
+            "mac":"b66f0c...2dd7d06"
+      },
+      "id":"f939...28c",
+      "version":1,
+      "at":1050000                  //增加at自动，自动跳过之前的 1~1050000 块
+  }
+  ```
+
+  
 
 
 
@@ -386,7 +418,7 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 
 * 在启动gero的时候添加 `—exchange` 和 `—mineMode` 以及 `--rpcapi exchange,sero` 三个参数即可开启gero的exchange服务。
   * `--exchange` 开启`exchange`服务
-  * `--mineMode` 关闭PC钱包使用的`balance`服务
+  * `--mineMode` 关闭PC钱包使用的`balance`服务，`balance`服务将被`exchange`服务代替。
   * `--rpcapi sero,exchange` 开启`exchange`和`sero`的jsonrpc接口
   * 其他的`rpc`参数与以太坊一致
   
