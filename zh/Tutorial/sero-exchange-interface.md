@@ -265,7 +265,7 @@ gero有两种导入账户的方式，分别是导入 $seed$ 和导入 $TK$ ，�
   * 导出seed对应的助记词是
 
   ```javascript
-  > personal.exportMnemonic(sero.account[0],"123456")  //公钥PK，密码
+  > personal.exportMnemonic(sero.accounts[0],"123456")  //公钥PK，密码
   "uncle frost expose ...... salmon champion before"
   ```
 
@@ -434,7 +434,7 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
   
   * `--exchangeValueStr` 将使gero的jsonrpc接口返回
   
-* gero为了尽可能少的在硬盘上存储数据，目前每10000块保存一次快照，因此当gero关闭后，会从最近的1万的整数倍块开始同步。
+* gero为了尽可能少的在硬盘上存储数据，目前每10000块或者1小时保存一次快照，因此当gero关闭后，会从最近的1万的整数倍块开始同步。
   
   * `--gcmode archive` 将使gero每一块都保存快照数据，重启的时候不会回滚区块。但是这种方式会耗费更大的硬盘存储。
   
@@ -445,7 +445,7 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 * 启动参数示例
 
   ```sh
-  ./gero --exchange --mineMode --datadir ~/geroData --port 53717 --rpc --rpcport 8545 --rpcapi exchange,sero,net --rpcaddr 127.0.0.1  --rpccorsdomain "*"  --gcmode archive   --keystore ~/keystore --confirmedBlock 32 --rpcwritetimeout 1800
+  ./gero --exchange --mineMode --datadir ~/geroData --port 53717 --rpc --rpcport 8545 --rpcapi exchange,sero,net --rpcaddr 127.0.0.1  --rpccorsdomain "*" --keystore ~/keystore --confirmedBlock 32 --rpcwritetimeout 1800
   ```
 
   * 对接方可以根据需求修改上面的配置
@@ -992,7 +992,7 @@ var txParam = exchange.genTx({
   {
   	"id": 0,
   	"jsonrpc": "2.0",
-  	"method": "exchange_genTx",
+  	"method": "exchange_genMergeTx",
   	"params": [{
   		"From": "0x0dbd9c0......9304201ea6",                //账户的PK
       "To": "0x8423cdaf......630a882a14",                 //合并到收款码(PKr)，为空则自动生成。
