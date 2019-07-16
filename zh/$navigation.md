@@ -19,6 +19,7 @@
 - [匿名Token发行实战](?file=Tutorial/practice-of-anonymous-token)
 - [NODE对接  (SSI 接口说明)](?file=Tutorial/sero-service-interface)
 - [WALLET对接 (SEI 接口说明)](?file=Tutorial/sero-exchange-interface)
+- [如何使用gero进行Staking](?file=Tutorial/how-to-staking-using-gero)
 
 ##### 标准范例
 
@@ -32,6 +33,7 @@
 ##### 最新动态
 
 - **产品发布**
+  - [MAINNET V1.0.0-RC0](?file=News/Release/SERO-MAINNET-V1.0.0-RC0)
   - [BETANET R7.3](?file=News/Release/SERO-BETANET-R7.3)
   - [BETANET R7.2](?file=News/Release/SERO-BETANET-R7.2)
   - [BETANET R7.1-HOTFIX.1](?file=News/Release/SERO-BETANET-R7.1-HOTFIX.1)

@@ -17,6 +17,7 @@
 - [Anonymous Tokens Issuance Principle](?file=Tutorial/principle-of-anonymous-token)
 - [Issue Anonymous Tokens](?file=Tutorial/practice-of-anonymous-token)
 - [Apply for mining license](?file=Tutorial/apply-for-mining-license)
+- [How to staking using gero](?file=Tutorial/how-to-staking-using-gero)
 
 ##### Standard example
 
@@ -30,6 +31,7 @@
 ##### News
 
 - **Releases**
+  - [MAINNET V1.0.0-RC0](?file=News/Release/SERO-MAINNET-V1.0.0-RC0)
   - [BETANET R7.3](?file=News/Release/SERO-BETANET-R7.3)
   - [BETANET R7.2](?file=News/Release/SERO-BETANET-R7.2)
   - [BETANET R7.1-HOTFIX.1](?file=News/Release/SERO-BETANET-R7.1-HOTFIX.1)
