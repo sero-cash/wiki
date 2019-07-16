@@ -4,9 +4,9 @@
 
 This update is BetaNet seamlessly switched to MainNet, and the relevant information is as follows:
 
-- Switch to the POW+POS consensus at $1290000.
+- Switch to the POW+POS consensus at $1300000.
   - Users and Exchanges have about 6 days to complete the full-node program update and technology upgrade.
-  - After the height of 1290000
+  - After the height of 1300000
     - Turn on the feature of  subscription of shares in share-pool
     - Turn on  the voting process.
     - Turn on the ability to create a staking node.
