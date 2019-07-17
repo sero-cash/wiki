@@ -31,7 +31,7 @@
 
 ## Share 的生命周期
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-2ec741ac26b57a57.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/277023-2ec741ac26b57a57.png)
 
 * 用户选择一定的价格购买股份后，本金即进入锁定状态**(Lock)**，股份进入当前的股份池中 **(InPool)**。
 * POW矿工在出块时随机选择3份股份，被选中的股份进入待投票状态 **(Lottery)**
@@ -47,7 +47,7 @@
 
 ## StakingNode的生命周期
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-c92bcb3bb1712720.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/277023-c92bcb3bb1712720.png)
 
 * 运营者通过锁定20万SERO币可以获得运营StakingNode 的权利。
 * StakingNode在运营一个月后才能进入关闭状态 **(Close)**
