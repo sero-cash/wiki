@@ -8,6 +8,14 @@
 
 
 
+进行Staking需要开启gero的exchange服务，启动时可以加入`--exchange --mineMode`两个参数：
+
+```sh
+./gero --exchange --mineMode --datadir ~/datadir
+```
+
+
+
 ## Staking 过程简要描述
 
 * POS 矿工可以在股份池里面购买投票的股份

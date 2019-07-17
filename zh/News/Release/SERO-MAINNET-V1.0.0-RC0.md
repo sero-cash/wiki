@@ -25,9 +25,23 @@
     * 升级全节点程序(gero)
     * 升级js-sero-client离线签名客户端（如果使用的话）
 
-
-
 关于Staking相关的功能可以参考：[《如何在gero上进行Staking》](?file=Tutorial/how-to-staking-using-gero)
+
+
+
+## 重要
+
+* 为支持Staking功能，本次更新会采用`exchange`服务代替`balance`服务提供gero的账户和余额管理功能，因此用户需要向gero增加`--exchange`和`--mineMode`两个参数启动`exchange`服务和关闭`balance`服务。
+
+```sh
+./gero --exchange --mineMode --datadir ~/datadir
+```
+
+* PC端钱包将自动切换。
+
+**注意：将`balance`切换到`exchange`服务之后，账户余额将会重新分析，将有一段时间（大概几个小时）余额显示不正确，大家不用担心。**
+
+
 
 
 
