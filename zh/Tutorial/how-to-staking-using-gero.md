@@ -14,6 +14,8 @@
 ./gero --exchange --mineMode --datadir ~/datadir
 ```
 
+**注意：加入这两个参数后，会对账户余额重新分析，将有一段时间（几个小时）无法看到正确的余额。**
+
 
 
 ## Staking 过程简要描述
