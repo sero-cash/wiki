@@ -6,7 +6,7 @@
 >
 > This article is mainly provided for users of full-node background program. Users of the wallet with a graphical interface, please wait for the subsequent documentation.
 >
-> **Staking function will be effective after the height of block `1290000`**
+> **Staking function will be effective after the height of block `1300000`**
 
 
 
