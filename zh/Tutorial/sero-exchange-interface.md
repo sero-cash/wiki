@@ -60,6 +60,7 @@ npm install js-sero-client
 * 可以由 $seed$ 生成出来
 * **Go语言**
 ```go
+  cpt.ZeroInit_OnlyInOuts()    //初始化加密库
   var seed keys.Uint256
   seed=keys.RandUint256()
   sk:=keys.Seed2Sk(&seed)
