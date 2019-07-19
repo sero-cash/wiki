@@ -374,7 +374,10 @@ gero有两种导入账户的方式，分别是导入 $seed$ 和导入 $TK$ ，�
 * **PK 生成 PKr**
 
   ```javascript
-  >  exchange.getPkr("GwA94QDTyQ8......uW4bT3DvPf77a5","0x000000000......0000110")  // PK,RNG
+  >  exchange.pk2Pkr(
+    "GwA94QDTyQ8......uW4bT3DvPf77a5",            //PK
+    "0x000000000......0000110"                    //32 byte 的随机数，为空则自动生成。
+  )  // PK,RNG
   "22mZ61am......aevRpWMD89"           //PKr: base58 编码
   ```
 
