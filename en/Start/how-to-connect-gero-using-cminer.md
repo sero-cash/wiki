@@ -1,5 +1,17 @@
 # How to mining solo using cminer
 
+
+
+## NOTE
+
+Currently switched to pow+pos consensus,  the pow part uses progpow algorithm, Can use gpu mining.
+
+For specific tutorials, please refer to:
+
+<https://blog.f2pool.com/en/mining-tutorial-en/sero_en>
+
+
+
 ## Why need to mine with cminer?
 
 **Many miners complain that mining using wallet is unstable, often crash or disconect, which are because:**

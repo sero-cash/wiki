@@ -2,6 +2,16 @@
 
 
 
+## 注意
+
+目前已经切换为POW+POS共识，POW的部分采用progpow算法，可以利用GPU挖矿。
+
+具体教程请参考：
+
+<https://blog.f2pool.com/zh/mining-tutorial/sero>
+
+
+
 ## 为什么需要用cminer挖矿
 
 **很多矿工都抱怨使用wallet全节点挖矿不稳定，经常崩溃或者掉线，这是因为：**
