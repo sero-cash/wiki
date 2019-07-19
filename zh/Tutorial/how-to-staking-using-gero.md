@@ -18,6 +18,10 @@
 
 
 
+如果需要通过`jsonrpc`接口调用staking的命令，可以通过加入`—rpcapi stake`参数开启。开启后`jsonrpc`的方法名可以跟其他的形式一致，比如`stake.buyShare`的方法名是`stake_buyShare`。
+
+
+
 ## Staking 过程简要描述
 
 * POS 矿工可以在股份池里面购买投票的股份
