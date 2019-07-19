@@ -1,14 +1,5 @@
 # SERO Mine Pool List
 
-## Official Pool
-
-- Site: Guangzhou, China
-- Fee: 5%, Settlement: 12-hours
-- Offical pool Miners Exchange Group：<https://discord.gg/xZREspF>
-- Address: 
-   - startum1+tcp: <http://129.204.197.105:8008>
-- Earnings: <http://203.195.255.129:8082> 
-
 
 ## F2pool
 
@@ -19,7 +10,14 @@
 - Address：<stratum1+tcp://sero.f2pool.com:4200>
 - Earnings：<https://www.f2pool.com/> 
 
+## BeePool
 
+- Fee: 2%/1% (PPS/PPLNS)
+- Payout Threshold：1 SERO
+- Payment Time: Once per day from 08:00-16:00 UTC
+- Help: <https://www.beepool.org/tutorial/sero>
+- Address：stratum1+tcp://sero-pool.beepool.org:9515
+- Earnings：<https://www.beepool.org>
 
 ## Ø•M•G Guild Pool
 
@@ -43,7 +41,6 @@
   - <http://www.sero-pool.top:8082>  (English)
   - <http://www.sero-pool.com:8082> (中文)
   - <http://www.sero-pool.cn:8082>  (中文)
-  
   
 
 ## The First Guild Pool

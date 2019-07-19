@@ -1,16 +1,5 @@
 # SERO 矿池列表
 
-## 官方矿池
-
-* 地点：中国、广州
-* 费率5%，12小时结算一次
-
-* 官方矿池矿工交流QQ群：733847862
-
-* 矿池地址：<http://129.204.197.105:8008>
-
-* 收益查询地址：<http://203.195.255.129:8082> 
-
 
 ## 鱼池
 
@@ -20,6 +9,15 @@
 * 挖矿教程：<https://blog.f2pool.com/zh/mining-tutorial/sero> 
 * 矿池地址：<stratum1+tcp://sero.f2pool.com:4200>
 * 收益查询：<https://www.f2pool.com/> 
+
+## 蜜蜂矿池
+
+* 费率: 1%
+* 起付额：1 SERO
+* 支付时间：每日08:00-16:00自动打币，每日一次。
+* 挖矿教程: <https://www.beepool.org/tutorial/sero>
+* 矿池地址：stratum1+tcp://sero-pool.beepool.org:9515
+* 收益查询：<https://www.beepool.org>
 
 
 ## 深圳矿池
