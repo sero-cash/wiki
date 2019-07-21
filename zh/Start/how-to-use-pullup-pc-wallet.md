@@ -52,16 +52,14 @@ Pullup钱包是在github上开源的，可以通过访问下面的链接来下�
 
 ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-f4a44c0339b71fa1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
-点击卡片上的双向箭头，就可以弹出节点选择器，你可以选择默认的节点`SERO Main Network`，也可以选择自己或者他人搭建的节点，不管选择那一种，都是安全的，因为钱包不会上传任何用户隐私信息到节点上。
+点击卡片上的双向箭头，就可以弹出节点选择器，你可以选择默认的节点`http://129.204.197.105:8545`，也可以选择自己或者他人搭建的节点，不管选择那一种，都是安全的，因为钱包不会上传任何用户隐私信息到节点上。
 
 ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-ba2866aa1f6da3fd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
 > 如果是选择自己或者他人搭建的 gero 节点，请确保其 gero 的版本号大于 `v1.0.0-rc2`，并且开启了 `--light --rpcapi light` 服务。
 
-> 另外两个选项是：
+> 另外的选项是：
 >
-> * localhost:8545
->   * 连接本地节点（需要在本地部署gero）
 > * Personal Rpc
 >   * 设置第三方的全节点ip和端口
 
