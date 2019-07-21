@@ -10,6 +10,7 @@
 - [矿池列表](?file=Start/sero-pool-list)
 - [如何用矿工程序(cminer)连接gero进行SOLO挖矿](?file=Start/how-to-connect-gero-using-cminer)
 - [快照下载列表](?file=Start/sero-chain-snapshot-list)
+- [如何使用PC端去中心化轻钱包](?file=Start/how-to-use-pullup-pc-wallet)
 
 ##### 教程
 
