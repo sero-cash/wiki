@@ -27,7 +27,7 @@
 
 Pullup钱包是在github上开源的，可以通过访问下面的链接来下载最新的Pullup钱包：
 
-<https://github.com/sero-cash/pullup>
+<https://github.com/sero-cash/pullup/releases>
 
 
 
