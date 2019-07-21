@@ -134,8 +134,9 @@ Pullup钱包是在github上开源的，可以通过访问下面的链接来下�
 
 
 
-* Pullup 钱包的地址分为主地址和收款码地址，这两种地址都可以作为发生地址使用。
+* Pullup 钱包的地址分为主地址和收款码地址，这两种地址都可以作为发送地址使用。
   * ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-638b0e8a5cf32ee3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+  * 主地址是一种特殊的收款码，可以多次使用不会发生变化。
   * 收款码在每次被使用之后都会发生变化。
   * 矿池挖矿时只能使用主地址。
   * 这两种地址都能使用于其他任何的情况：
