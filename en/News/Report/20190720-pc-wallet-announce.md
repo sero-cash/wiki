@@ -37,4 +37,4 @@ The SERO network will switch the consensus to PoS+PoW at a height of *1300000*
  
 
 * If the account is abnormal, you can enter the account interface to view the progress of the analysis.
-  * 
+  * ![image.png](https://upload-images.jianshu.io/upload_images/277023-0a381cca8341b206.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)

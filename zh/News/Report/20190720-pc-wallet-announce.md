@@ -20,7 +20,7 @@ SERO网络在130万块高度的时候会切换共识为 POS+POW。
   * 请在钱包的 `关于对话框` 确认节点版本号大于 `v1.0.0-rc2`
   * 如果不符合，请卸载钱包重新安装。
     * 卸载钱包不会清除区块数据
-    * 请注意备份号keystore文件
+    * 请注意备份好keystore文件
 
 ### 重点
 
@@ -29,4 +29,4 @@ SERO网络在130万块高度的时候会切换共识为 POS+POW。
   * `exchange`服务与第三方对接接口一致，运行更稳定。
 
 * 如果账户异常可以进入账户界面查看分析进度。
-  * 
+  * ![image.png](https://upload-images.jianshu.io/upload_images/277023-4c1fcf19f38247e8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
