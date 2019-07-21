@@ -285,8 +285,8 @@ Start registering `StakingNode`, note that in this example `accounts[0]` has 200
       from:sero.accounts[0],        //asset account
       vote:sero.accounts[1],        //voting account
       value:web3.toTa(200000),      //Registered fund
-      fee:web3.toHex(1000)          
-// Draw, 8000 represents 80%, 1000 represents 10%, and the maximum draw is 80%.
+      fee:web3.toHex(2500)          
+// Draw, 7500 represents 75%, 2500 represents 25%, and the maximum draw is 75%.
 })
 "0xecb3b5b235....8d35d7d1651"       //Register generated transaction hash
 ```
