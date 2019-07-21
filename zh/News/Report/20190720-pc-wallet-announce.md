@@ -29,4 +29,4 @@ SERO网络在130万块高度的时候会切换共识为 POS+POW。
   * `exchange`服务与第三方对接接口一致，运行更稳定。
 
 * 如果账户异常可以进入账户界面查看分析进度。
-  * ![image.png](https://upload-images.jianshu.io/upload_images/277023-4c1fcf19f38247e8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+  * ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-4c1fcf19f38247e8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
