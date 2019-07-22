@@ -4,7 +4,7 @@
 
 >  `Pullup钱包` 需要连接 `v1.0.0-rc2` 版本以上的全节点（gero），并且需要确保全节点启动参数中包含 `--light` 以及 `--rpcapi light`。
 
-> Pullup钱包只能购买股份和注册StakingNode，无法代替全节点进行投票，因此进行Staking投票的用户依然需要下载全节点钱包，并同步完整的区块数据。
+> **Pullup钱包只支持购买委托StakingNode投票的股份，暂不支持购买SOLO投票的股份。**
 
 
 
