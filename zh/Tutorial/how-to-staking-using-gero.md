@@ -289,6 +289,7 @@
 
 1. 拥有一个持续在线的全节点程序(gero)。
 2. 拥有一个包含 20万 SERO 余额的链上账户。
+   * 实际需要 20万+1 SERO ，1 SERO 作为 Gas 费。
 3. 拥有良好的网络环境。
 
 ### 步骤
@@ -309,7 +310,7 @@
 > sero.accounts[0]
 "5bEgN9YLqC......4zeamkdD16C"
 > web3.fromTa(sero.getBalance(sero.accounts[0]).tkn.SERO)
-200000.980079865355683522
+200000.980079865355683522         // > 20万 SERO
 ```
 
 
