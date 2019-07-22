@@ -13,7 +13,7 @@
 ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-1f5bb3f33fa6f7c2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
 - 用`难度`除以`时间间隔`，可以得出`全网的算力(HashRate)`
-  - $13570021803/11=1,233,638,345.72727 (H/S)​$ 
+  - $13570021803/11=1,233,638,345.72727 (H/S)$ 
   - 也就是每秒全网所有节点一共计算12.33亿次Hash值。
 - 当然这是初略估计，精确的话需要截取一段时间的数据，取平均值。
 
