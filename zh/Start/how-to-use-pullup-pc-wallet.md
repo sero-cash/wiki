@@ -34,15 +34,17 @@ Pullup钱包是在github上开源的，可以通过访问下面的链接来下�
 ## 安装
 
 * MAC下安装
-  * 解压 sero-pullup-mac.zip 为 sero-pullup-mac。
-  * 将sero-pullup-mac拷贝到【应用程序】文件夹中。
-  * 即可从启动面板里面启动Pullup钱包。
+  * 解压 pullup-mac-x.x.x.tar.gz 为 pullup 文件。
+  * 将 pullup 拷贝到【应用程序】文件夹中。
+  * 即可从启动面板里面启动 Pullup 钱包。
   * 如果被系统阻止，需要进入【偏好设置->安全性与隐私】，点击【仍要打开】
-* Win32下安装
-  * 解压sero-pullup-win32.zip 为 sero-pullup-win32文件夹
-  * 可将sero-pullup-win32放置于任何文件夹下
+* Windows下安装
+  * 目前仅支持64位win7.1以上的系统。
+  * 解压 pullup-windows-x.x.x.zip 为 pullup 文件夹
+  * 可将 pullup 放置于任何位置下
   * 进入文件夹中双击pullup.exe即可启动Pullup钱包
-  * 如果系统弹出防火墙拦截通知，可以点击【允许】
+    * 不要改变pullup.exe在文件夹中的路径
+  * 如果系统弹出防火墙拦截通知，点击【允许】
 
 
 
