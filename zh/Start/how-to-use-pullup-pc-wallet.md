@@ -174,7 +174,7 @@ Pullup钱包是在github上开源的，可以通过访问下面的链接来下�
 
 具体各项数据的说明请参考：[如何使用gero进行Staking](?file=Tutorial/how-to-staking-using-gero)
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-0a03a9533292bc4f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-0a03a9533292bc4f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 ### 权益池页面
 
@@ -183,12 +183,12 @@ Pullup钱包是在github上开源的，可以通过访问下面的链接来下�
 * 其中【我的股份】展示钱包内账户所有股份收益概要
 
 * 点击右上角【查看详情】可以看到每个股份的详细情况
-* ![image.png](https://upload-images.jianshu.io/upload_images/277023-666032bdf1a6ae86.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+* ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-666032bdf1a6ae86.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 * 其中【权益池】下面展示全网所有权益池列表以及统计情况
 * 点击【注册权益池】进行权益池的注册
 * 点击【买票】可以在买票的同时授权给某个权益池进行代投票。
-* ![image.png](https://upload-images.jianshu.io/upload_images/277023-d0f67df26b37c40d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+* ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-d0f67df26b37c40d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 ### 注册权益池
 
@@ -203,7 +203,7 @@ Pullup钱包是在github上开源的，可以通过访问下面的链接来下�
     * 收款码可以通过命令行`sero.genPKr`获取。
   * 费率必须是`[25,75]`范围的数字，代表最小抽成`25%`（即权益池的1/4份额），最大抽成75%。
   * 账户需要选择大于20万SERO的那个账户。
-  * ![image.png](https://upload-images.jianshu.io/upload_images/277023-c855b47b3b1acffc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+  * ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-c855b47b3b1acffc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
   * 点击【下一步】之后输入密码再点击【确定】，钱包后台会创建并发送交易，在链上注册权益池。
 * 注册完成的权益池在32个确认块之后将会展示在权益池列表中。
 
@@ -211,7 +211,7 @@ Pullup钱包是在github上开源的，可以通过访问下面的链接来下�
 
 光有权益池是不够的，不能挣得任何投票奖励，需要有用户在权益池中购买股份，权益池才能在区块产生的时候，以一定机率获得投票权。当你通过对比获得你认为的最佳权益池的时候，可以点击他后面的【购买份额】按钮购买股份。
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-bbcb274b0c6e0df0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-bbcb274b0c6e0df0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 购买的时候需要注意几个事情：
 
@@ -221,9 +221,9 @@ Pullup钱包是在github上开源的，可以通过访问下面的链接来下�
   * 这时就可以用自己设置的投票账户进行SOLO投票，减少自己的损失。
 * 购买金额需要选择自己能够承受的最大金额，系统会自动以当前票价帮你购买份额。
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-2fce062755465e2f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-2fce062755465e2f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 * 点击【下一步】输入密码然后点击【确定】之后，在账户详情页可以看到这笔交易。
-* ![image.png](https://upload-images.jianshu.io/upload_images/277023-bf81536ccb2d659b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+* ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-bf81536ccb2d659b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 * 大约32个确认块之后可以看到这笔交易确认，并且可以看到权益池里面更新的数据。
-* ![image.png](https://upload-images.jianshu.io/upload_images/277023-f85093508acd185b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+* ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-f85093508acd185b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
