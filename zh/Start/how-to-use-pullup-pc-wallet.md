@@ -222,6 +222,7 @@ Pullup钱包是在github上开源的，可以通过访问下面的链接来下�
   * 但存在一种情况，那就是权益池恶意罢工。
   * 这时就可以用自己设置的投票账户进行SOLO投票，减少自己的损失。
 * 购买金额需要选择自己能够承受的最大金额，系统会自动以当前票价帮你购买份额。
+* 每个交易一次最多购买1000个股份。
 
 ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-2fce062755465e2f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 

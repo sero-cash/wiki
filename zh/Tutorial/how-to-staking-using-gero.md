@@ -212,6 +212,8 @@
   
 * 认购，from 资金账户，vote 是投票账户，value是本次认购资金
 
+  * 为了使购买股份分散，每次最多购买1000分股份。
+  
   ```javascript
   >   stake.buyShare({from:sero.accounts[0],vote:sero.accounts[1],value:web3.toTa(20)})
   "0xac137baf4cd195....17c1fcb3edae4d25"
@@ -449,8 +451,8 @@
 
 ```javascript
 > stake.buyShare({
-      from:sero.accounts[0],
-      vote:sero.accounts[0],
+      from:sero.accounts[0],          //你的资金账户
+      vote:sero.accounts[1],          //你的投票账户
       pool:"0xc48e45......af708a",    //选择 StakingNode ID
       value:web3.toTa(2000)
 })
@@ -464,7 +466,8 @@
 }
 ```
 
-
+* 需要注意的是，在Staking Node工作正常的情况下，不要在全节点账户中解锁你自己的投票账户，因为这样可能会导致收益减少。
+* 当Staking Node恶意罢工的情况下，才解锁自己的投票账户，进行SOLO投票减少损失。
 
 #### 3. 确认票的Staking Node的情况
 
