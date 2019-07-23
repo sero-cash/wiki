@@ -64,7 +64,7 @@
 ![image.png](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/277023-c92bcb3bb1712720.png)
 
 * 运营者通过锁定20万SERO币可以获得运营StakingNode 的权利。
-* StakingNode在运营一个月后才能进入关闭状态 **(Close)**
+* StakingNode在运营一个月后，才能通过手工关闭，进入关闭状态 **(Close)**
   * 关闭之后将不允许新的股份代投申请。
   * 同时运营者有义务完成现在StakingNode中已有的股份。
 * StakingNode在同时满足下面两个条件下将归还本金进入结束状态**(Finish)**：
