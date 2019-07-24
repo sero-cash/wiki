@@ -2,6 +2,8 @@
 
 [TOC]
 
+## declare
+
 > `Pullup wallet` needs to connect to the full node (gero) above the `v1.0.0-rc2` version, and need to ensure that the full node startup parameters include `--lightNode` and `--rpcapi sero,stake,light`
 
 > **Pullup wallet only supports the purchase of shares voted by StakingNode, and does not support the purchase of SOLO voting shares. **
