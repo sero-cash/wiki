@@ -10,6 +10,7 @@
 - [How to mining solo using cminer](?file=Start/how-to-connect-gero-using-cminer)
 - [Summary of Wallet Problems](?file=Start/wallet-trouble-shooting-help)
 - [Snapshots download list](?file=Start/sero-chain-snapshot-list)
+- [How to use Decentralized Light Wallet (PC)](?file=Start/how-to-use-pullup-pc-wallet)
 
 ##### Tutorial
 
