@@ -57,11 +57,11 @@ The Pullup wallet is available open source on GitHub and you can download the la
 
 There is a card called `Node` on the front page of the wallet.
 
-![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-f4a44c0339b71fa1.png?imageMogr2/auto-orient/strip%7CimageView2/2 /w/400)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-f4a44c0339b71fa1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
 Click the two-way arrow on the card to pop up the node selector. You can choose the default node http://129.204.197.105:8545, or you can choose the node you built or built by others, no matter which one you choose. Secure because the wallet will not upload any user privacy information to the node.
 
-![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-ba2866aa1f6da3fd.png?imageMogr2/auto-orient/strip%7CimageView2/2 /w/400)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-ba2866aa1f6da3fd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 
 > If you choose a gero node built by yourself or others, make sure that its gero version number is greater than `v1.0.0-rc2` and that the `--lightNode --rpcapi sero,stake,light` service is enabled.
 
@@ -80,23 +80,23 @@ Click the two-way arrow on the card to pop up the node selector. You can choose 
 
 * Pullup wallet uses mnemonic to manage accounts. To create an account, click the button at the bottom of the homepage [Create Account].
 
-![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-5eac38ad56db462e.png?imageMogr2/auto-orient/strip%7CimageView2/2 /w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-5eac38ad56db462e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 
 
 * Enter at least 8 characters of any character password twice
 
-![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-834d8389b6439235.png?imageMogr2/auto-orient/strip%7CimageView2/2 /w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-834d8389b6439235.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 * Backup mnemonic
 
   * A mnemonic is equivalent to your private key. It must be kept safe. Leaking a mnemonic is equivalent to giving the account control to others.
 
-  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-9ddc22d908a10ed1.png?imageMogr2/auto-orient/strip%7CimageView2/2 /w/600)
+  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-9ddc22d908a10ed1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 * After entering the home page, you can see the account you just created.
 
-![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-5bd3b6ecc24fd16a.png?imageMogr2/auto-orient/strip%7CimageView2/2 /w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-5bd3b6ecc24fd16a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 
 
@@ -104,11 +104,11 @@ Click the two-way arrow on the card to pop up the node selector. You can choose 
 
 * The Pullup wallet uses the mnemonic as a medium to back up the account, so you can click on the account box in the home page that needs to be backed up to access the account page.
 
-![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-ca98c6acc58e7a75.png?imageMogr2/auto-orient/strip%7CimageView2/2 /w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-ca98c6acc58e7a75.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 * After the mnemonic page pops up, please write it down as soon as possible, then close the window and make sure it is safely stored and not leaked
 
-![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-e0b664b9fc79c8aa.png?imageMogr2/auto-orient/strip%7CimageView2/2 /w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-e0b664b9fc79c8aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 
 
@@ -116,11 +116,11 @@ Click the two-way arrow on the card to pop up the node selector. You can choose 
 
 * Click the [Use mnemonic import] button below the page for creating an account.
 
-  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-a4511fbe5196f333.png?imageMogr2/auto-orient/strip%7CimageView2/2 /w/600)
+  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-a4511fbe5196f333.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 * The wallet pops up the mnemonic input page, fill in the correct mnemonic on the page, and set the password.
 
-  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-23ffaff7038a664e.png?imageMogr2/auto-orient/strip%7CimageView2/2 /w/600)
+  ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-23ffaff7038a664e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 
 
@@ -130,7 +130,7 @@ Click the two-way arrow on the card to pop up the node selector. You can choose 
 
 Click the [Send] Tab button to enter the Send Transaction page and fill out the form as required by the page.
 
-![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-f787ad6927c4e0b6.png?imageMogr2/auto-orient/strip%7CimageView2/2 /w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-f787ad6927c4e0b6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 * The collection address must be filled in with the 'collect address', and the deposit address is a string of base58 encoded numbers, mainly from the
   * Exchange 'Deposit Address' 
@@ -144,7 +144,7 @@ Click the [Send] Tab button to enter the Send Transaction page and fill out the 
 ### Receiving Transaction
 
 * The address of the Pullup wallet is divided into the main address and the collection address, both of which can be used as the sending address.
-  * ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-638b0e8a5cf32ee3.png?imageMogr2/auto-orient/strip%7CimageView2/ 2/w/600)
+  * ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-638b0e8a5cf32ee3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
   * The main address is a special address that can be used multiple times without change.
   * The collection address will change after each use.
   * Only the main address can be used for mining.
@@ -157,7 +157,7 @@ Click the [Send] Tab button to enter the Send Transaction page and fill out the 
 
 * The biggest problem with the previous full-node wallet was that the transaxtion history could not be displayed and the Pullup wallet can display the transaction history.
 
-![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-bd8d26c61925b17b.png?imageMogr2/auto-orient/strip%7CimageView2/2 /w/800)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-bd8d26c61925b17b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
 
 
 
@@ -173,7 +173,7 @@ The following three PoS mining activities can be carried out in the decentralise
  * View my voting income
  For a description of the specific data, please refer to: [How to use gero for Staking] (?file=Tutorial/how-to-staking-using-gero)
 
-![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-0a03a9533292bc4f.png?imageMogr2/auto-orient/strip%7CimageView2/2 /w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-0a03a9533292bc4f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 ### Equity Pool Page
 
@@ -182,12 +182,12 @@ Click [Equity Pool] Tab to enter the equity pool page.
 * [My Shares] shows a summary of all share earnings in the account in the wallet
 
 * Click on the [View Details] in the upper right corner to see the details of each share.
-* ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-666032bdf1a6ae86.png?imageMogr2/auto-orient/strip%7CimageView2/ 2/w/600)
+* ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-666032bdf1a6ae86.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 *  [Equity Pool] below shows a list of all equity pools and statistics for the entire network.
 * Click [Register Equity Pool] to register the equity pool
 * Click [Buy Tickets] to authorize an equity pool to vote on behalf of the ticket.
-* ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-d0f67df26b37c40d.png?imageMogr2/auto-orient/strip%7CimageView2/ 2/w/600)
+* ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-d0f67df26b37c40d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 ### Equity Pool Registration
 
@@ -202,7 +202,7 @@ Click [Equity Pool] Tab to enter the equity pool page.
     * The address can be obtained from from the command line `sero.genPKr`.
   * The rate must be a number in the range [[25,75]` (minimum draw `25% (i.e 1/4 share of equity pool)`, maximum draw 75%)
   * The account needs to select the account with more than 200,000 SERO.
-  * ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-c855b47b3b1acffc.png?imageMogr2/auto-orient/strip%7CimageView2/ 2/w/600)
+  * ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-c855b47b3b1acffc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
   * Click [Next], enter the password and click [OK]. The wallet will create and send the transaction and will register the equity pool in the chain.
 * The registered equity pool will be displayed in the equity pool list after 32 confirmation blocks.
 
@@ -210,7 +210,7 @@ Click [Equity Pool] Tab to enter the equity pool page.
 
 It is not enough to have an equity pool (Stake Node). You cannot earn any voting rewards. Users need to buy shares in the equity pool. The equity pool can obtain voting rights at a certain probability when the block is generated. When you get the best equity pool by comparison, you can click on the [Purchase Share] button to buy shares.
 
-![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-bbcb274b0c6e0df0.png?imageMogr2/auto-orient/strip%7CimageView2/2 /w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-bbcb274b0c6e0df0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 There are a few things to note when buying:
 
@@ -221,9 +221,9 @@ There are a few things to note when buying:
 * The purchase amount needs to be the maximum amount that you can bear and the system will automatically help you buy the share with the current fare.
 * Purchase up to 1000 shares per transaction.
 
-![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-2fce062755465e2f.png?imageMogr2/auto-orient/strip%7CimageView2/2 /w/600)
+![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-2fce062755465e2f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 * Click [Next] to enter the password and then click [OK], you can see the transaction on the account details page.
-* ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-bf81536ccb2d659b.png?imageMogr2/auto-orient/strip%7CimageView2/ 2/w/600)
+* ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-bf81536ccb2d659b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 * You can see the transaction confirmation after about 32 confirmation blocks, and you can see the updated data in the equity pool.
-* ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-f85093508acd185b.png?imageMogr2/auto-orient/strip%7CimageView2/ 2/w/600)
+* ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-f85093508acd185b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
