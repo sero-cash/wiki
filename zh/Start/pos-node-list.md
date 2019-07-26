@@ -52,8 +52,8 @@
 ## 9、节点名称：Hotbit 节点
 - 节点 ID：0xda06d65e49808f31dec7b44339d856ff47ad2040a503ccd28a43a681195b23e1
 - 节点介绍：hotbit 交易所搭建的hotbit 节点为 SERO 打 Call，让更多矿工和矿场主、PoS 节点关注 SERO，为 SERO 提供稳定的算力和技术支持，也为未来 SERO 的市场推广助力。链上返息和理财返息结合，让SERO的持币用户拥有更好的体验。
-- 节点网站PC端：https://www.hotbit.io/
-- APP端：https://m.hotbit.io/
+- 节点网站PC端：https://www.hotbit.io
+- APP端：https://m.hotbit.io
 - 联系微信：tagore_ (备注：SERO节点）
 
 ## 10、节点名称：第一POS节点
