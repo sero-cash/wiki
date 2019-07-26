@@ -85,6 +85,7 @@
 ## 15、节点名称：T网节点
 - 节点ID: 0xf26f8e060b241ad3ff9c5821d85544b21419ef2730c5c64dc7bd89bfc3710885
 - 节点介绍：T网（tokencan.net）全力打造的Sero权益托管矿池，安全稳定，随进随退，收益实时可见，更有丰厚的社区节点奖励和1V1 VIP客户服务。Tokencan.net由香港证监会备案，致力于打造一个安全、稳定、高效、快捷的加密数字资产交易平台。
-PC端节点链接：https://www.tokencan.net/innovation/13 节点参与三部曲：注册T网账户—>充值Sero—>一键参与
+PC端节点链接：https://www.tokencan.net/innovation/13 
+节点参与三部曲：注册T网账户—>充值Sero—>一键参与
 T网矿池的优势：100 Sero起投，一键托管，收益更高，体验更好，省心省力，随托随退。
 - 客服微信：tokencan-2（备注Sero）
