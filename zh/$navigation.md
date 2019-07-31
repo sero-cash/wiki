@@ -59,6 +59,7 @@
   - [BETANET RC5](?file=News/Release/SERO-BETANET-RC5)
   - [BETANET RC4](?file=News/Release/SERO-BETANET-RC4)
 - **Reports**
+  - [2019年7月技术汇报](?file=News/Report/20190731-tech-report)
   - [SERO共识升级公告（PC钱包用户）](?file=News/Report/20190720-pc-wallet-announce)
   - [SERO共识升级公告（第三方对接用户）](?file=News/Report/20190720-3rd-announce)
   - [SERO的Token分配统计（截止2019.4.30)](?file=News/Report/token-distribution-statistics)
