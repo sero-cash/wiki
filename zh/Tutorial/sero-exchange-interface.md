@@ -432,7 +432,7 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
   
 * SERO的rpc有请求大小的限制，默认为512K。
   
-  * `--rpcRequestLength 1048576` 可以将限制改为1M
+  * `--rpcRequestContentLength 1048576` 可以将限制改为1M
   
 * 如果无法在jsonrpc返回值序列化的时候处理bigint类型，可以使jsonrpc以字符串的形式返回数值。
   
@@ -871,9 +871,22 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
   	"method": "exchange_genTx",
   	"params": [{
   		"From": "0x0dbd9c0......9304201ea6",                //账户的PK
-      "RefundTo": "0x8423cdaf......630a882a14",          //找零收款码(PKr)，为空则自动生成。
+      "RefundTo": "0x8423cdaf......630a882a14",          //可选，找零收款码(PKr)，为空则自动生成。
   		"Gas": 25000,                                       //最大消耗Gas，最少25000
   		"GasPrice": 1000000000,                             //GasPrice，默认1Gta
+      "Cmds": {                                           //可选，执行命令参数 (>=v1.0.0-rc6)
+        "BuyShare": {                                         //购买股份(以From为资金账户)
+          "Value": "2000000000000000000",                        //购买金额，单位Ta
+          "Vote":  "0x8423cdaf......630a882a14",                 //SOLO 投票地址
+          "Pool": "0x8414cdd......9df62dbda25b"                  //可选，StakingNode ID
+        },
+        "Contract": {                                         //调用智能合约
+          "Currency": "SERO",                                    //传入资产的币种
+          "Value": "1000000000",                                 //传入资产的金额，单位Ta
+          "To": "0x59bd488f......4e16a2e2b0",                    //合约地址，为空则是创建智能合约
+          "Data": "0x233892....228efad"                          //智能合约的Data
+        }
+      },
   		"Receptions": [{                                    //接受者信息
   			"Addr": "0x8423cdaf......630a882a14",             //接受者PKr|PK，PK会自动转成PKr
   			"Currency": "SERO",                               //币名

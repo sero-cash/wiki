@@ -233,15 +233,19 @@
   ```javascript
   > stake.getShare("0xb5b01116f......71015afc6f")
   {
-    addr: "5bEgN9YLq......4zeamkdD16C",
+    addr: "5bEgN9YLq......4zeamkdD16C",                //资金账户收款码
+    fee: 0,                                            //被抽成费率
     id: "0xb5b01116f3e8......2a08b28171015afc6f",      //你的股份ID
-    missed: 0,
-    num: 1,
-    price: 2001844456911510800,                       //平均价格
-    returnAmount: 20814755655292090000,               //已归还金额
-    status: 0,
-    total: 9,                                         //股份数
-    tx: "0x47a87164f......13e422efee",
+    lastPayTime: "0x147bf2",                           //上次结算点块号
+    missed: 0,                                         //丢失的票数
+    price: 2001844456911510800,                      //平均价格
+    profit: 20814755655292090000,                    //总收益
+    remaining: 71,                                   //剩余股份数
+    returnNum: "0x19",                              //已发放本金股份数  v1.0.0-rc6
+    returnProfit: "0xb6aa43a544af2",               //已发放奖励金额  v1.0.0-rc6
+    status: 0,                                      //股份总状态：0 有效，1 过期，2 完成
+    total: 112,                                        //总股份数
+    tx: "0x860867509de......1d9c5b0f6ee",            //购买该股份的交易hash
     voteAddr: "2tuxyM5uL4ZDk......4xdTPCe5xNPokr"     //投票账户的收款码
   }
   ```
@@ -397,6 +401,35 @@
   voteAddress: "2tuxyM5uL4......w4xdTPCe5xNPokr",
   wishVoteNum: "0x0",
   profit: "0x100"
+  returnProfit: "0x2d05ad6bd"                 //已发放奖励金额  v1.0.0-rc6
+}
+```
+
+
+
+#### 7. 节点统计接口 `v1.0.0-rc6`
+
+有开发能力的用户可以通过统计接口迭代每一个块号的某个`StakingNode`和在其中`Share`的状态，得到更加细节的数据。
+
+```javascript
+> stake.getStakeInfo(
+  "0xb1e20b......88176d",       //StakingNode Id
+  13400008,                     //起始块号
+  13400009                      //结束块号(不包含在结果中)
+)
+{
+  pools: [{                         //1300008 块时节点状态
+      blockNumber: 1300008,
+      lastPayTime: 0,              //结算块号，当这个值与blockNumber一致时，发放当前所有收益
+      ......
+      wishVoteNum: 0
+  }],
+  shares: [{                       //1300010 块时的股份状态
+      blockNumber: 1300010,
+      lastPayTime: 0,              //结算块号，当这个值与blockNumber一致时，发放当前所有收益和本金
+      ......
+      tx: "0xe622c3ff1b7863ed861252538f3bd52f78914af716a79121ccdf05f54d972a11"
+  }]
 }
 ```
 
