@@ -79,12 +79,12 @@
 -	Node introduction: HyperPay is the world's first digital wallet that integrates on-chain and off-chain, with multiple professional PoS pools. HyperPay provides asset security and node technical support for the SERO community, supports users to keep in and out, zero threshold mining, and has a built-in Coinw exchange, supports wallet to exchange one-click free transfer, instant transaction.
 -	Customer Service WeChat: hyperpay
 
-## 15) T Network Node
+## 15) Tokencan.net Node
 -	Node ID: 0xf26f8e060b241ad3ff9c5821d8554b21419ef2730c5c64dc7bd89bfc3710885
--	Node introduction: T Network ( tokencan.net) created the SERO Equity Mining Pool providing security and stability with in-and-out real-time revenue visibility, more generous community node rewards and VIP customer service. Tokencan.net, registered by the Hong Kong Securities Regulatory Commission, is committed to creating a secure, stable, efficient and fast encrypted digital asset trading platform.
+-	Node introduction: Tokencan.net Node created the SERO Equity Mining Pool providing security and stability with in-and-out real-time revenue visibility, more generous community node rewards and VIP customer service. Tokencan.net, registered by the Hong Kong Securities Regulatory Commission, is committed to creating a secure, stable, efficient and fast encrypted digital asset trading platform.
 Node link: https://www.tokencan.net/innovation/13
 Node Participation Steps: Register T Net Account - > Recharge Sero - > One Key Participation。
-Advantages of T-Net Mine: 100 Sero, One-Click Service, higher rewards, better experience, save effort, 
+Advantages of Tokencan.net Node Mine: 100 Sero, One-Click Service, higher rewards, better experience, save effort, 
 customer service.
 -	Customer Service tokencan-2 (Remarks SERO)
 
