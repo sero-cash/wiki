@@ -55,6 +55,7 @@
   - [BETANET RC5](?file=News/Release/SERO-BETANET-RC5)
   - [BETANET RC4](?file=News/Release/SERO-BETANET-RC4)
 - **Reports**
+  - [July 2019 Technical Report](?file=News/Report/201907-tech-report)
   - [SERO Consensus Upgrade Announcement (PC Full Node Wallet User)](?file=News/Report/20190720-pc-wallet-announce)
   - [Token distribution statistics for SERO coins (as of 2019.4.30) ](?file=News/Report/token-distribution-statistics)
   - [December 2018 Technical report](?file=News/Report/201812-tech-report)
