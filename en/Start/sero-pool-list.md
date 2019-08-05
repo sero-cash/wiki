@@ -88,3 +88,8 @@
 * Aaddress: pool.sero.52hash.com:8998
 * Earnings: http://sero.52hash.com
 
+## SERO.MOLE-POOL.net
+* Site: Russia
+* Fee: 2%, Settlement: 1 SERO every 30 mins
+* Address: stratum1+tcp://<address>.<worker>@sero.2zo.pw:8008
+* Earnings: https://sero.mole-pool.net
