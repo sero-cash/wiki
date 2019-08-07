@@ -47,7 +47,7 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
 > 账户的原理和构成细节请参考 <https://wiki.sero.cash/zh/index.html?file=Tutorial/sero-exchange-interface#账户>
 
 * **随机生成seed**
-   
+  
    seed需离线保存
    
   * request
@@ -58,6 +58,7 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
     	"method": "local_genSeed",
      	"params": []
    }
+  ```
 ```
   
   * response
@@ -67,8 +68,8 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
   	"result": "0xc0bdec98290c5a2895e357a6f96f4f7f98b6750d37e77971a055579e7246c403"   //随机生成的seed，32byte的hex编码。
   	"error": null
   }
-  ```
-  
+```
+
 * **由seed生成sk**
 
    私钥需离线使用
@@ -137,7 +138,7 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
    {
      	"id": 0,
      	"jsonrpc": "2.0",
-     	"method": "local_sk2Tk",
+     	"method": "local_tk2Pk",
      	"params": [
          "tu1nEPYcBwBZ...1cXNAs8Ht4z"      //跟踪秘钥 TK, 可以是 hex 或 base58 编码。
        ]
@@ -166,7 +167,7 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
    {
      	"id": 0,
      	"jsonrpc": "2.0",
-     	"method": "local_sk2Tk",
+     	"method": "local_pk2Pkr",
      	"params": [
          "tu1nEPYcBwBZ......cZojp6obBD87N",      //公钥 PK, 可以是 hex 或 base58 编码
          "0xd7a8cc1c7a1d09575950ca8004e3409ab7a6505b39a8e29783338e5016d8e7d1" //32 byte 随机数
@@ -196,7 +197,7 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
   {
   	"id": 0,
   	"jsonrpc": "2.0",
-  	"method": "local_sk2Tk",
+  	"method": "local_decOut",
   	"params": [
   		[{                          //参数1：需要解析的UTXO列表，来自flight_getBlocksInfo
   			Root: "0x7b30cc8....510fbb122e",
@@ -311,7 +312,7 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
     {
       	"id": 0,
       	"jsonrpc": "2.0",
-      	"method": "local_currencyToHex",
+      	"method": "local_currencyToId",
       	"params": [
           "SERO"     //币名字符串
         ]
@@ -340,7 +341,7 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
     {
       	"id": 0,
       	"jsonrpc": "2.0",
-      	"method": "local_currencyToHex",
+      	"method": "local_currencyToId",
       	"params": [
           "0x00000000....000005345524f"     //币种Id
         ]
