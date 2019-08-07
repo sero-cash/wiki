@@ -200,8 +200,8 @@ SSI的使用方式是不维护第三方创建的公私钥，因此，第三方�
   }
 ```
 
-
 ## 离线签名
+
 在  github.com/sero-cach/go-sero/zero/light 包里面，其中的sli.go是更底层的离线方法，调用这些方法不需要区块数据。
 
 gtx,err:=light.SLI_Inst.GenTx(param GenTxParam)

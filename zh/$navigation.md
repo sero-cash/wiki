@@ -21,6 +21,7 @@
 - [匿名Token发行实战](?file=Tutorial/practice-of-anonymous-token)
 - [NODE对接  (SSI 接口说明)](?file=Tutorial/sero-service-interface)
 - [WALLET对接 (SEI 接口说明)](?file=Tutorial/sero-exchange-interface)
+- [Flight接口说明](?file=Tutorial/sero-flight-interface)
 - [如何使用gero进行Staking](?file=Tutorial/how-to-staking-using-gero)
 - [发行匿名Token付费说明](?file=Tutorial/fee-for-issue-token)
 
