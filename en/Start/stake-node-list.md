@@ -92,3 +92,8 @@ customer service.
 -	Node ID: 0x86fea8e64ee24e515846642822ab7c0fabaf3f2879fb3064f267047d300b76f3
 -	Node introduction: 90% pool commission rebate.
 -	Customer Service WeChat: nobodylie
+
+## 17) Water Separation Node
+-	Node ID: 0xe058df83ef89df930aca3fed0c949ab6de1ccb51d2a87fc056631f11e3cd2ccc
+-	Node introduction: Forward!Forward!
+-	Customer Service WeChat: lymz_1999
