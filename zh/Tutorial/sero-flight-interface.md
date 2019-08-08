@@ -369,7 +369,7 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
 启动方式是：
 
 ```sh
-./gero --exchange --mineMode --datadir ~/geroData --port 53717 --rpc --rpcport 8545 --rpcapi exchange,sero,net --rpcaddr 127.0.0.1  --rpccorsdomain "*" --keystore ~/keystore --confirmedBlock 32 --rpcwritetimeout 1800 --exchangeValueStr
+./gero --mineMode --datadir ~/geroData --port 53717 --rpc --rpcport 8545 --rpcapi flight,sero --rpcaddr 127.0.0.1  --rpccorsdomain "*" --keystore ~/keystore --confirmedBlock 32 --rpcwritetimeout 1800 --exchangeValueStr
 ```
 
 

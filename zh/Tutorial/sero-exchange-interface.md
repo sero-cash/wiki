@@ -1200,7 +1200,8 @@ var txParam = exchange.genMergeTx({
   				"Close": null
   			}
   		},
-  		"Hash": "0x0dd3a1112......11af453498"      //交易Hash
+  		"Hash": "0x0dd3a1112......11af453498",      //交易Hash
+      "Roots": ["0x13ca7a0......75a3706b0"]       //输入的UTXO的Root列表
   	},
   	"error": null
   }
