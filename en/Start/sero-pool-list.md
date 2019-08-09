@@ -98,4 +98,4 @@
   * startum1+tcp: http://sero.mole-pool.net:4244
   * startum1+tcp: http://sero.mole-pool.net:4344
 * Earnings：
-  * https://sero.mole-pool.net (English)
+  * https://sero.mole-pool.net
