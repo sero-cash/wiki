@@ -341,7 +341,7 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
     {
       	"id": 0,
       	"jsonrpc": "2.0",
-      	"method": "local_currencyToId",
+      	"method": "local_idToCurrency",
       	"params": [
           "0x00000000....000005345524f"     //币种Id
         ]
