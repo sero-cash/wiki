@@ -88,8 +88,14 @@
 * Aaddress: pool.sero.52hash.com:8998
 * Earnings: http://sero.52hash.com
 
-## SERO.MOLE-POOL.net
+## First solo pool
 * Site: Russia
-* Fee: 2%, Settlement: 1 SERO every 30 mins
-* Address: stratum1+tcp://<address>.<worker>@sero.2zo.pw:8008
-* Earnings: https://sero.mole-pool.net
+* Fee: 2%, Settlement: 30 min
+* Telegram: 
+	* https://t.me/joinchat/ETboGg2cL9a7eTx4JB6uMg
+* Address：
+  * startum1+tcp: http://sero.mole-pool.net:4144
+  * startum1+tcp: http://sero.mole-pool.net:4244
+  * startum1+tcp: http://sero.mole-pool.net:4344
+* Earnings：
+  * https://sero.mole-pool.net (English)
