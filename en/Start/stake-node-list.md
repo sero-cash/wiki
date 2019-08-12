@@ -97,3 +97,9 @@ customer service.
 -	Node ID: 0xe058df83ef89df930aca3fed0c949ab6de1ccb51d2a87fc056631f11e3cd2ccc
 -	Node introduction: Forward!Forward!
 -	Customer Service WeChat: lymz_1999
+
+## 18) QBTC Node
+-	Node ID: 0x24a0a75882b3be4eb1b5ceee17c6f253d147cfbc43cb35e798cd5560f43d93ab
+-	Node introduction: The QBTC node is one of the Q-network exchange stake node with financial management functions. The exchange provides secure, stable and reliable wealth management product purchase and redemption services.
+- Node website PC: https://www.qbtc.ink [Optional pledge at the exchange, convenient and quick]
+-	Customer Service WeChat qbtc001  QQ Group: 581264962
