@@ -1,4 +1,4 @@
-# SERO Flight Interface (SFI) 接口说明
+# SERO Flight Interface (SFI) 接口说明 `v1.0.0-rc7`
 
 SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特点：
 
