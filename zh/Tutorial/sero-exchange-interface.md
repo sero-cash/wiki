@@ -188,8 +188,11 @@ pkr:=keys.Addr2PKr(&pk,&rnd)
   ```go
   import 'github.com/sero-cash/go-sero/zero/txtool/flight'
   import 'github.com/sero-cash/go-sero/zero/txtool'
+  import 'github.com/sero-cash/go-czero-import/cpt'
   param_str:='{"Gas":25000,"GasPrice":1000000000,"From":{"SKr":"0x0 .... }'  //由全节点构造
-  sk_str:='fd1b401d2bbfa09fba577b398b09b5ea075bd8f37773095c6e62271a4b080977'
+  sk_str:='0xfd1b401d2bbfa09fba577b398b09b5ea075bd8f37773095c6e62271a4b080977'
+  //------
+  cpt.ZeroInit_OnlyInOuts() //初始化
   //------
   var param txtool.GTxParam
   json.Unmarshal([]byte(param_str),&param)
