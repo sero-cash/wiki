@@ -186,30 +186,25 @@ pkr:=keys.Addr2PKr(&pk,&rnd)
 
 * 示例程序：<https://github.com/sero-cash/go-sero/blob/v0.7.2-dev/cmd/tx/main.go>
   ```go
-import 'github.com/sero-cash/go-sero/zero/txtool/flight'
-import 'github.com/sero-cash/go-sero/zero/txtool'
-
-param_str:='{"Gas":25000,"GasPrice":1000000000,"From":{"SKr":"0x0 .... }'  //由全节点构造
-sk_str:='fd1b401d2bbfa09fba577b398b09b5ea075bd8f37773095c6e62271a4b080977'
-
-//------
-var param txtool.GTxParam
-json.Unmarshal([]byte(param_str),&param)
-bs, _ := hexutil.Decode(sk_str)
-sk := keys.Uint512{}
-copy(sk[:], bs)
-
-	//------可以自己组装SK---------
-	copy(param.From.SKr[:], sk[:])
-for i := range param.Ins {
-copy(param.Ins[i].SKr[:], sk[:])
+  import 'github.com/sero-cash/go-sero/zero/txtool/flight'
+  import 'github.com/sero-cash/go-sero/zero/txtool'
+  param_str:='{"Gas":25000,"GasPrice":1000000000,"From":{"SKr":"0x0 .... }'  //由全节点构造
+  sk_str:='fd1b401d2bbfa09fba577b398b09b5ea075bd8f37773095c6e62271a4b080977'
+  //------
+  var param txtool.GTxParam
+  json.Unmarshal([]byte(param_str),&param)
+  bs, _ := hexutil.Decode(sk_str)
+  sk := keys.Uint512{}
+  copy(sk[:], bs)
+  //------可以自己组装SK---------
+  copy(param.From.SKr[:], sk[:])
+  for i := range param.Ins {
+    copy(param.Ins[i].SKr[:], sk[:])
   }
   gtx, _ := flight.SLI_Inst.GenTx(param)
-  
   //------也可以直接采用这种形式-------
   //gtx, _:=flight.SignTx(sk,param)
   //------
-  
   tx, _ := json.Marshal(&gtx)
   ```
 
