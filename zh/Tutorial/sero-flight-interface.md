@@ -59,7 +59,6 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
      	"params": []
    }
   ```
-```
   
   * response
   ```javascript
@@ -68,7 +67,7 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
   	"result": "0xc0bdec98290c5a2895e357a6f96f4f7f98b6750d37e77971a055579e7246c403"   //随机生成的seed，32byte的hex编码。
   	"error": null
   }
-```
+  ```
 
 * **由seed生成sk**
 
@@ -253,7 +252,35 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
   }
   ```
 
-  
+
+下面是Go语言版的UTXO解析
+
+  ```go
+import 'github.com/sero-cash/go-sero/zero/txtool/flight'
+import 'github.com/sero-cash/go-sero/zero/txtool'
+import 'github.com/sero-cash/go-czero-import/cpt'
+//---------
+outs_str := '[{Root:"0x7b30cc8....510fbb122e",....,TxHash:"0x921b8......be44829"}}]'
+tk_str := '0xfd1b401d2bbfa09fba577b398b09b5ea075bd8f37773095c6e62271a4b080977'
+//---------
+cpt.ZeroInit_OnlyInOuts() //初始化
+//---------
+var outs []txtool.Out
+json.Unmarshal([]byte(outs_str),&outs)
+//---------
+bs, _ := hexutil.Decode(sk_str)
+tk := keys.Uint512{}
+copy(tk[:], bs)
+//---------
+douts,_=flight.DecOut(&tk,outs)
+  ```
+
+> **由于Go语言引用了C++库(libczero.so)，因此需要:**
+>
+> 1. 下载最新的go-czero-import工程，并跟go-sero工程放在相同的路径上。
+>    * <https://github.com/sero-cash/go-czero-import>
+> 2. 设置环境变量 LD_LIBRARY_PATH 指向 go-czero-import/czero/lib_[XXXX]
+>    * XXXX 根据自己的系统进行选择
 
 ### 离线签名
 
@@ -298,7 +325,30 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
   }
   ```
 
-  
+
+也可以使用Go语言版的离线签名
+
+  ```go
+  import 'github.com/sero-cash/go-sero/zero/txtool/flight'
+  import 'github.com/sero-cash/go-sero/zero/txtool'
+  import 'github.com/sero-cash/go-czero-import/cpt'
+  param_str:='{"Gas":25000,"GasPrice":1000000000,"From":{"SKr":"0x0 .... }'  //由全节点构造
+  sk_str:='0xfd1b401d2bbfa09fba577b398b09b5ea075bd8f37773095c6e62271a4b080977'
+  //------
+  cpt.ZeroInit_OnlyInOuts() //初始化
+  //------
+  var param txtool.GTxParam
+  json.Unmarshal([]byte(param_str),&param)
+  bs, _ := hexutil.Decode(sk_str)
+  sk := keys.Uint512{}
+  copy(sk[:], bs)
+  //------可以自己组装SK---------
+  gtx, _:=flight.SignTx(sk,param)
+  //------
+  tx, _ := json.Marshal(&gtx)
+  ```
+
+
 
 ### 币名接口
 

@@ -200,13 +200,7 @@ pkr:=keys.Addr2PKr(&pk,&rnd)
   sk := keys.Uint512{}
   copy(sk[:], bs)
   //------可以自己组装SK---------
-  copy(param.From.SKr[:], sk[:])
-  for i := range param.Ins {
-    copy(param.Ins[i].SKr[:], sk[:])
-  }
-  gtx, _ := flight.SLI_Inst.GenTx(param)
-  //------也可以直接采用这种形式-------
-  //gtx, _:=flight.SignTx(sk,param)
+  gtx, _:=flight.SignTx(sk,param)
   //------
   tx, _ := json.Marshal(&gtx)
   ```
