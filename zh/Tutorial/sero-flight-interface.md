@@ -268,7 +268,7 @@ cpt.ZeroInit_OnlyInOuts() //初始化
 var outs []txtool.Out
 json.Unmarshal([]byte(outs_str),&outs)
 //---------
-bs, _ := hexutil.Decode(sk_str)
+bs, _ := hexutil.Decode(tk_str)
 tk := keys.Uint512{}
 copy(tk[:], bs)
 //---------
