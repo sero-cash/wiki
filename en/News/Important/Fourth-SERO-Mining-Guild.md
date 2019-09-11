@@ -22,12 +22,12 @@ The SERO team has now calculated the fourth guild award and the third award of t
 
 ### Table 2: The Third Mine Pool Award
 
-|Mine Pool Name|No. of blocks mined|Reward Amount|
-|--|--|--|
-|盘古矿池|414|5000|
-|深圳矿池|939|5000|
-|第一矿池|9611|15000|
-|OMG矿池|5369|15000|
-|赛罗矿池|46|5000|
-|铜锣矿池|17390|15000|
-|全梭矿池|19|5000|
+| Mine Pool Name | No. of blocks mined | Reward Amount |
+|----------------|---------------------|---------------|
+| 盘古矿池           | 414                 | 5000          |
+| 深圳矿池           | 939                 | 5000          |
+| 第一矿池           | 9611                | 15000         |
+| OMG矿池          | 5369                | 15000         |
+| 赛罗矿池           | 46                  | 5000          |
+| 铜锣矿池           | 17390               | 15000         |
+| 全梭矿池           | 19                  | 5000          |

@@ -28,10 +28,12 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
   3. 判断作废码`block.Nils`是否已经存在于之前保存的`UTXO`表中，如果存在，表明这个`UTXO`已经被用掉。
 * 发送交易（在线和离线）
   1. 选择需要转账的`UTXO`以及相关转账信息构造的参数调用`flight_genTxParam`，生成`txParam`。
-  2. 以`txParam`和私钥`sk`为参数调用离线签名方法`local_signTxWithSk`，生成待广播`tx`，并记录`txhash`
-  3. 以`tx`为参数调用`flight_commitTx`广播到全网。
-  4. 不断的以`txhash`为参数调用`flight_getTxReceipt`,获取到打包块号。
-  5. 确认32个块之后，还能从`flight_getTxReceipt`获取到数据则为成功交易。
+  2. 以`txParam`和私钥`sk`为参数调用离线签名方法`local_signTxWithSk`，生成待广播`tx`，并记录`txhash`。
+  3. 记录`local_signTxWithSk`的结果中的keys。
+  4. 以`tx`为参数调用`flight_commitTx`广播到全网。
+  5. 不断的以`txhash`为参数调用`flight_getTxReceipt`,获取到打包块号。
+  6. 确认32个块之后，还能从`flight_getTxReceipt`获取到数据则为成功交易。
+  7. 遇到纠纷的时候，可以拿出keys，调用`local_confirmOutZ`来解出明文数据。
 
 
 
@@ -319,6 +321,10 @@ douts,_=flight.DecOut(&tk,outs)
   		"Gas": "0x61a8",
   		"GasPrice": "0x3b9aca00",
   		"Hash": "0x813f69b7d60fe694ddfd6bec36e2adcba773a4518ee02354bd8f2f339f004a2e",
+      "Keys": [    //密文UTXO解析秘钥，不会提交到链上，可以保存作为确认证据。
+        "0x8e27d9fd65a178569b852cf71e476073b68c2f241074bbd7be712f145b84ee32", 
+        "0x6d83ce881db4fd68876c9a84f354124a01f94d53e702facb4db8071bc6ae146f"
+      ],
   		"Tx": {}
   	},
   	"error": null
@@ -346,6 +352,53 @@ douts,_=flight.DecOut(&tk,outs)
   gtx, _:=flight.SignTx(sk,param)
   //------
   tx, _ := json.Marshal(&gtx)
+  ```
+
+
+
+### 确认UTXO
+
+在交易签名的时候，会为每个Desc_Z中的Out生成一个Key，用这个Key可以通过接口`local_confirmOutZ`反解出这个的UTXO的明文。
+
+- request
+
+  ```javascript
+  {
+  	"id": 0,
+  	"jsonrpc": "2.0",
+  	"method": "local_confirmOutZ",
+  	"params": [
+  		"0x8e27d9fd65a17....7be712f145b84ee32",    //Key 解密秘钥，签名的时候返回出来。
+  		{                                          //
+  			AssetCM: "0xb5c26....7bcdaf0425",
+  			EInfo: "0x589fa119....741e562c1",
+  			OutCM: "0xb1908....3e48c14",
+  			PKr: "0x1da430a....27b0126",
+  			Proof: "0x03eed61....b24ad9b2a",
+  			RPK: "0xc80da39....3263c2"
+  		}
+  	]
+  }
+  ```
+
+- response
+
+  ```javascript
+  {
+  	"id": 0,
+  	"result": {
+  		Asset: {
+  			Tkn: {
+  				Currency: "0x000000000....0000005345524f",
+  				Value: "1000"
+  			},
+  			Tkt: null
+  		},
+  		Memo: "0x0000000....00000000",
+  		Nils: null
+  	},
+  	"error": null
+  }
   ```
 
 
