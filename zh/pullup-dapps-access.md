@@ -56,7 +56,7 @@ contract HelloWorld {
 }
 ```
 **2.部署合约**
-注意：开发环境需要100块后才能 
+注意：开发环境需要100个区块后才能发布智能合约.
 连接gero控制台
 ```
 > gero --datadir ~/Library/Sero/dev attach
@@ -166,17 +166,17 @@ call(method, args) {
 ```
 **Say Hello Demo 演示：**
 Set Name: 
-![3381568724750_.pic_hd.jpg](https://upload-images.jianshu.io/upload_images/13141677-d0d8f547d73e85ec.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![3381568724750_.pic_hd.jpg](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/13141677-d0d8f547d73e85ec.jpg?)
 
-![3361568724686_.pic.jpg](https://upload-images.jianshu.io/upload_images/13141677-1a835a58a32afd7e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![3361568724686_.pic.jpg](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/13141677-1a835a58a32afd7e.jpg)
 
 Say Hello
-![3371568724722_.pic.jpg](https://upload-images.jianshu.io/upload_images/13141677-868cd0cb4f1245ad.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![3371568724722_.pic.jpg](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/13141677-868cd0cb4f1245ad.jpg)
 
 添加DApp
-![3391568726149_.pic_hd.jpg](https://upload-images.jianshu.io/upload_images/13141677-63ec442509180b63.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![3391568726149_.pic_hd.jpg](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/13141677-63ec442509180b63.jpg)
 
-![3401568726217_.pic_hd.jpg](https://upload-images.jianshu.io/upload_images/13141677-a32fafbe6493c0b8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![3401568726217_.pic_hd.jpg](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/13141677-a32fafbe6493c0b8.jpg)
 
 
 ## 相关资料：
