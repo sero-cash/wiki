@@ -153,7 +153,7 @@ call(method, args) {
         }
     }
 ```
-在根目录新建 dapp.json文件
+在网站根目录新建 dapp.json文件
 ```
 {
   "img": "http://localhost:3000/logo192.png",
@@ -178,6 +178,7 @@ Say Hello
 
 ![3401568726217_.pic_hd.jpg](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/13141677-a32fafbe6493c0b8.jpg)
 
+**[DEMO下载](https://github.com/sero-cash/pullup-js-sdk/tree/master/example/dapp-hello)**
 
 ## 相关资料：
 >- [从源码开始——基于CENTOS7](https://wiki.sero.cash/zh/index.html?file=Start/from-the-sourcecode-base-on-centos7)
