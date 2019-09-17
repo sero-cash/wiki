@@ -16,7 +16,7 @@
 ##### 教程
 
 - [SERO钱包使用手册](?file=Tutorial/manual-of-wallet)
--  [SOLO模式下如何估算自己的出块概率](?file=Tutorial/how-to-evaluate-node-hashrate)
+- [SOLO模式下如何估算自己的出块概率](?file=Tutorial/how-to-evaluate-node-hashrate)
 - [匿名Token发行原理](?file=Tutorial/principle-of-anonymous-token)
 - [匿名Token发行实战](?file=Tutorial/practice-of-anonymous-token)
 - [NODE对接  (SSI 接口说明)](?file=Tutorial/sero-service-interface)
@@ -24,6 +24,7 @@
 - [Flight接口说明](?file=Tutorial/sero-flight-interface)
 - [如何使用gero进行Staking](?file=Tutorial/how-to-staking-using-gero)
 - [发行匿名Token付费说明](?file=Tutorial/fee-for-issue-token)
+- [pullup应用接入教程](?file=Tutorial/pullup-dapps-access)
 
 ##### 标准范例
 
