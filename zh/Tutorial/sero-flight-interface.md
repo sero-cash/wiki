@@ -325,6 +325,9 @@ douts,_=flight.DecOut(&tk,outs)
         "0x8e27d9fd65a178569b852cf71e476073b68c2f241074bbd7be712f145b84ee32", 
         "0x6d83ce881db4fd68876c9a84f354124a01f94d53e702facb4db8071bc6ae146f"
       ],
+      "Bases": [    //密文In解析秘钥，不会提交到链上，可以用flight_trace2Root提取Root。
+        "0x0000000000000000000000000000000000000000000000000000000000000000""
+      ],
   		"Tx": {}
   	},
   	"error": null
@@ -906,12 +909,12 @@ douts,_=flight.DecOut(&tk,outs)
   	"id": 0,
   	"jsonrpc": "2.0",
   	"method": "flight_commitTx",
-  	"params": {    //local_signTxWithSk的输出
+  	"params": [{    //local_signTxWithSk的输出
   		"Gas": "0x61a8",
   		"GasPrice": "0x3b9aca00",
   		"Hash": "0x813f69b7d60fe694ddfd6bec36e2adcba773a4518ee02354bd8f2f339f004a2e",
   		"Tx": {...}
-  	}
+  	}]
   }
   ```
 
@@ -923,6 +926,39 @@ douts,_=flight.DecOut(&tk,outs)
   {
   	"id": 0,
   	"result": null,    //成功返回null
+    "error": null,
+  }
+  ```
+
+  
+
+### 通过 TK 和 Trace 提取对应的Root
+
+在交易签名的时候，会为每个Desc_Z中的In生成一个Base，通过Base、Trace、TK三个值用`flight_trace2Root`可以提取该In对应的UTXO的Root。
+
+- request
+
+  ```javascript
+  {
+  	"id": 0,
+  	"jsonrpc": "2.0",
+  	"method": "flight_trace2Root",
+  	"params": [
+      "0xbb793767f......070f62f05",  //TK 跟踪秘钥
+      "0x0207f1a29......e7652eda1",  //Trace 原始Desc_Z.Ins 中的Trace字段
+      "0x000000000......000000000"   //签名之后对应的Base值
+    ]
+  }
+  ```
+
+  
+
+- response
+
+  ```javascript
+  {
+  	"id": 0,
+  	"result": "0x51182a6775......f07d1e49a095",    //Root值
     "error": null,
   }
   ```
