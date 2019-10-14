@@ -62,7 +62,7 @@
 
 ## 11) Spinach Node
 -	NodeID：0xcec0343b0b29eecb24ec54dafcb97adfedc2acc367348b851e71973aa4e54659
--	Node introduction: The world's first Spinach project based on the SERO main network, the Spinach node directly returns 80% of the equity pool proceeds to the voting users, and draws 10 lucky winners every week to win the bet eco-coin prize, and then vote for non-scheduled voting users. Stay tuned.
+-	Node introduction: The world's first Spinach project based on the SERO main network, the Spinach node directly returns 80% of the equity pool proceeds to the voting users.
 -	Contact WeChat: aoligei77889
 
 ## 12) Snow Rose Node
