@@ -32,7 +32,7 @@ The new protocol solves some problems in SuperZK 1.0 (CZero) and significantly o
 
 * Removal of mining license.
 
-### Removal of centralized mobile wallets.
+### Decentralized mobile wallets.
 
 * Support for iOS, Android and web browser. 
 
