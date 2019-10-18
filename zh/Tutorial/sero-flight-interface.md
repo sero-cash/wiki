@@ -83,7 +83,8 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
      	"jsonrpc": "2.0",
      	"method": "local_seed2Sk",
      	"params": [
-         "0xc0bdec98290c....79e7246c403"     //种子 seed
+         "0xc0bdec98290c....79e7246c403",     //种子 seed
+         2                                   //SuperZK版本，1: 1.0 2: 2.0, 不填默认是 1
        ]
    }
    ```
@@ -493,7 +494,7 @@ douts,_=flight.DecOut(&tk,outs)
     	"method": "flight_getBlocksInfo",
     	"params": [
         15,      //起始区块高度
-        1        //最大获取区块数
+        1        //获取后续多少区块
       ]
   }
   ```
@@ -530,6 +531,8 @@ douts,_=flight.DecOut(&tk,outs)
   						"Proof": "0x03d8b7e....5c88c2e06",
   						"RPK": "0x44231e....96841"
   					},
+            "Out_P": null,
+            "Out_C": null,
   				},
   				"TxHash": "0x482a2....bd0a5c2"
   			}
@@ -560,9 +563,9 @@ douts,_=flight.DecOut(&tk,outs)
   		"Pkgs": null                                       //Package 资产，交易所可以忽略
   	}],
   	"error": null
-  }
+}
   ```
-
+  
   
 
 ### 获取区块额外信息
@@ -629,21 +632,33 @@ douts,_=flight.DecOut(&tk,outs)
   			Root: "0x7b30cc8....510fbb122e",            
   			State: {
   				Num: 28,
-  				OS: {
+  				OS: {                            //下面的 Out_O/Out_Z/Out_P/Out_C 只会存在一个
   					Index: 31,
-  					Out_O: {                                //明文的Out，与Out_Z只会存在一个
-  						Addr: "0x7c02a05...ba6ac83a8",
+  					Out_O: {                                //SUPERZK1.0 明文的Out
+  						Addr: "0x7c02a05...ba6ac83a8",            //收款码PKr的hex编码
   						Asset: {...},
   						Memo: "0x0000......0000"
   					},
-  					Out_Z: {                               //密文的Out
+  					Out_Z: {                               //SUPERZK1.0 密文的Out
   						AssetCM: "0xa2a0f......745a9",
   						EInfo: "0x68a9e......b74ecfc493",
   						OutCM: "0xc90dc......90ff58f",
-  						PKr: "0x9364f11......14406a3",       //收款码PKr的hex编码
+  						PKr: "0x9364f11......14406a3",           //收款码PKr的hex编码
   						Proof: "0x0341d67......f941b0d",
   						RPK: "0x6230d4......02b51c2"
   					},
+            Out_P: {                               //SUPERZK2.0 明文Out
+              Asset: {...},
+              Memo: "0x00000....000000",
+              PKr: "0x77305....6bce36e"                 //收款码PKr的hex编码
+            },
+            Out_C: {                               //SUPERZK2.0 密文Out
+              AssetCM: "0xd3be8490....12904aa09",
+              EInfo: "0xd42e33....b46e1cd3",
+            PKr: "0xcc0c3b71....d7fcbd3",            //收款码PKr的hex编码
+              Proof: "0x02a04a89....ede4dca72f",
+              RPK: "0x855ba....352e88021"
+            },
   					RootCM: "0xff107b......ebdae30a2"
   				},
   				TxHash: "0x921b8......be44829"           //交易Hash
@@ -652,7 +667,7 @@ douts,_=flight.DecOut(&tk,outs)
   	"error": null
   }
   ```
-
+  
   
 
 ### 获取原始交易详情
@@ -722,13 +737,20 @@ douts,_=flight.DecOut(&tk,outs)
   				"Value": "90000000000000"                        //金额
   			},
   			"From": "0x3fb451......42be2a0",                   //发送方收款码，也是多余gas退回的地址。
-  			"Sign": "0x5fdd91......d98405"
+  			"Sign": "0x5fdd91......d98405"，
+        "Tx1": {                                     //SuperZK2.0 交易内容
+          "Ins_C": [{...}],                          //密文输入
+          "Ins_P": [],                               //明文输入
+          "Ins_P0": [],                              //SuperZK1.0-2.0转换输入
+          "Outs_C": [{...}],                         //密文输出
+        "Outs_P": [{...}]                          //明文输出
+        }
   		}
   	},
   	"error": null
   }
   ```
-
+  
   
 
 ### 获取交易收据

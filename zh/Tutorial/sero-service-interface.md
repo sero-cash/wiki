@@ -8,7 +8,7 @@ SSI的使用方式是不维护第三方创建的公私钥，因此，第三方�
 
 
 
-## CreateKr
+## CreateKr / szkCreateKr
 
 创建公私钥对
 
@@ -28,7 +28,7 @@ SSI的使用方式是不维护第三方创建的公私钥，因此，第三方�
   }
 ```
 
-
+* szkCreateKr 生成 **SuperZK2.0** 协议账户
 
 
 
@@ -167,10 +167,12 @@ SSI的使用方式是不维护第三方创建的公私钥，因此，第三方�
   }
 ```
 
-    **注意** 
+**注意** 
        * gero会根据当前机器的性能决定并行计算的数量，交易生成时间与引用的UTXO的数量成正比。
-       * 一个解决方案是对充值的UTXO进行merge，另外一个是延长接口调用的超时时间。
-       * --rpcwritetimeout [SECOND] 启动gero的时候加上这个参数，可以设置gero回写的超时时间，单位是秒。
+              * 一个解决方案是对充值的UTXO进行merge，另外一个是延长接口调用的超时时间。
+              * --rpcwritetimeout [SECOND] 启动gero的时候加上这个参数，可以设置gero回写的超时时间，单位是秒。
+
+
 
 ## CommitTx
 
@@ -200,53 +202,7 @@ SSI的使用方式是不维护第三方创建的公私钥，因此，第三方�
   }
 ```
 
-## 离线签名
 
-在  github.com/sero-cach/go-sero/zero/light 包里面，其中的sli.go是更底层的离线方法，调用这些方法不需要区块数据。
-
-gtx,err:=light.SLI_Inst.GenTx(param GenTxParam)
-
-param是需要签名的交易，gtx是签名后的交易。
-
-```go
-type GIn struct {
-	SKr     keys.PKr   //In所有人私钥
-	Out     Out        // GetBlocksInfo接口返回的结构
-	Witness Witness    // GetAnchor接口返回的结构
-}
-
-type GOut struct {
-	PKr   keys.PKr
-	Asset assets.Asset
-	Memo  keys.Uint512
-}
-
-type GenTxParam struct {
-	Gas      uint64
-	GasPrice big.Int
-	From     Kr          //发送者公-私钥对
-	Ins      []GIn
-	Outs     []GOut
-}
-
-type T struct {
-	Ehash    keys.Uint256   //外部hash
-	From     keys.PKr       //发送者暂存公钥
-	Fee      assets.Token   //gas费用
-	Sign     keys.Uint512   //From签名
-	Bcr      keys.Uint256   //Balance Commitment
-	Bsign    keys.Uint512   //BCR 签名
-	Desc_Z   Desc_Z         //密文输入输出
-	Desc_O   Desc_O         //明文输入输出(一般不用)
-	Desc_Pkg PkgDesc_Z      //Pkg描述(一般不用)
-}
-
-type GTx struct {
-	Gas      hexutil.Uint64
-	GasPrice hexutil.Big
-	Tx       stx.T //交易数据
-}
-```
 
 ## 建议对接方案
 

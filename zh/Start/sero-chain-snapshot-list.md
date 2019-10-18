@@ -26,6 +26,24 @@
 
 # 快照下载列表
 
+
+
+## 截止 1860566 万块的快照
+
+### MD5
+
+61346e4afc84f31b43a41daf1198dfbe
+
+### mega.nz
+
+<>
+
+### pan.baidu.com
+
+<https://pan.baidu.com/s/1lFj2kPhVebuCAnknkl2LZQ&shfl=sharepset>
+
+
+
 ## 截止 122 万块的快照
 
 ### MD5

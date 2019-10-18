@@ -24,7 +24,23 @@
 
 # Snapshots Download List
 
-BLOCK-NUM 1220K
+## BLOCK-NUM 1860K
+
+### MD5
+
+61346e4afc84f31b43a41daf1198dfbe
+
+### mega.nz
+
+<>
+
+### pan.baidu.com
+
+<https://pan.baidu.com/s/1lFj2kPhVebuCAnknkl2LZQ&shfl=sharepset>
+
+
+
+## BLOCK-NUM 1220K
 
 ### MD5
 

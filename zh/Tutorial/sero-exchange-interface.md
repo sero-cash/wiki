@@ -62,23 +62,27 @@ npm install js-sero-client
 ```go
   cpt.ZeroInit_OnlyInOuts()    //初始化加密库
   var seed keys.Uint256
-  seed=keys.RandUint256()
-  sk:=keys.Seed2Sk(&seed)
+  seed=c_type.RandUint256()
+  sk:=superzk.Seed2Sk(
+    &seed,                    //Seed 32 Byte 的随机数
+    2                         //SuperZK协议版本 1: SuperZK1.0, 2: SuperZK2.0
+  )
 ```
 * **JS语言**
 ```js
-  const account = require('js-sero-client').Account
+  const newKeysBySeed = require('js-sero-client').newKeysBySeed
   let seed = Buffer.alloc(
         32,
         'fd1b401d2bbfa09fba577b398b09b5ea075bd8f37773095c6e62271a4b080977',
         'hex'
   )
-  let keys = account.NewKeys(seed)            //seed 可以直接用字符串(hex|base58)
+  let keys = newKeysBySeed(
+    seed,                 //seed 可以直接用字符串(hex|base58)
+    2                     //SuperZK协议版本 1: SuperZK1.0, 2: SuperZK2.0
+  )
   let sk = keys.sk.toString('hex')
   let tk_hex = keys.tk.toString('hex')
   let tk_base58 = keys.tk.ToBase58()
-  let pk = keys.pk.toString('hex')
-  let pk_base58 = keys.pk.ToBase58()
 ```
 
 
@@ -91,18 +95,18 @@ npm install js-sero-client
 * $TK$ 由 $sk$ 生成
 * **Go语言**
 ```go
-  tk:=keys.Sk2Tk(&sk)
+  tk:=superzk.Sk2Tk(&sk)   //SuperZK1.0/2.0 都可以使用
 ```
 
 * **JS语言**
 ```js
-  const account = require('js-sero-client').Account
+  const newKeysBySk = require('js-sero-client').newKeysBySk
   let sk = Buffer.alloc(
          64,
          '4e7f432c24d2......e1513eadfef9d1cd604',
         'hex'
   )
-  let keys = account.NewKeys(undefined,sk)    //sk 可以直接用字符串(hex|base58)
+  let keys = newKeysBySk(sk)   //sk 可以直接用字符串(hex|base58)
   let tk_hex = keys.tk.toString('hex')
   let tk_base58 = keys.tk.ToBase58()
   let pk_hex = keys.pk.toString('hex')
@@ -119,17 +123,17 @@ npm install js-sero-client
 * $PK$ 由 $TK$ 生成。
 * **Go语言**
 ```go
-  pk:=keys.Tk2Pk(&tk)
+   pk:=superzk.Tk2Pk(&tk)        // tk: SuperZK1.0/2.0 协议跟踪秘钥
 ```
 * **JS语言**
 ```js
-  const account = require('js-sero-client').Account
+  const newKeysByTk = require('js-sero-client').newKeysByPK
   let tk = Buffer.alloc(
          64,
          '6a367411b800be76a9d......1ee1513eadfef9d1cd604',
         'hex'
   )
-  let keys = account.NewKeys(undefined,undefined,tk)      //tk 可以直接用字符串(hex|base58)
+  let keys = newKeysByTk(tk)      //tk 可以直接用字符串(hex|base58)
   let pk_hex = keys.pk.toString('hex')
   let pk_base58 = keys.pk.ToBase58()
 ```
@@ -144,19 +148,20 @@ npm install js-sero-client
 * $PKr$ 由 $PK$ 加入一个 32 BYTE 的随机数生成。
 * **Go语言**
 ```go
-rnd:=keys.RandUint256()  
-pkr:=keys.Addr2PKr(&pk,&rnd)
+rnd:=c_superzk.RandomFr()  
+pkr:=superzk.PK2PKr(&pk,&rnd)    //SuperZK2.0/1.0 都可以使用
 ```
 * **JS语言**
 ```js
-  const account = require('js-sero-client').Account
+  const newKeysByPK = require('js-sero-client').newKeysByPK  //SuperZK1.0/2.0 共用
+  const Czero = require('js-sero-client').Czero
   let pk = Buffer.alloc(
          64,
          '6a367411b800be......df5fb72aba4019',
         'hex'
   )
-  let rnd = account.czero.RandomU32()
-  let keys = account.NewKeys(undefined,undefined,undefined,pk)  //pk 可以直接用字符串(hex|base58)
+  let rnd = Czero.RandomU32()
+  let keys = newKeysByPK(pk)    //pk 可以直接用字符串(hex|base58)
   let pkr = keys.GenPKr(rnd)
   let pkr_hex = pkr.toString("hex")
   let pkr_base58 = pkr.ToBase58()
@@ -191,17 +196,18 @@ pkr:=keys.Addr2PKr(&pk,&rnd)
   import 'github.com/sero-cash/go-czero-import/cpt'
   param_str:='{"Gas":25000,"GasPrice":1000000000,"From":{"SKr":"0x0 .... }'  //由全节点构造
   sk_str:='0xfd1b401d2bbfa09fba577b398b09b5ea075bd8f37773095c6e62271a4b080977'
-  //------
-  cpt.ZeroInit_OnlyInOuts() //初始化
-  //------
+  //------初始化-----
+  cpt.ZeroInit_OnlyInOuts() //全局只能执行一次
+  //------txParam---
   var param txtool.GTxParam
   json.Unmarshal([]byte(param_str),&param)
+  //------私钥----
   bs, _ := hexutil.Decode(sk_str)
   sk := keys.Uint512{}
   copy(sk[:], bs)
-  //------可以自己组装SK---------
+  //------签名----
   gtx, _:=flight.SignTx(sk,param)
-  //------
+  //------转为JSON-----
   tx, _ := json.Marshal(&gtx)
   ```
 
@@ -244,7 +250,9 @@ tx.SignTx(
                   * gero 的 exchange 服务提供了自动 merge 功能，在gero上增加 `—autoMerge` 则可以自动进行UTXO的合并。
              * 可以延长接口调用的超时时间。
                   * `--rpcwritetimeout [SECOND]` 启动gero的时候加上这个参数，可以设置gero回写的超时时间，单位是秒。
-        * 并行运行多个签名
+        * 对于离线签名应用
+             * 并行运行多个签名
+             * 利用genMergeTx生成离线签名交易参数，再进行离线签名后发送。
 
 
 
@@ -268,14 +276,19 @@ gero有两种导入账户的方式，分别是导入 $seed$ 和导入 $TK$ ，�
   "uncle frost expose ...... salmon champion before"
   ```
 
-  * 直接导入hex编码的 $seed$
+  * 直接导入hex编码的 $seed$ (32 bytes 随机数)
 
   ```javascript
-  > personal.importRawKey("ec8bad429641f......0b1ab03d1f","123456")  // Seed，密码
+  > personal.importRawKey(
+    "ec8bad429641f......0b1ab03d1f", //Seed
+    "123456",                        //密码
+    true,                            //true: SuperZK1.0，false: SuperZK2.0
+    1800000                          //账户从1800000块开始进行余额分析
+  )
   "GwA94QDTyQ86cE5jc......8k5uW4bT3DvPf77a5"     //公钥PK
   ```
 
-  * 导出hex编码的 $seed$
+  * 导出hex编码的 $seed$，需要已经导入过这个账户。
 
   ```javascript
   >personal.exportRawKey("GwA94QDTyQ86cE5j....DvPf77a5","123456")  //公钥PK，密码
@@ -290,13 +303,16 @@ gero有两种导入账户的方式，分别是导入 $seed$ 和导入 $TK$ ，�
 
   
 
-* 导入 $TK$
+* 导入 $TK$，只能查看和跟踪交易和余额，不能发送交易。
 
   ```javascript
-  > personal.importTk("GwA94QDTyQ86cE5......AwUB22sEmQQ1AguYXn")   //TK
+  > personal.importTk(
+    "GwA94QDTyQ86cE5......AwUB22sEmQQ1AguYXn", //TK
+    1800000                                    //账户从1800000块开始分析
+)
   "GwA94QDTyQ86cE5jcuYCyr......bvaZPRMUwR8k5uW4bT3DvPf77a5"   //公钥PK
   ```
-
+  
   * 查看账户的 $TK$
   ```javascript
   > sero.getTk(sero.accounts[0])                        //公钥PK
@@ -314,8 +330,11 @@ gero有两种导入账户的方式，分别是导入 $seed$ 和导入 $TK$ ，�
    ```
    不管是导入 $seed$ 还是 $TK$ ，`gero` 都会为它生成一个keystore，其中 $seed$ 以密文的形式存储，$TK$ 以明文的形式存储。
   
-* **导入账户后，exchange分析会从第1块开始，为了避免exchange分析时间过长，用户可以通过修改keystore文件里面的自动跳过没有必要分析的块数。**
+* **导入账户后，exchange分析会从第1块开始，为了避免exchange分析时间过长，用户可以：**
 
+  
+  * 通过修改keystore文件里面的自动跳过没有必要分析的块数
+  
   ```javascript
   {
       "address":"24DidZ7...KWTQtU8",
@@ -330,11 +349,11 @@ gero有两种导入账户的方式，分别是导入 $seed$ 和导入 $TK$ ，�
       },
       "id":"f939...28c",
       "version":1,
-      "at":1050000                  //增加at自动，自动跳过之前的 1~1050000 块
+    "at":1050000                  //增加at自动，自动跳过之前的 1~1050000 块
   }
   ```
-
   
+  * 或者在导入账户的时候提供at参数。
 
 
 
@@ -345,7 +364,10 @@ gero有两种导入账户的方式，分别是导入 $seed$ 和导入 $TK$ ，�
 * **seed 生成 sk**
 
   ```javascript
-  exchange.seed2Sk("0xec8bad429......0b1ab03d1f")    //seed: hex编码
+  exchange.seed2Sk(
+    "0xec8bad429......0b1ab03d1f",
+    2                                  //SuperZK协议版本 1：1.0 2：2.0
+  )    //seed: hex编码
   "0x8fe1c73ac......0d1bc4305"                       //sk: hex 编码
   ```
 
@@ -363,7 +385,9 @@ gero有两种导入账户的方式，分别是导入 $seed$ 和导入 $TK$ ，�
 * **TK 生成 PK**
 
   ```javascript
-  exchange.tk2Pk("GwA94QDTyQ86c......1AguYXn")   //TK: hex或者base58 编码
+  exchange.tk2Pk(
+    "GwA94QDTyQ86c......1AguYXn",   //TK: hex或者base58 编码
+  )
   "GwA94QDTyQ8......uW4bT3DvPf77a5"              //PK: base58 编码
   ```
 
@@ -405,22 +429,12 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
   * 如何编译源码
     * <https://wiki.sero.cash/zh/index.html?file=Start/from-the-sourcecode-base-on-centos7>
 * 二进制程序发布位置
-  * **DARWIN (MacOS)**
-    * <https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.2-beta.r7.2/gero-v0.7.2-beta.r7.2-darwin-amd64.tar.gz>
-  * **WIN32**
-    * <https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.2-beta.r7.2/gero-v0.7.2-beta.r7.2-windows-amd64.zip>
-  * **LINUX3 (CENTOS 7)**
-    * <https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.2-beta.r7.2/gero-v0.7.2-beta.r7.2-linux-amd64-v3.tar.gz>
-  * **LINUX4 (UBUNTU 16.04)**
-    * <https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v0.7.2-beta.r7.2/gero-v0.7.2-beta.r7.2-linux-amd64-v4.tar.gz>
-  * 如何运行二进制程序
-    * <https://wiki.sero.cash/zh/index.html?file=Start/from-the-binary-package>
+  * https://github.com/sero-cash/go-sero/releases
+* 如何运行二进制程序
+  * <https://wiki.sero.cash/zh/index.html?file=Start/from-the-binary-package>
 
-
-
-* 在启动gero的时候添加 `—exchange` 和 `—mineMode` 以及 `--rpcapi exchange,sero` 三个参数即可开启gero的exchange服务。
+* 在启动gero的时候添加 `—exchange` 以及 `--rpcapi exchange,sero` 两个参数即可开启gero的exchange服务。
   * `--exchange` 开启`exchange`服务
-  * `--mineMode` 关闭PC钱包使用的`balance`服务，`balance`服务将被`exchange`服务代替。
   * `--rpcapi sero,exchange` 开启`exchange`和`sero`的jsonrpc接口
   * 其他的`rpc`参数与以太坊一致
   
@@ -434,7 +448,7 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
   
 * 如果无法在jsonrpc返回值序列化的时候处理bigint类型，可以使jsonrpc以字符串的形式返回数值。
   
-  * `--exchangeValueStr` 将使gero的jsonrpc接口返回
+  * `--exchangeValueStr` 将使gero的jsonrpc接口以字符串的形式返还数值。
   
 * gero为了尽可能少的在硬盘上存储数据，目前每10000块或者1小时保存一次快照，因此当gero关闭后，会从最近的1万的整数倍块开始同步。
   
@@ -447,7 +461,7 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 * 启动参数示例
 
   ```sh
-  ./gero --exchange --mineMode --datadir ~/geroData --port 53717 --rpc --rpcport 8545 --rpcapi exchange,sero,net --rpcaddr 127.0.0.1  --rpccorsdomain "*" --keystore ~/keystore --confirmedBlock 32 --rpcwritetimeout 1800 --exchangeValueStr
+  ./gero --exchange --datadir ~/geroData --port 53717 --rpc --rpcport 8545 --rpcapi exchange,sero,net --rpcaddr 127.0.0.1  --rpccorsdomain "*" --keystore ~/keystore --confirmedBlock 32 --rpcwritetimeout 1800 --exchangeValueStr
   ```
 
   * 对接方可以根据需求修改上面的配置
@@ -528,8 +542,9 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
   {
   	"id": 0,
   	"result": {
-      "hash":"0x61de8473709....3172c2225e55"， //块hash
-      "number": 109,                           //块号
+      "BlockHash":"0x61de8473709....3172c2225e55"， //块hash
+      "BlockNumber": 109,                           //块号
+      "ParentHash": "0xaf5f6bf0814203a8b49fc3398489e029dd4e9e5da45be241d3f85fc234f341aa"
       "timestamp": 1561398077                  //时间戳
       "TxHashes": [                                        //交易hash列表
         "0xc31c834efe568d56e7b4c60e7aefe2b223e8567244f242c7870ec5cb47cc1000", 
@@ -678,7 +693,7 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 * **console**
 
 ```javascript
->  exchange.getPkr(web3.addressToHex(sero.accounts[0]),"0x000000000......00000000000000100")
+>  exchange.getPkr(sero.accounts[0],"0x000000000......00000000000000100")
 "0x4546ffe8932.......88efeead5d7a84"
 ```
 
@@ -753,7 +768,10 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
   {
   	"id": 0,
   	"result": {
-  		"SERO": 4000000000000000000           //币种名 : 余额
+      "tkn" : {
+        "SERO": 4000000000000000000  //币种名 : 余额
+      },
+      "tkt" : {}
   	},
   	"error": null
   }
@@ -808,7 +826,7 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
   		"Nil": "0x902953f4eaec70e......b09beb8fff798a0d59ec23",     //UTXO的作废码
   		"Num": 1,                                                   //UTXO所在的块高度
       "Currency": "SERO",                                         //币名
-  		"Value": 1000000000000000000                                //币的数量
+  		"Value": "1000000000000000000"                                //币的数量
   	 }, 
   	  {
   		"Pkr": "0x291560a9ad4db22df......7bef504d7c7544dbddabcce6e79f0b",
@@ -817,7 +835,7 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
   		"Nil": "0xa6acfbc53cf68c433......0a1c0b974ad55977048069f",
   		"Num": 2,
   		"Currency": "SERO",                                         //币名
-  		"Value": 1000000000000000000                                //币的数量
+  		"Value": "1000000000000000000"                                //币的数量
   	 },
       ......
     ],
@@ -830,7 +848,7 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
 - **console**
 
 ```javascript
-> exchange.getRecords(1,3,web3.addressToHex(sero.accounts[0]))
+> exchange.getRecords(1,3,sero.accounts[0])
 [
   {
     Currency: "SERO",
@@ -839,7 +857,7 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
     Pkr: "0x5e3f88....1ee14",
     Root: "0xd79e00....250bc96",
     TxHash: "0x000000000......00000000000",
-    Value: 17600000000000000000
+    Value: "17600000000000000000"
   },
   ......
 ]
@@ -1075,6 +1093,7 @@ var txParam = exchange.genMergeTx({
             Currency: "SERO",                           //币名
             PK: "0x40aa8......f4d08a96",                //账户公钥
             Pkr: "0x924f6b6c......09bf320",             //收款码
+            Root: "0x0d57fa92.....879d811",             //Root
             Value: 4999925000000000000                  //金额
           },
           ......
@@ -1088,8 +1107,8 @@ var txParam = exchange.genMergeTx({
       },
     	"error": null
     }
-    ```
-
+  ```
+    
     
 
   
@@ -1598,6 +1617,7 @@ null
   * 通过离线客户端生成
     * 随机生成一个32bytes的seed，安全保存。
     * 调用`js-sero-client`的account对象生成`TK`、`PK`
+      * 建议采用更加安全SuperZK2.0协议创建账户。
   * 通过`gero`生成
     * 在`gero`控制台调用`personal.newAccount`生成新账户
     * 通过`personal.exportRawKey`导出`seed`，安全保存。
@@ -1639,10 +1659,12 @@ null
 
 ### 自动UTXO合并
 
-如果是在线签名的方式，可以采用
+* 如果是在线签名的方式，可以采用
+  * `exchange`的自动合并功能。
+    * 启动`gero`的时候加上`--autoMerge`参数。
+    * 当 `pk` 下的账户会定时进行自动的UTXO的合并。
+  * 在控制台调用`exchange.Merge`方法手动合并。
 
-* `exchange`的自动合并功能。
-  * 启动`gero`的时候加上`--autoMerge`参数。
-  * 当 `pk` 下的账户会定时进行自动的UTXO的合并。
-* 在控制台调用`exchange.Merge`方法手动合并。
+* 离线签名方向可以用`exchange.genMergeTx`构造合并交易。
+  * 然后进行离线签名后发送该交易。
 
