@@ -28,4 +28,4 @@
 ## 建议(非必须)
 
 在升级程序确认稳定后，可根据需求升级`SuperZK2.0`协议账户。
-   详细内容：<?file=News/Report/20191020-sip5-superzk20-account-update>
+   [详细内容](?file=News/Report/20191020-sip5-superzk20-account-update)
