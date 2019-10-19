@@ -44,6 +44,13 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
 ```sh
 ./gero --mineMode --datadir ~/geroData --nodiscover --rpc --rpcport 8545 --rpcapi local,sero --rpcaddr 127.0.0.1 --rpccorsdomain "*" --exchangeValueStr
 ```
+> * 另外，Local接口也可以通过Go语言来调用，需要依赖 `github.com/sero-cash/go-sero` 和 `github.com/sero-cash/go-czero-import` 这两个库。
+> > **由于Go语言引用了C++库(libczero.so)，因此需要:**
+> > 1. 下载最新的go-czero-import工程，并跟go-sero工程放在相同的路径上。
+> >    * <https://github.com/sero-cash/go-czero-import>
+> > 2. 设置环境变量 LD_LIBRARY_PATH 指向 go-czero-import/czero/lib_[XXXX]
+> >    * XXXX 根据自己的系统进行选择
+
 ### 账户管理
 
 > 账户的原理和构成细节请参考 <https://wiki.sero.cash/zh/index.html?file=Tutorial/sero-exchange-interface#账户>
@@ -69,6 +76,11 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
   	"result": "0xc0bdec98290c5a2895e357a6f96f4f7f98b6750d37e77971a055579e7246c403"   //随机生成的seed，32byte的hex编码。
   	"error": null
   }
+  ```
+  
+  * go语言
+  ```go
+  seed:=c_type.RandUint256()
   ```
 
 * **由seed生成sk**
@@ -99,8 +111,14 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
    }
    ```
 
-   
-
+  * go语言
+  ```go
+  sk:=superzk.Seed2Sk(
+    &seed,
+    2            //superzk协议版本 1:1.0 2:2.0
+  )
+  ```
+  
 * **由sk生成tk**
 
    跟踪秘钥TK无法对交易进行签名，因此可以在线使用。
@@ -126,6 +144,12 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
    	"result": "tu1nEPYcBwBZm......r5Y1cXNAs8Ht4z"   //跟踪秘钥 tk，64byte 的 base58 编码。
    	"error": null
    }
+   ```
+
+   * Go语言
+
+   ```go
+   tk:=superzk.Sk2Tk(&sk)
    ```
 
    
@@ -157,7 +181,15 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
    }
    ```
 
+   * Go语言
+
+   ```go
+   pk:=superzk.Tk2Pk(&tk)
+   ```
+
    
+
+
 
 * **由PK生成PKr**
 
@@ -187,7 +219,15 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
    }
    ```
 
+   * Go语言
    
+   ```go
+   pkr:=superzk.Pk2PKr(&pk)
+   ```
+   
+   
+
+
 
 ### UTXO解析
 
@@ -278,12 +318,7 @@ copy(tk[:], bs)
 douts,_=flight.DecOut(&tk,outs)
   ```
 
-> **由于Go语言引用了C++库(libczero.so)，因此需要:**
->
-> 1. 下载最新的go-czero-import工程，并跟go-sero工程放在相同的路径上。
->    * <https://github.com/sero-cash/go-czero-import>
-> 2. 设置环境变量 LD_LIBRARY_PATH 指向 go-czero-import/czero/lib_[XXXX]
->    * XXXX 根据自己的系统进行选择
+
 
 ### 离线签名
 
@@ -360,7 +395,7 @@ douts,_=flight.DecOut(&tk,outs)
 
 
 
-### 确认UTXO
+### 确认Out_Z
 
 在交易签名的时候，会为每个Desc_Z中的Out生成一个Key，用这个Key可以通过接口`local_confirmOutZ`反解出这个的UTXO的明文。
 
@@ -373,7 +408,7 @@ douts,_=flight.DecOut(&tk,outs)
   	"method": "local_confirmOutZ",
   	"params": [
   		"0x8e27d9fd65a17....7be712f145b84ee32",    //Key 解密秘钥，签名的时候返回出来。
-  		{                                          //
+  		{                                          //Out_Z的内容
   			AssetCM: "0xb5c26....7bcdaf0425",
   			EInfo: "0x589fa119....741e562c1",
   			OutCM: "0xb1908....3e48c14",
@@ -405,7 +440,64 @@ douts,_=flight.DecOut(&tk,outs)
   }
   ```
 
+* Go语言
 
+  ```go
+  dec_out,err:=flight.ConfirmOutZ(&key,&outz)
+  ```
+
+  
+### 确认Out_C
+
+在交易签名的时候，会为每个Tx1中的Out_C生成一个Key，用这个Key可以通过接口`local_confirmOutC`反解出这个的UTXO的明文。
+
+- request
+
+  ```javascript
+  {
+  	"id": 0,
+  	"jsonrpc": "2.0",
+  	"method": "local_confirmOutC",
+  	"params": [
+  		"0x8e27d9fd65a17....7be712f145b84ee32",    //Key 解密秘钥，签名的时候返回出来。
+  		{                                          //Out_C的内容
+  			AssetCM: "0xb5c26....7bcdaf0425",
+  			EInfo: "0x589fa119....741e562c1",
+  			PKr: "0x1da430a....27b0126",
+  			Proof: "0x03eed61....b24ad9b2a",
+  			RPK: "0xc80da39....3263c2"
+  		}
+  	]
+  }
+  ```
+
+- response
+
+  ```javascript
+  {
+  	"id": 0,
+  	"result": {
+  		Asset: {
+  			Tkn: {
+  				Currency: "0x000000000....0000005345524f",
+  				Value: "1000"
+  			},
+  			Tkt: null
+  		},
+  		Memo: "0x0000000....00000000",
+  		Nils: null
+  	},
+  	"error": null
+  }
+  ```
+
+* Go语言
+
+  ```javascript
+  dec_out,err:=flight.ConfirmOutC(&key,&outc)
+  ```
+
+  
 
 ### 币名接口
 
@@ -438,7 +530,14 @@ douts,_=flight.DecOut(&tk,outs)
     }
     ```
 
+  * Go语言
+
+    ```go
+    currency_id:=flight.CurrencyToId(currency_str)
+    ```
+
     
+
 
 * **币种Id转币名**
 
@@ -468,6 +567,17 @@ douts,_=flight.DecOut(&tk,outs)
     ```
 
     
+    
+  * Go语言
+  
+    ```go
+    currency_str:=flight.IdToCurrency(currency_id)
+    ```
+  
+    
+  
+
+
 
 ## Flight 接口
 
@@ -956,7 +1066,7 @@ douts,_=flight.DecOut(&tk,outs)
 
 ### 通过 TK 和 Trace 提取对应的Root
 
-在交易签名的时候，会为每个Desc_Z中的In生成一个Base，通过Base、Trace、TK三个值用`flight_trace2Root`可以提取该In对应的UTXO的Root。
+在交易签名的时候，会为每个In_Z或者In_C中的In生成一个Base，通过Base、Trace/NIL、TK三个值用`flight_trace2Root`可以提取该In对应的UTXO的Root。
 
 - request
 
@@ -985,4 +1095,4 @@ douts,_=flight.DecOut(&tk,outs)
   }
   ```
 
-  
+

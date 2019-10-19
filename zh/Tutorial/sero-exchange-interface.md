@@ -282,7 +282,7 @@ gero有两种导入账户的方式，分别是导入 $seed$ 和导入 $TK$ ，�
   > personal.importRawKey(
     "ec8bad429641f......0b1ab03d1f", //Seed
     "123456",                        //密码
-    true,                            //true: SuperZK1.0，false: SuperZK2.0
+    2,                               //协议版本 1: SuperZK1.0，2: SuperZK2.0
     1800000                          //账户从1800000块开始进行余额分析
   )
   "GwA94QDTyQ86cE5jc......8k5uW4bT3DvPf77a5"     //公钥PK
@@ -429,10 +429,12 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
   * 如何编译源码
     * <https://wiki.sero.cash/zh/index.html?file=Start/from-the-sourcecode-base-on-centos7>
 * 二进制程序发布位置
+  
   * https://github.com/sero-cash/go-sero/releases
 * 如何运行二进制程序
-  * <https://wiki.sero.cash/zh/index.html?file=Start/from-the-binary-package>
-
+  
+* <https://wiki.sero.cash/zh/index.html?file=Start/from-the-binary-package>
+  
 * 在启动gero的时候添加 `—exchange` 以及 `--rpcapi exchange,sero` 两个参数即可开启gero的exchange服务。
   * `--exchange` 开启`exchange`服务
   * `--rpcapi sero,exchange` 开启`exchange`和`sero`的jsonrpc接口
@@ -1107,11 +1109,13 @@ var txParam = exchange.genMergeTx({
       },
     	"error": null
     }
+    ```
   ```
     
     
-
   
+  
+  ```
 
 - **console**
 
