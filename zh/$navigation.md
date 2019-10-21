@@ -38,6 +38,7 @@
 ##### 最新动态
 
 - **产品发布**
+  - [MAINNET V1.0.1-RC1](?file=News/Release/SERO-MAINNET-V1.0.1-RC1)
   - [MAINNET V1.0.0-RC0](?file=News/Release/SERO-MAINNET-V1.0.0-RC0)
   - [BETANET R7.3](?file=News/Release/SERO-BETANET-R7.3)
   - [BETANET R7.2](?file=News/Release/SERO-BETANET-R7.2)
@@ -61,6 +62,8 @@
   - [BETANET RC5](?file=News/Release/SERO-BETANET-RC5)
   - [BETANET RC4](?file=News/Release/SERO-BETANET-RC4)
 - **Reports**
+  - [SERO SuperZK2.0 协议升级指南](?file=News/Report/20191020-sip5-superzk20-account-update)
+  - [SERO v1.0.1 版本升级指南](?file=News/Report/20191020-sip5-3rd-announce)
   - [2019年10月重大发布通告](?file=News/Report/20191016-superzk20-related-matters)
   - [2019年7月技术汇报](?file=News/Report/20190731-tech-report)
   - [SERO共识升级公告（PC钱包用户）](?file=News/Report/20190720-pc-wallet-announce)

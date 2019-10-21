@@ -23,9 +23,15 @@ SERO 本次发布 **SuperZK2.0** 协议主要提供下面三个方面的能力�
 
 1. 将 `gero` 升级为 `v1.0.1` 版本。
 
+   * 下载链接 <https://github.com/sero-cash/go-sero/releases/tag/v1.0.1-rc1>
+
 2. 将 `js-sero-client` 组件升级为 `v1.0.1` 版本。
 
+   * 使用npm升级。
+
 3. 如果依赖 `go-sero` 源码的请切换到 `v1.0.1` 源码上。
+
+   * 链接<https://github.com/sero-cash/go-sero>
 
    
 

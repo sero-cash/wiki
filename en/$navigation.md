@@ -55,6 +55,8 @@
   - [BETANET RC5](?file=News/Release/SERO-BETANET-RC5)
   - [BETANET RC4](?file=News/Release/SERO-BETANET-RC4)
 - **Reports**
+  - [SERO SuperZK2.0 Protocol Upgrade Guide](?file=News/Report/20191020-sip5-superzk20-account-update)
+  - [SERO v1.0.1 Version Upgrade Guide](?file=News/Report/20191020-sip5-3rd-announce)
   - [Major upgrade of SERO in October 2019](?file=News/Report/20191016-superzk20-related-matters)
   - [July 2019 Technical Report](?file=News/Report/201907-tech-report)
   - [SERO Consensus Upgrade Announcement (PC Full Node Wallet User)](?file=News/Report/20190720-pc-wallet-announce)
