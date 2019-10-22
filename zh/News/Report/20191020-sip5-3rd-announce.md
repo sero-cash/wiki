@@ -35,6 +35,7 @@
     * 用npm升级即可
   * gero 源码 v1.0.1 （如有源码依赖）
     * 用git升级即可 <https://github.com/sero-cash/go-sero>
+    * go-sero和go-czero-import两个项目源码都需要升级。
 
 * ### 在 **1958696** 高度左右1小时内，暂停充提或者转账操作。
 
