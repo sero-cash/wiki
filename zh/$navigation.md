@@ -62,6 +62,7 @@
   - [BETANET RC5](?file=News/Release/SERO-BETANET-RC5)
   - [BETANET RC4](?file=News/Release/SERO-BETANET-RC4)
 - **Reports**
+  - [Popup 钱包测试公告](?file=News/Report/20191023-popup-betatest-announce)
   - [SERO SuperZK2.0 协议升级指南](?file=News/Report/20191020-sip5-superzk20-account-update)
   - [SERO v1.0.1 版本升级指南](?file=News/Report/20191020-sip5-3rd-announce)
   - [2019年10月重大发布通告](?file=News/Report/20191016-superzk20-related-matters)
