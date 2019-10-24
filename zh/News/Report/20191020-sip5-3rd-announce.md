@@ -6,7 +6,7 @@
 
 软分叉将在 **1958696** 高度进行（北京时间 **2019年10月31日 20:30时** 左右）。
 
-更新情况可以参考：[MAINNET V1.0.1-RC1](?file=News/Release/SERO-MAINNET-V1.0.1-RC1)
+更新情况可以参考：[MAINNET V1.0.1](?file=News/Release/SERO-MAINNET-V1.0.1)
 
 **涉及对象**
 
@@ -35,11 +35,11 @@
 
 * ### 需要升级的组件
 
-  * gero `v1.0.1-rc2`
-    * 下载链接 <https://github.com/sero-cash/go-sero/releases/tag/v1.0.1-rc2>
+  * gero `v1.0.1-rc3`
+    * 下载链接 <https://github.com/sero-cash/go-sero/releases/tag/v1.0.1-rc3>
   * js-sero-client v1.0.1 （如有使用）
     * 用npm升级即可
-  * gero 源码 `v1.0.1-rc2` （如有源码依赖）
+  * gero 源码 `v1.0.1-rc3` （如有源码依赖）
     * go-sero
       * <https://github.com/sero-cash/go-sero>
       * Commit Id: `19a0b0d76eb0610fc4365f7d58171161afda2f4c`
