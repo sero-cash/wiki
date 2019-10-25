@@ -65,7 +65,7 @@ npm install js-sero-client
   seed=c_type.RandUint256()
   sk:=superzk.Seed2Sk(
     &seed,                    //Seed 32 Byte 的随机数
-    2                         //SuperZK协议版本 1: SuperZK1.0, 2: SuperZK2.0
+    1                         //SuperZK协议版本 1: SuperZK1.0, 2: SuperZK2.0
   )
 ```
 * **JS语言**
@@ -78,7 +78,7 @@ npm install js-sero-client
   )
   let keys = newKeysBySeed(
     seed,                 //seed 可以直接用字符串(hex|base58)
-    2                     //SuperZK协议版本 1: SuperZK1.0, 2: SuperZK2.0
+    1                     //SuperZK协议版本 1: SuperZK1.0, 2: SuperZK2.0
   )
   let sk = keys.sk.toString('hex')
   let tk_hex = keys.tk.toString('hex')
@@ -282,7 +282,7 @@ gero有两种导入账户的方式，分别是导入 $seed$ 和导入 $TK$ ，�
   > personal.importRawKey(
     "ec8bad429641f......0b1ab03d1f", //Seed
     "123456",                        //密码
-    2,                               //协议版本 1: SuperZK1.0，2: SuperZK2.0
+    1,                               //协议版本 1: SuperZK1.0，2: SuperZK2.0
     1800000                          //账户从1800000块开始进行余额分析
   )
   "GwA94QDTyQ86cE5jc......8k5uW4bT3DvPf77a5"     //公钥PK
@@ -366,7 +366,7 @@ gero有两种导入账户的方式，分别是导入 $seed$ 和导入 $TK$ ，�
   ```javascript
   exchange.seed2Sk(
     "0xec8bad429......0b1ab03d1f",
-    2                                  //SuperZK协议版本 1：1.0 2：2.0
+    1                                  //SuperZK协议版本 1：1.0 2：2.0
   )    //seed: hex编码
   "0x8fe1c73ac......0d1bc4305"                       //sk: hex 编码
   ```

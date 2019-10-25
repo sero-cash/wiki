@@ -8,7 +8,7 @@ SSI的使用方式是不维护第三方创建的公私钥，因此，第三方�
 
 
 
-## CreateKr / szkCreateKr
+## CreateKr
 
 创建公私钥对
 

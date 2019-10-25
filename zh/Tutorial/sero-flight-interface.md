@@ -96,7 +96,7 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
      	"method": "local_seed2Sk",
      	"params": [
          "0xc0bdec98290c....79e7246c403",     //种子 seed
-         2                                   //SuperZK版本，1: 1.0 2: 2.0, 不填默认是 1
+         1                                   //SuperZK版本，1: 1.0 2: 2.0, 不填默认是 1
        ]
    }
    ```
@@ -115,7 +115,7 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
   ```go
   sk:=superzk.Seed2Sk(
     &seed,
-    2            //superzk协议版本 1:1.0 2:2.0
+    1            //superzk协议版本 1:1.0 2:2.0
   )
   ```
   
