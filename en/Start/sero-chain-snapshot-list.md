@@ -32,7 +32,7 @@
 
 ### mega.nz
 
-<https://mega.nz/#!HwMRDaTC>
+<https://mega.nz/#!HwMRDaTC!sXdRfp-ZNhryOt07Eu8fHm770j4-ViYcMQjGCbAd-r8>
 
 ### pan.baidu.com
 
