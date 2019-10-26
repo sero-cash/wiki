@@ -29,15 +29,15 @@ The account system of `Popup` wallet is basically consistent with `Pullup` walle
 
 
 * **Android version download link**
-
    * https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/popup/sero_popup_v1.0.apk
-* **Web browser access link**
 
+* **Web browser access link**
    * http://popup.sero.cash
+
  * **IOS**
-    * open the link <http://popup.sero.cash>
-    * click the  [Share to]
-    * click the [Add to the home screen]
+   * open the link <http://popup.sero.cash>
+   * click the  [Share to]
+   * click the [Add to the home screen]
 
 
 
