@@ -35,9 +35,12 @@ The account system of `Popup` wallet is basically consistent with `Pullup` walle
    * http://popup.sero.cash
 
  * **IOS**
-   * open the link <http://popup.sero.cash>
-   * click the  [Share to]
-   * click the [Add to the home screen]
+   * **Use the WebApp**
+     * open the link <http://popup.sero.cash> in browser.
+     * click the  [Share to]
+     * click the [Add to the home screen]
+   * **Use the TestFlight**
+     * https://testflight.apple.com/join/cGWEPyC7
 
 
 

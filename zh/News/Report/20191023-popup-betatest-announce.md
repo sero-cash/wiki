@@ -23,6 +23,14 @@
   * https://sero.cash/app/popup/index.html
 * **浏览器访问链接**
   * http://popup.sero.cash
+* **IOS版本安装方案**
+  * **使用WebApp**
+    * 在浏览器里面打开链接 <http://popup.sero.cash>
+    * 点击下方  [分享] 按钮
+    * 点击 [添加到主屏幕]
+  * **使用 TestFlight 安装**
+    * 先安装Apple官方的Beta测试工具[TestFlight](https://itunes.apple.com/cn/app/testflight/id899247664?mt=8)
+    * 再在浏览器中打开 Popup 安装链接：<https://testflight.apple.com/join/cGWEPyC7>
 
 
 
