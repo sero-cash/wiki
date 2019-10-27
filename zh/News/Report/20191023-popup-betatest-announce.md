@@ -19,8 +19,6 @@
 
 * **Android版本下载链接**
   * https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/popup/sero_popup_v1.0.apk
-* **IOS版本下载链接**
-  * https://sero.cash/app/popup/index.html
 * **浏览器访问链接**
   * http://popup.sero.cash
 * **IOS版本安装方案**
