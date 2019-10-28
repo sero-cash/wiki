@@ -52,40 +52,7 @@
 ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/13141677-9f69069d07657471.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 `注意：一个钱包只能用一个账户进行挖矿。`
 
-### 4. 导入许可证(License)
-
-> - 接下来我们需要向SERO团队申请许可证，需要进行下面几个步骤：
->
->     - **加入SERO在微信/Discord/Telegram/Gitter上的miner社区**
->
->       - **gitter：** <https://gitter.im/sero-cash/miner>。
->       - **微信：** SERO9413
->       - **Discord：**  <https://discord.gg/n5HVxE>
->       - **Telegram：** <https://t.me/SeroOfficial>
->
->       > 选择你最常用的im工具加入社区即可，在社区你可以获得其他矿工提供的帮助。
->
->     -  **自助申请license**
->
->       > 上面已经生成了账户，请访问页面：<https://sero.cash/license/apply.html>，将`sero.accounts[0]`的公钥`PK`填入`Account address`，并完成其他的表单 ，然后点击`SUBMIT`。
->       >
->       > ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-bbb6f7c7661f7aba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
->
->       `注意：公钥可以作为资产接受地址，提供给第三方生成交易，泄露公钥并不会泄露你在SERO的信息。`
->
->     -  **安装许可证**
->
->       SERO团队在48小时内会为你生成BetaNet的挖矿许可证，并回信给你。
->       ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-ce2d496f2b656112.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
->
->       **回信中，你的许可证在正文和附件中各有一份，这两份是一致的。**
->
->       同时你可以通过在网页：<https://sero.cash/license/records.html>输入你的公钥去查询并下载你最新的license。
->
->       ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-86fb735f11d48516.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
-
-> - 点击菜单"账户">"导入账户或挖矿License",如下图,打开导入界面，此时只需要将名称为`BLIC.DATA`的文件拖拽到框中。
-![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/13141677-205221f5fc604f96.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
+### 4.自`MainNet-V1.0.1`版本之后已经不再需要挖矿许可证
 
 ### 5. 开启挖矿
 

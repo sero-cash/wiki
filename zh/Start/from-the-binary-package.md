@@ -242,57 +242,9 @@ SERO一共发行10亿数量的SERO币，除了其中10%作为早期捐赠的报�
 
 <br/>
 
-## 3. 安装挖矿许可证
+## 3. MainNet-V1.0.1 版之后已经不再需要挖矿许可证了。
 
-接下来我们需要向SERO团队申请许可证，需要进行下面几个步骤：
 
-* ### **加入SERO在微信/Discord/Telegram/Gitter上的miner社区**
-
-    - **gitter：** <https://gitter.im/sero-cash/miner>。
-    - **微信：** SERO9413
-    - **Discord：**  <https://discord.gg/n5HVxE>
-    - **Telegram：** <https://t.me/SeroOfficial>
-
-    > 选择你最常用的im工具加入社区即可，在社区你可以获得其他矿工提供的帮助。
-
-* ### **自助申请license**
-
-    > 上面已经生成了账户，请访问页面：<https://sero.cash/license/apply.html>，将`sero.accounts[0]`的公钥`PK`填入`Account address`，并完成其他的表单 ，然后点击`SUBMIT`。
-    >
-    > ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-bbb6f7c7661f7aba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
-
-    `注意：公钥可以作为资产接受地址，提供给第三方生成交易，泄露公钥并不会泄露你在SERO的信息。`
-
-* ### **安装许可证**
-
-    SERO团队在48小时内会为你生成BetaNet的挖矿许可证，并回信给你。
-    ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-ce2d496f2b656112.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-    **回信中，你的许可证在正文和附件中各有一份，这两份是一致的。**
-
-    同时你可以通过在网页：<https://sero.cash/license/records.html>输入你的公钥去查询并下载你最新的license。
-
-    ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-86fb735f11d48516.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
-
-    你需要在keystore目录下创建license目录，然后将许可证文件`BLIC.DATA`拷贝到这个目录下。
-
-    ```sh
-    $ cd ../datadir
-    $ mkdir keystore/license
-    $ echo "1169..[IGNORE]..51a85" > keystore/license/BLIC.DATA
-    ```
-
-    **现在许可证已经安装好了**
-
-    > **安全性说明：**
-    > 许可证是根据你的挖矿的公钥生成的，不同公钥生成的许可证不一样。在挖矿的时候，会利用许可证进行零知识证明，每次生成的证明都不一样。因此：
-    * 许可证并不会暴露在区块中。
-    * 共识会检查你产生的区块是不是得到许可。
-    * 只要不泄露你的跟踪秘钥`TK`和私钥`SK`，泄露许可证和公钥是安全的。
-        * 不会泄露作为矿工的身份。
-        * 其他用户也无法使用你的许可证。
-
-<br/>
 
 ## 4. 开始挖矿
 
