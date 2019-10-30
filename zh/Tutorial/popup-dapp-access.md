@@ -24,12 +24,14 @@ SERO Popup 钱包是一款去中心化的手机端钱包，分为IOS、Android�
 
 ## 开始接入
 
-###### 1. 配置开发环境
+### 1. 配置开发环境
+
 - 使用Crome浏览器打开：http://popup.sero.cash/
 - 新建开发账号
 - 在“我的”-“设置”-“节点设置”，设置gero节点，本例使用:  [http://127.0.0.1:8545](http://127.0.0.1:8545)
 
-###### 2. 开发智能合约
+### 2. 开发智能合约
+
 - IDE:  [https://remix.web.sero.cash/](https://remix.web.sero.cash/)
 - 源码: 
 ```
@@ -67,7 +69,8 @@ contract HelloDapp {
     }
 }
 ```
-###### 3. 新建`DApp`工程 （本教程使用`react`开发）
+### 3. 新建`DApp`工程 （本教程使用`react`开发）
+
 - 安装开发组件
 ```
 create-react-app hello-dapp
@@ -100,7 +103,8 @@ seropp.init(dapp,function (rest) {
 })
 ```
 
-###### 4. 调试
+### 4. 调试
+
 - 在Popup钱包中，打开“应用” ,输入DApp的地址
 
 ![image.png](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/13141677-3cbed5aa9cca490a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -211,7 +215,7 @@ execute = () => {
     }
 ```
 
-###### 5. DEMO下载 [https://github.com/sero-cash/sero-pp/example/]
+### 5. DEMO下载 [https://github.com/sero-cash/sero-pp/example/]
 
 - Hello Dapp页面
 
