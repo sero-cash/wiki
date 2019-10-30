@@ -14,12 +14,12 @@ SERO Popup Wallet is a decentralized mobile phone wallet, divided into three ver
          * Click [Add to Home Screen]
          
      * **Installation using TestFlight**
-         * Install Apple's official Beta test tool [TestFlight] (https://itunes.apple.com/cn/app/testflight/id899247664?mt=8)
+         * Install Apple's official Beta test tool [TestFlight](https://itunes.apple.com/cn/app/testflight/id899247664?mt=8)
          * Open the Popup installation link in your browser
-             * [https://testflight.apple.com/join/cGWEPyC7] (https://testflight.apple.com/join/cGWEPyC7)
+             * [https://testflight.apple.com/join/cGWEPyC7](https://testflight.apple.com/join/cGWEPyC7)
 * Android
      *   Download and install
-         * [https://sero-media.s3-ap-southeast-1.amazonaws.com/popup/sero_popup_v1.0.apk](https://sero-media.s3-ap-southeast-1.amazonaws.com /popup/sero_popup_v1.0.apk)
+         * [https://sero-media.s3-ap-southeast-1.amazonaws.com/popup/sero_popup_v1.0.apk](https://sero-media.s3-ap-southeast-1.amazonaws.com/popup/sero_popup_v1.0.apk)
 * Browser
      * Open [http://popup.sero.cash](http://popup.sero.cash/)
      
