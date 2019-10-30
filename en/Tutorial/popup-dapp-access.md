@@ -12,6 +12,7 @@ SERO Popup Wallet is a decentralized mobile phone wallet, divided into three ver
              * [http://popup.sero.cash](http://popup.sero.cash/)
          * Click the [Share] button below
          * Click [Add to Home Screen]
+         
      * **Installation using TestFlight**
          * Install Apple's official Beta test tool [TestFlight] (https://itunes.apple.com/cn/app/testflight/id899247664?mt=8)
          * Open the Popup installation link in your browser
@@ -112,7 +113,7 @@ seropp.init(dapp,function (rest) {
 
 ### 4. Debugging
 
-- 在Popup钱包中，打开“应用” ,输入DApp的地址
+- In the Popup wallet, open "Apps" and enter the address of the DApp.
 
 ![image.png](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/13141677-3cbed5aa9cca490a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
