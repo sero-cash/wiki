@@ -8,7 +8,7 @@
 
 ## 一、SERO Popup 钱包
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-70e18b75dca7b5f5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
+![image.png](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/277023-70e18b75dca7b5f5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
 
 **SERO Popup** 钱包是一款去中心化的手机端钱包，分为IOS、Android、浏览器三个版本。可以管理SERO生态中丰富的资产形式，并且支持Pullup钱包的助记词导入。**Popup** 钱包将是今后SERO上各种去中心化应用的主要入口。
 
@@ -34,7 +34,7 @@
 
 ## 二、SERO Pullup 钱包
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-99801bc9f9ff4861.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![image.png](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/277023-99801bc9f9ff4861.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 **SERO Pullup**钱包是一款去中心化的PC端轻钱包，支持账户管理、交易管理、权益质押、以及去中心化应用中心。目前已经有多款由社区开发的去中心化应用上架了应用中心。同时**Pullup**也是权益质押挖矿的主要入口。
 
@@ -49,7 +49,7 @@
 
 ## 三、SERO Flight 钱包
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-f9b3e6c04e0a701a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
+![image.png](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/277023-f9b3e6c04e0a701a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
 
 
 
@@ -73,7 +73,7 @@
 
 ## 四、SERO Wallet 钱包
 
-![image.png](https://upload-images.jianshu.io/upload_images/277023-796e30e8ddeadee5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![image.png](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/277023-796e30e8ddeadee5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
 
 **SERO Wallet** 是一款PC端的全节点钱包，在钱包后台，会启动一个全节点(gero)服务，并支持智能合约的发布与查看。**SERO Wallet**还提供了控制台启动脚本，使用户可以利用gero命令完成各种更精细的操作。
 

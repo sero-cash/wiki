@@ -103,7 +103,7 @@ seropp.init(dapp,function (rest) {
 ###### 4. 调试
 - 在Popup钱包中，打开“应用” ,输入DApp的地址
 
-![image.png](https://upload-images.jianshu.io/upload_images/13141677-3cbed5aa9cca490a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/13141677-3cbed5aa9cca490a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 - 核心方法
 ```
@@ -215,23 +215,23 @@ execute = () => {
 
 - Hello Dapp页面
 
-![image.png](https://upload-images.jianshu.io/upload_images/13141677-11672b169285cb3e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/13141677-11672b169285cb3e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 - 加载账户
 
-![image.png](https://upload-images.jianshu.io/upload_images/13141677-c499af2e0a5c45bb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/13141677-c499af2e0a5c45bb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 - 查询和执行智能合约
 
-![image.png](https://upload-images.jianshu.io/upload_images/13141677-f0958f64e3c9a841.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/13141677-f0958f64e3c9a841.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 - 确认交易信息（SERO Popup的组件，无需单独开发）
 
-![image.png](https://upload-images.jianshu.io/upload_images/13141677-f56b53c5a2021b16.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/13141677-f56b53c5a2021b16.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 - 弹出密码输入框（SERO Popup的组件，无需单独开发）
 
-![image.png](https://upload-images.jianshu.io/upload_images/13141677-97e1321a827b6b67.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/13141677-97e1321a827b6b67.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 相关资料
 >- **sero-pp** [https://github.com/sero-cash/sero-pp/](https://github.com/sero-cash/sero-pp/)
