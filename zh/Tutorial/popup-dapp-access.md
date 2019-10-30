@@ -34,6 +34,7 @@ SERO Popup 钱包是一款去中心化的手机端钱包，分为IOS、Android�
 
 - IDE:  [https://remix.web.sero.cash/](https://remix.web.sero.cash/)
 - 源码: 
+
 ```
 pragma solidity ^0.4.16;
 
@@ -69,9 +70,11 @@ contract HelloDapp {
     }
 }
 ```
+
 ### 3. 新建`DApp`工程 （本教程使用`react`开发）
 
 - 安装开发组件
+
 ```
 create-react-app hello-dapp
 cd hello-dapp
@@ -110,6 +113,7 @@ seropp.init(dapp,function (rest) {
 ![image.png](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/13141677-3cbed5aa9cca490a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 - 核心方法
+
 ```
 // 调用智能合约的方法（不发送交易）
 callMethod(_method, _args, callback) {
@@ -166,7 +170,9 @@ executeMethod(_method, args, value, cy, callback) {
         });
     }
 ```
+
 - 加载账户
+
 ```
 getAccountList = ()=>{
         let that = this;
@@ -179,6 +185,7 @@ getAccountList = ()=>{
 ```
 
 - 查询智能合约
+
 ```
 load = () => {
         let that = this;
@@ -204,7 +211,9 @@ load = () => {
         console.log("balance:: ",balance);
     }
 ```
+
 - 执行智能合约
+
 ```
 execute = () => {
         let name = document.getElementById("name").value;
