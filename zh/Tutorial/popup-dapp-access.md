@@ -82,15 +82,20 @@ npm install
 npm install sero-pp serojs bignumber.js sero-web3
 npm run start
 ```
+
 - 修改App.js，导入组件
+
 ```
 import serojs from 'serojs'
 import seropp from 'sero-pp'
 import Web3 from 'sero-web3'
 import BigNumber from 'bignumber.js'
 ```
+
 - 初始化DApp信息，
+
 `contractAddress ` 是智能合约地址
+
 ```
 const dapp = {
             name: "Hello DApp",
