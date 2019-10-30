@@ -229,7 +229,7 @@ execute = () => {
     }
 ```
 
-### 5. DEMO下载 [https://github.com/sero-cash/sero-pp/example/]
+### 5. DEMO下载 [https://github.com/sero-cash/sero-pp/tree/master/example/hello-dapp](hello-dapp)
 
 - Hello Dapp页面
 
