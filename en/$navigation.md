@@ -33,6 +33,7 @@
 ##### News
 
 - **Releases**
+  - [MAINNET V1.0.1](?file=News/Release/SERO-MAINNET-V1.0.1)
   - [MAINNET V1.0.0-RC0](?file=News/Release/SERO-MAINNET-V1.0.0-RC0)
   - [BETANET R7.3](?file=News/Release/SERO-BETANET-R7.3)
   - [BETANET R7.2](?file=News/Release/SERO-BETANET-R7.2)

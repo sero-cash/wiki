@@ -35,11 +35,11 @@
 
 * ### 需要升级的组件
 
-  * gero `v1.0.1-rc4`
-    * 下载链接 <https://github.com/sero-cash/go-sero/releases/tag/v1.0.1-rc4>
-  * js-sero-client v1.0.1 （如有使用）
+  * gero `v1.0.1-rc5`
+    * 下载链接 <https://github.com/sero-cash/go-sero/releases/tag/v1.0.1-rc5>
+  * js-sero-client `v1.0.1-rc5` （如有使用）
     * 用npm升级即可
-  * gero 源码 `v1.0.1-rc4` （如有源码依赖）
+  * gero 源码 `v1.0.1-rc5` （如有源码依赖）
     * go-sero
       * <https://github.com/sero-cash/go-sero>
       * Commit Id: `19a0b0d76eb0610fc4365f7d58171161afda2f4c`

@@ -26,7 +26,7 @@ Wallet钱包用户：
 1. 重启Wallet钱包触发升级提升框。
 2. 点击确认升级。
    * 确认Wallet钱包版本为 `v0.1.7`
-   * 确认Wallet后台节点版本为 `v1.0.1-rc4`
+   * 确认Wallet后台节点版本为 `v1.0.1-rc5`
 
 
 
@@ -34,8 +34,8 @@ Pullup钱包用户：
 -----
 
 1. 重启Pullup钱包。
-2. 根据提示将Pullup钱包升级至 `v0.1.8`
+2. 根据提示将Pullup钱包升级至 `v0.1.9`
 3. `v0.1.7`之前的钱包已经不可使用，请尽快升级。
 
   **Pullup 升级链接:**
-   https://github.com/sero-cash/pullup/releases/tag/v0.1.8
+   https://github.com/sero-cash/pullup/releases/tag/v0.1.9

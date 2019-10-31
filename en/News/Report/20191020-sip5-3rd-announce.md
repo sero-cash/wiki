@@ -4,7 +4,7 @@
 
 The `SERO` protocol has been upgraded to `SuperZK2.0`. Please complete the upgrade of `Full Node Program` and `Related Components` before October 27, 2019.
 
-Refer to: [MAINNET V1.0.1-RC1](?file=News/Release/SERO-MAINNET-V1.0.1-RC1)
+Refer to: [MAINNET V1.0.1](?file=News/Release/SERO-MAINNET-V1.0.1)
 
 The soft fork will be carried out at **1958696** (Beijing time **October 31, 2019, 20:30**).
 
@@ -16,11 +16,11 @@ The soft fork will be carried out at **1958696** (Beijing time **October 31, 201
 
 * ### Components that need to be upgraded
 
-  * gero v1.0.1
+  * gero v1.0.1-rc5
     * Download link <https://github.com/sero-cash/go-sero/releases>
-  * js-sero-client v1.0.1 (if used)
+  * js-sero-client v1.0.1-rc5 (if used)
     * Upgrade it with npm
-  * gero source code v1.0.1 (if there is source code dependency)
+  * gero source code v1.0.1-rc5 (if there is source code dependency)
     * Upgrade it with git
 
 ## Recommendations (not required)

@@ -15,13 +15,13 @@
 
 ## 发布名称
 
-`MainNet-V1.0.1-RC4`
+`MainNet-V1.0.1-RC5`
 
 
 
 ## 版本号
 
-gero:                `v1.0.1-rc4`
+gero:                `v1.0.1-rc5`
 mine-pool:      `v0.1.4`
 serominer:      `v0.3.0`
 js-sero-client:  `v1.0.1`
@@ -30,6 +30,8 @@ js-sero-client:  `v1.0.1`
 
 ## 新增特性
 
+* **RC5**
+  - [x] 修改花费UTXO时签名算法的Bug
 * **RC4**
   - [x]  为离线状态的gero增加了 --offline 参数
 * **RC3**
@@ -47,23 +49,22 @@ js-sero-client:  `v1.0.1`
 
 ## 提交 ID
 
-go-sero                    `9163bb722370d3ebedac4179a854153584cc826a`
-go-czero-import     `dac153d3b8ad511934e7e007810bdcef7c11e8cf` 
-console                  `df296a4b359ba14f555ab34e35896807581577f9`
-mine-pool             `fc3f2af2f261beefbe99b95d89abcb19b0d047f3`
-serominer               `a111c98b0b3ba5767ba4a7c2d02c949603ba90a9` 
+go-sero `f8258f9679abe3c6dbb265e70d622246e2fc3646`
+go-czero-import `a0271a3c40f1b6a31c74e5835cd80c8cdab2f1d2`
+console `df296a4b359ba14f555ab34e35896807581577f9`
+mine-pool `fc3f2af2f261beefbe99b95d89abcb19b0d047f3`
+serominer `a111c98b0b3ba5767ba4a7c2d02c949603ba90a9`
 
 
 
 ## 发布包
 
-> **二进制包下载地址:**
-> [https://github.com/sero-cash/go-sero/releases/tag/v1.0.1-rc3](https://github.com/sero-cash/go-sero/releases/tag/v1.0.1-rc3)
->
-> > gero-v1.0.1-rc3-darwin-amd64.tar.gz  `macos`,  md5 : `b7cbde6fc90e726be1a7d1c17d417049`
-> > gero-v1.0.1-rc3-linux-amd64-v3.tar.gz  `centos & ubuntu`, md5: `dfeb7b2f175b8cf75c53cc408127f199`
-> > gero-v1.0.1-rc3-linux-amd64-v4.tar.gz  `for fedora`, md5 : `135a679d28d4ca2ae6d7194ecc50e5e6`
-> > gero-v1.0.1-rc3-windows-amd64.zip  `windows`, md5 : `b62fe45e14a6ed817bd3130402a78177`
+> **二进制包下载地址:**  https://github.com/sero-cash/go-sero/releases/tag/v1.0.1-rc5
+> 
+>> gero-v1.0.1-rc5-darwin-amd64.tar.gz `macos`, md5 : 2115738c800b7ba517ac50e374cb1835
+> > gero-v1.0.1-rc5-linux-amd64-v3.tar.gz `centos & ubuntu`, md5: d74f879f2e99f0823acc0b5f64b16810
+> > gero-v1.0.1-rc5-linux-amd64-v4.tar.gz `for fedora`, md5 : 201843938296440f2679dc9b9f318d10
+> > gero-v1.0.1-rc5-windows-amd64.zip `windows`, md5 : 828ce8e2ff0b3ea1fffe9476ed8f7128
 
 
 
@@ -71,16 +72,16 @@ serominer               `a111c98b0b3ba5767ba4a7c2d02c949603ba90a9`
 
 ### DARWIN
 
-<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v1.0.1-rc4/gero-v1.0.1-rc4-darwin-amd64.tar.gz>
+https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v1.0.1-rc5/gero-v1.0.1-rc5-darwin-amd64.tar.gz
 
 ### LINUX3
 
-<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v1.0.1-rc4/gero-v1.0.1-rc4-linux-amd64-v3.tar.gz>
+https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v1.0.1-rc5/gero-v1.0.1-rc5-linux-amd64-v3.tar.gz
 
 ### LINUX4
 
-<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v1.0.1-rc4/gero-v1.0.1-rc4-linux-amd64-v4.tar.gz>
+https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v1.0.1-rc5/gero-v1.0.1-rc5-linux-amd64-v4.tar.gz
 
 ### WINDOWS
 
-<https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v1.0.1-rc4/gero-v1.0.1-rc4-windows-amd64.zip>
+https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/gero/v1.0.1-rc5/gero-v1.0.1-rc5-windows-amd64.zip
