@@ -20,6 +20,7 @@
 - [Issue Anonymous Tokens](?file=Tutorial/practice-of-anonymous-token)
 - [Apply for mining license](?file=Tutorial/apply-for-mining-license)
 - [How to staking using gero](?file=Tutorial/how-to-staking-using-gero)
+- [SERO Popup DApp access tutorial](?file=Tutorial/popup-dapp-access)
 
 ##### Standard example
 
