@@ -25,7 +25,8 @@
 - [Flight接口说明](?file=Tutorial/sero-flight-interface)
 - [如何使用gero进行Staking](?file=Tutorial/how-to-staking-using-gero)
 - [发行匿名Token付费说明](?file=Tutorial/fee-for-issue-token)
-- [pullup应用接入教程](?file=Tutorial/pullup-dapps-access)
+- [SERO Pullup应用接入教程](?file=Tutorial/pullup-dapps-access)
+- [SERO Popup应用接入教程](?file=Tutorial/popup-dapp-access)
 
 ##### 标准范例
 
