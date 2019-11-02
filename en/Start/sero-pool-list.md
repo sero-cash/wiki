@@ -104,3 +104,13 @@
 * Earnings：
    * https://sero.mole-pool.net/ (English)
 
+
+## WoolyPooly
+
+* Fee: 1% PPLNS 
+* Payout Threshold: 2 SERO 
+* Payment Time: 2hours 
+* Address: stratum1+tcp://sero.woolypooly.com:8008 
+* Earnings: https://woolypooly.com/
+
+
