@@ -13,22 +13,23 @@ With the help of community of all forces, SERO has been highly successful and sw
 # Installation method
 
 1. Popup
-* **iOS**
-  * Use **WebApp**
-    * Open the link in the browser
-      *  http://popup.sero.cash
-    * Click the [Share] button below
-    * Click [Add to Home Screen]
-  * Install using **TestFlight**
-    * Install Apple's official beta test tool first. TestFlight
-    * Then open in a browser Popupinstalled link
-      * https://testflight.apple.com/join/cGWEPyC7
-* **Android**
+   * iOS
+     * Use **WebApp**
+        * Open the link in the browser
+          * http://popup.sero.cash
+        * Click the [Share] button below
+        * Click [Add to Home Screen]
 
-  * Download and install
-    * https://sero-media.s3-ap-southeast-1.amazonaws.com/popup/sero_popup_v1.0.apk
-* **Browser**
-  * Open http://popup.sero.cash
+      * Install using **TestFlight**
+        * Install Apple's official beta test tool first. TestFlight
+        * Then open in a browser Popupinstalled link
+          * https://testflight.apple.com/join/cGWEPyC7
+
+   * **Android**
+     * Download and install
+       * https://sero-media.s3-ap-southeast-1.amazonaws.com/popup/sero_popup_v1.0.apk
+   * **Browser**
+     * Open http://popup.sero.cash
 2. Gero Need to ensure that the version `v1.0.1-rc5` above.
 
 3. PC Wallet Need to ensure that the version `0.1.8` above, Node version `v1.0.1-rc5` above.
