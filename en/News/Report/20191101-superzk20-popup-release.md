@@ -19,7 +19,7 @@ With the help of community of all forces, SERO has been highly successful and sw
           * http://popup.sero.cash
         * Click the [Share] button below
         * Click [Add to Home Screen]
-      * Install using **TestFlight**
+     * Install using **TestFlight**
         * Install Apple's official beta test tool first. TestFlight
         * Then open in a browser Popupinstalled link
           * https://testflight.apple.com/join/cGWEPyC7
