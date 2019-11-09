@@ -57,6 +57,7 @@
   - [BETANET RC5](?file=News/Release/SERO-BETANET-RC5)
   - [BETANET RC4](?file=News/Release/SERO-BETANET-RC4)
 - **Reports**
+  - [October 2019 Technical Report](?file=News/Report/201910-tech-report)
   - [SuperZK2.0  Switched Successfully & Popup Wallet Release](?file=News/Report/20191101-superzk20-popup-release)
   - [Popup Wallet Public Test Announcement](?file=News/Report/20191023-popup-betatest-announce)
   - [SERO SuperZK2.0 Protocol Upgrade Guide](?file=News/Report/20191020-sip5-superzk20-account-update)

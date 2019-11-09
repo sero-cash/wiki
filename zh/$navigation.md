@@ -64,6 +64,7 @@
   - [BETANET RC5](?file=News/Release/SERO-BETANET-RC5)
   - [BETANET RC4](?file=News/Release/SERO-BETANET-RC4)
 - **Reports**
+  - [2019年10月技术汇报](?file=News/Report/201910-tech-report)
   - [SuperZK2.0 切换成功 & Popup发布公告](?file=News/Report/20191101-superzk20-popup-release)
   - [PC端钱包发布公告](?file=News/Report/20191026-wallet-update-announce)
   - [Popup 钱包测试公告](?file=News/Report/20191023-popup-betatest-announce)
