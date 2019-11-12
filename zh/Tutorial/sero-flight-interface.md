@@ -42,7 +42,7 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
 `local` 接口是离线性质的`jsonrpc`接口，虽然需要启动gero程序，但是除了rpc服务，gero不需要对外连接和同步数据。因此可以采用下面的参数启动`gero`服务。
 
 ```sh
-./gero --mineMode --datadir ~/geroData --nodiscover --rpc --rpcport 8545 --rpcapi local,sero --rpcaddr 127.0.0.1 --rpccorsdomain "*" --exchangeValueStr
+./gero --offline --mineMode --datadir ~/geroData --nodiscover --rpc --rpcport 8545 --rpcapi local,sero --rpcaddr 127.0.0.1 --rpccorsdomain "*" --exchangeValueStr
 ```
 > * 另外，Local接口也可以通过Go语言来调用，需要依赖 `github.com/sero-cash/go-sero` 和 `github.com/sero-cash/go-czero-import` 这两个库。
 > > **由于Go语言引用了C++库(libczero.so)，因此需要:**

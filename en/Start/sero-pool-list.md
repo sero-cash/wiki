@@ -88,22 +88,6 @@
 * Aaddress: pool.sero.52hash.com:8998
 * Earnings: http://sero.52hash.com
 
-## FIRST SOLO POOL
-
-* Site: Russia
-* Fee: 2%, Settlement: 30 min
-
-* Telegram: 
-   * https://t.me/joinchat/ETboGg2cL9a7eTx4JB6uMg
-
-* Address：
-   * startum1+tcp: http://sero.mole-pool.net:4144/
-   * startum1+tcp: http://sero.mole-pool.net:4244/
-   * startum1+tcp: http://sero.mole-pool.net:4344/
-
-* Earnings：
-   * https://sero.mole-pool.net/ (English)
-
 
 ## WoolyPooly
 
