@@ -258,6 +258,9 @@ contract TFHCoin is SeroInterface {
 
 #### 5. 安装智能合约
 
+* **在SERO上发行Token需要交纳一定的SERO作为手续费**
+   * 如何缴纳手续费请参考
+      * https://wiki.sero.cash/zh/index.html?file=Tutorial/fee-for-issue-token
 * **然后我们将从IDE拷贝出来的编译后代码粘贴进控制台里面，并回车创建交易。**
    ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-7510f0afadee18a5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
    智能合约的安装是附带在交易中进行的，交易创建之后可以查看这笔交易的地址。用此地址可在区块浏览器中查询到当前打包的状态。
