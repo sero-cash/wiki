@@ -60,7 +60,7 @@
 * IOS
   * **使用 TestFlight 安装**
     * 先安装Apple官方的Beta测试工具[TestFlight](https://itunes.apple.com/cn/app/testflight/id899247664?mt=8)
-    * 再在浏览器中打开 Popup 安装链接
+    * 再在浏览器中打开 Flight 安装链接
       * <https://testflight.apple.com/join/4vblMC9n>
 * Android
   * 下载安装
