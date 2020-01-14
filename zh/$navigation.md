@@ -27,6 +27,7 @@
 - [发行匿名Token付费说明](?file=Tutorial/fee-for-issue-token)
 - [SERO Pullup应用接入教程](?file=Tutorial/pullup-dapps-access)
 - [SERO Popup应用接入教程](?file=Tutorial/popup-dapp-access)
+- [如何集成SERO](?file=Tutorial/how-to-integrate-sero)
 
 ##### 标准范例
 
