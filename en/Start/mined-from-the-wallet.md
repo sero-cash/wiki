@@ -62,29 +62,7 @@ Block data folder, used to store blockchain data and wallet account files
 
 ### 4. Import License
 
-Next, we need to apply for a license from the SERO team, and we need to do the following steps:
-
-* ### **Join SERO's gitter community**
-    > **The link of the community**
-    > [https://gitter.im/sero-cash/miner](https://gitter.im/sero-cash/miner)
-    > ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-fecac3360cd796e6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
-    >
-    > `gitter` is github.com's free instant messaging tool with good integration with `github`, which can be logged in via github/gitlab/twitter account. Some important notices about miner will be posted here.
-
-* ### **Send application email**
-    > The account has been generated above. Please send the account address of the tag `Serobase` to [license@sero.vip](mailto:license@sero.vip) by email and explain your information.
-    > ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-e72fcce8a23a8578.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
-
-    `Note: This address can be used as an asset acceptance address and can be provided to third parties to generate transactions. Disclosure the public key will not reveal your information in SERO.`
-
-* ### **Install mining license**
-
-> - The SERO team will generate a BetaNet mining license for you within 48 hours and will reply to you.
->   ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/277023-ce2d496f2b656112.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
->   **In your reply, you have one copy of your license in the mainbody and one copy in the attachment. The two copies are identical.**
-
-> - Click the menu "Accounts"> "Import account or mining license", as shown in the figure below, to open the import interface.  At this time, just drag and drop the file named `BLIC.DATA` into the box.
->   ![image.png](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/jianshu/15078246-b277de832cd7235f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> - You don't need a license anymore.
 
 ### 5. Start Mining
 
