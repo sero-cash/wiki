@@ -1,6 +1,6 @@
 #  SERO Exchange Interface (SEI) Interface Description
 
-[TOC]
+[MENU]
 
 The connection method of the SEI interface, the exchange service hosts the user's TK, is responsible for tracking the user's UTXO, and provides online and offline signature methods.
 Compared with the SSI interface, which requires the peer to manage UTXO itself, SEI is simpler, safer, and more practical.
