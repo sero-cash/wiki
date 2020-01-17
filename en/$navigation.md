@@ -17,6 +17,7 @@
 
 - [SERO Wallet Manual](?file=Tutorial/manual-of-wallet)
 - [Anonymous Tokens Issuance Principle](?file=Tutorial/principle-of-anonymous-token)
+- [SERO Exchange Interface (SEI)](?file=Tutorial/sero-exchange-interface)
 - [Issue Anonymous Tokens](?file=Tutorial/practice-of-anonymous-token)
 - [Apply for mining license](?file=Tutorial/apply-for-mining-license)
 - [How to staking using gero](?file=Tutorial/how-to-staking-using-gero)
