@@ -1033,6 +1033,7 @@ var txParam = exchange.genTx({
       "To": "0x8423cdaf......630a882a14",                 //合并到收款码(PKr)，为空则自动生成。
   		"Currency": "SERO",                                //需要合并的币名
       "Zcount": 100,                                     //最大合并的密文UTXO个数
+      "Icount": 1000,                                    //最多一次合并UTXO的个数
       "Left": 1                                          //剩下多少个UTXO
   	}]
   }

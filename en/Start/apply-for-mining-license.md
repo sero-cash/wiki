@@ -33,7 +33,7 @@ Drag the page to the bottom and click: Application records to enter the query pa
 Example:
 
 ![img](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902/1731550229603_.pic_hd.jpg)
- 
+
 
 ## The application of mining license and mining
 
@@ -45,7 +45,7 @@ Or refer to this document for mining with Gero command line: https://wiki.sero.c
 The mining license will be invalid after the specified End (block number). The red box in the figure below is the value of End (block number).
 
 ![img](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201902/1741550229613_.pic.jpg)
- 
+
 
 In general, the license will be renewed automatically, and you will receive a renewal email from license@sero.vip. You can also check the latest mining license on the system with your public key address.
 
