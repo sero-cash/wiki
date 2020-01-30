@@ -58,6 +58,7 @@
   - [BETANET RC5](?file=News/Release/SERO-BETANET-RC5)
   - [BETANET RC4](?file=News/Release/SERO-BETANET-RC4)
 - **Reports**
+  - [SERO expects to halve mining by April 2020](?file=News/Report/token-reduce-rewards-notice)
   - [SERO service upgrade announcement](?file=News/Report/20191121-sero-update-announce)
   - [October 2019 Technical Report](?file=News/Report/201910-tech-report)
   - [SuperZK2.0  Switched Successfully & Popup Wallet Release](?file=News/Report/20191101-superzk20-popup-release)
