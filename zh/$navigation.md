@@ -66,6 +66,7 @@
   - [BETANET RC4](?file=News/Release/SERO-BETANET-RC4)
 - **Reports**
   - [SERO服务升级报告](?file=News/Report/20191121-sero-update-announce)
+  - [2019年12月-2020年1月技术汇报](?file=News/Report/201912-202001-tech-report)
   - [2019年10月技术汇报](?file=News/Report/201910-tech-report)
   - [SuperZK2.0 切换成功 & Popup发布公告](?file=News/Report/20191101-superzk20-popup-release)
   - [PC端钱包发布公告](?file=News/Report/20191026-wallet-update-announce)
