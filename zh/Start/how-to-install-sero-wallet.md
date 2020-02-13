@@ -23,7 +23,7 @@
   * **使用 TestFlight 安装**
     * 先安装Apple官方的Beta测试工具[TestFlight](https://itunes.apple.com/cn/app/testflight/id899247664?mt=8)
     * 再在浏览器中打开 Popup 安装链接
-      * <https://testflight.apple.com/join/cGWEPyC7>
+      * <https://testflight.apple.com/join/W5c5xrXA>
 * Android
   * 下载安装
     * <https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/popup/cash.sero.popup.community_1.1.4.apk>
