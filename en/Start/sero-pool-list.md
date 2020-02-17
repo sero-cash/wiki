@@ -60,18 +60,17 @@
 
 ## SERO Guild Pool（Multilingual internationalized mining pool）
 
-- Site：Shanghai, Guangzhou, Shenzhen China、Sweden
-- Fee: 1%, Settlement: 2 hours
-- SERO Fans Club QQ Group：[709137229](//shang.qq.com/wpa/qunwpa?idkey=41898c6b30403ce39f6b3f7daee097acd7b1f3b795c16019b8fe401eff0c25ca "SERO Fans Club QQ Group：709137229")
-
+* Site：Shanghai, Guangzhou, Shenzhen China、Sweden
+* Fee: 0.1%, Settlement: 2 hours
+* SERO Fans Club QQ Group：[709137229](//shang.qq.com/wpa/qunwpa?idkey=41898c6b30403ce39f6b3f7daee097acd7b1f3b795c16019b8fe401eff0c25ca "SERO Fans Club QQ Group：709137229")
+  
+* Earnings：
+  * <https://sero.im>
+  * <http://212.64.55.28>
 
 * Address：
   * startum1+tcp: <http://212.64.55.28:8008>
   * More, Wechat: **LiuXuFei**
-  
-* Earnings：
-  * <http://pool.sero.im>
-  * <http://212.64.55.28:8082> （Alternative）
 
 
 ## Full shuttle pool

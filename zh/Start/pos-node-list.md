@@ -6,10 +6,9 @@
 - 节点介绍：赛罗节点是 IMPOOL 节点矿池的重点项目，基于 liuxufei 团队在赛罗矿池运营和技术优势，以及由 IMPOOL 提供矿场和服务器等硬件支持，倾力打造 SERO 节点中最稳定的节点服务。赛罗节点为 SERO 打 Call ！让更多矿工、矿场主、PoS 节点及用户关注 SERO，为 SERO 提供稳定的算力和技术支持，也为未来 SERO 的市场推广助力。
 - 节点网站：
 - https://sero.im （海外）
-- http://212.64.55.28:8082 （国内）
-- 客服微信：LiuXuFei（添加好友备注“SERO”，拉你入微信群）
-- 节点QQ群：770532901
-
+- http://212.64.55.28 （国内）
+- 客服微信：**LiuXuFei**（添加好友备注“SERO”，拉你入微信群）
+- 节点 QQ 群：[709137229](//shang.qq.com/wpa/qunwpa?idkey=41898c6b30403ce39f6b3f7daee097acd7b1f3b795c16019b8fe401eff0c25ca "SERO 爱好者社区：709137229")
 
 ## 2、节点名称：SERDAC 节点
 - 节点ID: 0x82abc9d07aa976761cede08e53de8d5057efd81fc0c443c59b593231e69b4291
