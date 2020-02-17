@@ -141,3 +141,10 @@
 * Address: stratum1+tcp://sero.woolypooly.com:8008 
 * Earnings: https://woolypooly.com/
 
+## Mole-Pool
+* Fee: 1.2%
+* Payout Threshold: 20 SERO
+* Payment Time: 1 hours
+* Address: solo-sero.mole-pool.net:2525 
+* Earnings: http://solo-sero.mole-pool.net/
+
