@@ -16,7 +16,7 @@ The application and entry ranking methods of the guilds are tentatively set as t
 
 The SERO team will strive to support every guild. At present, SERO project is developing rapidly. The guild is an important force in the future of our project.
 
-## SERO Coin Allocation Rules
+## SERO Coin Allocation Rules (The actual maximum total after February 29, 2020 is 650 million)
 
 The total supply of SERO that will ever be is 1 billion, and the distribution is as follows:
 1. 10% i.e 100 million SERO coins are reserved for external financing purposes to support the ongoing operation of the project team. And 1:1 mapping of 100 million ERC20 tokens.

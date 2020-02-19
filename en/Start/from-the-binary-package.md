@@ -2,7 +2,7 @@
 
 This article mainly explains how to install SERO from binary package and use it to mine SERO coins. For more information, please visit our [Product Technology WIKI](https://wiki.sero.cash).
 
-# Bonus Design
+# Bonus Design (The actual maximum total after February 29, 2020 is 650 million)
 
 SERO issued a total of 1 billion SERO coins, of which 25 % were awarded as community node contributions, that is, 250 million SERO coins were awarded to SERO miners for mining.  Mining bonus follow these rules:
 
