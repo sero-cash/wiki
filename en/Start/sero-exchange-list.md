@@ -1,4 +1,4 @@
-# SERO已经上线的交易所名单
+# List of SERO exchanges
 
 ## 1 、gate.io 比特儿
  - https://www.gatecn.io/trade/SERO_USDT
