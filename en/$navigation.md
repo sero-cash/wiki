@@ -12,6 +12,7 @@
 - [Summary of Wallet Problems](?file=Start/wallet-trouble-shooting-help)
 - [Snapshots download list](?file=Start/sero-chain-snapshot-list)
 - [How to use Decentralized Light Wallet (PC)](?file=Start/how-to-use-pullup-pc-wallet)
+- [SERO Exchange List)](?file=Start/sero-exchange-list)
 
 ##### Tutorial
 

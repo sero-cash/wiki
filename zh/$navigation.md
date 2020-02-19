@@ -13,6 +13,7 @@
 - [快照下载列表](?file=Start/sero-chain-snapshot-list)
 - [如何使用PC端去中心化轻钱包(Pullup)](?file=Start/how-to-use-pullup-pc-wallet)
 - [如何安装SERO的客户端钱包](?file=Start/how-to-install-sero-wallet)
+- [SERO交易所列表)](?file=Start/sero-exchange-list)
 
 ##### 教程
 
