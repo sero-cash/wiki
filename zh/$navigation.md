@@ -83,6 +83,7 @@
   - [2018年12月技术汇报](?file=News/Report/201812-tech-report)
   - [2018年11月技术汇报](?file=News/Report/201811-tech-report)
 - **重要事件**
+  - [SERO即将销毁一半未产出的币](?file=News/Important/destroy-half-of-the-unproduced-coins)
   - [SERO预计于2020年4月完成挖矿减半](?file=News/Report/token-reduce-rewards-notice)
   - [SERO Staking 简要说明](?file=News/Important/sero-staking-service)
   - [SIP3：奖励改进计划](?file=News/Important/sip3-description)

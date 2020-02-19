@@ -71,6 +71,7 @@
   - [December 2018 Technical report](?file=News/Report/201812-tech-report)
   - [November 2018 Technical report](?file=News/Report/201811-tech-report)
 - **Important events**
+  - [SERO is about to destroy half of the unproduced coins](?file=News/Important/destroy-half-of-the-unproduced-coins)
   - [SERO expects to halve mining by April 2020](?file=News/Report/token-reduce-rewards-notice)
   - [SERO Staking (PoS) and Staking Node Introduction](?file=News/Important/sero-staking-service)
   - [SIP2：Bonus improvement plan](?file=News/Important/sip3-description)
