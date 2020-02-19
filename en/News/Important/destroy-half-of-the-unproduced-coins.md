@@ -1,3 +1,3 @@
-#SERO is about to destroy half of the unproduced coins
+# SERO is about to destroy half of the unproduced coins
 
 SERO has passed community and foundation resolutions in the evening of 18th February 2020, announcing that the remaining half of the unmined coins are about to be burned. SERO ’s consensus is a hybrid PoW / PoS consensus. The mineable supply is 800 million SERO, and the total supply needs to be divided into 101 years to complete the entire emission. Considering that the current theoretical mining emission has reached about 180 million SERO, which means that the remaining 620 million will be burned by 310 million. Due to the difficulty of computing power, more than 40 million SERO have already been destroyed. Therefore, the theoretical total supply of SERO will be sharply reduced from 1 billion to 650 million. And the entire emission cycle will be adjusted to 97 years. The fork will complete by 2020.2.29
