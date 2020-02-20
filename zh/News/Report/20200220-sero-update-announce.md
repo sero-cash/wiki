@@ -17,6 +17,10 @@ SERO 全节点服务升级公告
 
    (或者 git clone https://gitee.com/sero-cash/go-czero-import.git)
 
+4. mine-pool `v0.1.5`
+   https://github.com/sero-cash/mine-pool
+
+
 本次SERO升级特性于下：
 ----------------
 

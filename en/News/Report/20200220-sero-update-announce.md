@@ -15,6 +15,9 @@ In order for the normal operation of the network, please upgrade the following s
 3. go-czero-import `v1.0.2-rc1`
    git clone https://github.com/sero-cash/go-czero-import.git
 
+4. mine-pool `v0.1.5`
+   https://github.com/sero-cash/mine-pool
+
 This sero upgrade feature is as follows:
 ----------------
 
