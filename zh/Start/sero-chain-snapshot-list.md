@@ -26,6 +26,18 @@
 
 # 快照下载列表
 
+## 截止 2700901 块的快照
+
+### MD5
+
+8ddb0dfb730922def3b22ee612ccd5c2
+
+### mega.nz
+
+https://mega.nz/#!fTgVWZYR!7-xj07Q7U5whOG3Kh_KmxFjjhDh_Ic6XS0EPfjH4-uM
+
+
+
 ## 截止 2481845 块的快照
 
 ### MD5
@@ -35,10 +47,6 @@
 ### mega.nz
 
 https://mega.nz/#!eOYXlATD!HXrYxO43oHCwkpcJyXXnJwAPnWCJZWm_rIMYshCNL4k
-
-### pan.baidu.com
-
-https://pan.baidu.com/s/1K2FOT9fo7mk2_yf7Gc_fMQ
 
 
 
