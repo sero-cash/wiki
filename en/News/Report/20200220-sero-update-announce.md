@@ -9,7 +9,7 @@ In order for the normal operation of the network, please upgrade the following s
 
    > Note: save the state with 'admin.close ()' on the command line before stopping gero.
 
-2. js-sero-client `1.0.2`
+2. js-sero-client `1.0.2-rc1`
    Update with npm
 
 3. go-czero-import `v1.0.2-rc1`
