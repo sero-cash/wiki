@@ -5,7 +5,7 @@ SERO 全节点服务升级公告
 -----------------------------------
 
 1. gero `v1.0.2-rc1`
-   https://github.com/sero-cash/go-sero/releases/tag/v1.0.1-rc6
+   https://github.com/sero-cash/go-sero/releases/tag/v1.0.2-rc1
 
    > 注意：先在命令行用`admin.close()`保存状态，再停止gero。
 
