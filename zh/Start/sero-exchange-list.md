@@ -93,6 +93,6 @@
 ## 31 、HCoin
  - https://www.hcoin86.com
  
-## 32 、HCoin
+## 32 、Coinex
  - https://www.coinex.com/
  
