@@ -24,8 +24,8 @@ With the current scale of the Beta network, the recommended requirements is:
 #----------------------------
 # OS         : CENTOS7.3
 # Processor  : Xeon E5-26xx v4 (C2T2)
-# RAM        : 4GB
-# Disk space : 50GB
+# RAM        : 8GB
+# Disk space : 100GB
 #----------------------------
 ```
 
@@ -126,31 +126,16 @@ With the executable program `gero`, you can now launch four different types of m
 #### Start dev mode
 
 ```sh
-$ build/bin/gero  --dev --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc" > ~/sero-data/debug.log
+$ build/bin/gero --dev --datadir "~/sero-data" --exchange --mineMode --rpc --rpcaddr="0.0.0.0" --rpcvhosts="*" --rpccorsdomain="*" --rpcapi="exchange,sero,net" --exchangeValueStr  > ~/sero-data/debug.log
 ```
 
 > In this mode, you should connect other dev nodes manually. Mining difficulty is very easy and unlimited.
 
-#### Start alpha mode
-
-
-```sh
-$ build/bin/gero --alpha --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc" > ~/sero-data/debug.log
-```
-
-> In this mode, the AlphaNet is automatically linked and start synchronizing data. The AlphaNet is the internal test network of SERO. The mining requires a license. If there is a test requirement, you can send an email to [license@sero.vip](mailto:license@sero.vip) to apply for a "mining license" or "SERO token for test".
-
-#### Start beta mode
-
-```
-$ build/bin/gero --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc" > ~/sero-data/debug.log
-```
-
-> In this mode, the BetaNet network is automatically linked and start synchronizing data. The BetaNet is the beta test network of SERO. The mining requires a license also. If there is a test requirement, you can send an email to [license@sero.vip](mailto:license@sero.vip) to apply for a "mining license" or "SERO token for test".
-
 #### Start Main mode
 
-​    This mode is not currently supported and will be provided when the main network is online...
+```sh
+build/bin/gero --datadir "~/sero-data" --exchange --mineMode --rpc --rpcaddr="0.0.0.0" --rpcvhosts="*" --rpccorsdomain="*" --rpcapi="exchange,sero,net" --exchangeValueStr 
+```
 
 #### Result output
 
@@ -166,7 +151,7 @@ When adding the attach parameter, gero can be started as a console.
 
 ```sh
 #Start the gero service in the background
-$ nohup build/bin/gero  --dev --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc" > ~/sero-data/gero.log &
+$ nohup build/bin/gero --dev --exchange --exchangeValueStr --mineMode --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc" > ~/sero-data/gero.log &
 #Start the console
 $ build/bin/gero --datadir "~/sero-data" attach
 ```
