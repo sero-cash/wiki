@@ -112,17 +112,15 @@ $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GOPATH/src/github.com/sero-cash/go-cz
 #### 启动dev模式
 
 ```sh
-$ build/bin/gero  --dev  --exchange --mineMode --datadir="./data" --rpc --rpcaddr="0.0.0.0" --rpcvhosts="*" --rpccorsdomain="*" --rpcapi="exchange,sero,net,light,stake" --lightNode --exchangeValueStr
- > ~/sero-data/debug.log
+$ build/bin/gero --dev --datadir "~/sero-data" --exchange --mineMode --rpc --rpcaddr="0.0.0.0" --rpcvhosts="*" --rpccorsdomain="*" --rpcapi="exchange,sero,net" --exchangeValueStr  > ~/sero-data/debug.log
 ```
 
 >  在这种模式下只能通过手工连接其他的dev节点，挖矿难度非常小，且无限制。
 
-#### 启动Main模式
+#### 启动Main模式(主网)
 
 ```sh
-$ build/bin/gero --exchange --mineMode --datadir="./data" --rpc --rpcaddr="0.0.0.0" --rpcvhosts="*" --rpccorsdomain="*" --rpcapi="exchange,sero,net,light,stake" --lightNode --exchangeValueStr
- > ~/sero-data/debug.log
+$ build/bin/gero --datadir "~/sero-data" --exchange --mineMode --rpc --rpcaddr="0.0.0.0" --rpcvhosts="*" --rpccorsdomain="*" --rpcapi="exchange,sero,net" --exchangeValueStr  > ~/sero-data/debug.log
 ```
 
 #### 结果输出
@@ -138,7 +136,7 @@ $ build/bin/gero --exchange --mineMode --datadir="./data" --rpc --rpcaddr="0.0.0
 
 ```sh
 #后台启动gero服务
-$ nohup build/bin/gero  --dev --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc" > ~/sero-data/gero.log &
+$ nohup build/bin/gero --dev --datadir "~/sero-data" --exchange --mineMode --rpc --rpcaddr="0.0.0.0" --rpcvhosts="*" --rpccorsdomain="*" --rpcapi="exchange,sero,net" --exchangeValueStr  > ~/sero-data/gero.log &
 #启动控制台
 $ build/bin/gero --datadir "~/sero-data" attach
 ```
