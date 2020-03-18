@@ -3,13 +3,10 @@
 
 
 ## 1. 机器配置
-以目前Beta上链的规模，满足以下配置
 
 > CPU 4线程以上
-> MEM 4GB以上
-> DISK 50G以上
-
-就能很好的运行了。
+> MEM 8GB以上
+> DISK 100G以上
 
 ```sh
 #本文中测试机配置
@@ -20,8 +17,6 @@
 # DISK: 50GB
 #----------------------------
 ```
-
-
 
 ## 2. 准备环境
 
@@ -42,8 +37,6 @@ $ sudo yum install boost
 #可能还需要安装 gmp、libgomp、procps-ng
 $ sudo yum install gmp libgomp procps-ng
 ```
-
-
 
 ## 3. 获取代码
 
@@ -72,8 +65,6 @@ $ git clone https://github.com/sero-cash/go-sero.git
 ```sh
 $ git clone https://github.com/sero-cash/go-czero-import.git
 ```
-
-
 
 ## 4. 编译gero
 
@@ -114,7 +105,6 @@ $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GOPATH/src/github.com/sero-cash/go-cz
 ```
 
 
-
 ## 6. 启动后台服务
 
 用gero可执行程序，目前可以启动四种不同类型的模式：
@@ -122,30 +112,18 @@ $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GOPATH/src/github.com/sero-cash/go-cz
 #### 启动dev模式
 
 ```sh
-$ build/bin/gero  --dev --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc" > ~/sero-data/debug.log
+$ build/bin/gero  --dev  --exchange --mineMode --datadir="./data" --rpc --rpcaddr="0.0.0.0" --rpcvhosts="*" --rpccorsdomain="*" --rpcapi="exchange,sero,net,light,stake" --lightNode --exchangeValueStr
+ > ~/sero-data/debug.log
 ```
 
 >  在这种模式下只能通过手工连接其他的dev节点，挖矿难度非常小，且无限制。
 
-#### 启动alpha模式
-
-```sh
-$ build/bin/gero  --alpha --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc" > ~/sero-data/debug.log
-```
-
-> 这种模式下会自动链接AlphaNet网络，并开始同步数据，AlphaNet网络是SERO内部测试网，挖矿需要许可证，如果有测试需求，可以发邮件给<gordon@sero.vip>申请 `挖矿许可证` 或者 `测试用SERO币` 。
-
-#### 启动beta模式
-
-```sh
-$ build/bin/gero --datadir "~/sero-data" --ipcpath "~/sero-data/gero.ipc" > ~/sero-data/debug.log
-```
-
-> 这种模式下会自动链接BetaNet网络，并开始同步数据，BetaNet网络是SERO团队提供给社区公测用的网络，挖矿同样需要许可证，如果有测试需求，可以发邮件给<gordon@sero.vip>申请 `挖矿许可证` 或者 `测试用SERO币` 。
-
 #### 启动Main模式
 
-> 此模式目前不支持，当主网络上线时，才会提供出来 ...
+```sh
+$ build/bin/gero --exchange --mineMode --datadir="./data" --rpc --rpcaddr="0.0.0.0" --rpcvhosts="*" --rpccorsdomain="*" --rpcapi="exchange,sero,net,light,stake" --lightNode --exchangeValueStr
+ > ~/sero-data/debug.log
+```
 
 #### 结果输出
 ![](http://sero-media.s3-website-ap-southeast-1.amazonaws.com/images/201904/277023-30b8b21ac13b66ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
