@@ -26,7 +26,7 @@
       * <https://testflight.apple.com/join/W5c5xrXA>
 * Android
   * 下载安装
-    * <https://sero-media-1256272584.cos.ap-shanghai.myqcloud.com/popup/cash.sero.popup.community_1.1.4.apk>
+    * <https://sero.cash/app/popup.html>
 * 浏览器
   * 打开 <http://popup.sero.cash>
 
