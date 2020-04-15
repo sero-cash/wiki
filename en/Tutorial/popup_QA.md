@@ -41,8 +41,8 @@ If the address you filled in is copied from the exchange or other platform, plea
 |Error Message|Reason	|Solution|
 |-|-|-|
 |The mnemonic is incorrect|	A word in the mnemonic is wrong|Find and correct the wrong words from the [BIP39 Thesaurus](https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt) and re-import the correct mnemonic words|
-|The length of the mnemonic is incorrect|Excluding "v2", the length of the mnemonic word is 24 words, the number of words entered does not meet the standard	|	1. Check if the number of mnemonic words is correct |
-|Re-enter the mnemonic words, separated by spaces|The mnemonic check digit is incorrect|	The last word of the mnemonic is wrong	Correct the last word from the [BIP39 Thesaurus](https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt) and re-import|
+|The length of the mnemonic is incorrect|Excluding "v2", the length of the mnemonic word is 24 words, the number of words entered does not meet the standard	|	1. Check if the number of mnemonic words is correct 2. Re-enter the mnemonic words, separated by spaces |
+|The mnemonic check digit is incorrect|	The last word of the mnemonic is wrong	|Correct the last word from the [BIP39 Thesaurus](https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt) and re-import|
 
 ### How to backup mnemonic words?
 
