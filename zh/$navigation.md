@@ -14,6 +14,7 @@
 - [如何使用PC端去中心化轻钱包(Pullup)](?file=Start/how-to-use-pullup-pc-wallet)
 - [如何安装SERO的客户端钱包](?file=Start/how-to-install-sero-wallet)
 - [SERO交易所列表](?file=Start/sero-exchange-list)
+- [Popup钱包常见问题](?file=Tutorial/popup_QA)
 
 ##### 教程
 
