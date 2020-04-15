@@ -13,6 +13,7 @@
 - [Snapshots download list](?file=Start/sero-chain-snapshot-list)
 - [How to use Decentralized Light Wallet (PC)](?file=Start/how-to-use-pullup-pc-wallet)
 - [SERO Exchange List](?file=Start/sero-exchange-list)
+- [Popup Instructions and FAQ](?file=Tutorial/popup_QA)
 
 ##### Tutorial
 
