@@ -12,6 +12,7 @@
 - [Summary of Wallet Problems](?file=Start/wallet-trouble-shooting-help)
 - [Snapshots download list](?file=Start/sero-chain-snapshot-list)
 - [How to use Decentralized Light Wallet (PC)](?file=Start/how-to-use-pullup-pc-wallet)
+- [How to install SERO Wallet](?file=Start/how-to-install-sero-wallet)
 - [SERO Exchange List](?file=Start/sero-exchange-list)
 - [Popup Instructions and FAQ](?file=Tutorial/popup_QA)
 
@@ -21,9 +22,12 @@
 - [Anonymous Tokens Issuance Principle](?file=Tutorial/principle-of-anonymous-token)
 - [SERO Exchange Interface (SEI)](?file=Tutorial/sero-exchange-interface)
 - [Issue Anonymous Tokens](?file=Tutorial/practice-of-anonymous-token)
+- [SERO Flight Interface (SFI)](?file=Tutorial/sero-flight-interface)
 - [Apply for mining license](?file=Tutorial/apply-for-mining-license)
 - [How to staking using gero](?file=Tutorial/how-to-staking-using-gero)
+- [The fee for issue token](?file=Tutorial/fee-for-issue-token)
 - [SERO Light Wallet's DApp access tutorial](?file=Tutorial/popup-dapp-access)
+- [How to integrate SERO](?file=Tutorial/how-to-integrate-sero)
 
 ##### Standard example
 
