@@ -1,38 +1,55 @@
-# SERO Popup手机轻钱包DApp接入教程
+# SERO 轻钱包DApp接入教程
 
 ## 介绍
 
-SERO Popup 钱包是一款去中心化的手机端钱包，分为IOS、Android、浏览器三个版本。可以管理SERO生态中丰富的资产形式，并且支持Pullup钱包的助记词导入。Popup 钱包将是今后SERO上各种去中心化应用的主要入口。
+SERO Pullup 钱包是一款去中心化的PC轻钱包，现有Windows和Mac OS两个版本。
 
+SERO Popup 钱包是一款去中心化的手机端轻钱包，分为IOS、Android、浏览器三个版本。可以管理SERO生态中丰富的资产形式，并且支持Pullup钱包的助记词导入。Popup 钱包将是今后SERO上各种去中心化应用的主要入口。
+                  
 ## 安装
 
-*   IOS
-    *   **使用WebApp**
-        *   在浏览器里面打开链接
-            *   [http://popup.sero.cash](http://popup.sero.cash/)
-        *   点击下方 [分享] 按钮
-        *   点击 [添加到主屏幕]
-    *   **使用 TestFlight 安装**
-        *   先安装Apple官方的Beta测试工具[TestFlight](https://itunes.apple.com/cn/app/testflight/id899247664?mt=8)
-        *   再在浏览器中打开 Popup 安装链接
-            *   [https://testflight.apple.com/join/cGWEPyC7](https://testflight.apple.com/join/cGWEPyC7)
-*   Android
-    *   下载安装
-        *   [https://sero-media.s3-ap-southeast-1.amazonaws.com/popup/sero_popup_v1.0.apk](https://sero-media.s3-ap-southeast-1.amazonaws.com/popup/sero_popup_v1.0.apk)
-*   浏览器
-    *   打开 [http://popup.sero.cash](http://popup.sero.cash/)
+### SERO Pullup
+
+   * <https://github.com/sero-cash/pullup/releases>
+
+### SERO Popup
+
+   *   IOS
+       *   **使用WebApp**
+           *   在浏览器里面打开链接
+               *   [http://popup.sero.cash](http://popup.sero.cash/)
+           *   点击下方 [分享] 按钮
+           *   点击 [添加到主屏幕]
+       *   **使用 TestFlight 安装**
+           *   先安装Apple官方的Beta测试工具[TestFlight](https://itunes.apple.com/cn/app/testflight/id899247664?mt=8)
+           *   再在浏览器中打开 Popup 安装链接
+               *   [https://testflight.apple.com/join/cGWEPyC7](https://testflight.apple.com/join/cGWEPyC7)
+   *   Android
+       *   下载安装
+           *   [https://sero.cash/app/popup.html](https://sero.cash/app/popup.html)
+   *   浏览器
+       *   打开 [http://popup.sero.cash](http://popup.sero.cash/)
+
 
 ## 开始接入
 
 ### 1. 配置开发环境
 
-- 使用Crome浏览器打开：http://popup.sero.cash/
-- 新建开发账号
-- 在“我的”-“设置”-“节点设置”，设置gero节点，本例使用:  [http://127.0.0.1:8545](http://127.0.0.1:8545)
+   * 使用Pullup开发
+      
+      *  在钱包首页设置开发测试节点：http://127.0.0.1:8545
+      *  在DApp页面输入DApp地址：http://127.0.0.1:3000
+   
+   * 使用Popup开发
+   
+      *  使用Crome浏览器打开：http://popup.sero.cash/
+      *  在「我的」- 「设置」- 「节点设置」，设置gero节点： http://127.0.0.1:8545
+      *  在DApp页面输入DApp地址：http://127.0.0.1:3000
+
 
 ### 2. 开发智能合约
 
-- IDE:  [https://remix.web.sero.cash/](https://remix.web.sero.cash/)
+- IDE:  [http://remix.web.sero.cash/](http://remix.web.sero.cash/)
 - 源码: 
 
 ```
@@ -251,5 +268,6 @@ execute = () => {
 
 ![image.png](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/13141677-97e1321a827b6b67.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### 相关资料
+### 依赖的组件
+
 >- **sero-pp** [https://github.com/sero-cash/sero-pp/](https://github.com/sero-cash/sero-pp/)
