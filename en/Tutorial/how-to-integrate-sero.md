@@ -13,11 +13,11 @@
 
 ### 4. Third-party connection
 
-**Gero manages the connection method of UTXO:**  
+**Gero manages the UTXOs for the Integration party:**  
 
 <https://wiki.sero.cash/en/index.html?file=Tutorial/sero-exchange-interface>
 
-**The exchange itself manages the UTXO listing method:**  
+**Integration party itself manages the UTXOs:**
 
 <https://wiki.sero.cash/en/index.html?file=Tutorial/sero-flight-interface>
 
