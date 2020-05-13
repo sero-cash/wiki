@@ -46,6 +46,6 @@
 
 <https://wiki.sero.cash/en/index.html?file=Start/how-to-install-sero-wallet>
 
-### 9. Popup mobile wallet Dapp development tutorial
+### 9. Mobile wallet Dapp (POPUP) development tutorial
 
 <https://wiki.sero.cash/en/index.html?file=Tutorial/popup-dapp-access>
