@@ -26,6 +26,26 @@
 
 # 快照下载列表
 
+
+## 截止 3255799 块的快照
+
+### MD5
+
+9053fb0fe47ccef243c85c3dfdf8fc71
+
+### 115云盘
+
+https://115.com/s/sw3vfue3694#chaindata-3255799.zip
+
+访问码：x659
+
+### mega.nz
+
+https://mega.nz/file/dZpgiADL#dOEV8_q51Awq5VCv-EEpqgc8lW5TEM_EpsP-vb79Zww
+
+
+
+
 ## 截止 2878165 块的快照
 
 ### MD5
