@@ -7,7 +7,7 @@
    * Estimated time：about **20: 00 on May 22, 2020**, Beijing time
    * It may be early or delayed according to the hashrate changing.
 
-2. The staking information query switch `--staking` has been added to this update, the latest staking information will not be queried without setting this flag.
+2. The staking information query switch `--stake` has been added to this update, the latest staking information will not be queried without setting this flag.
 
 3. When upgrading, run command `admin.close()` in the console before closing the older 'gero' program，prevent the resyncing of last 10k blocks.
 
@@ -29,7 +29,7 @@ js-sero-client:  `v1.0.2`
 ## New Feature
 
 * **RC1**
-  - [x] Staking Information query switch `--staking`
+  - [x] Staking Information query switch `--stake`
   - [x] Optimizing synchronization efficiency
   - [x] Fix the bug of the compiled script for some OS
 
