@@ -41,6 +41,7 @@
 ##### News
 
 - **Releases**
+  - [MAINNET V1.0.3](?file=News/Release/SERO-MAINNET-V1.0.3)
   - [MAINNET V1.0.2](?file=News/Release/SERO-MAINNET-V1.0.2)
   - [MAINNET V1.0.1](?file=News/Release/SERO-MAINNET-V1.0.1)
   - [MAINNET V1.0.0-RC0](?file=News/Release/SERO-MAINNET-V1.0.0-RC0)
