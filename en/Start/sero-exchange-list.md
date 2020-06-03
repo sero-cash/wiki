@@ -95,3 +95,16 @@
 
 ## 32 、Coinex
  - https://www.coinex.com/
+
+## 33、Pcsex
+ - https://www.pcsex.com/
+
+## 34、XT
+ - https://www.xt.pub/
+
+## 35、HBTC
+ - https://www.hbtc.com/
+
+## 36、Bitbns
+ - https://bitbns.com/
+ 
