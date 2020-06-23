@@ -1,6 +1,6 @@
 # SERO已经上线的交易所名单
 
-## 1 、gate.io 比特儿
+## 1 、Gate.io 比特儿
  - https://www.gatecn.io/trade/SERO_USDT
 
 ## 2 、Tokencan T 网
@@ -36,13 +36,13 @@
 ## 12 、HKEx
  - https://www.hkex.one/zh_CN/trade/SERO_USDT
 
-## 13 、chaoex炒客网
+## 13 、Chaoex炒客网
  - https://www.chaoex.info/dealcenter
 
 ## 14 、DXD
  - https://www.dxdcoin.com/zh_CN/trade/SERO_USDT
 
-## 15 、coinsuper币成
+## 15 、Coinsuper币成
  - https://www.coinsuper.info/trade?symbol=SERO%2FUSDT
 
 ## 16 、MOMOEX
@@ -63,48 +63,42 @@
 ## 21 、VDSEX
  -  https://www.vdsex.com/trade?na=SERO_USDT
 
-## 22 、citex
- - C网(CITEX) https://trade.citex.io/trade/SERO_USDT
-
-## 23 、Qbtc
+## 22 、Qbtc
  - Q网 https://www.qbtc.ink/trade?symbol=SERO_USDT
 
-## 24 、BAFEEX
+## 23 、BAFEEX
  - https://www.bafeex.io/exchange/649/sero/usdt
 
-## 25 、HPX
+## 24 、HPX
  - https://www.hpx.ai/tpl/trade/trade.html
 
-## 26 、B1
+## 25 、B1
  - https://b1.run/trade/SERO- USDT
 
-## 27 、DigiFinex
- - https://www.digifinex.com
-
-## 28 、bilaxy币系
+## 26 、bilaxy币系
  - https://bilaxy.com
 
-## 29 、BafeEX
+## 27 、BafeEX
  - https://www.bafeex.io
 
-## 30 、Dobi
+## 28 、Dobi
  - https://www.dobiexchange.com
 
-## 31 、HCoin
+## 29 、HCoin
  - https://www.hcoin86.com
  
-## 32 、Coinex
+## 30 、Coinex
  - https://www.coinex.com/
 
-## 33、Pcsex
+## 31、Pcsex
  - https://www.pcsex.com/
 
-## 34、XT
+## 32、XT
  - https://www.xt.pub/
 
-## 35、HBTC
+## 33、HBTC
  - https://www.hbtc.com/
 
-## 36、Bitbns
+## 34、Bitbns
  - https://bitbns.com/
  
