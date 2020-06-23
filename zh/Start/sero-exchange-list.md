@@ -52,7 +52,7 @@
  -  https://www.digifinex.vip
 
 ## 18 、CoinEgg币蛋
- - https://trade.coinegg.vip/trade/sero_usdt/
+ - https://trade.coinegg.vip/trade/sero_usdt
 
 ## 19 、BBKX
  - https://www.bbkx.com/zh_CN/trade/SERO_USDT
@@ -88,17 +88,17 @@
  - https://www.hcoin86.com
  
 ## 30 、Coinex
- - https://www.coinex.com/
+ - https://www.coinex.com
 
 ## 31、Pcsex
- - https://www.pcsex.com/
+ - https://www.pcsex.com
 
 ## 32、XT
- - https://www.xt.pub/
+ - https://www.xt.pub
 
 ## 33、HBTC
- - https://www.hbtc.com/
+ - https://www.hbtc.com
 
 ## 34、Bitbns
- - https://bitbns.com/
+ - https://bitbns.com
  
