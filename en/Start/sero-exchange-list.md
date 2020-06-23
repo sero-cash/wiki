@@ -1,6 +1,6 @@
 # List of SERO exchanges
 
-## 1 、gate.io 比特儿
+## 1 、Gate.io 比特儿
  - https://www.gatecn.io/trade/SERO_USDT
 
 ## 2 、Tokencan T 网
@@ -36,16 +36,16 @@
 ## 12 、HKEx
  - https://www.hkex.one/zh_CN/trade/SERO_USDT
 
-## 13 、chaoex炒客网
+## 13 、Chaoex炒客网
  - https://www.chaoex.info/dealcenter
 
 ## 14 、DXD
  - https://www.dxdcoin.com/zh_CN/trade/SERO_USDT
 
-## 15 、coinsuper币成
+## 15 、Coinsuper币成
  - https://www.coinsuper.info/trade?symbol=SERO%2FUSDT
 
-## 16 、MOMOEX
+## 16 、MoMoEX
  - https://www.momoex.com/zh_CN/trade/SERO_USDT
 
 ## 17 、Digifinex
@@ -63,48 +63,33 @@
 ## 21 、VDSEX
  -  https://www.vdsex.com/trade?na=SERO_USDT
 
-## 22 、citex
- - C网(CITEX) https://trade.citex.io/trade/SERO_USDT
-
-## 23 、Qbtc
- - Q网 https://www.qbtc.ink/trade?symbol=SERO_USDT
-
-## 24 、BAFEEX
+## 22 、BafeEX
  - https://www.bafeex.io/exchange/649/sero/usdt
 
-## 25 、HPX
+## 23 、HPX
  - https://www.hpx.ai/tpl/trade/trade.html
 
-## 26 、B1
+## 24 、B1
  - https://b1.run/trade/SERO- USDT
 
-## 27 、DigiFinex
- - https://www.digifinex.com
-
-## 28 、bilaxy币系
+## 25 、Bilaxy币系
  - https://bilaxy.com
 
-## 29 、BafeEX
- - https://www.bafeex.io
-
-## 30 、Dobi
- - https://www.dobiexchange.com
-
-## 31 、HCoin
+## 26 、HCoin
  - https://www.hcoin86.com
 
-## 32 、Coinex
+## 27 、Coinex
  - https://www.coinex.com/
 
-## 33、Pcsex
+## 28、Pcsex
  - https://www.pcsex.com/
 
-## 34、XT
+## 29、XT
  - https://www.xt.pub/
 
-## 35、HBTC
+## 30、HBTC
  - https://www.hbtc.com/
 
-## 36、Bitbns
+## 31、Bitbns
  - https://bitbns.com/
  
