@@ -271,3 +271,6 @@ SERO Red Envelope Open Source Address：
 https://gitee.com/anonymous2020/sero-redpackage
 
 Use the SERO mobile phone POPUP wallet to find the SERO Red Envelope DAPP to experience, or enter https://anonymous2020.gitee.io/sero-redpackage/  in the wallet url bar.
+
+
+**This article was created by the author of SERO red envelope DAPP**
