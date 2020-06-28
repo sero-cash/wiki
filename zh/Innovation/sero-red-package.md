@@ -275,4 +275,4 @@ https://gitee.com/anonymous2020/sero-redpackage
 
 
 
-**本文章由“希望之石”编写**
+**本文章由SERO红包DAPP的作者编写**
