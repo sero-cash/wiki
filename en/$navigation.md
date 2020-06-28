@@ -37,6 +37,7 @@
 
 - [What's Innovation guide](?file=Innovation/what-is-innovation-guide)
 - [How to Realize Anonymous Crypto Kitties by SERO DAPP](?file=Innovation/sero-crypto-kitties)
+- [SERO Red Envelope DApp Development Summary](?file=Innovation/sero-red-package)
 
 ##### News
 
