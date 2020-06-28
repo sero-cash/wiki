@@ -38,6 +38,7 @@
 
 - [什么是创新指南](?file=Innovation/what-is-innovation-guide)
 - [如何实现匿名版以太猫](?file=Innovation/sero-crypto-kitties)
+- [SERO红包DAPP开发总结](?file=Innovation/sero-red-package)
 
 ##### 最新动态
 
