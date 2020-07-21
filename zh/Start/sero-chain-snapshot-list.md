@@ -43,7 +43,7 @@ https://115.com/s/sw3ap1e3694#chaindata-3701067.zip
 
 https://mega.nz/file/AYRUmAoI#FV_DC34td2fBE7k0Li2GMNLE78OZ0cpD_WD5B10YoXU
 
-## Bt 种子
+### Bt 种子
 
 http://122.112.168.27/bt/chaindata-3701067.zip
 

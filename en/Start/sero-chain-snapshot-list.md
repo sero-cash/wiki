@@ -39,9 +39,7 @@ Code: p471
 
 https://mega.nz/file/AYRUmAoI#FV_DC34td2fBE7k0Li2GMNLE78OZ0cpD_WD5B10YoXU
 
-
-
-## Bt.Torrent
+### Bt.Torrent
 
 http://122.112.168.27/bt/chaindata-3701067.zip
 
