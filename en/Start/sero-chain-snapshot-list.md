@@ -30,16 +30,16 @@
 
 7df6869c27ebb79288cca5f4b3f2acff
 
-### 115 Pan
+### 115 Pan (Full file)
 
 https://115.com/s/sw3ap1e3694#chaindata-3701067.zip
 Code: p471
 
-### mega.nz
+### mega.nz (Full file)
 
 https://mega.nz/file/AYRUmAoI#FV_DC34td2fBE7k0Li2GMNLE78OZ0cpD_WD5B10YoXU
 
-### Bt.Torrent
+### Bt.Torrent (Just Seed file)
 
 http://122.112.168.27/bt/chaindata-3701067.zip
 
