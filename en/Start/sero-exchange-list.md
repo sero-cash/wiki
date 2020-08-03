@@ -15,29 +15,29 @@
 ## 5 、CoinW 币赢
  - https://www.coinw.ai/fast/trade/SERO_CNYT.html
 
-## 6 、Bit-Z
+## 6、ZT
+ - https://www.ztb.com/
+ 
+## 7 、Bit-Z
  - https://www.bitz.top/exchange/sero_usdt
 
-## 7 、ZD 支点
+## 8 、ZD 支点
  - https://www.zdcoin.app/el_GR/trade/SERO_USDT
-
-## 8 、LBKEX
+ 
+## 9 、LBKEX
  -  https://www.lbkex.co/exchange.html#/sero/usdt
 
-## 9 、CITEX C网
+## 10 、CITEX C网
  - https://trade.citex.io/trade/SERO_USDT
 
-## 10 、BiUP
+## 11 、BiUP
  - https://www.biup.com
 
-## 11 、Hotbit
+## 12 、Hotbit
  - https://www.hotbit.io/exchange?symbol=SERO_USDT
 
-## 12 、HKEx
+## 13 、HKEx
  - https://www.hkex.one/zh_CN/trade/SERO_USDT
-
-## 13 、Chaoex 炒客网
- - https://www.chaoex.info/dealcenter
 
 ## 14 、DXD
  - https://www.dxdcoin.com/zh_CN/trade/SERO_USDT
@@ -101,6 +101,6 @@
 
 ## 34、Bitbns
  - https://bitbns.com
- 
-## 35、ZT
- - https://www.ztb.com/
+
+## 35 、Chaoex 炒客网
+ - https://www.chaoex.info/dealcenter
