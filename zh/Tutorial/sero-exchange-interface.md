@@ -988,7 +988,8 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
   				"Tkt": null
   			},
   			"Memo": "0x00000000......000000000"
-  		}]
+  		}],
+      "Z":true //是否采用匿名方式发送交易
   	},
   	"error": null
   }
@@ -1111,12 +1112,8 @@ var txParam = exchange.genMergeTx({
     	"error": null
     }
     ```
-  ```
-    
-    
   
-  
-  ```
+
 
 - **console**
 

@@ -25,7 +25,8 @@ SFI接口是SSI的升级版，支持jsonrpc和console调用，并支持以下特
        2. 从解出的`UTXO`数据获取作废码列表`Nils`
        3. 将`UTXO`和`Nils`关联保存
        4. 将`UTXO`的资产数据入账
-  3. 判断作废码`block.Nils`是否已经存在于之前保存的`UTXO`表中，如果存在，表明这个`UTXO`已经被用掉。
+  3. 注意，在32个确认块之前`getBlocksInfo`或者`getTx`获取的`UTXO`的`Root`可能会因为分叉发生变化因此只能作为提示信息，不能入库，在32个确认块之后需要再次调用`getTx`获取最新数据后才能最终入库。
+  4. 判断作废码`block.Nils`是否已经存在于之前保存的`UTXO`表中，如果存在，表明这个`UTXO`已经被用掉。
 * 发送交易（在线和离线）
   1. 选择需要转账的`UTXO`以及相关转账信息构造的参数调用`flight_genTxParam`，生成`txParam`。
   2. 以`txParam`和私钥`sk`为参数调用离线签名方法`local_signTxWithSk`，生成待广播`tx`，并记录`txhash`。
@@ -339,7 +340,8 @@ douts,_=flight.DecOut(&tk,outs)
   		  "Gas": 25000,
         "GasPrice": 1000000000,
   		  "Ins": [{}],
-  		  "Outs": [{},{}]
+  		  "Outs": [{},{}],
+        "Z": true    //是否采用匿名的方式发送交易
   	  },
       "0x1657f2f6......f96be89b4f03"    //私钥SK
     ]
@@ -380,7 +382,7 @@ douts,_=flight.DecOut(&tk,outs)
   param_str:='{"Gas":25000,"GasPrice":1000000000,"From":{"SKr":"0x0 .... }'  //由全节点构造
   sk_str:='0xfd1b401d2bbfa09fba577b398b09b5ea075bd8f37773095c6e62271a4b080977'
   //------
-  cpt.ZeroInit_OnlyInOuts() //初始化
+  cpt.ZeroInit_OnlyInOuts() //初始化加密参数，全局只能调用一次。
   //------
   var param txtool.GTxParam
   json.Unmarshal([]byte(param_str),&param)
@@ -641,8 +643,8 @@ douts,_=flight.DecOut(&tk,outs)
   						"Proof": "0x03d8b7e....5c88c2e06",
   						"RPK": "0x44231e....96841"
   					},
-            "Out_P": null,
-            "Out_C": null,
+            "Out_P": null,         //SuperZK2.0协议明文UTXO
+            "Out_C": null,         //SuperZK2.0协议密文UTXO
   				},
   				"TxHash": "0x482a2....bd0a5c2"
   			}
@@ -765,7 +767,7 @@ douts,_=flight.DecOut(&tk,outs)
             Out_C: {                               //SUPERZK2.0 密文Out
               AssetCM: "0xd3be8490....12904aa09",
               EInfo: "0xd42e33....b46e1cd3",
-            PKr: "0xcc0c3b71....d7fcbd3",            //收款码PKr的hex编码
+              PKr: "0xcc0c3b71....d7fcbd3",            //收款码PKr的hex编码
               Proof: "0x02a04a89....ede4dca72f",
               RPK: "0x855ba....352e88021"
             },
@@ -851,9 +853,9 @@ douts,_=flight.DecOut(&tk,outs)
         "Tx1": {                                     //SuperZK2.0 交易内容
           "Ins_C": [{...}],                          //密文输入
           "Ins_P": [],                               //明文输入
-          "Ins_P0": [],                              //SuperZK1.0-2.0转换输入
+          "Ins_P0": [],                              //SuperZK1.0 明文输入
           "Outs_C": [{...}],                         //密文输出
-        "Outs_P": [{...}]                          //明文输出
+          "Outs_P": [{...}]                          //明文输出
         }
   		}
   	},
@@ -1022,12 +1024,13 @@ douts,_=flight.DecOut(&tk,outs)
   			},
   			"Memo": "0x0000000......0000000",
   			"PKr": "0xb8d018......143099"
-  		}]
+  		}],
+      "Z":true      //采用匿名交易的方式进行签名
   	},
   	"error": null
   }
-  ```
-
+```
+  
   
 
 ### 广播交易

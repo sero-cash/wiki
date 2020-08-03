@@ -162,10 +162,10 @@
   {
     sharePoolSize: "0x0",                    //股份池当前大小
     sharePrice: "0x1bc16d674ec80000",        //当前股份价格
-    buyShare: function(),
-    closeStakePool: function(),
-    getShare: function(),
-    getSharePoolSize: function(callback),
+    buyShare: function(),                    //购买股份
+    closeStakePool: function(),              //关闭权益池
+    getShare: function(),                    //根据股份Id查询股份详情
+    getSharePoolSize: function(callback),    //获取股份池大小
     getSharePrice: function(callback),
     modifyStakePoolFee: function(),
     modifyStakePoolVote: function(),
@@ -255,7 +255,7 @@
 * 查看我的总股份情况
 
   ```javascript
-  > stake.myShare("5bEgN9YLqCBN9......pti4zeamkdD16C")
+  > stake.myShareV2("5bEgN9YLqCBN9......pti4zeamkdD16C")  //查询某PK下的股份详情
   [{
       addr: "5bEgN9YLqCB......rpti4zeamkdD16C",
       expired: 0,                                //股份过期数量
@@ -270,6 +270,7 @@
       total: 30,                                 //我的总股份数
       voteAddr: ["2tuxyM5uL4ZDkfp......Vtw4xdTPCe5xNPokr"]    //我的投票ID
   }]
+  > stake.getShareByPkrV2("2tuxy......xNPokr") //查询某PKr下的股份详情
   ```
 
 ### 6. 查看账户余额

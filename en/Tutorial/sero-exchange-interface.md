@@ -197,6 +197,7 @@ Offline signing program is also divided into Go version and JS version.
   //------txParam---
   var param txtool.GTxParam
   json.Unmarshal([]byte(param_str),&param)
+  param.Z=true //need to be sent anonymously
   //------Private key ----
   bs, _ := hexutil.Decode(sk_str)
   sk := keys.Uint512{}
@@ -502,6 +503,7 @@ SERO's full node program (gero) provides a set of services specifically for exch
       109                  // Block number, empty means to get the latest block。
         ]
   }
+  ```
 ```
   
   - response
@@ -521,7 +523,7 @@ SERO's full node program (gero) provides a set of services specifically for exch
         "error": null
   }
 ```
-  
+
 - **console**
 
 ```javascript
@@ -912,7 +914,8 @@ SERO's full node program (gero) provides a set of services specifically for exch
               "Tkt": null
           },
           "Memo": "0x00000000......000000000"
-      }]
+      }],
+      "Z":true    //need to be sent anonymously
     },
     "error": null
   }

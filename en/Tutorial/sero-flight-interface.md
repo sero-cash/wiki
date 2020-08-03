@@ -26,7 +26,8 @@ The SFI interface is an upgraded version of SSI, supports jsonrpc and console ca
          2. `UTXO` Obtain a list of obsolete codes from the extracted data `Nils`
          3. Save `UTXO` and `Nils`
          4. The `UTXO` asset recorded data
-   3. Determine whether the obsolete code `block.Nils` already exists in the previously saved `UTXO` table. If it exists, it indicates that it `UTXO` has been used.
+   3. Note that the `Root` of the `UTXO` obtained by `getBlocksInfo` or `getTx` before 32 confirmation blocks may change because of the fork, so it can only be used as a prompt and cannot be stored, and the `getTx` needs to be called again to get the latest data after 32 confirmation blocks before it can be finally stored.
+   4. Determine whether the obsolete code `block.Nils` already exists in the previously saved `UTXO` table. If it exists, it indicates that it `UTXO` has been used.
 
 * Send transactions (online and offline)
 
@@ -117,7 +118,7 @@ The `local` interface is an offline `jsonrpc` interface. Although the gero progr
   ```
 
 * **Generate tk from sk**
- 
+
   The tracking key TK cannot sign transactions, so it can be used online.
 
   * request
@@ -305,7 +306,8 @@ After calling the `flight_genTxParam` assembly transaction signature parameters,
 		  	"Gas": 25000,
 	     "GasPrice": 1000000000,
 		  	"Ins": [{}],
-		  	"Outs": [{}, {}] 
+		  	"Outs": [{}, {}],
+        "Z": true //need to be sent anonymously
 		  }, 
 	    "0x1657f2f6 ...... f96be89b4f03"     // private key SK 
 	  ] 
@@ -422,7 +424,7 @@ When signing a transaction, a key will be generated for each Out_C in Tx1, and t
   	}
   ]
 }
-```	
+```
 
 - response
 
@@ -565,8 +567,8 @@ Scan the block to get the new UTXO and UTXO obsolete information in the block, b
 						"Proof":"0x03d8b7e....5c88c2e06",
 						"RPK": "0x44231e....96841"
 					},
-          "Out_P": null,
-          "Out_C": null,
+          "Out_P": null,         // The plain text UTXO for the SuperZK2.0
+          "Out_C": null,         // The ciphertext UTXO for the SuperZK2.0
 				},
 				"TxHash": "0x482a2....bd0a5c2"
 			}
@@ -919,7 +921,8 @@ The listing person needs to select the UTXO to be used to assemble the transacti
 		  },
 		"Memo": "0x0000000......0000000",
 		"PKr": "0xb8d018......143099"
-		}]
+		}],
+    "Z":true //if true, sign & send the tx anonymously
 	},
 	"error": null
 }
