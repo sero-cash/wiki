@@ -29,6 +29,7 @@
 - [发行匿名Token付费说明](?file=Tutorial/fee-for-issue-token)
 - [SERO 轻钱包应用接入教程](?file=Tutorial/popup-dapp-access)
 - [如何集成SERO](?file=Tutorial/how-to-integrate-sero)
+- [SERO Popup钱包支付接入指南](?file=Tutorial/sero-popup-pay)
 
 ##### 标准范例
 
