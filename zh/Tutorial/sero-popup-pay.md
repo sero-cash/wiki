@@ -1,4 +1,4 @@
-# SERO Pay 接入指南
+# SERO Popup钱包支付接入指南
 
 ## 接口声明
 
@@ -29,7 +29,7 @@
 |![image.png](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/13141677-da9b772b24ba00c3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)|![image.png](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/13141677-e349eb5e59044bdd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)|![image.png](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/13141677-ba5ae7fbde7d651b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
 |
 
-**APP 调用Popup的代码，请根据开发语言修改 **
+**APP 调用Popup的代码，请根据开发语言修改**
 ```javascript
 function openPopup() {
 	var txParams = {"payFrom":"","to":"5p9kwQ5MgmABNq9XEUTwQLzCsBXfXQ6XLu8jm5hPueQ2owRWQ62RT1WGo9Cw8gj4Ld9YoBwLfZ3XeQA8guT2nCHX","value":"0x8ac7230489e80000","data":"0xf0baae20183286e1e5ed79f4b5af6aa60000c4abf2b9000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000000034d30310000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a3135393034383230303300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d4f52443135393034383230303300000000000000000000000000000000000000","gasPrice":"0x3b9aca00","cy":"SERO","gas":"0x3e951","type":"thirdpay"};
@@ -72,7 +72,7 @@ QRCode.toCanvas(canvas, JSON.stringify(txParams), function (error) {
     if (error) console.error(error)
  });
 ```
-**测试二维码*
+**测试二维码**
 
 ![image.png](https://sero-media.s3-ap-southeast-1.amazonaws.com/images/jianshu/13141677-986ed600f6bbc986.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
 
