@@ -121,6 +121,12 @@ const dapp = {
             author: "tom",
             url: "http://127.0.0.1:3000",
             logo: "http://127.0.0.1:3000/logo192.png",
+
+            navMode:"light",
+            navColor:"#f7f7f7",
+
+            barMode:"light",
+            barColor:"#f7f7f7"
         }
 
 seropp.init(dapp,function (rest) {
