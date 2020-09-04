@@ -15,12 +15,13 @@ and much more!
 ## 1. Hardware Requirements
 
 With the current scale of the Beta network, the recommended requirements is:
-> Processor: CPU with 2 threads or more(4 threads will run more smoothly)
-> RAM: 4GB
-> Disk space: 10G
+> * Processor: >= CPU with 8 Core
+> * RAM: >= 16GB
+> * Disk space: >= 500G (SSD)
+> * Bandwidth >= 5M
 
 ```sh
-#Hardware information of test machine in this document
+#Hardware information of test machine in this document (Low test environment requirements)
 #----------------------------
 # OS         : CENTOS7.3
 # Processor  : Xeon E5-26xx v4 (C2T2)
