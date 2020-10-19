@@ -114,10 +114,32 @@ $ mkdir ~/sero-data
 
 Set the dynamic library importing path
 
+### Darwin >= 10.15.7
+
 ```sh
-$ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GOPATH/src/github.com/sero-cash/go-czero-import/czero/lib
+$ export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$GOPATH/src/github.com/sero-cash/go-czero-import/czero/lib_DARWIN_AMD64
+```
+### Linux
+
+some os required 
+```sh
+libgmp-dev
+
 ```
 
+##### 7.0 < centos < 8.0
+
+```sh
+$ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GOPATH/src/github.com/sero-cash/go-czero-import/czero/lib_LINUX_AMD64_V3
+```
+##### others
+
+If V4 does not work, you can try to switch to V3
+
+
+```sh
+$ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GOPATH/src/github.com/sero-cash/go-czero-import/czero/lib_LINUX_AMD64_V4
+```
 
 
 ## 6. Start the background service
