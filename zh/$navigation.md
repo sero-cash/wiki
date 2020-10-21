@@ -44,6 +44,7 @@
 ##### 最新动态
 
 - **产品发布**
+  - [MAINNET V1.0.4](?file=News/Release/SERO-MAINNET-V1.0.4)
   - [MAINNET V1.0.3](?file=News/Release/SERO-MAINNET-V1.0.3)
   - [MAINNET V1.0.2](?file=News/Release/SERO-MAINNET-V1.0.2)
   - [MAINNET V1.0.1](?file=News/Release/SERO-MAINNET-V1.0.1)
