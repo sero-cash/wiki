@@ -36,6 +36,7 @@ https://115.com/s/swn3vh13694?password=ybb3&#
 
 ### mega.nz (Full file)
 
+https://mega.nz/file/oYY1CYoa#cIlJRxOR1yvnjcd1T0l3IKhEXNK3wVF2n2f6YmT8t5A
 
 
 ## BLOCK-NUM 4632972
