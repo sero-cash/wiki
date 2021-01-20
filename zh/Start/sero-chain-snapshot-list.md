@@ -38,6 +38,7 @@ https://115.com/s/swn3vh13694?password=ybb3&#
 
 ### mega.nz（全文件）
 
+https://mega.nz/file/oYY1CYoa#cIlJRxOR1yvnjcd1T0l3IKhEXNK3wVF2n2f6YmT8t5A
 
 ## 截止 4632972 块的快照
 
