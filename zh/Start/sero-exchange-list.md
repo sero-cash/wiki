@@ -1,106 +1,123 @@
-# SERO已经上线的交易所名单
-
 ## 1 、Gate.io 比特儿
+ 
  - https://www.gatecn.io/trade/SERO_USDT
 
 ## 2 、Tokencan T网
+
+
  - https://www.tokencan.net/trade/SERO_USDT
 
-## 3 、MXC 抹茶
- - https://www.mxc.ceo/trade/easy#SERO_USDT
+## 3 、Bit-Z
 
-## 4 、BiKi
- - https://www.biki.com/trade/SERO_USDT
 
-## 5 、CoinW 币赢
- - https://www.coinw.ai/fast/trade/SERO_CNYT.html
-
-## 6、ZT
- - https://www.ztb.com/
- 
-## 7 、Bit-Z
  - https://www.bitz.top/exchange/sero_usdt
 
-## 8 、ZD 支点
- - https://www.zdcoin.app/el_GR/trade/SERO_USDT
- 
-## 9 、LBKEX
- -  https://www.lbkex.co/exchange.html#/sero/usdt
+## 4 、MXC 抹茶
 
-## 10 、CITEX C网
+
+ - https://www.mxc.ceo/trade/easy#SERO_USDT
+
+## 5 、CoinW 币赢
+
+
+ - https://www.coinw.ai/fast/trade/SERO_CNYT.html
+
+## 6 、C网（CITEX ）
+
+
  - https://trade.citex.io/trade/SERO_USDT
 
-## 11 、BiUP
- - https://www.biup.com
+## 7 、比特牛
 
-## 12 、Hotbit
- - https://www.hotbit.io/exchange?symbol=SERO_USDT
 
-## 13 、HKEx
- - https://www.hkex.one/zh_CN/trade/SERO_USDT
+ - https://www.btnex.pro/exchange/SERO/USDT
 
-## 14 、DXD
- - https://www.dxdcoin.com/zh_CN/trade/SERO_USDT
+## 8 、凤凰全球
 
-## 15 、Coinsuper 币成
- - https://www.coinsuper.info/trade?symbol=SERO%2FUSDT
 
-## 16 、MOMOEX
- - https://www.momoex.com/zh_CN/trade/SERO_USDT
+ - https://www.phoenixglobal.cc/exchange/SERO/USDT
 
-## 17 、Digifinex
- -  https://www.digifinex.vip
+## 9 、红米(HomiEx)
 
-## 18 、CoinEgg 币蛋
- - https://trade.coinegg.vip/trade/sero_usdt
 
-## 19 、BBKX
- - https://www.bbkx.com/zh_CN/trade/SERO_USDT
+ - https://www.homiex.io/exchange/SERO/USDT
 
-## 20 、DOBI 多比
- - https://www.dobiexchange.com/trade?coin=sero_usdt
+## 10 、鹿网
 
-## 21 、VDSEX
- -  https://www.vdsex.com/trade?na=SERO_USDT
 
-## 22 、Qbtc
- - Q网 https://www.qbtc.ink/trade?symbol=SERO_USDT
+ - https://www.deerdex.top/exchange/SERO/USDT
 
-## 23 、BAFEEX
- - https://www.bafeex.io/exchange/649/sero/usdt
+## 11 、霍比特(HBTC)
+
+
+ - https://www.hbtc.co/exchange/SERO/USDT
+
+## 12 、安银(AEX)
+
+
+ - https://www.aex.cool/page/trade.html#/?symbol=sero_usdt
+
+## 13 、XT网
+
+
+ - https://www.xt.com/tradePro/sero_usdt
+
+## 14 、DigiFinex
+
+
+ - https://www.digifinex.com/en-ww/trade/USDT/SERO
+
+## 15 、BiKi
+
+
+ - https://www.biki.cc/zh_CN/trade/SERO_USDT
+
+## 16 、库币（KuCoin）
+
+
+ - https://trade.kucoin.cc/SERO-USDT
+
+## 17 、ZT
+
+
+ - https://www.ztb.im/exchange?coin=SERO_USDT
+
+## 18 、币格（BigOne）
+
+
+ - https://www.bigonechina.com/trade/SERO-USDT
+
+## 19 、币牛BiBull
+
+
+ - https://www.bibull.co/zh_CN/trade/SERO_USDT
+
+## 20 、Bione
+
+
+ - https://www.bione.me/zh_CN/trade/SERO_USDT
+
+## 21 、支点(Zhidian.io)
+
+
+ - https://www.zhidian.io/zh_CN/trade/SERO_USDT
+
+## 22 、LBank
+
+
+ - https://www.lbank.info/exchange.html#/sero/usdt
+
+## 23 、波网
+
+
+ - https://www.boboo.vip/exchange/SERO/USDT
 
 ## 24 、HPX
- - https://www.hpx.ai/tpl/trade/trade.html
 
-## 25 、B1
- - https://b1.run/trade/SERO- USDT
 
-## 26 、bilaxy 币系
- - https://bilaxy.com
+ - https://www.hpx.world/tpl/trade/trade.html
 
-## 27 、BafeEX
- - https://www.bafeex.io
+## 25 、GOKO
 
-## 28 、Dobi
- - https://www.dobiexchange.com
 
-## 29 、HCoin
- - https://www.hcoin86.com
- 
-## 30 、Coinex
- - https://www.coinex.com
-
-## 31、Pcsex
- - https://www.pcsex.com
-
-## 32、XT
- - https://www.xt.pub
-
-## 33、HBTC
- - https://www.hbtc.com
-
-## 34、Bitbns
- - https://bitbns.com
-
-## 35 、Chaoex 炒客网
- - https://www.chaoex.info/dealcenter
+ - https://www.goko.vip/zh_CN/trade/SERO_USDT
