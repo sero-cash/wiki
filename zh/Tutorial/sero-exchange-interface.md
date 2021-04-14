@@ -498,9 +498,9 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
     * 账户需要导入`seed`
   * [`CommitTx(tx)->()`](#CommitTx)
     * 将签名好的tx提交给交易池并广播给全网
-  * [`GetCommittedTx(txhas)->tx`](#GetCommittedTx)
+  * [`GetCommittedTx(txhash)->tx`](#GetCommittedTx) `> v1.0.8`
     * 获取本地提交过的tx
-  * [`ResendCommittedTx(txhash)->()`](#ResendCommittedTx)
+  * [`ResendCommittedTx(txhash)->()`](#ResendCommittedTx) `> v1.0.8`
     * 将本地提交过的tx重新提交给交易池并广播给全网
   * [`GetPkSynced(pk)->pkState`](#GetPkSynced)
     * 获取当前`exchange`的账户分析情况
@@ -1293,7 +1293,7 @@ null
 
 
 
-### GetCommitedTx (v1.0.8)
+### GetCommitedTx
 
 - 获取本地提交过的交易详情
 - **jsonrpc**
@@ -1325,7 +1325,7 @@ null
 
 
 
-### ResendCommittedTx (v1.0.8)
+### ResendCommittedTx
 
 - 将本地提交过的tx重新提交给交易池并广播给全网
 - **jsonrpc**
@@ -1398,8 +1398,6 @@ null
    返回值`CommitTx`的输出一致         
 
 ```
-
-
 
 ### GetPkSynced
 
