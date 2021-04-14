@@ -498,6 +498,10 @@ SERO的全节点程序(gero)提供了一套专门为exchange对接的服务，ex
     * 账户需要导入`seed`
   * [`CommitTx(tx)->()`](#CommitTx)
     * 将签名好的tx提交给交易池并广播给全网
+  * [`GetCommittedTx(txhas)->tx`](#GetCommittedTx)
+    * 获取本地提交过的tx
+  * [`ResendCommittedTx(txhash)->()`](#ResendCommittedTx)
+    * 将本地提交过的tx重新提交给交易池并广播给全网
   * [`GetPkSynced(pk)->pkState`](#GetPkSynced)
     * 获取当前`exchange`的账户分析情况
   * [`Merge(pk,currency)->txhash`](#Merge)
@@ -1284,6 +1288,114 @@ null
   transactionHash: "0x1bae9132......7ecd7172d36",
   transactionIndex: 0
 }
+
+```
+
+
+
+### GetCommitedTx (v1.0.8)
+
+- 获取本地提交过的交易详情
+- **jsonrpc**
+- request
+   
+    ```javascript
+      {
+      	"id": 0,
+      	"jsonrpc": "2.0",
+      	"method": "exchange_getCommittedTx",
+      	"params": [
+      		"0x0dbd9c0......9304201ea6",                //交易hash
+      	]
+      }
+    ````
+  
+- response
+    - 如果向本地gero成功提交过交易，返回值`GenTxWithSign`的输出一致
+
+
+- **console**
+
+```javascript
+> exchange.getCommittedTx("0x9c597571829ba9c0432c4c65da9ec762f2827321598357c88565adbe0775bd91")   //txhash
+
+   返回值`GenTxWithSign`的输出一致         
+
+```
+
+
+
+### ResendCommittedTx (v1.0.8)
+
+- 将本地提交过的tx重新提交给交易池并广播给全网
+- **jsonrpc**
+- request
+     
+    ```javascript
+      {
+      	"id": 0,
+      	"jsonrpc": "2.0",
+      	"method": "exchange_resendCommittedTx",
+      	"params": [
+      		"0x0dbd9c0......9304201ea6",                //交易hash
+      	]
+      }
+   ```` 
+ - response
+    - success 无错误就说明可以重新放到交易池，等待`gero`同步到全网。
+      ```javascript
+      {
+      	"jsonrpc": "2.0",
+      	"id": 0,
+      	"result": null
+      }
+      ```
+    - error
+      - leveldb: not found  通过txhash没有查询到本地提交过该交易
+      ```javascript
+      {
+      	"jsonrpc": "2.0",
+      	"id": 0,
+      	"error": {
+      		"code": -32000,
+      		"message": "leveldb: not found"
+      	}
+      }
+      ````
+      - Verify Tx Error 交易校验错误
+      ```javascript
+      {
+      	"jsonrpc": "2.0",
+      	"id": 0,
+      	"error": {
+      		"code": -32000,
+      		"message": "Verify Tx Error: resean=txs.verify p_in already in nils , hash=0x9c597571829...8565adbe0775bd9"
+      	}
+      }
+      ```
+      出现这样的错误，说明交易被打包或者重复使用utxo.
+        * 交易被打包
+        
+            如果交易被打包，通过调用`sero.getTransactionReceipt`可以查询到交易被打包情况，至少确保被确认32个块以上。
+            
+        * utxo被重复使用
+            
+            如果确认未被打包，则存在重复使用utxo,该交易不会被打包上链。
+        
+         
+      - ohters
+       不包含以上两种错误的其它错误
+      
+      
+          
+
+
+- **console**
+
+```javascript
+> exchange.resendCommittedTx("0x9c597571829...8565adbe0775bd9")   //txhash
+
+   返回值`CommitTx`的输出一致         
 
 ```
 
