@@ -12,7 +12,7 @@
 
 
 1. gero  `v1.1.0`
-   https://github.com/sero-cash/go-sero/release/tag/v1.1.0
+   https://github.com/sero-cash/go-sero/releases/tag/v1.1.0
 
 2. go-czero-import  `v1.1.0` 
    git clone https://github.com/sero-cash/go-czero-import.git
