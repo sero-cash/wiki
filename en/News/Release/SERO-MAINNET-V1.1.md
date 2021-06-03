@@ -50,7 +50,7 @@ js-sero-client :  `v1.0.1`
 
 ## Commit ID
 
-go-sero `407be3cd078c8f4289678f8e433d4da4c03bdb66`
+go-sero `92fd3138298d0123d518da289fc65894abb15cbc`
 go-czero-import `92dfb4110904ece1e0066d8126a7863ed3487db7`
 console `df296a4b359ba14f555ab34e35896807581577f9`
 mine-pool `fc3f2af2f261beefbe99b95d89abcb19b0d047f3`
@@ -62,9 +62,9 @@ serominer `a111c98b0b3ba5767ba4a7c2d02c949603ba90a9`
 
 > **Download Urls:** https://github.com/sero-cash/go-sero/releases/tag/v1.1.0
 >
-> > gero-v1.1.0-darwin-amd64.tar.gz `macos`, md5: `0e8648110a6b31fc99db325b0666c2f4`
-> > gero-v1.1.0-linux-amd64-v3.tar.gz `centos & ubuntu`, md5: `ae86e390906db13e3378d6c5cf8edb05`
-> > gero-v1.1.0-windows-amd64.zip `windows`, md5: `b179354a3b346fe8ab5d1c9bd7555062`
+> > gero-v1.1.0-darwin-amd64.tar.gz `macos`, md5: `e6c6afb2fe2535fc3fc2c48c7b614c7c`
+> > gero-v1.1.0-linux-amd64-v3.tar.gz `centos & ubuntu`, md5: `8557a2f34ee0ac06fd609e05f492d667`
+> > gero-v1.1.0-windows-amd64.zip `windows`, md5: `e22ca135cf37b180f125e2a14d152e85`
 
 
 
