@@ -74,6 +74,7 @@
   - [BETANET RC5](?file=News/Release/SERO-BETANET-RC5)
   - [BETANET RC4](?file=News/Release/SERO-BETANET-RC4)
 - **Reports**
+  - [SERO 挖矿许可证机制早已取消](?file=News/Report/20210615-about-mining-license)
   - [SERO服务升级公告v1.1](?file=News/Report/20210603-sero-update-announce)
   - [Gero V1.0.5 版本交易池故障报告](?file=News/Report/20210408-v1.0.5-fault-Report)
   - [SERO服务升级报告v1.0.2](?file=News/Report/20200220-sero-update-announce)
