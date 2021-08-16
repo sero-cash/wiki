@@ -44,6 +44,7 @@
 ##### 最新动态
 
 - **产品发布**
+  - [EASTER V0.0](?file=News/Release/SERO2-ALPHANET-EASTER-V0.0)
   - [MAINNET V1.1](?file=News/Release/SERO-MAINNET-V1.1)
   - [MAINNET V1.0.7](?file=News/Release/SERO-MAINNET-V1.0.7)
   - [MAINNET V1.0.5](?file=News/Release/SERO-MAINNET-V1.0.5)
