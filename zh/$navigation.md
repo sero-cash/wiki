@@ -18,6 +18,7 @@
 
 ##### 教程
 
+- [如何缩减 SERO 区块数据存储空间](?file=Tutorial/how-to-create-snapshot)
 - [SERO钱包使用手册](?file=Tutorial/manual-of-wallet)
 - [SOLO模式下如何估算自己的出块概率](?file=Tutorial/how-to-evaluate-node-hashrate)
 - [匿名Token发行原理](?file=Tutorial/principle-of-anonymous-token)
