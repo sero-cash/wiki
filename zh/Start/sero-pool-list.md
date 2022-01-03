@@ -10,6 +10,8 @@
 * 矿池地址1：<stratum+tcp://pool2.sero.cash:8808>
 * 矿池地址2：<stratum+tcp://pool4.sero.cash:8808>
 * Telegram：<https://t.me/SEROPoolSupport>
+* 地区：亚太地区
+
 
 ## GONG POOL
 
