@@ -27,7 +27,7 @@
 * 费率: 2%
 * 起付额: 0.5 SERO  
 * 支付时间: 每天结算两次
-* 挖矿教程：<https://cartompool.com/> 
+* Website：<https://cartompool.com/> 
 * 矿池地址：<stratum1+tcp://cartompool.com:8808>
 * 挖矿教程：<https://cartompool.com/#/help>
 * 地区：法兰克福
