@@ -18,6 +18,7 @@
 
 ##### Tutorial
 
+- [How to create a snapshot](?file=Tutorial/how-to-create-snapshot)
 - [SERO Wallet Manual](?file=Tutorial/manual-of-wallet)
 - [Anonymous Tokens Issuance Principle](?file=Tutorial/principle-of-anonymous-token)
 - [SERO Exchange Interface (SEI)](?file=Tutorial/sero-exchange-interface)
