@@ -26,7 +26,7 @@
 
    * Your `gero` version number needs to be greater than or equal to `v1.1.0`
    * You have already synced to the latest block with a snapshot greater than or equal to `6137414` height published by the Foundation.
-     * Reference: [Snapshot download](https://wiki.sero.cash/zh/index.html?file=Start/sero-chain-snapshot-list)
+     * Reference: [Snapshot download](https://wiki.sero.cash/en/index.html?file=Start/sero-chain-snapshot-list)
 
    Missing either of the above two conditions will cause the snapshot creation to fail.
 
